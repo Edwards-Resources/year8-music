@@ -1,6 +1,10 @@
 # Next session
 
-**Where things stand (5 August 2026, night):** Term 3 is finished to the direction contract's own definition: built, reviewed over three rounds, documented in DESIGN.md, and committed. `python3 build.py` emits 27 pages into `docs/` from `data/`. The repo exists locally on `main` at `903eb24`, nothing pushed, no GitHub repo yet.
+**Where things stand (6 August 2026):** Term 3 is finished to the direction contract's own definition: built, reviewed over three rounds, documented in DESIGN.md, and committed. `python3 build.py` emits 27 pages into `docs/` from `data/`.
+
+**Published 6 August 2026.** Public repo at https://github.com/Edwards-Resources/year8-music, Pages serving `main` `/docs` at **https://edwards-resources.github.io/year8-music/**. Verified live: fonts, spot ink and base paths all resolve on the real host, no console errors. The repo name is load-bearing, because the site's base path is hard-coded `/year8-music/`; renaming the repo breaks every link. Matthew chose to publish the full working history and to keep the direction-contract HTML comment in the built pages, matching the Year 10 site.
+
+**Anonymity now covers the repo, not just the site.** The Year 10 repo's README and PRODUCT.md had named the school and Matthew in full while the built site was clean; Matthew confirmed on 6 August 2026 that the school name goes nowhere at all. Both files were corrected there and the rule in `year10-music-2026/PRODUCT.md` was rewritten to cover internal planning files too. Year 8's own files were checked and were already clean. **Grep any new file for the school name before committing it.**
 
 Read **DESIGN.md before touching any CSS.** The rules in it were earned through a finish review, not invented.
 
@@ -21,9 +25,8 @@ Step up to **Opus, medium-high** only if the visual world needs to change, or fo
 ## Also outstanding
 
 1. **Six lessons have unfilled media slots:** 8, 11, 13, 16, 22 and 23. The Canvas source carries placeholders written as "Piano ballad - video"; `build.py` detects these and renders an honest "Not added yet" panel rather than showing placeholder text to students. Choosing the tracks is Matthew's call and ties to the Australian-artist focus (Thelma Plum and Eastern Rosellas chosen; the Odesza swap still open).
-2. **Not published.** Needs a repo under the `Edwards-Resources` org and Pages pointed at `/docs`. **Ask Matthew before creating the repo**; he does not want repos created autonomously.
-3. **Before it goes public, decide what belongs in a public history.** Git history is permanent, so this is a decision to make at publish time, not after. `NEXT-SESSION.md` and `PRODUCT.md` carry class codes and internal planning. The built site in `docs/` is already clean: no school name, no class codes, no student data, `noindex` on every page. Starting a fresh history at publish is a legitimate option.
-4. **DoE external-publishing policy** still unverified, same open question as the Year 10 site.
+2. **The site is now public, so every commit is public.** Pushing is no longer a private act: anything committed from here is visible immediately and stays in history even if a later commit removes it. Still **ask Matthew before pushing**.
+3. **DoE external-publishing policy** still unverified, same open question as the Year 10 site.
 
 ## How to work on it
 
@@ -48,5 +51,7 @@ Step up to **Opus, medium-high** only if the visual world needs to change, or fo
 ## Last commit
 
 ```
-903eb24 Year 8 Music site: Term 3 built, reviewed and documented
+9501dff Add README and refresh build date stamp
 ```
+
+Pushed to `origin/main`.
