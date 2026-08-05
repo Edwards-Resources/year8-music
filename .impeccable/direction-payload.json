@@ -1,0 +1,65 @@
+{
+  "title": "Choose the Year 8 visual world",
+  "question": "The roll assigned Rehearsal Marks. Keep it, take an alternate, or re-roll.",
+  "options": [
+    {
+      "id": "assigned",
+      "label": "Rehearsal Marks",
+      "kicker": "THE ROLL",
+      "lineage": "engraved band parts and pocket-score edition livery",
+      "thesis": "The year as a score you can call any letter from, because no two classes are at the same bar.",
+      "palette": ["#1A2FC7", "#FBFBF7", "#101010", "#FF4A1F"],
+      "materials": ["boxed rehearsal letters", "repeat barlines", "flooded edition ink", "engraved rules"],
+      "viewport": "A flooded ultramarine cover band carries the unit title like a part cover, and directly beneath it the whole term is laid out as big boxed rehearsal letters, every lesson a letter you can jump straight into without scrolling past the others.",
+      "risk": "Notation can read as classical and lock out kids who do not read music. It only survives as popular music's own notation: chord charts, section letters and repeat bars, never a stave of dots."
+    },
+    {
+      "id": "challenger-cyclorama",
+      "label": "Cue Sheet",
+      "lineage": "stagecraft cycloramas and lighting plots",
+      "thesis": "The unit as a cue list, where every lesson is a numbered cue that can be called out of order.",
+      "palette": ["#0A0A0F", "#1B3FA8", "#E8859B", "#FFFFFF"],
+      "materials": ["stencil cue caps", "horizon bands", "tabular numerals"],
+      "viewport": "Horizontal bands stacked dark to light, each one a lesson cue with its number in stencil caps, brightening as it becomes the section you are reading.",
+      "risk": "The black ground is the problem. A classroom projector in daylight cannot hold it, and this site is watched on the board first.",
+      "case": "Fuses strongly, and it is the closest challenger. A cue list is random access by design and Battle of the Bands is a staged show, so the language is honestly theirs. It loses on the ground colour against the projector.",
+      "hero": "https://impeccable.style/worlds/cards/stagecraft-theater-lighting-cyclorama-dawn-hero.webp",
+      "board": "https://impeccable.style/worlds/cards/stagecraft-theater-lighting-cyclorama-dawn.webp"
+    },
+    {
+      "id": "challenger-pc98",
+      "label": "Sixteen Colours",
+      "lineage": "Japanese PC-98 game screens at 640 by 400",
+      "thesis": "The lesson as a docked text window on a fixed sixteen-colour screen, menus inverting as you pick them.",
+      "palette": ["#2A1B4A", "#F0A0C0", "#50C8E0", "#F8F0D0"],
+      "materials": ["ordered dither", "bitmap cell grid", "bevelled windows"],
+      "viewport": "A fixed frame: artwork holding the upper right, a bevelled text window docked along the bottom playing the lesson out one cell at a time.",
+      "risk": "A bitmap face on an integer-only grid cannot be zoomed or text-scaled, which the access provisions in these classes require.",
+      "case": "The highest recognition with 13-year-olds of any card here, and genuinely fun. It fails on accessibility rather than taste, and softening the pixel grammar to fix that would leave nothing of the world.",
+      "hero": "https://impeccable.style/worlds/cards/digital-design-canon-pc98-sixteen-color-field-hero.webp",
+      "board": "https://impeccable.style/worlds/cards/digital-design-canon-pc98-sixteen-color-field.webp"
+    },
+    {
+      "id": "challenger-cloud",
+      "label": "Spectral Edge",
+      "lineage": "iridescent cloud edges",
+      "thesis": "A quiet achromatic page where a thin spectral fringe is the only thing marking where you are.",
+      "palette": ["#FFFFFF", "#5A6472", "#9FE0C8", "#C8A8E8"],
+      "materials": ["hairline bands", "wide margins", "thin humanist sans"],
+      "viewport": "A wide white field of text with generous margins, colour appearing only as a narrow mint and violet fringe along the edge of the active band.",
+      "risk": "Colour at hairline width disappears completely on a projector, and the whole thing is too quiet to hold a Year 8 room.",
+      "case": "Reads calmly and would be restful to write into. It fuses poorly here because the two things it commits to, quiet and hairline colour, are the two things this site cannot afford.",
+      "hero": "https://impeccable.style/worlds/cards/clouds-storms-auroras-iridescent-cloud-edge-hero.webp",
+      "board": "https://impeccable.style/worlds/cards/clouds-storms-auroras-iridescent-cloud-edge.webp"
+    }
+  ],
+  "reroll": true,
+  "canon": true,
+  "canonCard": {
+    "label": "The category standard",
+    "thesis": "What a school course site ships, executed impeccably.",
+    "viewport": "A tidy grid of week cards over a neutral ground, a sidebar listing the lessons, breadcrumbs above the title.",
+    "risk": "Safe and instantly legible, and indistinguishable from the Canvas pages this is meant to replace."
+  },
+  "steer": true
+}

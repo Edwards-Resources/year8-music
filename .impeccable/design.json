@@ -1,0 +1,589 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-08-05T12:52:09Z",
+  "title": "Design System: Year 8 Music",
+  "extensions": {
+    "colorMeta": {
+      "print": {
+        "role": "primary",
+        "displayName": "Print Black",
+        "canonical": "#0B0B0D",
+        "tonalRamp": [
+          "#0B0B0D",
+          "#1E1F23",
+          "#33353B",
+          "#4E5058",
+          "#6E7078",
+          "#9A9CA3",
+          "#C4C5C2",
+          "#EAEAE7"
+        ]
+      },
+      "white": {
+        "role": "primary",
+        "displayName": "Reversed White",
+        "canonical": "#FFFFFF",
+        "tonalRamp": [
+          "#232326",
+          "#3B3B3F",
+          "#55555A",
+          "#727277",
+          "#949499",
+          "#B5B5BA",
+          "#D8D9DC",
+          "#FFFFFF"
+        ]
+      },
+      "stock": {
+        "role": "neutral",
+        "displayName": "Garment Stock",
+        "canonical": "#EAEAE7",
+        "tonalRamp": [
+          "#232322",
+          "#3A3A38",
+          "#54544F",
+          "#71716B",
+          "#93938C",
+          "#B4B4AE",
+          "#D2D2CE",
+          "#F7F7F5"
+        ]
+      },
+      "stock-hi": {
+        "role": "neutral",
+        "displayName": "Stock Highlight",
+        "canonical": "#F7F7F5",
+        "tonalRamp": [
+          "#262624",
+          "#3E3E3B",
+          "#585854",
+          "#75756F",
+          "#97978F",
+          "#B8B8B1",
+          "#D8D8D4",
+          "#F7F7F5"
+        ]
+      },
+      "soft": {
+        "role": "neutral",
+        "displayName": "Soft Grey",
+        "canonical": "#4E5058",
+        "tonalRamp": [
+          "#17181C",
+          "#25262B",
+          "#34363C",
+          "#4E5058",
+          "#6C6F78",
+          "#8E9199",
+          "#B4B6BC",
+          "#DCDDE0"
+        ]
+      },
+      "print-soft": {
+        "role": "neutral",
+        "displayName": "Print Field Soft",
+        "canonical": "#D8D9DC",
+        "tonalRamp": [
+          "#1F2023",
+          "#333438",
+          "#4A4B50",
+          "#646569",
+          "#868790",
+          "#A7A8AF",
+          "#D8D9DC",
+          "#F1F1F3"
+        ]
+      },
+      "print-softer": {
+        "role": "neutral",
+        "displayName": "Print Field Softer",
+        "canonical": "#B9BABE",
+        "tonalRamp": [
+          "#1C1D20",
+          "#2F3034",
+          "#45464A",
+          "#5E5F64",
+          "#7E7F85",
+          "#9C9DA3",
+          "#B9BABE",
+          "#DEDFE1"
+        ]
+      },
+      "rule": {
+        "role": "neutral",
+        "displayName": "Hairline",
+        "canonical": "#C4C5C2",
+        "tonalRamp": [
+          "#1F201E",
+          "#343531",
+          "#4C4D48",
+          "#686A64",
+          "#8A8B85",
+          "#A9AAA5",
+          "#C4C5C2",
+          "#E6E7E4"
+        ]
+      },
+      "pink": {
+        "role": "secondary",
+        "displayName": "Tour Pink",
+        "canonical": "#FF1E6F",
+        "tonalRamp": [
+          "#3B0019",
+          "#5E0028",
+          "#87003A",
+          "#B0004D",
+          "#D80060",
+          "#FF1E6F",
+          "#FF6C9E",
+          "#FFC0D5"
+        ]
+      },
+      "yellow": {
+        "role": "secondary",
+        "displayName": "Tour Yellow",
+        "canonical": "#FFE000",
+        "tonalRamp": [
+          "#332C00",
+          "#524700",
+          "#756500",
+          "#9A8400",
+          "#C0A500",
+          "#E5C600",
+          "#FFE000",
+          "#FFF0A0"
+        ]
+      },
+      "cyan": {
+        "role": "secondary",
+        "displayName": "Tour Cyan",
+        "canonical": "#00CFE8",
+        "tonalRamp": [
+          "#002B31",
+          "#00454E",
+          "#00626E",
+          "#00808F",
+          "#00A0B3",
+          "#00CFE8",
+          "#63E2F1",
+          "#BEF3F9"
+        ]
+      },
+      "lime": {
+        "role": "secondary",
+        "displayName": "Tour Lime",
+        "canonical": "#96F000",
+        "tonalRamp": [
+          "#1C2F00",
+          "#2E4C00",
+          "#436C00",
+          "#598E00",
+          "#71B100",
+          "#87D400",
+          "#96F000",
+          "#CFF87E"
+        ]
+      },
+      "orange": {
+        "role": "secondary",
+        "displayName": "Tour Orange",
+        "canonical": "#FF6A00",
+        "tonalRamp": [
+          "#331400",
+          "#522200",
+          "#753100",
+          "#9A4100",
+          "#C05200",
+          "#E56000",
+          "#FF6A00",
+          "#FFB484"
+        ]
+      }
+    },
+    "alphaDerivatives": [
+      {
+        "name": "scroll-shade",
+        "value": "rgba(11,11,13,.28)",
+        "derivedFrom": "print",
+        "purpose": "Print Black at 28%, the shade at each edge of the table scroll region. Not a palette entry."
+      },
+      {
+        "name": "stock-clear",
+        "value": "rgba(234,234,231,0)",
+        "derivedFrom": "stock",
+        "purpose": "Garment Stock at zero alpha, the far end of the table fade. Written in full rather than as transparent, because transparent interpolates through black and smears grey into the fade."
+      },
+      {
+        "name": "mask-opaque",
+        "value": "#000",
+        "derivedFrom": null,
+        "purpose": "The opaque stop of the halftone mask-image gradient. A mask reads only the alpha channel, so this means 'fully visible', not the colour black. Never use it as a paint colour."
+      }
+    ],
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "The tour logo. One per page, on the black print field, carrying the overprint offset in the page ink."
+      },
+      "numeral": {
+        "displayName": "Numeral",
+        "purpose": "The lesson number in the billing line, carrying the inverted plate offset in Reversed White."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "The lesson title beside the numeral."
+      },
+      "headline-sm": {
+        "displayName": "Headline Small",
+        "purpose": "The 'The dates' section heading on the term page."
+      },
+      "poster": {
+        "displayName": "Poster",
+        "purpose": "A term name on a home card."
+      },
+      "date-numeral": {
+        "displayName": "Date Numeral",
+        "purpose": "The lesson number in the tour list. Tabular figures, right-aligned in a 2.1ch column."
+      },
+      "leg-letter": {
+        "displayName": "Leg Letter",
+        "purpose": "The A to E capital inside its 40px ink square."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "A leg name in the tour list."
+      },
+      "block-title": {
+        "displayName": "Block Title",
+        "purpose": "A block heading inside a lesson, and the assessment 'when' line."
+      },
+      "brand": {
+        "displayName": "Brand",
+        "purpose": "The site name in the bar."
+      },
+      "count": {
+        "displayName": "Count",
+        "purpose": "The term, date count and subtitle line under a logo."
+      },
+      "label-lg": {
+        "displayName": "Label Large",
+        "purpose": "The 'all dates' button and a leg's lesson range, which rides 0.13em tracking."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "The stamp bar on every panel. The most-used label size; rises to 0.16em on the encore and the term question."
+      },
+      "code": {
+        "displayName": "Code",
+        "purpose": "Syllabus outcome codes, tracked tighter than any other label because they are alphanumeric strings, not words."
+      },
+      "meta": {
+        "displayName": "Meta",
+        "purpose": "The lesson locator line and the masthead assessment flag."
+      },
+      "table-head": {
+        "displayName": "Table Head",
+        "purpose": "Column headers reversed out of Print Black."
+      },
+      "direction": {
+        "displayName": "Direction",
+        "purpose": "The 'Previous' and 'Next' labels."
+      },
+      "flag": {
+        "displayName": "Flag",
+        "purpose": "The assessment chip on the tour list. The smallest type in the system."
+      },
+      "lead": {
+        "displayName": "Lead",
+        "purpose": "The learning intention. Body face at bold, sized for the projector, max 60ch."
+      },
+      "question": {
+        "displayName": "Question",
+        "purpose": "The term's driving question, max 58ch."
+      },
+      "strong-body": {
+        "displayName": "Strong Body",
+        "purpose": "A lesson title in the tour list, and the encore sentence."
+      },
+      "blurb": {
+        "displayName": "Blurb",
+        "purpose": "The paragraph under a logo on a print field, max 58ch."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "All prose. Max 70ch."
+      },
+      "board": {
+        "displayName": "Board",
+        "purpose": "The learning intention in the tour list and a prev/next lesson title. Sized for the projector rather than the desk."
+      },
+      "table-body": {
+        "displayName": "Table Body",
+        "purpose": "Table cells."
+      },
+      "body-sm": {
+        "displayName": "Body Small",
+        "purpose": "Outcome text and poster subtitles."
+      },
+      "small": {
+        "displayName": "Small",
+        "purpose": "The footer and the key-word chips. The numbered step marker shares this size in the display face."
+      },
+      "caption": {
+        "displayName": "Caption",
+        "purpose": "The .small utility and the table swipe hint, both in Soft Grey."
+      },
+      "crumb": {
+        "displayName": "Crumb",
+        "purpose": "The breadcrumb trail."
+      }
+    },
+    "shadows": [
+      {
+        "name": "plate-offset",
+        "value": "var(--plate) calc(var(--plate) * .85) 0 var(--ink)",
+        "purpose": "The second colour pass on every masthead element. text-shadow, zero blur, absolute length because the misregistration belongs to the sheet, not the glyph. --plate is clamp(2px,.35vw,4px)."
+      },
+      {
+        "name": "plate-offset-inverted",
+        "value": "var(--plate) calc(var(--plate) * .85) 0 #fff",
+        "purpose": "The same plate on the lesson numeral, where the glyph carries the ink and the offset carries the Reversed White pass, so numeral and title misregister together."
+      },
+      {
+        "name": "lifted-poster",
+        "value": "6px 6px 0 var(--print)",
+        "purpose": "Home poster cards on hover only, paired with translate(-3px,-3px). Hard-edged, no blur, Print Black. The only box-shadow in the system, and admissible because it is the plate device at object scale."
+      },
+      {
+        "name": "scroll-shade",
+        "value": "radial-gradient(farthest-side at 0 50%, rgba(11,11,13,.28), transparent) left/14px 100% no-repeat scroll",
+        "purpose": "Not elevation. Scroll affordance on the table region, paired left and right, riding the scroll via background-attachment:local so the edge clears at the end of travel."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-step",
+        "value": "cubic-bezier(.2,.8,.3,1)",
+        "purpose": "The only easing in the system, used on the tour date step-out and the poster lift."
+      },
+      {
+        "name": "duration-row",
+        "value": "140ms",
+        "purpose": "Tour date background and padding shift on hover or focus."
+      },
+      {
+        "name": "duration-lift",
+        "value": "160ms",
+        "purpose": "Home poster transform on hover."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}",
+        "purpose": "All motion is disabled outright under reduced-motion. No fallback animation."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "columns",
+        "value": "900px",
+        "purpose": "Both two-column grids collapse to one; the aside becomes a 1rem-gap stack below the main column and its loud panel is demoted to the quiet treatment so it does not stack as a second filled field under the encore."
+      },
+      {
+        "name": "phone",
+        "value": "620px",
+        "purpose": "Tour date drops to two columns with the flag on its own line, leg range hides, prev/next stacks, and the table swipe hint becomes visible."
+      }
+    ],
+    "container": {
+      "name": "wrap",
+      "value": "min(1160px, 100% - 2.5rem)",
+      "purpose": "The single centred measure. Print fields bleed full width but their contents sit in this wrap."
+    }
+  },
+  "components": [
+    {
+      "name": "Tour Date",
+      "kind": "custom",
+      "refersTo": "date-row",
+      "description": "The signature row: one lesson of the term as a date on the back-print. Hover or focus fills the row with the leg ink and steps it out of the list. The assessment chip carries the same ink.",
+      "html": "<ol class=\"ds-dates\"><li class=\"ds-date\"><a href=\"#\"><span class=\"ds-no\">12</span><span class=\"ds-what\"><span class=\"ds-tt\">Building your beat</span><span class=\"ds-int\">We are learning to build a four-bar drum groove in GarageBand.</span></span><span class=\"ds-flag\">Assessment</span></a></li><li class=\"ds-date\"><a href=\"#\"><span class=\"ds-no\">13</span><span class=\"ds-what\"><span class=\"ds-tt\">Bass and root notes</span><span class=\"ds-int\">We are learning to write a bass line that follows the chords.</span></span></a></li></ol>",
+      "css": ".ds-dates{--ink:#FF1E6F;list-style:none;margin:0;padding:0;font-family:Atkinson,'Trebuchet MS',sans-serif;color:#0B0B0D}.ds-date a{display:grid;grid-template-columns:auto 1fr auto;gap:1rem;align-items:center;padding:.72rem .2rem;border-bottom:1px solid #C4C5C2;text-decoration:none;color:inherit;transition:background .14s cubic-bezier(.2,.8,.3,1),padding-left .14s cubic-bezier(.2,.8,.3,1)}.ds-no{font-family:'Archivo Black','Arial Black',sans-serif;font-size:1.5rem;line-height:1;min-width:2.1ch;text-align:right;font-variant-numeric:tabular-nums}.ds-tt{display:block;font-weight:700;font-size:1.15rem;line-height:1.25}.ds-int{display:block;font-size:1rem;line-height:1.35;margin-top:.2rem}.ds-flag{font-family:'Archivo Black','Arial Black',sans-serif;font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;background:var(--ink);color:#0B0B0D;border:2px solid #0B0B0D;padding:.28rem .45rem;white-space:nowrap}.ds-date a:hover,.ds-date a:focus-visible{background:var(--ink);padding-left:.7rem;outline:none}.ds-date a:focus-visible{outline:3px solid #FF1E6F;outline-offset:3px}"
+    },
+    {
+      "name": "Panel, weight one (loud)",
+      "kind": "card",
+      "refersTo": "panel-loud",
+      "description": "A 4px bordered box on lifted stock with a stamp bar filled in the page ink. Exactly one per lesson, chosen by the build: the task block, else the first list, else the first titled paragraph.",
+      "html": "<section class=\"ds-panel\"><h3 class=\"ds-panel-h\">Your task</h3><div class=\"ds-panel-in\"><p>Open your GarageBand project and build the four-bar groove using kick, snare and hi-hat.</p><ul><li>Kick on beats 1 and 3</li><li>Snare on beats 2 and 4</li></ul></div></section>",
+      "css": ".ds-panel{--ink:#FF1E6F;border:4px solid #0B0B0D;background:#F7F7F5;color:#0B0B0D;font-family:Atkinson,'Trebuchet MS',sans-serif;line-height:1.6}.ds-panel-h{font-family:'Archivo Black','Arial Black',sans-serif;font-weight:400;text-transform:uppercase;background:var(--ink);color:#0B0B0D;font-size:.74rem;letter-spacing:.14em;padding:.55rem .8rem;border-bottom:4px solid #0B0B0D;margin:0}.ds-panel-in{padding:.95rem .9rem}.ds-panel-in>*+*{margin-top:.7rem}.ds-panel-in p{margin:0}.ds-panel-in ul{margin:0;padding-left:1.1rem}.ds-panel-in li+li{margin-top:.35rem}"
+    },
+    {
+      "name": "Panel, weight two (quiet)",
+      "kind": "card",
+      "refersTo": "panel-quiet",
+      "description": "No box. A 3px black top rule with the label in black caps over a 2px ink keyline. Every titled block that is not the lesson's one loud field, including listening lists.",
+      "html": "<section class=\"ds-quiet\"><h3 class=\"ds-quiet-h\">Key words</h3><div class=\"ds-quiet-in\"><p class=\"ds-terms\"><span class=\"ds-term\">Groove</span><span class=\"ds-term\">Hook</span><span class=\"ds-term\">Root note</span></p><p>A hook is the part of the song you can sing back after one listen.</p></div></section>",
+      "css": ".ds-quiet{--ink:#FF1E6F;border-top:3px solid #0B0B0D;padding-top:.1rem;color:#0B0B0D;font-family:Atkinson,'Trebuchet MS',sans-serif;line-height:1.6}.ds-quiet-h{font-family:'Archivo Black','Arial Black',sans-serif;font-weight:400;text-transform:uppercase;color:#0B0B0D;font-size:.74rem;letter-spacing:.14em;border-bottom:2px solid var(--ink);display:inline-block;padding:.5rem 0 .28rem;margin:0}.ds-quiet-in{padding:.6rem 0 0}.ds-quiet-in>*+*{margin-top:.7rem}.ds-quiet-in p{margin:0}.ds-terms{display:flex;flex-wrap:wrap;gap:.4rem}.ds-term{background:#0B0B0D;color:#fff;font-weight:700;font-size:.9rem;padding:.18rem .5rem}"
+    },
+    {
+      "name": "Encore",
+      "kind": "custom",
+      "refersTo": "encore",
+      "description": "Weight three, the way out. A solid ink field with black type closing the lesson, where the source data carries an exit block.",
+      "html": "<section class=\"ds-encore\"><div class=\"ds-encore-in\"><h3 class=\"ds-encore-h\">Encore</h3><p>Name one thing your groove does that a metronome does not.</p></div></section>",
+      "css": ".ds-encore{--ink:#FF1E6F;border:4px solid #0B0B0D;background:var(--ink);color:#0B0B0D;font-family:Atkinson,'Trebuchet MS',sans-serif}.ds-encore-in{padding:1.1rem 1.2rem}.ds-encore-h{font-family:'Archivo Black','Arial Black',sans-serif;font-weight:400;text-transform:uppercase;font-size:.74rem;letter-spacing:.16em;margin:0 0 .5rem;line-height:1.02}.ds-encore p{font-size:1.15rem;font-weight:700;max-width:60ch;margin:0;line-height:1.3}"
+    },
+    {
+      "name": "Status Flag",
+      "kind": "chip",
+      "refersTo": "flag",
+      "description": "The one status treatment, shared by the term list and the lesson masthead, filled with the page ink so each chip prints in its own leg colour.",
+      "html": "<span class=\"ds-flag\">Assessment</span> <p class=\"ds-flag ds-flag-lg\">This lesson is an assessment task</p>",
+      "css": ".ds-flag{--ink:#96F000;display:inline-block;font-family:'Archivo Black','Arial Black',sans-serif;font-weight:400;text-transform:uppercase;font-size:.6rem;letter-spacing:.12em;background:var(--ink);color:#0B0B0D;border:2px solid #0B0B0D;padding:.28rem .45rem;white-space:nowrap;margin:0}.ds-flag-lg{font-size:.7rem;letter-spacing:.15em;padding:.4rem .6rem;margin-top:.9rem;white-space:normal}"
+    },
+    {
+      "name": "Home Poster",
+      "kind": "card",
+      "refersTo": "poster",
+      "description": "A term as a solid-ink poster card. The only place a box-shadow appears, and it is the plate device at object scale.",
+      "html": "<ul class=\"ds-posters\"><li><a class=\"ds-poster\" href=\"#\"><span class=\"ds-poster-name\">Popular Music</span><span class=\"ds-poster-sub\">Term 3 &middot; Battle of the Bands &middot; 25 dates</span></a></li></ul>",
+      "css": ".ds-posters{list-style:none;margin:0;padding:0;display:grid;gap:1.2rem;grid-template-columns:repeat(auto-fill,minmax(300px,1fr))}.ds-poster{display:block;border:4px solid #0B0B0D;background:#FF1E6F;color:#0B0B0D;text-decoration:none;padding:1.4rem 1.2rem;height:100%;font-family:Atkinson,'Trebuchet MS',sans-serif;transition:transform .16s cubic-bezier(.2,.8,.3,1)}.ds-poster:hover{transform:translate(-3px,-3px);box-shadow:6px 6px 0 #0B0B0D}.ds-poster:focus-visible{outline:3px solid #FF1E6F;outline-offset:3px}.ds-poster-name{font-family:'Archivo Black','Arial Black',sans-serif;font-size:2rem;line-height:1;display:block;margin:0 0 .4rem;text-transform:uppercase;letter-spacing:-.02em}.ds-poster-sub{font-weight:700;font-size:.92rem;display:block;text-wrap:balance}"
+    },
+    {
+      "name": "Table Scroll Region",
+      "kind": "custom",
+      "refersTo": "panel-quiet",
+      "description": "A named, focusable scroll region with a local-attachment gradient shadow that rides the scroll, plus a worded hint below 620px.",
+      "html": "<section><h3 class=\"ds-blk-h\">The four progressions</h3><p class=\"ds-tablehint\">Swipe the table sideways to see the rest.</p><div class=\"ds-tablewrap\" role=\"region\" tabindex=\"0\" aria-label=\"The four progressions, table\"><table><thead><tr><th>Name</th><th>Chords</th><th>Root notes</th><th>Feel</th></tr></thead><tbody><tr><td>The classic</td><td>C G Am F</td><td>C G A F</td><td>Warm, open</td></tr><tr><td>The sad one</td><td>Am F C G</td><td>A F C G</td><td>Reflective</td></tr></tbody></table></div></section>",
+      "css": ".ds-blk-h{font-family:'Archivo Black','Arial Black',sans-serif;font-weight:400;text-transform:uppercase;font-size:1.05rem;letter-spacing:-.02em;line-height:1.02;margin:0 0 .6rem;color:#0B0B0D}.ds-tablehint{font-family:Atkinson,'Trebuchet MS',sans-serif;font-size:.86rem;color:#4E5058;margin:0 0 .4rem}.ds-tablewrap{overflow-x:auto;border:3px solid #0B0B0D;background:linear-gradient(to right,#F7F7F5 30%,rgba(234,234,231,0)) left/40px 100% no-repeat local,linear-gradient(to left,#F7F7F5 30%,rgba(234,234,231,0)) right/40px 100% no-repeat local,radial-gradient(farthest-side at 0 50%,rgba(11,11,13,.28),transparent) left/14px 100% no-repeat scroll,radial-gradient(farthest-side at 100% 50%,rgba(11,11,13,.28),transparent) right/14px 100% no-repeat scroll}.ds-tablewrap:focus-visible{outline:3px solid #FF1E6F;outline-offset:2px}.ds-tablewrap table{border-collapse:collapse;width:100%;font-family:Atkinson,'Trebuchet MS',sans-serif;font-size:.95rem;min-width:34rem}.ds-tablewrap th{background:#0B0B0D;color:#fff;font-family:'Archivo Black','Arial Black',sans-serif;font-weight:400;font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;text-align:left;padding:.6rem .7rem}.ds-tablewrap td{border-bottom:1px solid #C4C5C2;padding:.6rem .7rem;vertical-align:top;background:#F7F7F5}.ds-tablewrap tbody tr:nth-child(even) td{background:#EAEAE7}"
+    },
+    {
+      "name": "Prev / Next",
+      "kind": "nav",
+      "refersTo": "back-button",
+      "description": "Two equal bordered cards on lifted stock. Hover fills pink and flips the direction label to black, because grey on pink is 2.06:1 and fails.",
+      "html": "<nav class=\"ds-prevnext\" aria-label=\"Lessons\"><a class=\"ds-pn\" href=\"#\"><span>Previous</span><strong>Bass and root notes</strong></a><a class=\"ds-pn ds-pn-next\" href=\"#\"><span>Next</span><strong>Writing your hook</strong></a></nav>",
+      "css": ".ds-prevnext{display:grid;grid-template-columns:1fr 1fr;gap:1rem;font-family:Atkinson,'Trebuchet MS',sans-serif}.ds-pn{border:4px solid #0B0B0D;background:#F7F7F5;color:#0B0B0D;padding:.85rem 1rem;text-decoration:none;display:block}.ds-pn span{display:block;font-family:'Archivo Black','Arial Black',sans-serif;font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:#4E5058;margin-bottom:.25rem}.ds-pn strong{font-size:1rem;line-height:1.25}.ds-pn-next{text-align:right}.ds-pn:hover,.ds-pn:focus-visible{background:#FF1E6F;outline:none}.ds-pn:hover span,.ds-pn:focus-visible span{color:#0B0B0D}.ds-pn:focus-visible{outline:3px solid #FF1E6F;outline-offset:3px}@media (max-width:620px){.ds-prevnext{grid-template-columns:1fr}.ds-pn-next{text-align:left}}"
+    },
+    {
+      "name": "Print Field Masthead",
+      "kind": "custom",
+      "refersTo": "print-field",
+      "description": "The black cover: poster-scale logo carrying the plate offset in the page ink, over a halftone dot field that fades off the bottom edge, with the two reversed greys below it.",
+      "html": "<div class=\"ds-print\"><div class=\"ds-print-wrap\"><h1 class=\"ds-logo\">Popular Music</h1><p class=\"ds-count\">Term 3 &middot; 25 dates &middot; Battle of the Bands</p><p class=\"ds-blurb\">Everything we do in class, lesson by lesson.</p><p class=\"ds-of\">Lesson 19 of 25 &middot; Texture, FX and Assessment</p></div><div class=\"ds-halftone\" aria-hidden=\"true\"></div></div>",
+      "css": ".ds-print{--ink:#FF1E6F;--plate:clamp(2px,.35vw,4px);background:#0B0B0D;color:#fff;position:relative;overflow:hidden;padding:clamp(2.2rem,5.5vw,4rem) 1.25rem clamp(2rem,4vw,3rem);font-family:Atkinson,'Trebuchet MS',sans-serif}.ds-print-wrap{position:relative;z-index:1}.ds-logo{font-family:'Archivo Black','Arial Black',sans-serif;font-weight:400;text-transform:uppercase;line-height:1.02;margin:0;font-size:clamp(2.5rem,8.5vw,5.6rem);letter-spacing:-.035em;text-shadow:var(--plate) calc(var(--plate)*.85) 0 var(--ink)}.ds-count{font-family:'Archivo Black','Arial Black',sans-serif;font-size:clamp(.82rem,1.7vw,1.05rem);letter-spacing:.14em;text-transform:uppercase;margin:1.1rem 0 0}.ds-blurb{max-width:58ch;margin:1.2rem 0 0;color:#D8D9DC;font-size:1.1rem;line-height:1.6}.ds-of{font-family:'Archivo Black','Arial Black',sans-serif;font-size:.7rem;letter-spacing:.15em;text-transform:uppercase;margin:.9rem 0 0;color:#B9BABE}.ds-halftone{position:absolute;inset:auto -10% -30% -10%;height:70%;pointer-events:none;background-image:radial-gradient(currentColor 1.5px,transparent 1.6px);background-size:10px 10px;color:#fff;opacity:.13;-webkit-mask-image:linear-gradient(to bottom,transparent,#000);mask-image:linear-gradient(to bottom,transparent,#000)}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Tour Tee",
+    "overview": "A term is a tour and every lesson is a date on the back of the shirt. The whole system is a screenprint: a black print field where the cover lettering lives, bone garment stock underneath where the reading happens, and five loud spot inks, one assigned to each leg of the tour. Type is heavy grotesque caps carrying a single overprint offset, fields are bounded by 4px black rules rather than shadows, and halftone dot gradients fade off the bottom of every black field. Strip every word out and it is still a merch back-print.\n\nThe system is built to be read twice at very different distances. The primary screen is a projector in a daylit classroom, so reading surfaces stay light, learning intentions are sized for the back of the room, and step-downs in hierarchy are carried by weight rather than by grey. The same page has to hold on a Year 8 student's phone at home, which is why the type scales with clamp() at every level, the one wide object on the page becomes a named scroll region rather than shrinking, and the sidebar changes weight rather than position when the column collapses.\n\nLoudness is rationed, and it is counted. Colour arrives as a whole-page decision, once per lesson; underneath it, exactly one block per lesson is printed loud and everything else takes the quiet weight. The Year 10 site's Marker Zine world is a confirmed anti-reference, as is the sample/ directory's Rehearsal Marks world, which was built and rejected. Neither is a starting point for anything here.",
+    "keyCharacteristics": [
+      "Black print fields for covers and mastheads, bone stock for all reading",
+      "Five spot inks, one per leg, never mixed on a page",
+      "Black type on every spot ink, always",
+      "Exactly one loud field per lesson, chosen by the build, never by hand",
+      "A single overprint offset belonging to the plate, not the glyph",
+      "Zero radius, zero blur: 4px black borders do the work shadows would",
+      "Weight, not hue, encodes what a block is",
+      "No position marker of any kind, anywhere"
+    ],
+    "rules": [
+      {
+        "name": "The Black-On-Ink Rule",
+        "body": "Type set on a spot ink is Print Black, without exception. White on the pink is 2.06:1 and fails; grey on any ink fails. This is simultaneously the print-accurate move and the accessibility floor, which is why it never needs to be argued about.",
+        "section": "colors"
+      },
+      {
+        "name": "The One Ink Per Page Rule",
+        "body": "A page picks up exactly one spot ink, from its leg, at the root element. Hue never encodes what a block is. If a lesson appears to need a second colour to distinguish two blocks, the answer is a different weight, not a different hue.",
+        "section": "colors"
+      },
+      {
+        "name": "The Light Ground Rule",
+        "body": "Black is for print fields and mastheads only. No reading surface, panel, or sidebar is ever set on a dark ground, because the primary screen is a projector in a daylit room. Reversed White is a type colour only; there is no white surface in the system.",
+        "section": "colors"
+      },
+      {
+        "name": "The No Colour-Alone Rule",
+        "body": "Leg colour is always doubled by a letter (A to E) and a lesson range; the assessment status is a bordered word in a bordered field, never a coloured dot. Nothing in the system is legible only through hue.",
+        "section": "colors"
+      },
+      {
+        "name": "The Plate Rule",
+        "body": "--plate is clamp(2px, .35vw, 4px) and belongs to the print field, not to any glyph. Every offset element on a black field, at any type size, shifts by var(--plate) calc(var(--plate) * .85). It is an absolute length precisely because a real second pass is off by one physical distance across the whole sheet, not proportionally to each letter. Never express the offset in em, and never give one masthead a different offset from another.",
+        "section": "typography"
+      },
+      {
+        "name": "The Overprint-Is-The-Only-Distress Rule",
+        "body": "One offset, no blur, no texture on the letterform, no rough edges, no fake registration marks. Bootleg lettering goes illegible fast; the single clean offset is the whole distress budget for the display voice, and body copy carries none of it.",
+        "section": "typography"
+      },
+      {
+        "name": "The Board Sizing Rule",
+        "body": "The lesson intention on the term list is set at 1rem with the title at 1.15rem, and the step between them is carried by weight, not by grey. Anything a student must read off the projector stays in Print Black at full weight. Soft Grey is reserved for what only matters at desk distance.",
+        "section": "typography"
+      },
+      {
+        "name": "The Two-Ramp Rule",
+        "body": "A new size joins one of the two ramps or it does not exist. Display face means uppercase and tracked, from 0.6rem to 5.6rem, and it names things. Body face means sentence case and untracked, from 0.82rem to 1.5rem, and it says things. There is no display-face body copy and no body-face heading, with one deliberate exception: the learning intention and the term question, which are bold body face because they are sentences that have to survive the back of the room.",
+        "section": "typography"
+      },
+      {
+        "name": "The No Kicker Rule",
+        "body": "No eyebrows, no kickers, no floating mini-labels above a heading anywhere in the system. A label is either a stamped bar filling the top edge of its own field or black caps sitting over an ink keyline inside that field. It never floats free above the thing it names.",
+        "section": "typography"
+      },
+      {
+        "name": "The No Position Marker Rule",
+        "body": "Nothing in this system may indicate where a class has reached: no tracker, no current-lesson highlight, no progress bar, no most-recent badge, no 'you are here' in the breadcrumb beyond the page's own identity. Several classes run the same sequence at different speeds, so any marker is wrong for most of them. There is no position logic in the build and none may be added. This is the single most important rule in the project and it outranks every visual consideration in this file.",
+        "section": "layout"
+      },
+      {
+        "name": "The Straight-Down Rule",
+        "body": "The term reads as one continuous list from lesson 1 to lesson 25, broken only by leg headings. No card grid, no week accordion, no collapsed sections, no hero card before the list starts. The first viewport is the black print field and then the dates.",
+        "section": "layout"
+      },
+      {
+        "name": "The Demote-Don't-Move Rule",
+        "body": "When the two-column grid collapses, elements change weight rather than order or identity. The sidebar keeps its content and its place in the reading order and drops from the loud treatment to the quiet one. Nothing is hidden at a narrow width except the leg range, which is already restated by the list it heads.",
+        "section": "layout"
+      },
+      {
+        "name": "The Border-Not-Shadow Rule",
+        "body": "Weight and separation are always a black border or rule, never a blur. If a surface needs to feel raised, it gets a 4px border and the lifted stock, not a shadow. The only hard offset in the system is the print plate, and it is never soft, never coloured other than in the page ink or Reversed White, and never applied to a reading surface.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do set the leg ink once, on the page's root element, via .ink-pink / .ink-yellow / .ink-cyan / .ink-lime / .ink-orange, and let every child inherit var(--ink).",
+      "Do keep the leg mapping fixed as A pink, B yellow, C cyan, D lime, E orange in every future term.",
+      "Do set black type on every spot ink, everywhere, with no exception.",
+      "Do give every lesson exactly one loud field, chosen in the build by the documented order (the task block, else the first list, else the first titled paragraph), so a lesson with no task still prints.",
+      "Do print one content shape one way. A block type takes the same treatment in lesson 2 as it does in lesson 19.",
+      "Do let the status flag take the page ink on both surfaces, and keep it one shared rule.",
+      "Do express the overprint as var(--plate) calc(var(--plate) * .85) with zero blur on every masthead element, at any type size.",
+      "Do keep every reading surface light, and reserve Print Black grounds for print fields and the site bar.",
+      "Do demote weight rather than reorder or hide content when a column collapses.",
+      "Do give any element that scrolls a name, tabindex=\"0\", and a visible worded hint at the width where it will actually clip.",
+      "Do set min-width: 0 on any grid child that can contain a wide object.",
+      "Do double every colour signal with a letter, a word, or a range.",
+      "Do self-host any new face as woff2 in assets/fonts/, so the site keeps working with no network and no dependency."
+    ],
+    "donts": [
+      "Don't add a live position marker of any kind, ever: no tracker, no current-lesson highlight, no progress bar, no most-recent badge. Several classes run the same sequence at different speeds. There is no position logic in the build, and adding one breaks the product.",
+      "Don't use hue to encode block type. Two blocks in one lesson are never two different inks.",
+      "Don't print a second loud field in a lesson, and don't leave a lesson with none.",
+      "Don't stack two filled ink fields directly on top of each other at any width; that is what the 900px sidebar demotion exists to prevent.",
+      "Don't set Reversed White or grey type on a spot ink, and don't set body copy in Soft Grey when it has to be read off the board.",
+      "Don't introduce a white surface. Reversed White is a type colour on Print Black only.",
+      "Don't add a kicker, eyebrow, or free-floating label above a heading. A label is a stamp bar or keylined caps inside its own field.",
+      "Don't round a corner, blur a shadow, or add a soft or coloured drop shadow. The only hard offset permitted is the print plate at object scale, in Print Black.",
+      "Don't express the plate offset in em or vary it per element; it belongs to the sheet, not the glyph.",
+      "Don't introduce a dark reading surface, a card grid, a week accordion, or a hero card before the tour list.",
+      "Don't add a sixth spot ink, a tint of an existing one, or a new grey. The two reversed greys and the one Soft Grey are the whole secondary-voice budget.",
+      "Don't add a font size that is not on one of the two ramps above.",
+      "Don't treat sample/index.html, sample/y8-sample-standalone.html, or the Year 10 Marker Zine site as a reference; both are rejected worlds.",
+      "Don't add distress texture, registration marks, rough edges, or a second offset to the lettering. One clean offset is the entire distress budget."
+    ]
+  }
+}

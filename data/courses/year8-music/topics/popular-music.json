@@ -1,0 +1,1733 @@
+{
+  "id": "popular-music",
+  "name": "Popular Music",
+  "subtitle": "Battle of the Bands",
+  "term": "Term 3",
+  "blurb": "This term we explore how Australian popular music uses rhythm, harmony and production to create style and identity. You will build your own track in GarageBand, and perform an Australian song of your choice.",
+  "question": "How do the concepts of music shape the sound and style of popular music?",
+  "outcomes": [
+    [
+      "MU4-PER-01",
+      "uses performance skills to demonstrate understanding of the elements of music and communicate musical ideas"
+    ],
+    [
+      "MU4-COM-01",
+      "improvises, arranges or composes using the elements of music to create musical ideas"
+    ],
+    [
+      "MU4-LIS-01",
+      "uses listening skills to describe music in relation to stylistic, cultural, historical or social contexts and the elements of music"
+    ]
+  ],
+  "assessment": {
+    "name": "Battle of the Bands",
+    "when": "Due Week 8",
+    "detail": "A performance, solo or in a small group, and a GarageBand composition."
+  },
+  "sections": [
+    {
+      "letter": "A",
+      "name": "Introduction and Drums",
+      "from": 1,
+      "to": 5,
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Welcome to Popular Music",
+          "assessed": false,
+          "intention": "We are learning to identify characteristics of Australian popular genres.",
+          "criteria": [
+            "I can describe at least two genre differences in Australian popular music."
+          ],
+          "blocks": [
+            {
+              "type": "listen",
+              "heading": "Listening survey - five Australian artists",
+              "tracks": [
+                "AC/DC - Thunderstruck",
+                "Flume - Never Be Like You",
+                "Baker Boy - Marryuna",
+                "Thelma Plum - Better in Blak",
+                "Jessica Mauboy - Little Things"
+              ]
+            },
+            {
+              "type": "table",
+              "headers": [
+                "Artist",
+                "Genre",
+                "What to listen for"
+              ],
+              "rows": [
+                [
+                  "AC/DC",
+                  "Rock",
+                  "Distorted guitar riff, driving backbeat, live drum kit"
+                ],
+                [
+                  "Flume",
+                  "Electronic / EDM",
+                  "Programmed drums, heavy processing, synth textures"
+                ],
+                [
+                  "Baker Boy",
+                  "Hip hop",
+                  "Rapping in Yolŋu Matha and English, brass hook, trap hi-hats"
+                ],
+                [
+                  "Thelma Plum",
+                  "Indie / pop",
+                  "Clean guitar, restrained drums, voice front and centre"
+                ],
+                [
+                  "Jessica Mauboy",
+                  "R&B / pop",
+                  "Layered vocal harmony, polished production, tight groove"
+                ]
+              ]
+            },
+            {
+              "type": "prose",
+              "title": "",
+              "text": "Baker Boy, Thelma Plum and Jessica Mauboy are First Nations artists. Listen for how each one uses music to say something about identity."
+            },
+            {
+              "type": "activity",
+              "title": "Your task",
+              "text": "Choose the genre you connect with most. Write two sentences about what you notice in its instruments or production.",
+              "items": []
+            },
+            {
+              "type": "definition",
+              "terms": [
+                "genre"
+              ],
+              "text": "A category of music that shares common features - for example rock, pop or hip hop. Two songs in the same genre usually use similar instruments, grooves and production choices."
+            },
+            {
+              "type": "support",
+              "title": "Need a hand? Word bank",
+              "text": "Use these words: distorted, clean, programmed, acoustic, layered, punchy, smooth, heavy, bright, echoey, fast, slow. Sentence starter: “In this song I can hear … which makes it sound …”",
+              "items": []
+            },
+            {
+              "type": "extension",
+              "text": "Find an Australian artist who is not on this list. Identify their genre and describe two stylistic features that place them in it. Be ready to play a 30-second excerpt to the class and justify your choice.",
+              "items": []
+            },
+            {
+              "type": "exit",
+              "text": "What makes a song sound Australian to you?"
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "title": "Rhythm and Groove",
+          "assessed": false,
+          "intention": "We are learning how groove shapes style in popular music.",
+          "criteria": [
+            "I can explain how drum patterns create different feels across genres."
+          ],
+          "blocks": [
+            {
+              "type": "listen",
+              "heading": "The three grooves",
+              "tracks": [
+                "Backbeat - rock",
+                "Four-on-the-floor - EDM and dance",
+                "Trap - hip hop"
+              ]
+            },
+            {
+              "type": "table",
+              "headers": [
+                "Groove",
+                "Where the kick and snare land",
+                "Typical genre"
+              ],
+              "rows": [
+                [
+                  "Backbeat",
+                  "Kick on 1 and 3, snare on 2 and 4",
+                  "Rock, pub rock"
+                ],
+                [
+                  "Four-on-the-floor",
+                  "Kick on every beat: 1, 2, 3, 4",
+                  "EDM, dance, disco"
+                ],
+                [
+                  "Trap",
+                  "Sparse kick, snare or clap on 3, fast rolling hi-hats",
+                  "Hip hop"
+                ]
+              ]
+            },
+            {
+              "type": "activity",
+              "title": "Your task - Groove Comparison",
+              "text": "Clap each groove as a class. Then on your worksheet, draw a simple icon for each groove, note the tempo, and describe the feel in your own words.",
+              "items": []
+            },
+            {
+              "type": "definition",
+              "terms": [
+                "Groove"
+              ],
+              "text": "Beat - the steady pulse of the music. It is what you tap your foot to. Groove - the overall rhythmic feel created by the interaction of drums, bass and other instruments. Two songs can share a beat but have completely different grooves."
+            },
+            {
+              "type": "support",
+              "title": "Need a hand? Clap it before you write it",
+              "text": "Count “1 - 2 - 3 - 4” out loud and clap only on 2 and 4. That is a backbeat. Now clap on every number. That is four-on-the-floor. You have just played the difference between rock and dance music. For “describe the feel”, pick one: driving, bouncy, relaxed, heavy, floaty, urgent.",
+              "items": []
+            },
+            {
+              "type": "extension",
+              "text": "Transcribe one groove into simple notation on a four-beat grid, showing kick, snare and hi-hat on separate lines. Then compare the same groove across three Australian songs - does the tempo or the hi-hat pattern change the feel more?",
+              "items": []
+            },
+            {
+              "type": "exit",
+              "text": "Which groove is most iconic in Australian music, and why?"
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "title": "GarageBand Basics",
+          "assessed": false,
+          "intention": "We are learning to set up a GarageBand project correctly.",
+          "criteria": [
+            "I can create a new project, set the tempo, and enable the metronome."
+          ],
+          "blocks": [
+            {
+              "type": "prose",
+              "title": "",
+              "text": "Setup walkthrough video"
+            },
+            {
+              "type": "list",
+              "title": "Set up your project - follow along",
+              "items": [
+                "Open GarageBand and choose Empty Project.",
+                "When asked to choose a track type, select Software Instrument.",
+                "Find the tempo in the display at the top of the window. Set it to 100 bpm.",
+                "Turn on the metronome. Press play and listen to the click.",
+                "Turn on the count-in so you get one bar of clicks before recording starts.",
+                "Save now: File → Save As. Name it Surname_PopularMusic and save to your student drive, not the desktop."
+              ],
+              "text": ""
+            },
+            {
+              "type": "prose",
+              "title": "Save it properly, once",
+              "text": "This is the project you build on all term and submit in Week 8. If it lives on the desktop of a shared machine, you will lose it."
+            },
+            {
+              "type": "definition",
+              "terms": [
+                "loop"
+              ],
+              "text": "A repeated musical phrase recorded and layered digitally. Most popular music is built from loops stacked on top of each other."
+            },
+            {
+              "type": "prose",
+              "title": "Stuck? Common problems",
+              "text": "I can't hear the click. Check the metronome icon is highlighted, and that your headphones are plugged in properly. I can't find the tempo. It is the number in the display at the top centre. Click and drag it up or down. Nothing happens when I press record. Make sure a track is selected - it should be highlighted on the left."
+            },
+            {
+              "type": "extension",
+              "text": "Import a reference track of an Australian song you like. Work out its tempo by ear, then set your project tempo to match so the grid lines up with the song.",
+              "items": []
+            },
+            {
+              "type": "exit",
+              "text": "What tempo did you choose, and where did you save your project?"
+            }
+          ]
+        },
+        {
+          "number": 4,
+          "title": "Recording and Programming Drums",
+          "assessed": false,
+          "intention": "We are learning to record a drum part in GarageBand.",
+          "criteria": [
+            "I can create a steady 8-bar beat in time."
+          ],
+          "blocks": [
+            {
+              "type": "prose",
+              "title": "",
+              "text": "Programming a beat on the grid - video"
+            },
+            {
+              "type": "list",
+              "title": "Build an 8-bar drum loop",
+              "items": [
+                "Add a Software Instrument track and choose a Drum Kit.",
+                "Decide which groove you are building - backbeat, four-on-the-floor, or trap. Write it down before you play.",
+                "Record kick and snare only for 8 bars. Ignore hi-hats for now.",
+                "Play it back. If it drifts, use quantise to snap the notes to the grid.",
+                "Record the hi-hats on a second pass, over the top.",
+                "Loop the region and check it still feels steady when it repeats."
+              ],
+              "text": ""
+            },
+            {
+              "type": "prose",
+              "title": "This is assessment work.",
+              "text": "The drum track you build today is the first layer of your Week 8 composition. Keep it."
+            },
+            {
+              "type": "support",
+              "title": "Need a hand? Start simpler",
+              "text": "Use a preset drum kit and program the beat by clicking notes onto the grid instead of playing it live. Kick on 1 and 3, snare on 2 and 4, and nothing else. That is a complete, correct rock groove. Remember which is which: kick is the low boom, snare is the sharp crack, hi-hat is the short metallic tick.",
+              "items": []
+            },
+            {
+              "type": "extension",
+              "text": "Add a drum fill every 4 bars so the loop has shape rather than just repeating. Then try the same groove on a different kit - acoustic against electronic - and describe what changes about the feel.",
+              "items": []
+            },
+            {
+              "type": "exit",
+              "text": "Which groove did you build, and did you program it or play it in?"
+            }
+          ]
+        },
+        {
+          "number": 5,
+          "title": "Drums in Genres",
+          "assessed": false,
+          "intention": "We are learning to compare rhythmic features across genres.",
+          "criteria": [
+            "I can describe how grooves affect musical style."
+          ],
+          "blocks": [
+            {
+              "type": "prose",
+              "title": "",
+              "text": "Rock reference track"
+            },
+            {
+              "type": "prose",
+              "title": "",
+              "text": "Pop reference track"
+            },
+            {
+              "type": "prose",
+              "title": "",
+              "text": "EDM or hip hop reference track"
+            },
+            {
+              "type": "activity",
+              "title": "Your task - Compare your loop to the real thing",
+              "text": "Play your 8-bar loop from Lesson 4, then play a reference track in the same genre. Answer the questions below.",
+              "items": []
+            },
+            {
+              "type": "table",
+              "headers": [
+                "Question",
+                "Your answer"
+              ],
+              "rows": [
+                [
+                  "What genre is your loop?",
+                  ""
+                ],
+                [
+                  "What is different about the real track's drums?",
+                  ""
+                ],
+                [
+                  "Is the real track faster or slower than yours?",
+                  ""
+                ],
+                [
+                  "One change you will make to your loop",
+                  ""
+                ]
+              ]
+            },
+            {
+              "type": "definition",
+              "terms": [
+                "texture"
+              ],
+              "text": "How many layers of sound are heard at once, and how they interact. A solo voice is a thin texture; a full band with backing vocals is a thick one."
+            },
+            {
+              "type": "support",
+              "title": "Need a hand? Just compare two",
+              "text": "Compare pop against rock only. Ask one question: are the drums played by a person or made by a computer? Then say which sounds heavier, and why you think so.",
+              "items": []
+            },
+            {
+              "type": "extension",
+              "text": "Groove carries cultural meaning as well as style. Choose an Australian song and argue how its groove contributes to the identity the artist is presenting. Does a pub rock backbeat say something different about Australia than a trap beat does?",
+              "items": []
+            },
+            {
+              "type": "exit",
+              "text": "Name one thing you will change about your drum loop next lesson."
+            },
+            {
+              "type": "prose",
+              "title": "Next:",
+              "text": "Lessons 6-10 - Chords & Harmony. You will add a chord progression over the drum loop you just built."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "letter": "B",
+      "name": "Chords and Harmony",
+      "from": 6,
+      "to": 10,
+      "lessons": [
+        {
+          "number": 6,
+          "title": "Popular Chord Progressions",
+          "assessed": false,
+          "intention": "We are learning how chords create harmony in popular songs.",
+          "criteria": [
+            "I can play or sequence a simple chord progression."
+          ],
+          "blocks": [
+            {
+              "type": "prose",
+              "title": "",
+              "text": "Three Australian songs that share the same progression - video"
+            },
+            {
+              "type": "table",
+              "headers": [
+                "Progression",
+                "In C major",
+                "In G major",
+                "Sounds like"
+              ],
+              "rows": [
+                [
+                  "I-V-vi-IV",
+                  "C - G - Am - F",
+                  "G - D - Em - C",
+                  "The pop progression. Hundreds of songs use it"
+                ],
+                [
+                  "vi-IV-I-V",
+                  "Am - F - C - G",
+                  "Em - C - G - D",
+                  "Same four chords, darker start"
+                ],
+                [
+                  "I-IV-V",
+                  "C - F - G",
+                  "G - C - D",
+                  "Rock and blues. Punchy and direct"
+                ],
+                [
+                  "ii-V-I",
+                  "Dm - G - C",
+                  "Am - D - G",
+                  "Smoother, jazzier landing"
+                ]
+              ],
+              "heading": "The progressions"
+            },
+            {
+              "type": "activity",
+              "title": "Your task",
+              "text": "Play I-V-vi-IV on keyboard or guitar as a whole-class jam, then practise it on your own instrument. Four beats per chord, round and round.",
+              "items": []
+            },
+            {
+              "type": "definition",
+              "terms": [
+                "chord progression"
+              ],
+              "text": "A sequence of chords that provides the harmony of a song. The same progression can appear in completely different genres - what changes is the instruments, tempo and production around it."
+            },
+            {
+              "type": "support",
+              "title": "Need a hand? Start with two chords",
+              "text": "Play just C and G, four beats each, swapping back and forth. That is a real progression and plenty of songs use only two chords. On keyboard, C major is the three white notes C-E-G played together. G major is G-B-D. Find them, hold them, and count four.",
+              "items": []
+            },
+            {
+              "type": "extension",
+              "text": "Try ii-V-I, or substitute a chord in I-V-vi-IV for one not in the table. What happens to the mood? Then work out the progression of a song you like by ear.",
+              "items": []
+            },
+            {
+              "type": "exit",
+              "text": "Why do you think so many pop songs use the same four chords?"
+            }
+          ]
+        },
+        {
+          "number": 7,
+          "title": "Recording Chords in GarageBand",
+          "assessed": false,
+          "intention": "We are learning to record a chord progression in GarageBand.",
+          "criteria": [
+            "I can record a progression in time using a chosen instrument sound."
+          ],
+          "blocks": [
+            {
+              "type": "prose",
+              "title": "",
+              "text": "Recording chords - video"
+            },
+            {
+              "type": "list",
+              "title": "Record your chord track",
+              "items": [
+                "Open your project. Your drum loop should already be there.",
+                "Add a new Software Instrument track. Choose a piano, electric piano or synth pad.",
+                "Set the loop to 8 bars so it matches your drums.",
+                "Record I-V-vi-IV, four beats per chord. That fills 4 bars, so play it twice.",
+                "Play it back with the drums. If the timing drifts, quantise.",
+                "Save."
+              ],
+              "text": ""
+            },
+            {
+              "type": "support",
+              "title": "Need a hand? Use Smart Instruments",
+              "text": "Switch the track to Smart Piano or Smart Guitar. Tap a chord strip and it plays the whole chord in rhythm for you, in time. You choose the chords and when they change; GarageBand handles the fingers.",
+              "items": []
+            },
+            {
+              "type": "extension",
+              "text": "Layer two chord sounds - a pad underneath and a piano on top - so the harmony has depth. Or try inversions, keeping the top note the same as chords change, so the progression sounds smoother.",
+              "items": []
+            },
+            {
+              "type": "exit",
+              "text": "Play your chords to the person next to you. Do they sound pop, rock or EDM?"
+            }
+          ]
+        },
+        {
+          "number": 8,
+          "title": "Harmony in Styles",
+          "assessed": false,
+          "intention": "We are learning to identify how harmony changes across styles.",
+          "criteria": [
+            "I can describe differences in how chords are used in at least two genres."
+          ],
+          "blocks": [
+            {
+              "type": "listen",
+              "heading": "",
+              "tracks": [
+                "Piano ballad - video",
+                "Pub rock - video",
+                "EDM pads - video"
+              ]
+            },
+            {
+              "type": "activity",
+              "title": "Your task - Listening chart",
+              "text": "Listen to each excerpt and fill in the row.",
+              "items": []
+            },
+            {
+              "type": "table",
+              "headers": [
+                "Style",
+                "What instrument plays the chords?",
+                "Do chords change fast or slow?",
+                "Mood"
+              ],
+              "rows": [
+                [
+                  "Piano ballad",
+                  "",
+                  "",
+                  ""
+                ],
+                [
+                  "Pub rock",
+                  "",
+                  "",
+                  ""
+                ],
+                [
+                  "EDM",
+                  "",
+                  "",
+                  ""
+                ]
+              ]
+            },
+            {
+              "type": "support",
+              "title": "Need a hand? Just tick the box",
+              "text": "Compare two styles only. For each one, tick: chords played by piano / guitar / synth. Chords change fast / slow. Mood is happy / sad / energetic / calm.",
+              "items": []
+            },
+            {
+              "type": "extension",
+              "text": "Compare harmonic rhythm - how often the chords change - across the three styles. Why might a ballad hold a chord for four bars while a rock song changes every bar? What does that do to the energy?",
+              "items": []
+            },
+            {
+              "type": "exit",
+              "text": "How would your progression sound played as EDM instead of rock?"
+            }
+          ]
+        },
+        {
+          "number": 9,
+          "title": "Combining Drums and Chords",
+          "assessed": false,
+          "intention": "We are learning to combine rhythm and harmony in GarageBand.",
+          "criteria": [
+            "I can create a loop with chords and drums together."
+          ],
+          "blocks": [
+            {
+              "type": "prose",
+              "title": "",
+              "text": "Layering drums and chords - video"
+            },
+            {
+              "type": "list",
+              "title": "Lock the two layers together",
+              "items": [
+                "Play your drums and chords together. Do the chord changes land on beat 1 of each bar?",
+                "If not, drag the chord region so it starts exactly on a bar line.",
+                "Check the balance - can you hear both, or is one drowning the other? Adjust the volume sliders.",
+                "Loop the 8 bars and listen three times through. It should feel steady, not rushed.",
+                "Save."
+              ],
+              "text": ""
+            },
+            {
+              "type": "prose",
+              "title": "Checkpoint.",
+              "text": "By the end of today you should have two working layers. Lessons 11-14 add bass and a riff on top of these."
+            },
+            {
+              "type": "support",
+              "title": "Need a hand? Use a ready-made drum track",
+              "text": "If your drum loop is not working, ask for the teacher drum track and layer your chords over that instead. The skill being practised today is combining layers, not rebuilding the drums.",
+              "items": []
+            },
+            {
+              "type": "extension",
+              "text": "Add a second 8-bar section with a different progression, so your track has contrast. Or vary the harmony the second time through - same chords, different voicing or rhythm.",
+              "items": []
+            },
+            {
+              "type": "exit",
+              "text": "Does your loop feel steady when it repeats? What did you fix?"
+            }
+          ]
+        },
+        {
+          "number": 10,
+          "title": "Performance Preparation",
+          "assessed": false,
+          "intention": "We are learning to rehearse and refine our chosen Australian song.",
+          "criteria": [
+            "I can perform the first section of my song with accuracy."
+          ],
+          "blocks": [
+            {
+              "type": "prose",
+              "title": "Your song must be locked in today",
+              "text": "It has to be by an Australian artist, and approved. If you have not chosen, do that first - rehearsal time is short and the performance is assessed in Lesson 19."
+            },
+            {
+              "type": "prose",
+              "title": "Solo or group - your choice.",
+              "text": "You can perform on your own or in a small group. Both are worth the same marks. Pick whichever you will play your best in, and decide now, because it changes which song suits you."
+            },
+            {
+              "type": "list",
+              "title": "Rehearsal plan",
+              "items": [
+                "Play through the first section once, all the way, without stopping.",
+                "Find the hardest bar. Play just that bar, slowly, five times.",
+                "Play the bar before it and the bar after it, joined up.",
+                "Play the whole section again. It should be cleaner.",
+                "Write down what you will practise before next lesson."
+              ],
+              "text": ""
+            },
+            {
+              "type": "support",
+              "title": "Need a hand? Chorus only",
+              "text": "Learn the chorus and nothing else. A chorus performed accurately and confidently is worth far more than a whole song played badly. Ask for a lyric sheet with the chords marked above the words.",
+              "items": []
+            },
+            {
+              "type": "extension",
+              "text": "Prepare a full verse and chorus, and accompany yourself - sing while playing, or add a backing part. Think about how you will start and finish, not just the middle.",
+              "items": []
+            },
+            {
+              "type": "exit",
+              "text": "What is the one bar you need to practise most, and why?"
+            },
+            {
+              "type": "prose",
+              "title": "Next:",
+              "text": "Lessons 11-15 - Bass & Hooks. You will add the bass line that ties your drums and chords together, then write the riff that makes the track yours."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "letter": "C",
+      "name": "Bass and Hooks",
+      "from": 11,
+      "to": 15,
+      "lessons": [
+        {
+          "number": 11,
+          "title": "The Role of Bass",
+          "assessed": false,
+          "intention": "We are learning how bass underpins harmony and rhythm.",
+          "criteria": [
+            "I can describe how bass functions in different genres."
+          ],
+          "blocks": [
+            {
+              "type": "listen",
+              "heading": "",
+              "tracks": [
+                "Bass in rock - video",
+                "Bass in pop - video",
+                "Bass in EDM - video"
+              ]
+            },
+            {
+              "type": "prose",
+              "title": "Bass does two jobs at once.",
+              "text": "It plays the lowest note of the harmony, so it tells your ear which chord you are on. And it locks to the kick drum, so it drives the rhythm. That is why a track feels empty without it."
+            },
+            {
+              "type": "activity",
+              "title": "Your task - Listen for the bass",
+              "text": "For each genre, describe what the bass is doing. Identify its role in at least two of the three.",
+              "items": []
+            },
+            {
+              "type": "table",
+              "headers": [
+                "Genre",
+                "What kind of bass sound?",
+                "Busy or simple?",
+                "Does it follow the kick?"
+              ],
+              "rows": [
+                [
+                  "Rock",
+                  "",
+                  "",
+                  ""
+                ],
+                [
+                  "Pop",
+                  "",
+                  "",
+                  ""
+                ],
+                [
+                  "EDM",
+                  "",
+                  "",
+                  ""
+                ]
+              ]
+            },
+            {
+              "type": "definition",
+              "terms": [
+                "bass line"
+              ],
+              "text": "The low notes that support the harmony and rhythm of a song. Usually the lowest part you can hear, and usually the one you feel more than you notice."
+            },
+            {
+              "type": "support",
+              "title": "Need a hand? Sentence starters",
+              "text": "The bass is the low sound that holds the song up. Finish these: “In rock, the bass …”    “In pop, the bass …”    “In EDM, the bass …” Useful words: deep, punchy, smooth, wobbly, steady, moving, simple, loud.",
+              "items": []
+            },
+            {
+              "type": "extension",
+              "text": "Compare bass technique across all three genres and explain how each one shapes the style. Consider: a fingered electric bass in rock, a synth sub in EDM, and how the choice of sound alone changes what the song communicates.",
+              "items": []
+            },
+            {
+              "type": "exit",
+              "text": "In which genre is the bass most noticeable, and why do you think that is?"
+            }
+          ]
+        },
+        {
+          "number": 12,
+          "title": "Recording Bass in GarageBand",
+          "assessed": false,
+          "intention": "We are learning to record a bass line that works with chords and drums.",
+          "criteria": [
+            "I can record a bass part that locks with the kick drum."
+          ],
+          "blocks": [
+            {
+              "type": "prose",
+              "title": "",
+              "text": "Recording bass - video"
+            },
+            {
+              "type": "list",
+              "title": "Record your bass track",
+              "items": [
+                "Add a Software Instrument track and choose a bass sound.",
+                "Work out your root notes. For I-V-vi-IV in C, that is C - G - A - F.",
+                "Play one long note per chord to start. Four beats each.",
+                "Play it back with the drums. Does the bass land with the kick? That is the target.",
+                "Once it locks, try playing the root note on every beat instead of holding it.",
+                "Save."
+              ],
+              "text": ""
+            },
+            {
+              "type": "table",
+              "headers": [
+                "Chord",
+                "C",
+                "G",
+                "Am",
+                "F"
+              ],
+              "rows": [
+                [
+                  "Bass note",
+                  "C",
+                  "G",
+                  "A",
+                  "F"
+                ]
+              ]
+            },
+            {
+              "type": "prose",
+              "title": "",
+              "text": "The bass note is the letter the chord is named after. That is the rule, and it works for every chord in the table."
+            },
+            {
+              "type": "support",
+              "title": "Need a hand? Use Smart Bass",
+              "text": "Switch to Smart Bass and turn on autoplay. Choose a pattern, then tap the chord as it changes. GarageBand plays a bass line that already fits.",
+              "items": []
+            },
+            {
+              "type": "extension",
+              "text": "Add syncopated fills - notes that land off the beat - or write a walking bass line that steps between chords instead of jumping. Both make the bass a part people listen to rather than just feel.",
+              "items": []
+            },
+            {
+              "type": "exit",
+              "text": "Does your bass lock with the kick drum? How can you tell?"
+            }
+          ]
+        },
+        {
+          "number": 13,
+          "title": "Hooks and Riffs",
+          "assessed": false,
+          "intention": "We are learning what makes a hook memorable.",
+          "criteria": [
+            "I can create a short riff or hook that repeats."
+          ],
+          "blocks": [
+            {
+              "type": "listen",
+              "heading": "",
+              "tracks": [
+                "Famous guitar riff - video",
+                "Famous synth hook - video",
+                "Famous vocal hook - video"
+              ]
+            },
+            {
+              "type": "prose",
+              "title": "What makes a hook stick?",
+              "text": "Usually it is short (two bars or less), repeated often, and simple enough to sing back after hearing it once. Complicated ideas are rarely memorable."
+            },
+            {
+              "type": "activity",
+              "title": "Your task - Design your riff",
+              "text": "Before you touch GarageBand, plan it. Use three or four notes only. Sing or hum it first - if you cannot sing it, it is too complicated.",
+              "items": []
+            },
+            {
+              "type": "table",
+              "headers": [
+                "Plan",
+                "Your answer"
+              ],
+              "rows": [
+                [
+                  "Which notes will you use?",
+                  ""
+                ],
+                [
+                  "How many bars long?",
+                  ""
+                ],
+                [
+                  "What instrument sound?",
+                  ""
+                ],
+                [
+                  "Where will it appear in the track?",
+                  ""
+                ]
+              ]
+            },
+            {
+              "type": "definition",
+              "terms": [
+                "Hook"
+              ],
+              "text": "Riff - a repeated melodic or rhythmic pattern, often played on guitar, bass or synth. Hook - a short, catchy musical idea that makes a song memorable. A riff can be the hook, but a hook can also be a vocal line or even a rhythm."
+            },
+            {
+              "type": "support",
+              "title": "Need a hand? Use the three-note model",
+              "text": "Start from the teacher's three-note riff and change one thing - a note, the rhythm, or the instrument sound. That is still your riff, and it will work over your chords. Safe notes over a C-G-Am-F progression: C, E, G, A. Any of them will sound right.",
+              "items": []
+            },
+            {
+              "type": "extension",
+              "text": "Take your riff and flip it into another genre - play a rock guitar riff as an EDM synth line, or a synth hook on distorted guitar. Same notes, different world. What has to change besides the sound?",
+              "items": []
+            },
+            {
+              "type": "exit",
+              "text": "Sing your riff to the person next to you. Can they sing it back?"
+            }
+          ]
+        },
+        {
+          "number": 14,
+          "title": "Recording Your Riff",
+          "assessed": false,
+          "intention": "We are learning to record a riff that gives identity to our composition.",
+          "criteria": [
+            "I can record a riff that repeats in time and fits with my other parts."
+          ],
+          "blocks": [
+            {
+              "type": "prose",
+              "title": "",
+              "text": "Recording a riff - video"
+            },
+            {
+              "type": "list",
+              "title": "Record your riff",
+              "items": [
+                "Add a track and choose the sound you planned in Lesson 13.",
+                "Record your riff over the top of drums, chords and bass.",
+                "Quantise if the timing is loose.",
+                "Copy the region so the riff repeats across the loop.",
+                "Listen to all four layers together. Can you still hear the riff, or is it buried? Adjust the volume.",
+                "Save."
+              ],
+              "text": ""
+            },
+            {
+              "type": "prose",
+              "title": "You now have all four required layers",
+              "text": "drums, chords, bass and riff. Lessons 16-18 are about shaping them into a finished track."
+            },
+            {
+              "type": "support",
+              "title": "Need a hand? Record it one note at a time",
+              "text": "You do not have to play it live. Draw the notes onto the grid one at a time, in the piano roll. The result sounds identical and you control exactly where each note lands.",
+              "items": []
+            },
+            {
+              "type": "extension",
+              "text": "Write a variation of your riff for the second half of the track - same shape, one or two notes changed, or the rhythm displaced. Repetition makes a hook memorable; variation stops it becoming boring.",
+              "items": []
+            },
+            {
+              "type": "exit",
+              "text": "Which of your four layers is the most interesting to listen to, and why?"
+            }
+          ]
+        },
+        {
+          "number": 15,
+          "title": "Performance Check-In",
+          "assessed": false,
+          "intention": "We are learning to rehearse and refine our performance for assessment.",
+          "criteria": [
+            "I can perform an excerpt of my song with accuracy and stylistic detail."
+          ],
+          "blocks": [
+            {
+              "type": "activity",
+              "title": "Your task",
+              "text": "Perform 30 to 60 seconds of your chosen Australian song for the class. This is a rehearsal, not the assessment - the point is to find out what still needs work while there is time to fix it.",
+              "items": []
+            },
+            {
+              "type": "prose",
+              "title": "Audience job.",
+              "text": "Listen properly and give one thing that worked and one thing to work on. Be specific - \"the timing in the chorus was solid\" is useful, \"it was good\" is not."
+            },
+            {
+              "type": "table",
+              "headers": [
+                "Feedback",
+                "Write it here"
+              ],
+              "rows": [
+                [
+                  "One thing that worked",
+                  ""
+                ],
+                [
+                  "One thing to work on",
+                  ""
+                ],
+                [
+                  "My plan before Lesson 19",
+                  ""
+                ]
+              ]
+            },
+            {
+              "type": "support",
+              "title": "Need a hand? Play the chorus only",
+              "text": "A simplified section, played accurately, is a real performance. Use your annotated lyric and chord sheet, and play the part you know best.",
+              "items": []
+            },
+            {
+              "type": "extension",
+              "text": "Perform an extended section, and add accompaniment or a backing part. Think about stagecraft too - how you start, how you finish, and what you do if you make a mistake mid-song.",
+              "items": []
+            },
+            {
+              "type": "exit",
+              "text": "What is the single thing you will improve before the assessment?"
+            },
+            {
+              "type": "prose",
+              "title": "Next:",
+              "text": "Lessons 16-20 - Texture, Effects & Assessment. You will finish the track and both assessments happen."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "letter": "D",
+      "name": "Texture, FX and Assessment",
+      "from": 16,
+      "to": 20,
+      "lessons": [
+        {
+          "number": 16,
+          "title": "Texture and Layering",
+          "assessed": false,
+          "intention": "We are learning to use texture to build density in music.",
+          "criteria": [
+            "I can add multiple layers to create contrast in my track."
+          ],
+          "blocks": [
+            {
+              "type": "listen",
+              "heading": "",
+              "tracks": [
+                "Thin texture example - video",
+                "Thick texture example - video"
+              ]
+            },
+            {
+              "type": "prose",
+              "title": "Contrast is the point.",
+              "text": "A track where everything plays all the time is exhausting. Take layers away in the verse and add them in the chorus, and the chorus feels bigger without being louder."
+            },
+            {
+              "type": "list",
+              "title": "Add a layer",
+              "items": [
+                "Choose one new layer: a pad, a countermelody, or extra percussion.",
+                "Record it over your existing four layers.",
+                "Now mute one layer for the first 8 bars and unmute it after. Listen to the difference.",
+                "Decide which layers belong in your quiet section and which in your loud one.",
+                "Save."
+              ],
+              "text": ""
+            },
+            {
+              "type": "definition",
+              "terms": [
+                "Dynamics"
+              ],
+              "text": "Tone colour (timbre) - the unique sound quality of an instrument, voice or electronic effect. It is what makes a piano and a guitar sound different playing the same note. Dynamics - the volume of music, from soft to loud."
+            },
+            {
+              "type": "support",
+              "title": "Need a hand? One layer is enough",
+              "text": "Add a single pad sound holding one long chord underneath everything. That is a real texture layer and it will make your track sound fuller straight away. Thin texture means few layers, like one voice and a guitar. Thick means many, like a full band with backing vocals.",
+              "items": []
+            },
+            {
+              "type": "extension",
+              "text": "Try polyphonic layering - two independent melodies running at once that both work on their own and together. Harder than it sounds, and it is what separates a stack of loops from an arrangement.",
+              "items": []
+            },
+            {
+              "type": "exit",
+              "text": "How many layers does your track have now, and which one would you remove first?"
+            }
+          ]
+        },
+        {
+          "number": 17,
+          "title": "Effects",
+          "assessed": false,
+          "intention": "We are learning to apply effects to shape sound in a composition.",
+          "criteria": [
+            "I can use at least two effects to change timbre in my track."
+          ],
+          "blocks": [
+            {
+              "type": "prose",
+              "title": "",
+              "text": "Applying effects in GarageBand - video"
+            },
+            {
+              "type": "table",
+              "headers": [
+                "Effect",
+                "What it does",
+                "Try it on"
+              ],
+              "rows": [
+                [
+                  "Reverb",
+                  "Makes a sound feel like it is in a space - room, hall, stadium",
+                  "Your riff or a vocal"
+                ],
+                [
+                  "Delay",
+                  "Repeats the sound like an echo",
+                  "Your riff, sparingly"
+                ],
+                [
+                  "EQ",
+                  "Adjusts frequencies (bass, middle, treble) to shape the sound",
+                  "Your bass or drums"
+                ],
+                [
+                  "Filter",
+                  "Removes high or low frequencies, often swept for build-ups",
+                  "Chords, before a drop"
+                ]
+              ]
+            },
+            {
+              "type": "activity",
+              "title": "Your task",
+              "text": "Apply at least two effects to parts of your composition. Listen before and after each one so you can hear what it actually changed.",
+              "items": []
+            },
+            {
+              "type": "prose",
+              "title": "Less is more",
+              "text": "Reverb on everything turns a track to mush. Pick one or two parts that need it and leave the rest dry."
+            },
+            {
+              "type": "definition",
+              "terms": [
+                "Reverb"
+              ],
+              "text": "EQ - adjusting frequencies (bass, middle, treble) to shape sound. Reverb - an effect that makes a sound feel like it is in a space, for example a room, hall or stadium."
+            },
+            {
+              "type": "support",
+              "title": "Need a hand? Use a preset",
+              "text": "Ask for the preset effect chains. Pick one, apply it to a track, and listen to what changed. You still meet the criteria - the skill is hearing the difference, not building the chain from scratch.",
+              "items": []
+            },
+            {
+              "type": "extension",
+              "text": "Automate an effect so it changes over time - a filter sweep building into a chorus, or a reverb throw on the last word of a phrase. Automation is what makes a track sound produced rather than assembled.",
+              "items": []
+            },
+            {
+              "type": "exit",
+              "text": "Which two effects did you use, and on which tracks?"
+            }
+          ]
+        },
+        {
+          "number": 18,
+          "title": "Structure and Arrangement",
+          "assessed": false,
+          "intention": "We are learning to organise songs into clear sections.",
+          "criteria": [
+            "I can structure my track using contrasting sections."
+          ],
+          "blocks": [
+            {
+              "type": "prose",
+              "title": "",
+              "text": "Structure in an Australian popular song - video"
+            },
+            {
+              "type": "list",
+              "title": "Build your arrangement",
+              "items": [
+                "Turn on arrangement markers in GarageBand.",
+                "Label your sections: Intro, Verse, Chorus, Bridge, Outro.",
+                "Make at least two contrasting sections - they must differ in which layers play, not just repeat.",
+                "Strip the intro back. Drums alone, or riff alone, is a strong opening.",
+                "Play it start to finish. Does it go somewhere, or just repeat?",
+                "Save."
+              ],
+              "text": ""
+            },
+            {
+              "type": "table",
+              "headers": [
+                "Section",
+                "Bars",
+                "Which layers play?"
+              ],
+              "rows": [
+                [
+                  "Intro",
+                  "",
+                  ""
+                ],
+                [
+                  "Verse",
+                  "",
+                  ""
+                ],
+                [
+                  "Chorus",
+                  "",
+                  ""
+                ],
+                [
+                  "Outro",
+                  "",
+                  ""
+                ]
+              ]
+            },
+            {
+              "type": "definition",
+              "terms": [
+                "Drop"
+              ],
+              "text": "Structure - the arrangement of sections in a piece of music, for example verse, chorus, bridge. Drop - a point in EDM or pop where the music builds up and then changes suddenly for dramatic effect."
+            },
+            {
+              "type": "support",
+              "title": "Need a hand? Use an A-B structure",
+              "text": "Two sections is all you need. A = quieter, fewer layers. B = everything playing. Then A again. That is a complete, correct structure.",
+              "items": []
+            },
+            {
+              "type": "extension",
+              "text": "Build a full verse-chorus-bridge-outro form. Analyse an Australian song you like, map its structure bar by bar, then replicate that shape with your own material.",
+              "items": []
+            },
+            {
+              "type": "exit",
+              "text": "How many sections does your track have, and how are they different from each other?"
+            }
+          ]
+        },
+        {
+          "number": 19,
+          "title": "Solo or Group Performance",
+          "assessed": true,
+          "intention": "We are learning to perform music with accuracy and style.",
+          "criteria": [
+            "I can perform a piece that shows expressive and stylistic qualities."
+          ],
+          "blocks": [
+            {
+              "type": "prose",
+              "title": "This lesson is assessed.",
+              "text": "You perform your chosen Australian popular song as a soloist or in a small ensemble. Marked against the rubric."
+            },
+            {
+              "type": "list",
+              "title": "What you are marked on",
+              "items": [
+                "Accuracy - right notes, right rhythm, steady tempo",
+                "Stylistic awareness - does it sound like the genre it comes from?",
+                "Expression - dynamics and phrasing, not just correct notes"
+              ],
+              "text": ""
+            },
+            {
+              "type": "prose",
+              "title": "Audience.",
+              "text": "Respectful listening is part of the lesson. No talking, no phones, and applaud everyone."
+            },
+            {
+              "type": "prose",
+              "title": "Adjustments available",
+              "text": "A shortened performance, or a simplified version of the song, is a valid submission. Annotated lyric and chord sheets are available. Speak to your teacher before the lesson if you need either."
+            },
+            {
+              "type": "prose",
+              "title": "Going further",
+              "text": "Perform an extended arrangement, include live accompaniment, or bring in a backing track you have made yourself."
+            }
+          ]
+        },
+        {
+          "number": 20,
+          "title": "GarageBand Composition",
+          "assessed": true,
+          "intention": "We are learning to create and present an original composition in popular style.",
+          "criteria": [
+            "I can submit a completed track with drums, chords, bass, riff and effects."
+          ],
+          "blocks": [
+            {
+              "type": "prose",
+              "title": "Submit two files.",
+              "text": "An audio export (so it can be played) and the .band project file (so your work on the layers can be seen). Missing either one is an incomplete submission."
+            },
+            {
+              "type": "prose",
+              "title": "Submission checklist - tick every row before you submit",
+              "text": "Submission checklist - tick every row before you submit"
+            },
+            {
+              "type": "table",
+              "headers": [
+                "Requirement",
+                "Done",
+                "Built in"
+              ],
+              "rows": [
+                [
+                  "Drum track, steady and in time",
+                  "",
+                  "Lesson 4"
+                ],
+                [
+                  "Chord progression",
+                  "",
+                  "Lesson 7"
+                ],
+                [
+                  "Bass line that locks with the kick",
+                  "",
+                  "Lesson 12"
+                ],
+                [
+                  "Riff or hook that repeats",
+                  "",
+                  "Lesson 14"
+                ],
+                [
+                  "At least two effects applied",
+                  "",
+                  "Lesson 17"
+                ],
+                [
+                  "At least two contrasting sections",
+                  "",
+                  "Lesson 18"
+                ],
+                [
+                  "Audio export uploaded",
+                  "",
+                  "Today"
+                ],
+                [
+                  ".band project file uploaded",
+                  "",
+                  "Today"
+                ]
+              ]
+            },
+            {
+              "type": "prose",
+              "title": "Adjustments available",
+              "text": "A shorter track of 30 to 45 seconds with fewer layers is a valid submission. Work through the checklist above with your teacher before you upload."
+            },
+            {
+              "type": "prose",
+              "title": "Going further",
+              "text": "Extend the track with additional sections, use advanced automation, or record live instruments or vocals and mix them in with your programmed parts."
+            },
+            {
+              "type": "prose",
+              "title": "Next:",
+              "text": "Lessons 21-25 - Showcase & Reflection. You will hear everyone's tracks and look back at what Australian popular music is actually saying."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "letter": "E",
+      "name": "Showcase and Reflection",
+      "from": 21,
+      "to": 25,
+      "lessons": [
+        {
+          "number": 21,
+          "title": "Showcase Listening Session",
+          "assessed": false,
+          "intention": "We are learning to evaluate compositions using the concepts of music.",
+          "criteria": [
+            "I can describe how texture, timbre and dynamics are used in a peer's track."
+          ],
+          "blocks": [
+            {
+              "type": "activity",
+              "title": "Your task",
+              "text": "Everyone plays their track. For each one you hear, note how the composer used the concepts of music. Use the proper vocabulary - that is the skill being practised.",
+              "items": []
+            },
+            {
+              "type": "table",
+              "headers": [
+                "Track by",
+                "Texture",
+                "Tone colour",
+                "Dynamics",
+                "One thing I liked"
+              ],
+              "rows": [
+                [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ],
+                [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ],
+                [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ],
+                [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              ]
+            },
+            {
+              "type": "prose",
+              "title": "Feedback rule.",
+              "text": "Everyone in this room made something from nothing. Comment on the music, not the person, and find something real to praise before you suggest a change."
+            },
+            {
+              "type": "support",
+              "title": "Need a hand? Sentence starters",
+              "text": "“I liked the use of …”    “The texture was thick or thin because …”    “The loudest part was …” Listen to one or two tracks closely rather than trying to cover everyone.",
+              "items": []
+            },
+            {
+              "type": "extension",
+              "text": "Lead the feedback discussion for a track. Identify specific production techniques the composer used - not just what you heard, but how you think they made it happen.",
+              "items": []
+            },
+            {
+              "type": "exit",
+              "text": "Which track sounded most different from yours, and what did they do that you did not?"
+            }
+          ]
+        },
+        {
+          "number": 22,
+          "title": "Reflecting on Australian Popular Music",
+          "assessed": false,
+          "intention": "We are learning to reflect on the cultural identity expressed through Australian popular music.",
+          "criteria": [
+            "I can identify features that make Australian popular music unique."
+          ],
+          "blocks": [
+            {
+              "type": "listen",
+              "heading": "",
+              "tracks": [
+                "Baker Boy - video",
+                "Thelma Plum - video",
+                "Jessica Mauboy - video"
+              ]
+            },
+            {
+              "type": "prose",
+              "title": "Back where we started.",
+              "text": "You met these artists in Lesson 1 and listened for instruments and production. Now you have made a track yourself, listen again for something harder: what are they using music to say?"
+            },
+            {
+              "type": "activity",
+              "title": "Your task - The Australian sound",
+              "text": "Brainstorm what makes Australian popular music distinctive. Think about language, accent, subject matter, instruments, and the stories artists choose to tell.",
+              "items": []
+            },
+            {
+              "type": "table",
+              "headers": [
+                "Artist",
+                "What is distinctly Australian about their music?"
+              ],
+              "rows": [
+                [
+                  "Baker Boy",
+                  ""
+                ],
+                [
+                  "Thelma Plum",
+                  ""
+                ],
+                [
+                  "Jessica Mauboy",
+                  ""
+                ]
+              ]
+            },
+            {
+              "type": "prose",
+              "title": "",
+              "text": "Baker Boy raps in Yolŋu Matha as well as English. That is a deliberate choice about identity, made in a genre that came from somewhere else entirely."
+            },
+            {
+              "type": "support",
+              "title": "Need a hand? One artist, one feature",
+              "text": "Choose the artist you like most and name a single thing that makes their music sound Australian. One clear idea is enough.",
+              "items": []
+            },
+            {
+              "type": "extension",
+              "text": "Australian artists work in genres that began overseas - hip hop, rock, EDM. Explain how they fuse those global forms with something local, and what that fusion achieves culturally.",
+              "items": []
+            },
+            {
+              "type": "exit",
+              "text": "Has your answer to \"what makes a song sound Australian\" changed since Lesson 1?"
+            }
+          ]
+        },
+        {
+          "number": 23,
+          "title": "Comparative Listening",
+          "assessed": false,
+          "intention": "We are learning to compare how the concepts of music shape genre.",
+          "criteria": [
+            "I can explain at least two similarities and two differences between artists."
+          ],
+          "blocks": [
+            {
+              "type": "listen",
+              "heading": "",
+              "tracks": [
+                "Artist A - video",
+                "Artist B - video"
+              ]
+            },
+            {
+              "type": "activity",
+              "title": "Your task",
+              "text": "Compare two Australian artists from different genres - AC/DC against Flume, for example. Find two things they share and two ways they differ.",
+              "items": []
+            },
+            {
+              "type": "table",
+              "headers": [
+                "Concept",
+                "Artist A",
+                "Artist B"
+              ],
+              "rows": [
+                [
+                  "Texture",
+                  "",
+                  ""
+                ],
+                [
+                  "Tone colour",
+                  "",
+                  ""
+                ],
+                [
+                  "Structure",
+                  "",
+                  ""
+                ],
+                [
+                  "Groove",
+                  "",
+                  ""
+                ]
+              ]
+            },
+            {
+              "type": "support",
+              "title": "Need a hand? Sentence frames",
+              "text": "“Both artists …”    “A uses … but B uses …”    “The biggest difference is …” Fill in two rows rather than all four, and work through it with your teacher.",
+              "items": []
+            },
+            {
+              "type": "extension",
+              "text": "One of these artists recorded in a studio with a band; the other built tracks on a computer. Explain how technology changed what is possible in each case, and what it changed about performing live.",
+              "items": []
+            },
+            {
+              "type": "exit",
+              "text": "Which of the two artists is closer to the track you made, and why?"
+            }
+          ]
+        },
+        {
+          "number": 24,
+          "title": "Extension Workshop",
+          "assessed": false,
+          "intention": "We are learning to extend our skills through self-directed projects.",
+          "criteria": [
+            "I can independently apply new ideas to expand my music-making."
+          ],
+          "blocks": [
+            {
+              "type": "prose",
+              "title": "Choose one pathway",
+              "text": "Choose one pathway"
+            },
+            {
+              "type": "table",
+              "headers": [
+                "Pathway",
+                "What you do"
+              ],
+              "rows": [
+                [
+                  "Remix",
+                  "Take your track and rebuild it in a different genre. Same riff, new world"
+                ],
+                [
+                  "Perform a cover",
+                  "Learn a new Australian song, or extend the one you performed in Lesson 19"
+                ],
+                [
+                  "Refine",
+                  "Go back into your composition and improve it using techniques you have since learnt"
+                ]
+              ]
+            },
+            {
+              "type": "support",
+              "title": "Need a hand? Remix a short section",
+              "text": "Take one loop from your track and change the instrument sounds and the tempo. That is a remix, and it is a genuine creative decision.",
+              "items": []
+            },
+            {
+              "type": "extension",
+              "text": "Set your own brief and direction. Advanced production, genre fusion, or recording live players are all open. Decide what you want to have made by the end of the lesson, then make it.",
+              "items": []
+            },
+            {
+              "type": "exit",
+              "text": "Which pathway did you choose, and what did you learn from it?"
+            }
+          ]
+        },
+        {
+          "number": 25,
+          "title": "Wrap-Up and Reflection",
+          "assessed": false,
+          "intention": "We are learning to reflect on our growth and identify future goals in music.",
+          "criteria": [
+            "I can describe what I improved in and set a target for future learning."
+          ],
+          "blocks": [
+            {
+              "type": "prose",
+              "title": "Your reflection",
+              "text": "Look back over the whole term. In Lesson 1 you had never opened this project; by Lesson 20 you had written and produced a track and performed a song in front of people."
+            },
+            {
+              "type": "table",
+              "headers": [
+                "Question",
+                "Your answer"
+              ],
+              "rows": [
+                [
+                  "What did I improve most in this term?",
+                  ""
+                ],
+                [
+                  "What was hardest, and how did I get past it?",
+                  ""
+                ],
+                [
+                  "Performing or composing - which suited me better?",
+                  ""
+                ],
+                [
+                  "My target for next term",
+                  ""
+                ]
+              ]
+            },
+            {
+              "type": "prose",
+              "title": "Playback session.",
+              "text": "We finish by listening to the tracks again, properly, as an audience rather than as markers."
+            },
+            {
+              "type": "support",
+              "title": "Need a hand? Reflection starters",
+              "text": "“One thing I did well was …”    “I found it hard when …”    “Next term I want to …” You can answer these out loud instead of writing them.",
+              "items": []
+            },
+            {
+              "type": "extension",
+              "text": "Evaluate your development critically. Where is the ceiling on your current skills, what specifically would you need to learn to get past it, and what is an ambitious but real goal for next term?",
+              "items": []
+            },
+            {
+              "type": "prose",
+              "title": "Next term:",
+              "text": "Film and Video Game Music. You will use the same GarageBand skills to score picture - writing music that has to fit something happening on screen."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

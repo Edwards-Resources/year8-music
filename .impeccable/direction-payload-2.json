@@ -1,0 +1,103 @@
+{
+  "title": "Year 8 visual world, take two",
+  "question": "Steered for fun and playful. The roll assigned Tour Tee. Keep it, take an alternate, or re-roll.",
+  "options": [
+    {
+      "id": "assigned",
+      "label": "Tour Tee",
+      "kicker": "THE ROLL",
+      "lineage": "screenprinted band merch and the back-print tour list",
+      "thesis": "The term is the tour, and every lesson is a date on the back of the shirt.",
+      "palette": [
+        "#111111",
+        "#E8007A",
+        "#F5DE00",
+        "#00B3D6"
+      ],
+      "materials": [
+        "screenprint halftone",
+        "overprint spot inks",
+        "back-print tour list",
+        "bootleg display type"
+      ],
+      "viewport": "A black print field with the unit name set as a tour logo, and under it the whole term running as a back-print tour list, one lesson per line, assessment lessons flagged like sold-out shows.",
+      "risk": "Bootleg merch lettering goes illegible fast and heavy distress can look cheap. Only the display voice is screenprinted; body copy stays clean and the reading surface stays light for the projector."
+    },
+    {
+      "id": "challenger-bauhaus",
+      "label": "Foundation Course",
+      "lineage": "the Bauhaus foundation workshop",
+      "thesis": "Every lesson is a compositional exercise in primary shapes you can pick up and rearrange.",
+      "palette": [
+        "#FFFFFF",
+        "#111111",
+        "#D8232A",
+        "#F7D000"
+      ],
+      "materials": [
+        "primary circle, square, triangle",
+        "visible baseline grid",
+        "single-case geometric sans"
+      ],
+      "viewport": "A white worktable ruled by a visible grid, the term's sections laid out as primary shapes you drag into balance.",
+      "risk": "Primary shapes read young. This is the card most likely to feel like Year 3 rather than Year 8.",
+      "case": "The strongest challenger and genuinely playful, with the drag-to-arrange interaction earning its keep. It loses on identification: the kids do not hold the reference, and the primaries read younger than the room.",
+      "hero": "https://impeccable.style/worlds/cards/design-canon-bauhaus-foundation-workshop-hero.webp",
+      "board": "https://impeccable.style/worlds/cards/design-canon-bauhaus-foundation-workshop.webp"
+    },
+    {
+      "id": "challenger-sampler",
+      "label": "Sampler Cloth",
+      "lineage": "a child's stitched alphabet sampler",
+      "thesis": "The term stitched as bands of increasing difficulty, the last band looser and more confident than the first.",
+      "palette": [
+        "#E8DFC8",
+        "#9E2B25",
+        "#2A3F7A",
+        "#3F6B3A"
+      ],
+      "materials": [
+        "silk on loose linen",
+        "stacked skill bands",
+        "signed and dated foot"
+      ],
+      "viewport": "Bands stacked down the cloth, alphabets first and a full scene last, the learner's signature ruled in at the foot.",
+      "risk": "Soft where the brief asks for loud, and it reads as craft rather than music.",
+      "case": "A lovely mapping: bands of increasing difficulty are honestly what a term of skill-building is. It fuses poorly against the steer, because silk on linen cannot be the loud, playful thing you just asked for.",
+      "hero": "https://impeccable.style/worlds/cards/graphic-worlds-publishing-sampler-alphabet-proof-hero.webp",
+      "board": "https://impeccable.style/worlds/cards/graphic-worlds-publishing-sampler-alphabet-proof.webp"
+    },
+    {
+      "id": "challenger-dive",
+      "label": "Deep Dive",
+      "lineage": "a technical dive down a volcanic island wall",
+      "thesis": "The term as a descent, each lesson pinned to its own depth on one vertical axis.",
+      "palette": [
+        "#06121F",
+        "#0E3F63",
+        "#2CD5E8",
+        "#F2F6F8"
+      ],
+      "materials": [
+        "dive-computer digits",
+        "marine snow particles",
+        "one vertical depth axis"
+      ],
+      "viewport": "A single vertical axis descending from turquoise surface to dark wall, lessons hanging off it at increasing depth.",
+      "risk": "Depth implies later equals deeper equals harder, which is a position claim this site is not allowed to make. Dark ground fights the projector too.",
+      "case": "The vertical axis is a real sequence device and the world is atmospheric. It fuses poorly on product truth: it smuggles a progression the site has explicitly refused.",
+      "hero": "https://impeccable.style/worlds/cards/rivers-tides-ocean-depths-mesophotic-deep-dive-hero.webp",
+      "board": "https://impeccable.style/worlds/cards/rivers-tides-ocean-depths-mesophotic-deep-dive.webp"
+    }
+  ],
+  "reroll": true,
+  "canon": true,
+  "canonCard": {
+    "label": "The category standard",
+    "thesis": "What a school course site ships, executed impeccably.",
+    "viewport": "A tidy grid of week cards over a neutral ground, a sidebar listing the lessons, breadcrumbs above the title.",
+    "risk": "Safe and instantly legible, and indistinguishable from the Canvas pages this is meant to replace."
+  },
+  "steer": true,
+  "seed": "b2cc7a19"
+}

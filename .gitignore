@@ -1,0 +1,11 @@
+.DS_Store
+.impeccable/questions/
+
+# Machine-local, not project state.
+# hook.cache.json keys findings by session id and absolute path.
+.impeccable/hook.cache.json
+
+# Preview server config. The working entry lives in School Master/.claude/launch.json,
+# which takes precedence over this one anyway; the copy here points at a session
+# scratchpad path that stops existing when the session ends.
+.claude/

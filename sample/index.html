@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Sample: Rehearsal Marks</title>
+<style>
+@font-face{font-family:Archivo Black;src:url(../assets/fonts/archivo-black-400.woff2) format("woff2");font-weight:400;font-display:swap;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+2000-206F,U+2122,U+2212}
+@font-face{font-family:Archivo Black;src:url(../assets/fonts/archivo-black-400-latin-ext.woff2) format("woff2");font-weight:400;font-display:swap;unicode-range:U+0100-02BA,U+1E00-1E9F,U+2020,U+20A0-20AB}
+@font-face{font-family:Atkinson;src:url(../assets/fonts/atkinson-hyperlegible-400.woff2) format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:Atkinson;src:url(../assets/fonts/atkinson-hyperlegible-700.woff2) format("woff2");font-weight:700;font-display:swap}
+@font-face{font-family:Atkinson;src:url(../assets/fonts/atkinson-hyperlegible-400-italic.woff2) format("woff2");font-weight:400;font-style:italic;font-display:swap}
+
+:root{
+  --paper:#F1F2F4;
+  --paper-hi:#FBFBFC;
+  --ink:#10131A;
+  --ink-soft:#4C525E;
+  --rule:#C9CDD4;
+  --ink-a:#1B2BD4;
+  --ink-b:#D42D18;
+  --ink-c:#0B6E60;
+  --ink-d:#9C1E82;
+  --ink-e:#8A4F00;
+  --signal:#FF4A1F;
+  --display:"Archivo Black","Arial Black",sans-serif;
+  --body:Atkinson,"Trebuchet MS",sans-serif;
+  --wrap:min(1180px,100% - 2.5rem);
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);font-size:1.0625rem;line-height:1.6}
+.wrap{width:var(--wrap);margin-inline:auto}
+h1,h2,h3{font-family:var(--display);font-weight:400;letter-spacing:-.02em;line-height:1;margin:0;text-transform:uppercase}
+p{margin:0}
+a{color:inherit}
+
+/* ---------------------------------------------------------- the repeat bar */
+/* Thick-thin double bar with two dots: the score's own "go back and do it
+   again" mark, used here as the divider between sections of the term. */
+.repeat{display:flex;align-items:stretch;gap:.34rem;height:var(--h,64px);flex:none}
+.repeat i{display:block;background:currentColor;border-radius:1px}
+.repeat .thin{width:3px}
+.repeat .thick{width:11px}
+.repeat .dots{display:flex;flex-direction:column;justify-content:center;gap:.5rem;padding-left:.2rem}
+.repeat .dots b{width:9px;height:9px;border-radius:50%;background:currentColor;display:block}
+
+/* stave: five rules, the page's own texture */
+.stave{height:44px;background:repeating-linear-gradient(to bottom,transparent 0 8px,var(--rule) 8px 10px);opacity:.8}
+
+/* ------------------------------------------------------------------ cover */
+.cover{background:var(--ink-a);color:#fff;padding:clamp(2.5rem,6vw,5rem) 0 0;position:relative;overflow:hidden}
+.cover-grid{display:grid;grid-template-columns:1fr auto;gap:2.5rem;align-items:start}
+.cover h1{font-size:clamp(2.6rem,8.4vw,6rem);letter-spacing:-.035em}
+.cover .sub{font-family:var(--display);font-size:clamp(.8rem,1.5vw,1rem);letter-spacing:.14em;margin-top:1.4rem;opacity:.85;text-transform:uppercase}
+.cover .blurb{max-width:56ch;margin-top:1.5rem;font-size:1.15rem;line-height:1.55;color:#E4E6FB}
+.cover-mark{color:rgba(255,255,255,.5)}
+.cover-question{margin-top:2.6rem;border-top:2px solid rgba(255,255,255,.32);padding-top:1.1rem;max-width:60ch}
+.cover-question span{font-family:var(--display);font-size:.72rem;letter-spacing:.16em;display:block;opacity:.72;margin-bottom:.5rem}
+.cover-question p{font-size:1.3rem;line-height:1.35}
+.cover-foot{margin-top:clamp(2rem,5vw,3.4rem);display:flex;gap:0;align-items:flex-end}
+.cover-foot .bar{flex:1;height:18px;background:rgba(255,255,255,.28)}
+.cover-foot .bar.on{background:#fff}
+
+/* --------------------------------------------------------------- the wall */
+.wall{padding:clamp(2.6rem,6vw,4.6rem) 0}
+.wall-head{display:flex;align-items:center;gap:1.4rem;margin-bottom:.6rem}
+.wall-head h2{font-size:clamp(1.5rem,3.4vw,2.4rem)}
+.wall-head .line{flex:1;height:3px;background:var(--ink)}
+.wall-lede{color:var(--ink-soft);max-width:62ch;margin-bottom:2.6rem}
+
+.section{margin-bottom:2.9rem}
+.section-head{display:flex;align-items:center;gap:1rem;margin-bottom:1.1rem}
+/* the rehearsal mark itself: boxed capital, exactly as a conductor calls it */
+.mark{width:58px;height:58px;flex:none;display:grid;place-items:center;background:var(--c);color:#fff;font-family:var(--display);font-size:1.9rem;line-height:1;border:3px solid var(--ink);box-shadow:5px 5px 0 var(--ink)}
+.section-head h3{font-size:clamp(1.05rem,2.2vw,1.45rem)}
+.section-head .range{font-family:var(--display);font-size:.72rem;letter-spacing:.13em;color:var(--ink-soft);margin-top:.34rem;display:block}
+/* the section ends the way a section of a part ends: a rule into a repeat */
+.section-end{display:flex;align-items:center;gap:.9rem;margin-top:1.1rem;color:var(--ink)}
+.section-end .lead{flex:1;height:3px;background:var(--ink)}
+
+.blocks{list-style:none;margin:0;padding:0;display:grid;gap:.9rem;grid-template-columns:repeat(auto-fill,minmax(184px,1fr))}
+.blocks a{text-decoration:none;display:block;height:100%}
+.tile{background:var(--paper-hi);border:3px solid var(--ink);height:100%;display:flex;flex-direction:column;transition:transform .16s cubic-bezier(.2,.8,.3,1),box-shadow .16s cubic-bezier(.2,.8,.3,1)}
+.tile .no{background:var(--c);color:#fff;font-family:var(--display);font-size:2.5rem;line-height:1;padding:.62rem .7rem .5rem;display:flex;align-items:baseline;justify-content:space-between}
+.tile .no small{font-family:var(--body);font-weight:700;font-size:.7rem;letter-spacing:.13em;color:#fff}
+.tile .tt{padding:.72rem .78rem .9rem;font-weight:700;font-size:1rem;line-height:1.25;flex:1}
+.blocks a:hover .tile,.blocks a:focus-visible .tile{transform:translate(-3px,-3px);box-shadow:6px 6px 0 var(--ink)}
+.blocks a:focus-visible{outline:3px solid var(--signal);outline-offset:3px}
+.tile.is-task .no{background:var(--ink)}
+.tile.is-task .tt::after{content:"Assessment";display:block;margin-top:.5rem;font-family:var(--display);font-size:.6rem;letter-spacing:.13em;color:#fff;background:var(--signal);padding:.24rem .42rem;width:max-content}
+
+/* ---------------------------------------------------------- lesson sample */
+.lesson{background:var(--paper-hi);border-top:3px solid var(--ink);padding:clamp(2.4rem,5vw,4rem) 0}
+.lesson-head{display:grid;grid-template-columns:auto 1fr;gap:1.5rem;align-items:start}
+.lesson-head .mark{width:76px;height:76px;font-size:2.5rem;--c:var(--ink-a)}
+.lesson-head h2{font-size:clamp(1.8rem,4.6vw,3.1rem);letter-spacing:-.03em}
+.lesson-head .where{font-family:var(--display);font-size:.72rem;letter-spacing:.14em;color:var(--ink-soft);margin-bottom:.6rem;display:block}
+/* the learning intention set as a tempo direction, the way a score opens */
+.tempo{margin:2.2rem 0 0;border-top:3px solid var(--ink);border-bottom:1px solid var(--rule);padding:1rem 0}
+.tempo span{font-family:var(--display);font-size:.7rem;letter-spacing:.15em;color:var(--ink-a);display:block;margin-bottom:.4rem}
+.tempo p{font-size:1.35rem;line-height:1.35;font-style:italic;max-width:64ch}
+.cols{display:grid;grid-template-columns:1.55fr 1fr;gap:2.4rem;margin-top:2.2rem;align-items:start}
+.crit{list-style:none;margin:.9rem 0 0;padding:0}
+.crit li{display:flex;gap:.7rem;align-items:flex-start;padding:.5rem 0;border-bottom:1px solid var(--rule)}
+.crit input{width:22px;height:22px;flex:none;accent-color:var(--ink-a);margin-top:.15rem}
+.panel{border:3px solid var(--ink);background:var(--paper)}
+.panel > h3{background:var(--ink);color:#fff;font-size:.78rem;letter-spacing:.14em;padding:.55rem .8rem}
+.panel .in{padding:1rem .9rem}
+.panel.task > h3{background:var(--signal)}
+.panel.exit > h3{background:var(--ink-c)}
+table{border-collapse:collapse;width:100%;margin-top:1.2rem;font-size:.95rem}
+th{background:var(--ink);color:#fff;font-family:var(--display);font-weight:400;font-size:.68rem;letter-spacing:.1em;text-align:left;padding:.6rem .7rem;text-transform:uppercase}
+td{border-bottom:1px solid var(--rule);padding:.62rem .7rem;vertical-align:top}
+tbody tr:nth-child(even) td{background:var(--paper)}
+.grooves{list-style:none;margin:1.2rem 0 0;padding:0;display:grid;gap:.6rem}
+.grooves li{display:flex;align-items:center;gap:.8rem;border-left:0;padding:.55rem .75rem;background:var(--paper);border:1px solid var(--rule)}
+.grooves b{font-family:var(--display);font-size:.9rem;letter-spacing:.02em}
+.grooves .slash{color:var(--ink-a);flex:none}
+h3.blk{font-size:1.15rem;margin-top:2.1rem}
+
+.foot{border-top:3px solid var(--ink);padding:1.6rem 0 3rem;color:var(--ink-soft);font-size:.92rem}
+.note-bar{background:var(--ink);color:#fff;padding:.7rem 0;font-family:var(--display);font-size:.7rem;letter-spacing:.15em;text-transform:uppercase}
+
+@media (max-width:820px){
+  .cover-grid{grid-template-columns:1fr}
+  .cols{grid-template-columns:1fr;gap:1.6rem}
+  .lesson-head{grid-template-columns:1fr}
+  .lesson-head .mark{width:60px;height:60px;font-size:2rem}
+  .blocks{grid-template-columns:repeat(auto-fill,minmax(146px,1fr))}
+  .tile .no{font-size:2rem}
+  .section-head .rep{display:none}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+</head>
+<body>
+
+<div class="note-bar"><div class="wrap">Sample only &middot; Rehearsal Marks direction &middot; real Term 3 content</div></div>
+
+<!-- =============================================================== cover -->
+<header class="cover">
+  <div class="wrap cover-grid">
+    <div>
+      <h1>Popular<br>Music</h1>
+      <p class="sub">Year 8 &middot; Term 3 &middot; 25 lessons &middot; Battle of the Bands</p>
+      <p class="blurb">This term we explore how Australian popular music uses rhythm, harmony and production to create style and identity. You will build your own track in GarageBand, and perform an Australian song of your choice.</p>
+      <div class="cover-question">
+        <span>The question for this term</span>
+        <p>How do the concepts of music shape the sound and style of popular music?</p>
+      </div>
+    </div>
+    <div class="repeat cover-mark" style="--h:170px" aria-hidden="true">
+      <i class="thin"></i><i class="thick"></i>
+      <span class="dots"><b></b><b></b></span>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="cover-foot" aria-hidden="true">
+      <span class="bar on"></span><span class="bar"></span><span class="bar on"></span><span class="bar"></span>
+      <span class="bar on"></span><span class="bar"></span><span class="bar on"></span><span class="bar"></span>
+    </div>
+  </div>
+</header>
+
+<!-- ============================================================ the wall -->
+<section class="wall">
+  <div class="wrap">
+    <div class="wall-head">
+      <h2>The whole term</h2>
+      <span class="line" aria-hidden="true"></span>
+    </div>
+    <p class="wall-lede">Every lesson of the term, in order. Jump straight to the one you need. Nothing here assumes where your class is up to.</p>
+
+    <!-- A -->
+    <div class="section" style="--c:var(--ink-a)">
+      <div class="section-head">
+        <span class="mark" aria-hidden="true">A</span>
+        <div><h3>Introduction and Drums</h3><span class="range">Lessons 1 to 5</span></div>
+      </div>
+      <ul class="blocks">
+        <li><a href="#lesson"><div class="tile"><div class="no">1 <small>A</small></div><div class="tt">Welcome to Popular Music</div></div></a></li>
+        <li><a href="#lesson"><div class="tile"><div class="no">2 <small>A</small></div><div class="tt">Rhythm and Groove</div></div></a></li>
+        <li><a href="#lesson"><div class="tile"><div class="no">3 <small>A</small></div><div class="tt">GarageBand Basics</div></div></a></li>
+        <li><a href="#lesson"><div class="tile"><div class="no">4 <small>A</small></div><div class="tt">Recording and Programming Drums</div></div></a></li>
+        <li><a href="#lesson"><div class="tile"><div class="no">5 <small>A</small></div><div class="tt">Drums in Genres</div></div></a></li>
+      </ul>
+      <div class="section-end" aria-hidden="true">
+        <span class="lead"></span>
+        <span class="repeat" style="--h:34px"><i class="thin"></i><i class="thick"></i><span class="dots"><b></b><b></b></span></span>
+      </div>
+    </div>
+
+    <!-- B -->
+    <div class="section" style="--c:var(--ink-b)">
+      <div class="section-head">
+        <span class="mark" aria-hidden="true">B</span>
+        <div><h3>Chords and Harmony</h3><span class="range">Lessons 6 to 10</span></div>
+      </div>
+      <ul class="blocks">
+        <li><a href="#lesson"><div class="tile"><div class="no">6 <small>B</small></div><div class="tt">Popular Chord Progressions</div></div></a></li>
+        <li><a href="#lesson"><div class="tile"><div class="no">7 <small>B</small></div><div class="tt">Recording Chords in GarageBand</div></div></a></li>
+        <li><a href="#lesson"><div class="tile"><div class="no">8 <small>B</small></div><div class="tt">Harmony in Styles</div></div></a></li>
+        <li><a href="#lesson"><div class="tile"><div class="no">9 <small>B</small></div><div class="tt">Combining Drums and Chords</div></div></a></li>
+        <li><a href="#lesson"><div class="tile"><div class="no">10 <small>B</small></div><div class="tt">Performance Preparation</div></div></a></li>
+      </ul>
+      <div class="section-end" aria-hidden="true">
+        <span class="lead"></span>
+        <span class="repeat" style="--h:34px"><i class="thin"></i><i class="thick"></i><span class="dots"><b></b><b></b></span></span>
+      </div>
+    </div>
+
+    <!-- C -->
+    <div class="section" style="--c:var(--ink-c)">
+      <div class="section-head">
+        <span class="mark" aria-hidden="true">C</span>
+        <div><h3>Bass and Hooks</h3><span class="range">Lessons 11 to 15</span></div>
+      </div>
+      <ul class="blocks">
+        <li><a href="#lesson"><div class="tile"><div class="no">11 <small>C</small></div><div class="tt">The Role of Bass</div></div></a></li>
+        <li><a href="#lesson"><div class="tile"><div class="no">12 <small>C</small></div><div class="tt">Recording Bass in GarageBand</div></div></a></li>
+        <li><a href="#lesson"><div class="tile"><div class="no">13 <small>C</small></div><div class="tt">Hooks and Riffs</div></div></a></li>
+        <li><a href="#lesson"><div class="tile"><div class="no">14 <small>C</small></div><div class="tt">Recording Your Riff</div></div></a></li>
+        <li><a href="#lesson"><div class="tile"><div class="no">15 <small>C</small></div><div class="tt">Performance Check-In</div></div></a></li>
+      </ul>
+      <div class="section-end" aria-hidden="true">
+        <span class="lead"></span>
+        <span class="repeat" style="--h:34px"><i class="thin"></i><i class="thick"></i><span class="dots"><b></b><b></b></span></span>
+      </div>
+    </div>
+
+    <!-- D -->
+    <div class="section" style="--c:var(--ink-d)">
+      <div class="section-head">
+        <span class="mark" aria-hidden="true">D</span>
+        <div><h3>Texture, FX and Assessment</h3><span class="range">Lessons 16 to 20</span></div>
+      </div>
+      <ul class="blocks">
+        <li><a href="#lesson"><div class="tile"><div class="no">16 <small>D</small></div><div class="tt">Texture and Layering</div></div></a></li>
+        <li><a href="#lesson"><div class="tile"><div class="no">17 <small>D</small></div><div class="tt">Effects</div></div></a></li>
+        <li><a href="#lesson"><div class="tile"><div class="no">18 <small>D</small></div><div class="tt">Structure and Arrangement</div></div></a></li>
+        <li><a href="#lesson"><div class="tile is-task"><div class="no">19 <small>D</small></div><div class="tt">Solo or Group Performance</div></div></a></li>
+        <li><a href="#lesson"><div class="tile is-task"><div class="no">20 <small>D</small></div><div class="tt">GarageBand Composition</div></div></a></li>
+      </ul>
+      <div class="section-end" aria-hidden="true">
+        <span class="lead"></span>
+        <span class="repeat" style="--h:34px"><i class="thin"></i><i class="thick"></i><span class="dots"><b></b><b></b></span></span>
+      </div>
+    </div>
+
+    <!-- E -->
+    <div class="section" style="--c:var(--ink-e)">
+      <div class="section-head">
+        <span class="mark" aria-hidden="true">E</span>
+        <div><h3>Showcase and Reflection</h3><span class="range">Lessons 21 to 25</span></div>
+      </div>
+      <ul class="blocks">
+        <li><a href="#lesson"><div class="tile"><div class="no">21 <small>E</small></div><div class="tt">Showcase Listening Session</div></div></a></li>
+        <li><a href="#lesson"><div class="tile"><div class="no">22 <small>E</small></div><div class="tt">Reflecting on Australian Popular Music</div></div></a></li>
+        <li><a href="#lesson"><div class="tile"><div class="no">23 <small>E</small></div><div class="tt">Comparative Listening</div></div></a></li>
+        <li><a href="#lesson"><div class="tile"><div class="no">24 <small>E</small></div><div class="tt">Extension Workshop</div></div></a></li>
+        <li><a href="#lesson"><div class="tile"><div class="no">25 <small>E</small></div><div class="tt">Wrap-Up and Reflection</div></div></a></li>
+      </ul>
+      <div class="section-end" aria-hidden="true">
+        <span class="lead"></span>
+        <span class="repeat" style="--h:34px"><i class="thin"></i><i class="thick"></i><span class="dots"><b></b><b></b></span></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================================= lesson page -->
+<article class="lesson" id="lesson">
+  <div class="wrap">
+    <div class="lesson-head">
+      <span class="mark" aria-hidden="true">2</span>
+      <div>
+        <span class="where">Section A &middot; Lesson 2 of 25</span>
+        <h2>Rhythm and Groove</h2>
+      </div>
+    </div>
+
+    <div class="tempo">
+      <span>We are learning to</span>
+      <p>understand how groove shapes style in popular music.</p>
+    </div>
+
+    <div class="cols">
+      <div>
+        <h3 class="blk">The three grooves</h3>
+        <ul class="grooves">
+          <li>
+            <svg class="slash" width="34" height="22" viewBox="0 0 34 22" aria-hidden="true"><g stroke="currentColor" stroke-width="3.4" stroke-linecap="round"><path d="M4 18 12 5"/><path d="M13 18 21 5"/><path d="M22 18 30 5"/></g></svg>
+            <span><b>Backbeat</b> &mdash; rock. Kick on 1 and 3, snare on 2 and 4.</span>
+          </li>
+          <li>
+            <svg class="slash" width="34" height="22" viewBox="0 0 34 22" aria-hidden="true"><g stroke="currentColor" stroke-width="3.4" stroke-linecap="round"><path d="M4 18 12 5"/><path d="M13 18 21 5"/><path d="M22 18 30 5"/></g></svg>
+            <span><b>Four-on-the-floor</b> &mdash; EDM and dance. Kick on every beat.</span>
+          </li>
+          <li>
+            <svg class="slash" width="34" height="22" viewBox="0 0 34 22" aria-hidden="true"><g stroke="currentColor" stroke-width="3.4" stroke-linecap="round"><path d="M4 18 12 5"/><path d="M13 18 21 5"/><path d="M22 18 30 5"/></g></svg>
+            <span><b>Trap</b> &mdash; hip hop. Sparse kick, clap on 3, fast rolling hi-hats.</span>
+          </li>
+        </ul>
+
+        <table>
+          <thead><tr><th>Groove</th><th>Where the kick and snare land</th><th>Typical genre</th></tr></thead>
+          <tbody>
+            <tr><td>Backbeat</td><td>Kick on 1 and 3, snare on 2 and 4</td><td>Rock, pub rock</td></tr>
+            <tr><td>Four-on-the-floor</td><td>Kick on every beat: 1, 2, 3, 4</td><td>EDM, dance, disco</td></tr>
+            <tr><td>Trap</td><td>Sparse kick, snare or clap on 3, fast rolling hi-hats</td><td>Hip hop</td></tr>
+          </tbody>
+        </table>
+
+        <h3 class="blk">Key words</h3>
+        <p style="margin-top:.7rem"><b>Beat</b> &mdash; the steady pulse of the music. It is what you tap your foot to.<br>
+        <b>Groove</b> &mdash; the overall rhythmic feel created by the interaction of drums, bass and other instruments. Two songs can share a beat but have completely different grooves.</p>
+      </div>
+
+      <div>
+        <section class="panel">
+          <h3>Success criteria</h3>
+          <div class="in">
+            <ul class="crit">
+              <li><input type="checkbox" id="c1"><label for="c1">I can explain how drum patterns create different feels across genres.</label></li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="panel task" style="margin-top:1.2rem">
+          <h3>Your task &mdash; Groove Comparison</h3>
+          <div class="in">
+            <p>Clap each groove as a class. Then on your worksheet, draw a simple icon for each groove, note the tempo, and describe the feel in your own words.</p>
+          </div>
+        </section>
+
+        <section class="panel" style="margin-top:1.2rem">
+          <h3>Need a hand?</h3>
+          <div class="in">
+            <p>Count &ldquo;1 &ndash; 2 &ndash; 3 &ndash; 4&rdquo; out loud and clap only on <b>2</b> and <b>4</b>. That is a backbeat. Now clap on every number. That is four-on-the-floor. You have just played the difference between rock and dance music.</p>
+          </div>
+        </section>
+
+        <section class="panel exit" style="margin-top:1.2rem">
+          <h3>Before you leave</h3>
+          <div class="in">
+            <p>Which groove is most iconic in Australian music, and why?</p>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</article>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="stave" aria-hidden="true" style="margin-bottom:1.2rem"></div>
+    <p>Class material. Assessment tasks, submissions and marks stay in Canvas.</p>
+  </div>
+</footer>
+
+</body>
+</html>
