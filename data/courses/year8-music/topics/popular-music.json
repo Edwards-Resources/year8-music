@@ -259,9 +259,9 @@
           ],
           "blocks": [
             {
-              "type": "prose",
-              "title": "",
-              "text": "Programming a beat on the grid - video"
+              "type": "media",
+              "brief": "Programming a beat on the grid",
+              "embed": ""
             },
             {
               "type": "list",
@@ -400,11 +400,6 @@
           ],
           "blocks": [
             {
-              "type": "prose",
-              "title": "",
-              "text": "Songs that share the same progression - video"
-            },
-            {
               "type": "table",
               "headers": [
                 "Progression",
@@ -416,14 +411,14 @@
               "rows": [
                 [
                   "I-V-vi-IV",
-                  "Horses - Daryl Braithwaite (chorus)",
+                  "The Horses - Daryl Braithwaite (chorus)",
                   "C - G - Am - F",
                   "G - D - Em - C",
                   "The pop progression. Hundreds of songs use it"
                 ],
                 [
                   "vi-IV-I-V",
-                  "Horses again, started on the minor chord",
+                  "Riptide - Vance Joy (bridge)",
                   "Am - F - C - G",
                   "Em - C - G - D",
                   "Same four chords, darker start"
@@ -458,6 +453,40 @@
                 ]
               ],
               "heading": "The progressions"
+            },
+            {
+              "type": "listen",
+              "heading": "Hear each progression",
+              "tracks": [
+                {
+                  "title": "I-V-vi-IV - The Horses, Daryl Braithwaite (chorus)",
+                  "embed": "lnigc08J6FI"
+                },
+                {
+                  "title": "vi-IV-I-V - Riptide, Vance Joy (bridge)",
+                  "embed": "uJ_1HMAGb4k"
+                },
+                {
+                  "title": "I-IV-V - Eastern Rosellas, Miles Phillips (chorus)",
+                  "embed": "9vJZi-x-sag"
+                },
+                {
+                  "title": "I-V-IV - Bad Moon Rising, Creedence Clearwater Revival",
+                  "embed": "zUQiUFZ5RDw"
+                },
+                {
+                  "title": "I-IV-vi-V - Castle on the Hill, Ed Sheeran",
+                  "embed": "K0ibBPhiaG0"
+                },
+                {
+                  "title": "I-IV-vi-V - Love Story, Taylor Swift (chorus)",
+                  "embed": "8xg3vE8Ie_E"
+                },
+                {
+                  "title": "ii-V-I - Sunday Morning, Maroon 5",
+                  "embed": "S2Cti12XBw4"
+                }
+              ]
             },
             {
               "type": "activity",
@@ -499,9 +528,9 @@
           ],
           "blocks": [
             {
-              "type": "prose",
-              "title": "",
-              "text": "Recording chords - video"
+              "type": "media",
+              "brief": "Recording chords",
+              "embed": ""
             },
             {
               "type": "list",
@@ -613,9 +642,9 @@
           ],
           "blocks": [
             {
-              "type": "prose",
-              "title": "",
-              "text": "Layering drums and chords - video"
+              "type": "media",
+              "brief": "Layering drums and chords",
+              "embed": ""
             },
             {
               "type": "list",
@@ -804,9 +833,9 @@
           ],
           "blocks": [
             {
-              "type": "prose",
-              "title": "",
-              "text": "Recording bass - video"
+              "type": "media",
+              "brief": "Recording bass",
+              "embed": ""
             },
             {
               "type": "list",
@@ -950,9 +979,9 @@
           ],
           "blocks": [
             {
-              "type": "prose",
-              "title": "",
-              "text": "Recording a riff - video"
+              "type": "media",
+              "brief": "Recording a riff",
+              "embed": ""
             },
             {
               "type": "list",
@@ -1128,9 +1157,9 @@
           ],
           "blocks": [
             {
-              "type": "prose",
-              "title": "",
-              "text": "Applying effects in GarageBand - video"
+              "type": "media",
+              "brief": "Applying effects in GarageBand",
+              "embed": ""
             },
             {
               "type": "table",
@@ -1207,9 +1236,9 @@
           ],
           "blocks": [
             {
-              "type": "prose",
-              "title": "",
-              "text": "Structure in an Australian popular song - video"
+              "type": "media",
+              "brief": "Structure in an Australian popular song",
+              "embed": ""
             },
             {
               "type": "list",

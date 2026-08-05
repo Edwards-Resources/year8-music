@@ -155,6 +155,26 @@ def unfilled_media(label, what):
             f'</div></section>')
 
 
+def player_html(embed, title):
+    """The 16:9 well. Lazy, so a lesson carrying six of them still opens on the board."""
+    return (f'<div class="video"><iframe src="https://www.youtube-nocookie.com/embed/{e(embed)}" '
+            f'title="{e(title)}" loading="lazy" allowfullscreen '
+            'allow="accelerometer; clipboard-write; encrypted-media; picture-in-picture">'
+            '</iframe></div>')
+
+
+def clip_html(track):
+    """One named thing to listen to, with its player if it has one yet.
+
+    A track with no embed keeps its place in the grid and says so, rather than
+    disappearing, so the run still reads as the complete set the lesson names.
+    """
+    name = f'<p class="clip-t">{e(track["title"])}</p>'
+    if track.get("embed"):
+        return f'<div class="clip">{player_html(track["embed"], track["title"])}{name}</div>'
+    return f'<div class="clip"><div class="video video-none"><p>Not added yet</p></div>{name}</div>'
+
+
 def loud_block(blocks):
     """Index of the one block on a lesson that carries the filled ink field.
 
@@ -183,12 +203,23 @@ def block_html(block, loud=False):
     head = f'<h3 class="blk-h">{e(h)}</h3>' if h else ""
 
     if t == "listen":
-        tracks = block["tracks"]
+        # A track is either a bare title or {"title", "embed"}. Both shapes live in
+        # the same list, so a block can be half filled while Matthew works through it.
+        tracks = [x if isinstance(x, dict) else {"title": x} for x in block["tracks"]]
         # Placeholders, not repertoire, and they must never render as content.
-        if all(is_placeholder(x) for x in tracks):
+        if all(is_placeholder(x["title"]) for x in tracks):
             return unfilled_media("Listening", "tracks")
+
+        # Once anything in the run is playable the whole run becomes a clip grid.
+        # Mixing a player column against a tick list reads as two different blocks.
+        if any(x.get("embed") for x in tracks):
+            title = block.get("heading") or "Listen"
+            clips = "".join(clip_html(x) for x in tracks)
+            return (f'<section class="blk panel quiet"><h3 class="panel-h">{e(title)}</h3>'
+                    f'<div class="panel-in"><div class="clips">{clips}</div></div></section>')
+
         rows = "".join(
-            f'<li><span class="tick" aria-hidden="true"></span><span>{e(x)}</span></li>'
+            f'<li><span class="tick" aria-hidden="true"></span><span>{e(x["title"])}</span></li>'
             for x in tracks
         )
         # The heading is the truth: these runs are sometimes a listening list and
@@ -261,6 +292,20 @@ def block_html(block, loud=False):
             return f'<section class="blk"><ol class="steps">{items}</ol></section>'
         return (f'<section class="{cls}"><h3 class="panel-h">{e(title)}</h3>'
                 f'<div class="panel-in"><ol class="steps">{items}</ol></div></section>')
+
+    if t == "media":
+        # A filled slot and an empty one are the same shape on the page: the quiet
+        # panel labelled Video. Only the inside changes, so a lesson does not
+        # re-flow when Matthew finally picks the track.
+        if not block.get("embed"):
+            return unfilled_media("Video", "video")
+        brief = f'<p>{e(block["brief"])}</p>' if block.get("brief") else ""
+        return (
+            '<section class="blk panel quiet"><h3 class="panel-h">Video</h3>'
+            '<div class="panel-in">'
+            + player_html(block["embed"], block.get("brief") or "Video for this lesson")
+            + f'{brief}</div></section>'
+        )
 
     if t == "prose":
         title = block.get("title") or h

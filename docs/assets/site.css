@@ -165,6 +165,27 @@ a{color:inherit}
       padding:.8rem;text-decoration:none}
 .back:hover{background:var(--pink);color:var(--print)}
 
+/* A media well, not a reading surface: the black ground is the letterbox behind
+   the player, so it is the one Print Black field that is not a print field. Square
+   and keylined like everything else. Capped in width because a 16:9 player run to
+   the full column on a projector pushes the rest of the lesson off the board. */
+.video{position:relative;aspect-ratio:16/9;max-width:46rem;
+       border:3px solid var(--print);background:var(--print)}
+.video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+
+/* A run of listening lands as a grid, not a stack: five players stacked at full
+   column is five screens of scrolling on the board. min-width:0 because a grid
+   child holding a player will otherwise refuse to shrink and push the page wide. */
+.clips{display:grid;gap:1.1rem;grid-template-columns:repeat(auto-fill,minmax(19rem,1fr))}
+.clip{min-width:0}
+.clip .video{max-width:none}
+.clip-t{font-weight:700;margin-top:.45rem;line-height:1.35}
+/* An empty slot holds its place in the run rather than vanishing, so the set still
+   reads as complete. Bone on black, because it sits in the same well as a player. */
+.video-none{display:grid;place-items:center}
+.video-none p{font-family:var(--display);font-size:.74rem;letter-spacing:.14em;
+              text-transform:uppercase;color:var(--stock)}
+
 /* ------------------------------------------------------------------ lesson */
 .print-lesson .bill{display:flex;align-items:baseline;gap:1rem;flex-wrap:wrap}
 /* Same plate, both elements: the numeral carries the white pass, the title the

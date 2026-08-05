@@ -433,6 +433,14 @@ One ink per lesson, three weights of treatment, and the loud one is allocated by
 
 The outcomes panel is the single documented override: it sets `--ink: var(--stock)`, so its stamp bar is bone rather than a spot ink. It is reference material, not part of the tour.
 
+### Video well and clip grid
+Added 6 August 2026, when the site got playable media for the first time.
+- **`.video`**: a 16:9 well, 3px Print Black keyline, square, no radius, on a Print Black ground. This is the one black field that is not a print field: it is the letterbox behind the player, not a reading surface, so it does not breach the light-reading-surface rule. Capped at `46rem` on its own, because a 16:9 player run to the full column on a projector pushes the rest of the lesson off the board.
+- **`.clips`**: a run of listening becomes a grid, `repeat(auto-fill, minmax(19rem, 1fr))`, not a stack. Seven players stacked at full column is seven screens of scrolling in a lesson. Each `.clip` takes `min-width: 0`, or the grid child holding a player refuses to shrink and pushes the page sideways.
+- **Both sit inside the quiet panel**, so a filled slot and an empty one are the same shape and the lesson does not re-flow when a track is finally chosen. A player never takes the loud field; the task keeps it.
+- Players are `loading="lazy"` and served from `youtube-nocookie.com`.
+- A track with no embed yet keeps its place in the grid as a black well reading "Not added yet", rather than vanishing, so the run still reads as the complete set the lesson names.
+
 ### Status Flag
 One status treatment on both surfaces, filled with the page ink. Display caps, black type, 2px black border, square, no radius. On the tour list it is the word `Assessment` at 0.6rem tracked `0.12em`, taking that leg's ink so each chip prints in its own colour down the page; on a lesson masthead it is the sentence "This lesson is an assessment task" at 0.7rem, taking that lesson's leg ink. Taking the ink rather than a fixed neutral keeps the marker loud on the one page whose job is finding your date, while still leaving it one rule and never a foreign plate.
 
