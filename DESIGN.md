@@ -425,6 +425,8 @@ The row that carries the whole product. A three-column grid link (`auto 1fr auto
 One ink per lesson, three weights of treatment, and the loud one is allocated by the build rather than by the block type. This is the core content grammar and Term 4 must inherit it unchanged.
 - **Weight one, loud** (`.panel`): a 4px black bordered box on lifted stock, with a stamp bar filled in the page ink and black label caps. Exactly one per lesson, plus the two fixed sidebars (assessment on the term page, success criteria on a lesson).
 - **Weight two, quiet** (`.panel.quiet`): no box. A 3px black top rule, the label in black caps over a 2px ink keyline, interior flush to the column. Every other titled block: key words, support, extension, listening, the unfilled-media notice, and titled prose and lists. Same ink, less shouting, so a lesson reads as a run of unequal things rather than six identical stamped cards.
+
+**The unfilled-media notice takes the quiet weight whichever block it arrives in.** An empty slot must never shout louder than the lesson around it, and it must never take the loud field: `loud_block()` skips placeholders, so a titled one cannot print "Not added yet" as the loudest thing on the page. Labelled `Listening` for a listen block and `Video` for a prose one, because the label has to say which kind of thing is missing.
 - **Weight three, the way out** (`.encore`): a 4px bordered rectangle filled solid with the page ink, black type, closing the lesson. At most one per lesson, and only where the source data carries an exit block.
 
 **Which block goes loud** is decided in the build, in a fixed order: the task block if the lesson has one, else the first list, else the first titled paragraph. Ordinary lessons put the loud weight on the task, because that is what the student acts on; assessment lessons carry no task block, so the marking criteria take it. Without that fallback an assessment lesson prints with no ink at all and ends up the quietest page on a site about printing.
@@ -484,6 +486,10 @@ A single global treatment: `3px solid` Tour Pink with `3px` offset, on every foc
 
 ## Known open items in the shipped build
 
-None. Every custom property declared on `:root` is used, every literal `font-size` in `assets/site.css` sits on one of the two ramps above, and every literal colour is either a palette token or a stated alpha derivative.
+**Sixteen media slots are still unfilled** across sixteen lessons: eight as `listen` blocks (1, 2, 8, 11, 13, 16, 22, 23) and eight as untitled `prose` (4, 6, 7, 9, 12, 14, 17, 18). All sixteen now render the honest notice. Lessons 1 and 2 name real tracks but have nothing playable, because the Year 8 build has no embed support at all; the Year 10 site's `media` block and its `youtube-nocookie` iframe are the pattern to port when that is wanted.
+
+**Fixed 6 August 2026: the placeholder leak.** The `- video` test had only ever run on `listen` blocks, so the eight prose placeholders printed to the page as teaching copy, live and public. One shared `is_placeholder()` now serves both shapes. The lesson is that a guard written for one block type is not a guard on the data; it holds only where it is called.
+
+Every custom property declared on `:root` is used, every literal `font-size` in `assets/site.css` sits on one of the two ramps above, and every literal colour is either a palette token or a stated alpha derivative.
 
 The one dead token this section used to carry, `--step: 1.1rem`, was deleted on 5 August 2026 after the finish review. It had never been referenced. If a spacing scale is wanted later, add it as tokens that are actually used rather than reviving this one.

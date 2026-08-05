@@ -131,6 +131,30 @@ review, the verdict, and DESIGN.md
 # ------------------------------------------------------------------- blocks
 
 
+def is_placeholder(text):
+    """True for an unfilled media slot carried over from the Canvas pages.
+
+    They are written as "Something - video": a note to Matthew about what to find,
+    never a sentence meant for a student. The listen blocks have always been checked
+    for this, but the same placeholders also arrive as untitled prose, and there they
+    printed to the page as if they were teaching copy. One test, used by both.
+    """
+    t = (text or "").rstrip().lower()
+    return t.endswith("- video") or t.endswith("- audio")
+
+
+def unfilled_media(label, what):
+    """The honest stand-in for a media slot that has no media yet.
+
+    Quiet weight, the same as every other titled block, because an empty slot must
+    not shout louder than the lesson around it.
+    """
+    return (f'<section class="blk panel quiet"><h3 class="panel-h">{label}</h3>'
+            f'<div class="panel-in"><p>Not added yet. The {what} for this lesson '
+            f'{"are" if what.endswith("s") else "is"} still being chosen.</p>'
+            f'</div></section>')
+
+
 def loud_block(blocks):
     """Index of the one block on a lesson that carries the filled ink field.
 
@@ -139,10 +163,16 @@ def loud_block(blocks):
     they used to render with no filled field at all and read as the least printed
     pages on the site; there the criteria list, or failing that the first named
     paragraph, is what the student acts on. Exactly one per lesson, always.
+
+    A placeholder can never take the ink. Today's placeholders are all untitled and
+    so were never eligible, but a titled one would otherwise print "Not added yet"
+    as the loudest thing on the page.
     """
     for want in ("activity",), ("list",), ("prose",):
         for i, b in enumerate(blocks):
             if b["type"] in want and (want[0] != "prose" or b.get("title") or b.get("heading")):
+                if is_placeholder(b.get("text")):
+                    continue
                 return i
     return -1
 
@@ -154,12 +184,9 @@ def block_html(block, loud=False):
 
     if t == "listen":
         tracks = block["tracks"]
-        # The Canvas pages carry unfilled media slots written as "Something - video".
-        # They are placeholders, not repertoire, and must never render as content.
-        if all(x.rstrip().lower().endswith("- video") for x in tracks):
-            return ('<section class="blk panel quiet"><h3 class="panel-h">Listening</h3>'
-                    '<div class="panel-in"><p>Not added yet. The tracks for this lesson '
-                    'are still being chosen.</p></div></section>')
+        # Placeholders, not repertoire, and they must never render as content.
+        if all(is_placeholder(x) for x in tracks):
+            return unfilled_media("Listening", "tracks")
         rows = "".join(
             f'<li><span class="tick" aria-hidden="true"></span><span>{e(x)}</span></li>'
             for x in tracks
@@ -237,6 +264,11 @@ def block_html(block, loud=False):
 
     if t == "prose":
         title = block.get("title") or h
+        # Eight lessons carry their unfilled video slot as untitled prose rather than
+        # as a listen block, and printed it to the page as a sentence. Same slot, same
+        # honest notice, whichever shape it arrives in.
+        if is_placeholder(block.get("text")):
+            return unfilled_media("Video", "video")
         if not title:
             return f'<section class="blk"><p>{e(block["text"])}</p></section>'
         return (f'<section class="{cls}"><h3 class="panel-h">{e(title)}</h3>'
