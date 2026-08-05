@@ -402,12 +402,13 @@
             {
               "type": "prose",
               "title": "",
-              "text": "Three Australian songs that share the same progression - video"
+              "text": "Songs that share the same progression - video"
             },
             {
               "type": "table",
               "headers": [
                 "Progression",
+                "Hear it in",
                 "In C major",
                 "In G major",
                 "Sounds like"
@@ -415,24 +416,42 @@
               "rows": [
                 [
                   "I-V-vi-IV",
+                  "Horses - Daryl Braithwaite (chorus)",
                   "C - G - Am - F",
                   "G - D - Em - C",
                   "The pop progression. Hundreds of songs use it"
                 ],
                 [
                   "vi-IV-I-V",
+                  "Horses again, started on the minor chord",
                   "Am - F - C - G",
                   "Em - C - G - D",
                   "Same four chords, darker start"
                 ],
                 [
                   "I-IV-V",
+                  "Eastern Rosellas - Miles Phillips (chorus)",
                   "C - F - G",
                   "G - C - D",
                   "Rock and blues. Punchy and direct"
                 ],
                 [
+                  "I-V-IV",
+                  "Bad Moon Rising - Creedence Clearwater Revival",
+                  "C - G - F",
+                  "G - D - C",
+                  "Almost the same three chords, but it falls home instead of climbing"
+                ],
+                [
+                  "I-IV-vi-V",
+                  "Castle on the Hill - Ed Sheeran; Love Story - Taylor Swift (chorus)",
+                  "C - F - Am - G",
+                  "G - C - Em - D",
+                  "Lifts early, then leans on the V to send you round again"
+                ],
+                [
                   "ii-V-I",
+                  "Sunday Morning - Maroon 5",
                   "Dm - G - C",
                   "Am - D - G",
                   "Smoother, jazzier landing"
