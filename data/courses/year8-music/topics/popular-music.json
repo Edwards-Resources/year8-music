@@ -49,15 +49,16 @@
                   "embed": "v2AC41dglnM"
                 },
                 {
-                  "title": "Flume - Never Be Like You (feat. Kai)",
-                  "embed": "-KPnyf8vwXI"
+                  "title": "RÜFÜS DU SOL - Innerbloom",
+                  "embed": "Tx9zMFodNtA"
                 },
                 {
                   "title": "Baker Boy - Marryuna (feat. Yirrmal)",
                   "embed": "afQcYH2nwoM"
                 },
                 {
-                  "title": "Thelma Plum - Better in Blak"
+                  "title": "Miles Phillips - Eastern Rosellas",
+                  "embed": "9vJZi-x-sag"
                 },
                 {
                   "title": "Jessica Mauboy - Little Things",
@@ -79,9 +80,9 @@
                   "Distorted guitar riff, driving backbeat, live drum kit"
                 ],
                 [
-                  "Flume",
-                  "Electronic / EDM",
-                  "Programmed drums, heavy processing, synth textures"
+                  "RÜFÜS DU SOL",
+                  "Electronic / dance",
+                  "Long synth pads, a slow build, deep sub bass under a live-sounding kit"
                 ],
                 [
                   "Baker Boy",
@@ -89,9 +90,9 @@
                   "Rapping in Yolŋu Matha and English, brass hook, trap hi-hats"
                 ],
                 [
-                  "Thelma Plum",
-                  "Indie / pop",
-                  "Clean guitar, restrained drums, voice front and centre"
+                  "Miles Phillips",
+                  "Folk pop",
+                  "A seven-year-old's voice over a family band, recorded at home rather than in a studio"
                 ],
                 [
                   "Jessica Mauboy",
@@ -103,7 +104,7 @@
             {
               "type": "prose",
               "title": "",
-              "text": "Baker Boy, Thelma Plum and Jessica Mauboy are First Nations artists. Listen for how each one uses music to say something about identity."
+              "text": "Baker Boy and Jessica Mauboy are First Nations artists. Listen for how each one uses music to say something about identity."
             },
             {
               "type": "activity",
@@ -114,7 +115,7 @@
             {
               "type": "definition",
               "terms": [
-                "genre"
+                "Genre"
               ],
               "text": "A category of music that shares common features - for example rock, pop or hip hop. Two songs in the same genre usually use similar instruments, grooves and production choices."
             },
@@ -153,7 +154,7 @@
                   "embed": "tuK6n2Lkza0"
                 },
                 {
-                  "title": "Four-on-the-floor - RUFUS DU SOL, Innerbloom",
+                  "title": "Four-on-the-floor - RÜFÜS DU SOL, Innerbloom",
                   "embed": "Tx9zMFodNtA"
                 },
                 {
@@ -252,7 +253,7 @@
             {
               "type": "definition",
               "terms": [
-                "loop"
+                "Loop"
               ],
               "text": "A repeated musical phrase recorded and layered digitally. Most popular music is built from loops stacked on top of each other."
             },
@@ -382,7 +383,7 @@
             {
               "type": "definition",
               "terms": [
-                "texture"
+                "Texture"
               ],
               "text": "How many layers of sound are heard at once, and how they interact. A solo voice is a thin texture; a full band with backing vocals is a thick one."
             },
@@ -523,7 +524,7 @@
             {
               "type": "definition",
               "terms": [
-                "chord progression"
+                "Chord progression"
               ],
               "text": "A sequence of chords that provides the harmony of a song. The same progression can appear in completely different genres - what changes is the instruments, tempo and production around it."
             },
@@ -610,7 +611,7 @@
                   "embed": "tuK6n2Lkza0"
                 },
                 {
-                  "title": "EDM pads - RUFUS DU SOL, Innerbloom",
+                  "title": "EDM pads - RÜFÜS DU SOL, Innerbloom",
                   "embed": "Tx9zMFodNtA"
                 }
               ]
@@ -618,7 +619,7 @@
             {
               "type": "activity",
               "title": "Your task - Listening chart",
-              "text": "Listen to each excerpt and fill in the row.",
+              "text": "Listen to each excerpt and fill in the row. Type your answers straight into the chart.",
               "items": []
             },
             {
@@ -680,6 +681,83 @@
               "type": "media",
               "brief": "Recording more than one track and stacking them up",
               "embed": "9TmHfA8wlIk"
+            },
+            {
+              "type": "beatgrid",
+              "title": "What lined up looks like",
+              "rows": [
+                {
+                  "name": "Hi-hat",
+                  "hits": [
+                    "x",
+                    "x",
+                    "x",
+                    "x",
+                    "x",
+                    "x",
+                    "x",
+                    "x",
+                    "x",
+                    "x",
+                    "x",
+                    "x",
+                    "x",
+                    "x",
+                    "x",
+                    "x"
+                  ]
+                },
+                {
+                  "name": "Snare",
+                  "hits": [
+                    ".",
+                    "x",
+                    ".",
+                    "x",
+                    ".",
+                    "x",
+                    ".",
+                    "x",
+                    ".",
+                    "x",
+                    ".",
+                    "x",
+                    ".",
+                    "x",
+                    ".",
+                    "x"
+                  ]
+                },
+                {
+                  "name": "Kick",
+                  "hits": [
+                    "x",
+                    ".",
+                    "x",
+                    ".",
+                    "x",
+                    ".",
+                    "x",
+                    ".",
+                    "x",
+                    ".",
+                    "x",
+                    ".",
+                    "x",
+                    ".",
+                    "x",
+                    "."
+                  ]
+                }
+              ],
+              "chords": [
+                "C",
+                "G",
+                "Am",
+                "F"
+              ],
+              "alt": "Four bars of drum grid, one column per beat. The hi-hat plays on every beat, the kick on beats 1 and 3, the snare on beats 2 and 4. Above the drums, four chord blocks - C, G, A minor and F - each starting exactly on beat 1 of its own bar, so every chord change lands on a kick drum.",
+              "caption": "Every chord change starts on beat 1 of a bar, on the same beat as a kick drum. If your chord region starts anywhere else, the two layers will drift apart as the loop repeats."
             },
             {
               "type": "list",
@@ -780,26 +858,30 @@
           "number": 11,
           "title": "The Role of Bass",
           "assessed": false,
-          "intention": "We are learning how bass underpins harmony and rhythm.",
+          "intention": "We are learning how the bass works in a pop rock band.",
           "criteria": [
-            "I can describe how bass functions in different genres."
+            "I can describe the main characteristics of the bass in a pop rock song."
           ],
           "blocks": [
             {
               "type": "listen",
-              "heading": "Bass in three styles",
+              "heading": "Bass in four pop rock songs",
               "tracks": [
                 {
-                  "title": "Bass in rock - AC/DC, Thunderstruck",
-                  "embed": "v2AC41dglnM"
+                  "title": "Jet - Are You Gonna Be My Girl",
+                  "embed": "tuK6n2Lkza0"
                 },
                 {
-                  "title": "Bass in pop - Jessica Mauboy, Little Things",
-                  "embed": "XbAlPugythw"
+                  "title": "Tame Impala - The Less I Know The Better",
+                  "embed": "2SUwOgmvzK4"
                 },
                 {
-                  "title": "Bass in EDM - Flume, Never Be Like You",
-                  "embed": "-KPnyf8vwXI"
+                  "title": "Midnight Oil - Beds Are Burning",
+                  "embed": "ejorQVy3m8E"
+                },
+                {
+                  "title": "Silverchair - Israel's Son",
+                  "embed": "k2d6iwOSAfQ"
                 }
               ]
             },
@@ -810,33 +892,39 @@
             },
             {
               "type": "activity",
-              "title": "Your task - Listen for the bass",
-              "text": "For each genre, describe what the bass is doing. Identify its role in at least two of the three.",
+              "title": "Your task - What is the bass doing?",
+              "text": "Listen to each song and describe the bass. Fill in at least three of the four rows.",
               "items": []
             },
             {
               "type": "table",
               "headers": [
-                "Genre",
+                "Song",
                 "What kind of bass sound?",
                 "Busy or simple?",
-                "Does it follow the kick?"
+                "Does it follow the kick drum?"
               ],
               "rows": [
                 [
-                  "Rock",
+                  "Jet",
                   "",
                   "",
                   ""
                 ],
                 [
-                  "Pop",
+                  "Tame Impala",
                   "",
                   "",
                   ""
                 ],
                 [
-                  "EDM",
+                  "Midnight Oil",
+                  "",
+                  "",
+                  ""
+                ],
+                [
+                  "Silverchair",
                   "",
                   "",
                   ""
@@ -846,24 +934,24 @@
             {
               "type": "definition",
               "terms": [
-                "bass line"
+                "Bass line"
               ],
               "text": "The low notes that support the harmony and rhythm of a song. Usually the lowest part you can hear, and usually the one you feel more than you notice."
             },
             {
               "type": "support",
               "title": "Need a hand? Sentence starters",
-              "text": "The bass is the low sound that holds the song up. Finish these: “In rock, the bass …”    “In pop, the bass …”    “In EDM, the bass …” Useful words: deep, punchy, smooth, wobbly, steady, moving, simple, loud.",
+              "text": "The bass is the low sound that holds the song up. Finish these: “In Jet, the bass …”    “In Tame Impala, the bass …”    “In Midnight Oil, the bass …” Useful words: deep, punchy, smooth, steady, moving, simple, loud.",
               "items": []
             },
             {
               "type": "extension",
-              "text": "Compare bass technique across all three genres and explain how each one shapes the style. Consider: a fingered electric bass in rock, a synth sub in EDM, and how the choice of sound alone changes what the song communicates.",
+              "text": "All four are pop rock, so the differences are small and worth naming precisely. Compare how much the bass moves: one of these plays almost nothing but the root note of each chord, another has a bass line you could sing on its own. Explain what each choice does to the feel of the song.",
               "items": []
             },
             {
               "type": "exit",
-              "text": "In which genre is the bass most noticeable, and why do you think that is?"
+              "text": "Which of the four has the bass line you would most want to play, and what makes it good?"
             }
           ]
         },
@@ -946,18 +1034,26 @@
           "blocks": [
             {
               "type": "listen",
-              "heading": "Three kinds of hook",
+              "heading": "Five kinds of hook",
               "tracks": [
                 {
-                  "title": "Guitar riff - AC/DC, Thunderstruck",
-                  "embed": "v2AC41dglnM"
+                  "title": "Guitar riff - AC/DC, T.N.T.",
+                  "embed": "CiJeSSzu9Bo"
                 },
                 {
-                  "title": "Synth hook - Flume, Never Be Like You",
-                  "embed": "-KPnyf8vwXI"
+                  "title": "Vocal riff - The Easybeats, Friday On My Mind",
+                  "embed": "rOtnpb2EtQ8"
                 },
                 {
-                  "title": "Vocal hook - Gotye, Somebody That I Used To Know",
+                  "title": "String hook - The Veronicas, Untouched",
+                  "embed": "uKqriTRYInY"
+                },
+                {
+                  "title": "Flute riff - Men At Work, Down Under",
+                  "embed": "XfR9iY5y94s"
+                },
+                {
+                  "title": "Xylophone hook - Gotye, Somebody That I Used To Know",
                   "embed": "8UVNT4wvIGY"
                 }
               ]
@@ -965,7 +1061,7 @@
             {
               "type": "prose",
               "title": "What makes a hook stick?",
-              "text": "Usually it is short (two bars or less), repeated often, and simple enough to sing back after hearing it once. Complicated ideas are rarely memorable."
+              "text": "Usually it is short (two bars or less), repeated often, and simple enough to sing back after hearing it once. Complicated ideas are rarely memorable. Notice that these five are played on five different things - guitar, voice, strings, flute and xylophone. A hook is an idea, not an instrument."
             },
             {
               "type": "activity",
@@ -1001,9 +1097,16 @@
             {
               "type": "definition",
               "terms": [
+                "Riff"
+              ],
+              "text": "A repeated melodic or rhythmic pattern, often played on guitar, bass or synth. A riff usually sits underneath or between the vocals."
+            },
+            {
+              "type": "definition",
+              "terms": [
                 "Hook"
               ],
-              "text": "Riff - a repeated melodic or rhythmic pattern, often played on guitar, bass or synth. Hook - a short, catchy musical idea that makes a song memorable. A riff can be the hook, but a hook can also be a vocal line or even a rhythm."
+              "text": "A short, catchy musical idea that makes a song memorable. A riff can be the hook, but a hook can also be a vocal line, a string part or even a rhythm."
             },
             {
               "type": "support",
@@ -1160,8 +1263,8 @@
                   "embed": "uJ_1HMAGb4k"
                 },
                 {
-                  "title": "Thick - Jessica Mauboy, Little Things",
-                  "embed": "XbAlPugythw"
+                  "title": "Thick - Baker Boy, Marryuna (feat. Yirrmal)",
+                  "embed": "afQcYH2nwoM"
                 }
               ]
             },
@@ -1185,9 +1288,16 @@
             {
               "type": "definition",
               "terms": [
+                "Tone colour"
+              ],
+              "text": "Also called timbre. The unique sound quality of an instrument, voice or electronic effect. It is what makes a piano and a guitar sound different playing the same note."
+            },
+            {
+              "type": "definition",
+              "terms": [
                 "Dynamics"
               ],
-              "text": "Tone colour (timbre) - the unique sound quality of an instrument, voice or electronic effect. It is what makes a piano and a guitar sound different playing the same note. Dynamics - the volume of music, from soft to loud."
+              "text": "How loud or soft the music is, and how that changes across a song. Adding layers can make a section feel bigger without turning anything up."
             },
             {
               "type": "support",
@@ -1296,8 +1406,8 @@
           "blocks": [
             {
               "type": "media",
-              "brief": "Gotye, Somebody That I Used To Know - listen for where each section starts",
-              "embed": "8UVNT4wvIGY"
+              "brief": "Powderfinger, My Happiness - listen for where each section starts, and what drops out at the start of each verse",
+              "embed": "HM_eb0vVo0k"
             },
             {
               "type": "list",
@@ -1345,9 +1455,9 @@
             {
               "type": "definition",
               "terms": [
-                "Drop"
+                "Structure"
               ],
-              "text": "Structure - the arrangement of sections in a piece of music, for example verse, chorus, bridge. Drop - a point in EDM or pop where the music builds up and then changes suddenly for dramatic effect."
+              "text": "The arrangement of sections in a piece of music, and the order they come in. In most pop and rock songs that is some combination of intro, verse, chorus, bridge and outro."
             },
             {
               "type": "support",
@@ -1596,7 +1706,8 @@
                   "embed": "afQcYH2nwoM"
                 },
                 {
-                  "title": "Thelma Plum - Better in Blak"
+                  "title": "Miles Phillips - Eastern Rosellas",
+                  "embed": "9vJZi-x-sag"
                 },
                 {
                   "title": "Jessica Mauboy - Little Things",
@@ -1627,7 +1738,7 @@
                   ""
                 ],
                 [
-                  "Thelma Plum",
+                  "Miles Phillips",
                   ""
                 ],
                 [
@@ -1639,7 +1750,7 @@
             {
               "type": "prose",
               "title": "",
-              "text": "Baker Boy raps in Yolŋu Matha as well as English. That is a deliberate choice about identity, made in a genre that came from somewhere else entirely."
+              "text": "Baker Boy raps in Yolŋu Matha as well as English. That is a deliberate choice about identity, made in a genre that came from somewhere else entirely. Miles Phillips wrote Eastern Rosellas when he was seven, about birds at his grandparents' place, recorded it at home with his dad on drums, and went in at number five on the ARIA chart - the youngest Australian ever to chart."
             },
             {
               "type": "support",
@@ -1676,15 +1787,15 @@
                   "embed": "v2AC41dglnM"
                 },
                 {
-                  "title": "Artist B - Flume, Never Be Like You",
-                  "embed": "-KPnyf8vwXI"
+                  "title": "Artist B - RÜFÜS DU SOL, Innerbloom",
+                  "embed": "Tx9zMFodNtA"
                 }
               ]
             },
             {
               "type": "activity",
               "title": "Your task",
-              "text": "Compare two Australian artists from different genres - AC/DC against Flume, for example. Find two things they share and two ways they differ.",
+              "text": "Compare two Australian artists from different genres - AC/DC against RÜFÜS DU SOL, for example. Find two things they share and two ways they differ.",
               "items": []
             },
             {
@@ -1725,7 +1836,7 @@
             },
             {
               "type": "extension",
-              "text": "One of these artists recorded in a studio with a band; the other built tracks on a computer. Explain how technology changed what is possible in each case, and what it changed about performing live.",
+              "text": "One of these bands plays rock instruments straight to tape; the other builds tracks from synths and programmed parts and then has to work out how to play them live. Explain how the technology shapes what each band can do, on the record and on stage.",
               "items": []
             },
             {

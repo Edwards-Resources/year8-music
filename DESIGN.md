@@ -433,6 +433,8 @@ One ink per lesson, three weights of treatment, and the loud one is allocated by
 
 The outcomes panel is the single documented override: it sets `--ink: var(--stock)`, so its stamp bar is bone rather than a spot ink. It is reference material, not part of the tour.
 
+**A definition block naming one word puts that word in its own stamp bar** (`Key word: Tone colour`) and drops the chip, which would otherwise print the same word twice in a row. Several related words keep the plural `Key words` label and the chips. This exists because the Canvas extractor folded unrelated elements into single panels - timbre with dynamics, structure with drop, riff with hook - and a student reading one could not tell where the first definition stopped. One word, one box.
+
 ### Video well and clip grid
 Added 6 August 2026, when the site got playable media for the first time.
 - **`.video`**: a 16:9 well, 3px Print Black keyline, square, no radius, on a Print Black ground. This is the one black field that is not a print field: it is the letterbox behind the player, not a reading surface, so it does not breach the light-reading-surface rule. Capped at `46rem` on its own, because a 16:9 player run to the full column on a projector pushes the rest of the lesson off the board.
@@ -449,6 +451,12 @@ A 4px bordered card filled solid in pink with black display type at 2rem and a b
 
 ### Table
 A named, focusable scroll region: `role="region"`, `tabindex="0"`, and an `aria-label` built from the block heading. The table keeps a `34rem` min-width, so on a phone it scrolls inside its 3px-bordered wrapper instead of squashing. Column heads are the display face reversed out of Print Black; cells alternate lifted bone and page bone. Above 620px the region simply scrolls; below it, a Soft Grey hint line above the wrapper says so in words rather than relying on a fading edge. The wrapper takes the same 3px pink focus outline as every other focusable thing.
+
+### Table, worksheet variant
+A table that arrives from `data/` with any empty cell is a worksheet, and its blanks become text fields rather than dead space. The build decides this from the data alone: no flag, no schema change, and a fully-filled reference table (Lesson 1's listening survey) is untouched. The field is a keylined box on the same stock, never a browser-default control: 2px Print Black rule, no radius, no inner shadow, body face at Table body size, `2.75rem` min height so it clears a touch target, and the same 3px pink focus outline as everything else. It picks up the row's zebra stripe so the alternation still reads. Under the wrapper, a Soft Grey line states that answers stay on the device. Answers persist in `localStorage` keyed to the page path plus the block index plus the cell, so two tables in one lesson cannot overwrite each other, and writes are coalesced on a 250ms timer because typing fires per keystroke. Each field carries an `aria-label` built from its row's first filled cell and its column head, so it is identifiable out of context.
+
+### Beat grid
+An inline SVG for showing a relationship in time that prose cannot carry. Four bars, one column per beat, drum rows below and a chord band above, with bar lines running the full height through both because the alignment between them is the whole point. Two colours only: Print Black rules and hits on lifted bone, chord blocks in the leg ink. Type inside the drawing is sized in viewBox user units on the elements themselves and is deliberately **not** on either page ramp, because it is geometry that scales with the diagram. The grid is described in data (rows of hits, a chord per bar), so another lesson can draw a different groove without touching the renderer. It scrolls in its own named region with the same worded hint as a table, and its caption is Print Black body copy, not Soft Grey, because the caption is the teaching point rather than a UI hint.
 
 ### Success Criteria
 A loud panel containing checkbox rows divided by hairlines, 22px native checkboxes with `accent-color` set to Print Black. Ticks persist in `localStorage` keyed to the page path and never leave the device, which is stated on the panel in Caption. Below 900px it takes the quiet treatment along with the rest of the sidebar.

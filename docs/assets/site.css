@@ -241,6 +241,43 @@ td{border-bottom:1px solid var(--rule);padding:.6rem .7rem;vertical-align:top;
    background:var(--stock-hi)}
 tbody tr:nth-child(even) td{background:var(--stock)}
 
+/* A blank cell on a worksheet table is a field, not a gap. The row gets the air a
+   handwritten answer would need, and the field reads as a keylined box on the same
+   bone stock rather than as a foreign form control: no radius, no inner shadow,
+   Print Black rule, body face at reading size so it is legible off the board.
+   Only the fillable table takes the taller row, so a reference table is unchanged. */
+.is-fill td{padding:.5rem .55rem}
+.fillcell{padding:.4rem .5rem}
+.fill{display:block;width:100%;min-width:8rem;box-sizing:border-box;
+  font-family:var(--body);font-size:.95rem;color:var(--print);
+  background:var(--stock);border:2px solid var(--print);border-radius:0;
+  padding:.5rem .55rem;min-height:2.75rem;-webkit-appearance:none;appearance:none}
+.fill:hover{background:var(--stock-hi)}
+.fill:focus-visible{outline:3px solid var(--pink);outline-offset:2px}
+tbody tr:nth-child(even) .fill{background:var(--stock-hi)}
+.fillnote{font-size:.86rem;color:var(--soft);margin-top:.5rem;max-width:60ch}
+
+/* The diagram is one drawing, so it scrolls in its own named region the way the
+   tables do rather than shrinking to unreadable on a phone. */
+.bgwrap{overflow-x:auto}
+.bgwrap:focus-visible{outline:3px solid var(--pink);outline-offset:2px}
+.beatgrid{display:block;width:100%;min-width:34rem;height:auto}
+.bg-cell{fill:var(--stock-hi);stroke:var(--rule);stroke-width:1}
+.bg-hit{fill:var(--print)}
+.bg-chord{fill:var(--ink);stroke:var(--print);stroke-width:2}
+.bg-bar{stroke:var(--print);stroke-width:3}
+/* Type inside the drawing is sized in viewBox user units on the elements
+   themselves, not here: it is geometry that scales with the diagram, so it is not
+   a step on either page ramp and must not be read as one. */
+.bg-lab{font-family:var(--display);fill:var(--print);
+  letter-spacing:.08em;text-transform:uppercase}
+.bg-ch{font-family:var(--display);fill:var(--print);text-anchor:middle}
+.bg-beat{font-family:var(--display);fill:var(--print);
+  text-anchor:middle;letter-spacing:.1em;text-transform:uppercase}
+/* The caption is the teaching point, not a UI hint, so it is Print Black body copy
+   at reading size. Soft Grey is for the swipe hint and the storage note only. */
+.bg-cap{margin-top:.7rem;max-width:60ch}
+
 .crit{list-style:none;margin:0;padding:0}
 .crit li{display:flex;gap:.65rem;align-items:flex-start;padding:.45rem 0}
 .crit li+li{border-top:1px solid var(--rule)}

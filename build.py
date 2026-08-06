@@ -197,7 +197,76 @@ def loud_block(blocks):
     return -1
 
 
-def block_html(block, loud=False):
+def beatgrid_html(block):
+    """Four bars of drum grid with the chord blocks drawn above it.
+
+    A student who has just watched a multitrack tutorial can record two layers and
+    still have no picture of what "line them up" means. Words do not carry it: the
+    thing being taught is a spatial relationship, so it is drawn. Print Black rules
+    on bone with the leg ink for the chord blocks, which is the same two-colour
+    budget every other object on the page works inside.
+
+    The grid is described in data - rows of sixteen hits, and a chord per bar - so
+    a later lesson can draw a different groove without touching this function.
+    """
+    rows = block["rows"]
+    chords = block["chords"]
+    bars, per_bar = 4, 4
+    steps = bars * per_bar
+    lab_w, cell, row_h = 108, 44, 40          # user units, viewBox space
+    top = 66                                   # chord band above the drum rows
+    w = lab_w + steps * cell
+    h = top + len(rows) * row_h + 34
+
+    p = []
+    # The chord band. One block per bar, each landing exactly on beat 1, which is
+    # the whole claim the diagram is making.
+    p.append('<text x="0" y="16" class="bg-lab" font-size="15">Chords</text>')
+    for i, ch in enumerate(chords):
+        x = lab_w + i * per_bar * cell
+        p.append(f'<rect x="{x + 2}" y="24" width="{per_bar * cell - 4}" height="34" '
+                 'class="bg-chord"/>')
+        p.append(f'<text x="{x + per_bar * cell / 2}" y="47" class="bg-ch" '
+                 f'font-size="20">{e(ch)}</text>')
+
+    # The drum rows. A filled square is a hit, so the pattern reads at board size.
+    for r, row in enumerate(rows):
+        y = top + r * row_h
+        p.append(f'<text x="0" y="{y + 26}" class="bg-lab" font-size="15">'
+                 f'{e(row["name"])}</text>')
+        for s in range(steps):
+            x = lab_w + s * cell
+            p.append(f'<rect x="{x}" y="{y + 4}" width="{cell}" height="{row_h - 8}" '
+                     'class="bg-cell"/>')
+            if row["hits"][s] == "x":
+                p.append(f'<rect x="{x + 8}" y="{y + 12}" width="{cell - 16}" '
+                         f'height="{row_h - 24}" class="bg-hit"/>')
+
+    # Bar lines run the full height, through both the chord band and the drums,
+    # because the alignment between them is the point being made.
+    bottom = top + len(rows) * row_h
+    for b in range(bars + 1):
+        x = lab_w + b * per_bar * cell
+        p.append(f'<line x1="{x}" y1="20" x2="{x}" y2="{bottom}" class="bg-bar"/>')
+    for b in range(bars):
+        x = lab_w + b * per_bar * cell + per_bar * cell / 2
+        p.append(f'<text x="{x}" y="{bottom + 24}" class="bg-beat" font-size="13">'
+                 f'Bar {b + 1}</text>')
+
+    svg = (f'<svg viewBox="0 0 {w} {h}" class="beatgrid" role="img" '
+           f'aria-label="{e(block["alt"])}">{"".join(p)}</svg>')
+    cap = f'<p class="bg-cap">{e(block["caption"])}</p>' if block.get("caption") else ""
+    # Same rule as the tables: a region that clips gets a name, keyboard focus, and
+    # a hint in words at the width where it actually clips.
+    return ('<section class="blk panel quiet"><h3 class="panel-h">'
+            f'{e(block.get("title") or "Lining the layers up")}</h3>'
+            '<div class="panel-in">'
+            '<p class="tablehint">Swipe the diagram sideways to see all four bars.</p>'
+            f'<div class="bgwrap" role="region" tabindex="0" '
+            f'aria-label="{e(block["alt"])}">{svg}</div>{cap}</div></section>')
+
+
+def block_html(block, loud=False, idx=0):
     t = block["type"]
     h = block.get("heading")
     head = f'<h3 class="blk-h">{e(h)}</h3>' if h else ""
@@ -232,19 +301,43 @@ def block_html(block, loud=False):
                 f'<div class="panel-in"><ul class="tracks">{rows}</ul></div></section>')
 
     if t == "table":
+        # A worksheet table is one that arrives with empty cells: the data says what
+        # the columns are and leaves the answers blank. Those blanks are the whole
+        # point of the block, so they become fields a student can type into rather
+        # than dead space they have to copy into a book. A reference table (every
+        # cell filled, as in Lesson 1's survey) is left exactly as it was.
+        fillable = any(not str(c).strip() for r in block["rows"] for c in r)
         th = "".join(f"<th>{e(c)}</th>" for c in block["headers"])
-        rows = "".join("<tr>" + "".join(f"<td>{e(c)}</td>" for c in r) + "</tr>"
-                       for r in block["rows"])
+
+        def cell(c, ri, ci):
+            if not (fillable and not str(c).strip()):
+                return f"<td>{e(c)}</td>"
+            # aria-label reads the row's first filled cell and the column head, so
+            # the field is identifiable out of context: "Piano ballad, Mood".
+            row_name = next((str(x).strip() for x in block["rows"][ri] if str(x).strip()), "")
+            col = block["headers"][ci] if ci < len(block["headers"]) else ""
+            label = ", ".join(x for x in (row_name, col) if x) or "Answer"
+            return (f'<td class="fillcell"><input type="text" class="fill" '
+                    f'data-cell="{idx}-{ri}-{ci}" aria-label="{e(label)}"></td>')
+
+        rows = "".join(
+            "<tr>" + "".join(cell(c, ri, ci) for ci, c in enumerate(r)) + "</tr>"
+            for ri, r in enumerate(block["rows"])
+        )
         # The table keeps a min-width, so on a phone it scrolls inside this wrapper.
         # A scroll region needs a name and keyboard focus, or it is unreachable
         # without a pointer, and the hint says so in words rather than a fading edge.
         label = e(f"{h}, table" if h else "Table")
         # The hint goes above the wrapper, so it is read before the clip, not after.
+        note = ('<p class="fillnote">Type straight into the boxes. Your answers stay '
+                'on this device and are still here if you close the page.</p>'
+                if fillable else "")
         return (f'<section class="blk">{head}'
                 '<p class="tablehint">Swipe the table sideways to see the rest.</p>'
-                f'<div class="tablewrap" role="region" tabindex="0" aria-label="{label}">'
+                f'<div class="tablewrap{" is-fill" if fillable else ""}" role="region" '
+                f'tabindex="0" aria-label="{label}">'
                 f"<table><thead><tr>{th}</tr></thead><tbody>{rows}</tbody></table>"
-                "</div></section>")
+                f"</div>{note}</section>")
 
     # One ink per lesson, three weights. The leg's spot ink comes from the article,
     # so hue never encodes block type; the weight of the treatment does. Loud is the
@@ -263,7 +356,17 @@ def block_html(block, loud=False):
         return panel(block.get("title") or "Your task")
 
     if t == "definition":
-        terms = "".join(f'<span class="term">{e(x)}</span>' for x in block.get("terms") or [])
+        # One box per word. The extractor used to fold two unrelated elements into
+        # a single Key words panel - timbre with dynamics, structure with drop - and
+        # a student reading it could not tell where one definition stopped. A block
+        # carrying exactly one term names that term in its own heading; a genuine
+        # group of related words keeps the plural label.
+        # With one term the heading carries the word, so the chip would print it
+        # twice in a row; the chips stay where they are doing work, naming several.
+        names = block.get("terms") or []
+        if len(names) == 1:
+            return panel(f"Key word: {names[0]}")
+        terms = "".join(f'<span class="term">{e(x)}</span>' for x in names)
         return panel("Key words", f'<p class="terms">{terms}</p>' if terms else "")
 
     if t == "support":
@@ -306,6 +409,9 @@ def block_html(block, loud=False):
             + player_html(block["embed"], block.get("brief") or "Video for this lesson")
             + f'{brief}</div></section>'
         )
+
+    if t == "beatgrid":
+        return beatgrid_html(block)
 
     if t == "prose":
         title = block.get("title") or h
@@ -412,7 +518,10 @@ def build_lesson(site, course, topic, lesson, prev_l, next_l):
         for i, c in enumerate(lesson["criteria"])
     )
     li = loud_block(lesson["blocks"])
-    blocks = "".join(block_html(b, loud=(i == li))
+    # The block index goes through so a fillable table's saved answers are keyed to
+    # its position in the lesson, not just to the page. Two tables on one lesson
+    # would otherwise share one set of stored values.
+    blocks = "".join(block_html(b, loud=(i == li), idx=i)
                      for i, b in enumerate(lesson["blocks"]))
     flag = ('<p class="assessed-flag">This lesson is an assessment task</p>'
             if lesson.get("assessed") else "")
