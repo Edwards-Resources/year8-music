@@ -20,6 +20,10 @@ Run this on any new track **before** the oEmbed check, not after. oEmbed proves 
 
 Read **DESIGN.md before touching any CSS.** The rules in it were earned through a finish review, not invented.
 
+## First, a five-minute job
+
+**Popular Music Lesson 13 needs Matthew's ear on one track.** He asked for The Easybeats' "Friday On My Mind" as the vocal-riff example, for a "na na na na" section. No such section could be located - the famous hook in that song is the guitar riff - so it went in as asked and was flagged rather than swapped or quietly left wrong. If he names a different song, swap the track and its `Vocal riff - ` title prefix in `popular-music.json` Lesson 13 and rebuild. Nothing else depends on it.
+
 ## The next task
 
 **Build Term 1 (Piano)**, then Term 2 (Guitar), into the existing system, so the site is complete for the 2027 Year 8 intake.
