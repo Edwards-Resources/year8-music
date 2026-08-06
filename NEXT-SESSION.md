@@ -20,6 +20,23 @@ Run this on any new track **before** the oEmbed check, not after. oEmbed proves 
 
 Read **DESIGN.md before touching any CSS.** The rules in it were earned through a finish review, not invented.
 
+## Deployed, and how it nearly wasn't
+
+The 6 August revisions are **live and verified against the live URL** as at 7 August 2026, 07:54 AEST. Flume and Thelma Plum return zero hits across all 25 lesson pages.
+
+Getting there took eleven hours, for a reason worth not repeating. Five commits went out across four pushes in about ten minutes. Each push triggers its own Pages deployment, they collided (`Deployment request failed... due to in progress deployment`), and retrying with `gh run rerun` wedged run 31102698316 in a state GitHub could not clear: it reported `queued` while force-cancel returned `409 Cannot cancel a workflow re-run that has not yet queued` and plain cancel claimed it was already completed. That run held the deployment lock, so a fresh build request and a clean push each sat through the 10-minute timeout and aborted.
+
+**What actually cleared it:** toggling the Pages publishing source in the web UI - Settings, Pages, Build and deployment, folder `/docs` to `/ (root)`, Save, then straight back to `/docs`, Save. That fires new deployments outside the jammed queue. It has to be done in the UI; the equivalent `gh api --method PUT .../pages` call is blocked as a repo-settings write. Set it back to `/docs` or the site 404s, since there is no `index.html` at the repo root.
+
+**Two rules this earned:**
+
+- **Verify the deployment, not the push.** A green `git push` proves the code reached GitHub and nothing else. The only honest check is fetching the live URL and looking for something that exists only in the new build:
+  ```bash
+  curl -s "https://edwards-resources.github.io/year8-music/year8-music/popular-music/lesson-11/" | grep -c 'class="fill"'
+  ```
+  This was reported to Matthew as live when it was not, and he found it by opening the page.
+- **Batch handoff edits into one commit.** One push, one deployment, no collision. Committing each documentation tweak separately is free on an ordinary repo and is not free on a Pages repo.
+
 ## First, a five-minute job
 
 **Popular Music Lesson 13 needs Matthew's ear on one track.** He asked for The Easybeats' "Friday On My Mind" as the vocal-riff example, for a "na na na na" section. No such section could be located - the famous hook in that song is the guitar riff - so it went in as asked and was flagged rather than swapped or quietly left wrong. If he names a different song, swap the track and its `Vocal riff - ` title prefix in `popular-music.json` Lesson 13 and rebuild. Nothing else depends on it.
@@ -79,4 +96,4 @@ Step up to **Opus, medium-high** only if the visual world needs to change, or fo
 b46e5f5 Popular Music: typeable tables, a beat grid, and safer repertoire
 ```
 
-Pushed to `origin/main` on 6 August 2026, so the revisions - including the Flume removal - are live.
+Pushed to `origin/main`, and deployed and verified live on 7 August 2026 at 07:54 AEST.
