@@ -75,4 +75,4 @@ Step up to **Opus, medium-high** only if the visual world needs to change, or fo
 b46e5f5 Popular Music: typeable tables, a beat grid, and safer repertoire
 ```
 
-**Not pushed.** `origin/main` is still on `233b7ef Build Term 4, Film Soundtrack`, so the live site does not yet have the revisions - including the Flume removal. Ask Matthew before pushing.
+Pushed to `origin/main` on 6 August 2026, so the revisions - including the Flume removal - are live.
