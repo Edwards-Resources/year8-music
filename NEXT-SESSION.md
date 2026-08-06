@@ -72,7 +72,7 @@ Step up to **Opus, medium-high** only if the visual world needs to change, or fo
 ## Last commit
 
 ```
-233b7ef Build Term 4, Film Soundtrack
+b46e5f5 Popular Music: typeable tables, a beat grid, and safer repertoire
 ```
 
-Pushed to `origin/main`.
+**Not pushed.** `origin/main` is still on `233b7ef Build Term 4, Film Soundtrack`, so the live site does not yet have the revisions - including the Flume removal. Ask Matthew before pushing.
