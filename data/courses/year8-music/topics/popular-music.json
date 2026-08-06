@@ -44,11 +44,25 @@
               "type": "listen",
               "heading": "Listening survey - five Australian artists",
               "tracks": [
-                "AC/DC - Thunderstruck",
-                "Flume - Never Be Like You",
-                "Baker Boy - Marryuna",
-                "Thelma Plum - Better in Blak",
-                "Jessica Mauboy - Little Things"
+                {
+                  "title": "AC/DC - Thunderstruck",
+                  "embed": "v2AC41dglnM"
+                },
+                {
+                  "title": "Flume - Never Be Like You (feat. Kai)",
+                  "embed": "-KPnyf8vwXI"
+                },
+                {
+                  "title": "Baker Boy - Marryuna (feat. Yirrmal)",
+                  "embed": "afQcYH2nwoM"
+                },
+                {
+                  "title": "Thelma Plum - Better in Blak"
+                },
+                {
+                  "title": "Jessica Mauboy - Little Things",
+                  "embed": "XbAlPugythw"
+                }
               ]
             },
             {
