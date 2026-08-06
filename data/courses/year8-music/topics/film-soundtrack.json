@@ -1,0 +1,1651 @@
+{
+  "id": "film-soundtrack",
+  "name": "Film Soundtrack",
+  "subtitle": "Scoring the Scene",
+  "term": "Term 4",
+  "blurb": "This term you score picture instead of a song. You'll investigate how music, dialogue and sound effects work together in film and games, and finish by re-scoring a muted film scene in a small group.",
+  "question": "How does music shape the way we experience a story on screen?",
+  "outcomes": [
+    [
+      "MU4-PER-01",
+      "uses performance skills to demonstrate understanding of the elements of music and communicate musical ideas"
+    ],
+    [
+      "MU4-COM-01",
+      "improvises, arranges or composes using the elements of music to create musical ideas"
+    ],
+    [
+      "MU4-LIS-01",
+      "uses listening skills to describe music in relation to stylistic, cultural, historical or social contexts and the elements of music"
+    ]
+  ],
+  "assessment": {
+    "name": "Film Soundtrack",
+    "when": "Due Week 7",
+    "detail": "Working in a small group, re-score a muted film scene with dialogue, foley and original underscoring."
+  },
+  "sections": [
+    {
+      "letter": "A",
+      "name": "Sound and Story",
+      "from": 1,
+      "to": 5,
+      "lessons": [
+        {
+          "number": 1,
+          "title": "The Sound of Story",
+          "assessed": false,
+          "intention": "We are learning to identify how music and sound work together in film and games.",
+          "criteria": [
+            "I can classify a sound in a scene as diegetic, non-diegetic or foley."
+          ],
+          "blocks": [
+            {
+              "type": "listen",
+              "heading": "Two ways in",
+              "tracks": [
+                {
+                  "title": "Harry Potter and the Deathly Hallows - Official Trailer",
+                  "embed": "0Q3O8rauQx0"
+                },
+                {
+                  "title": "Inception - Digital Trailer",
+                  "embed": "Qwe6qXFTdgc"
+                }
+              ]
+            },
+            {
+              "type": "table",
+              "headers": [
+                "Sound category",
+                "What it means",
+                "Example"
+              ],
+              "rows": [
+                [
+                  "Diegetic",
+                  "A sound the characters in the story can hear too",
+                  "A radio playing in the room, a band on stage"
+                ],
+                [
+                  "Non-diegetic",
+                  "Music or sound added for the audience only",
+                  "The orchestral score swelling under a chase"
+                ],
+                [
+                  "Foley",
+                  "Everyday sound effects recreated and added afterwards",
+                  "Footsteps, doors, wind, rustling paper"
+                ]
+              ]
+            },
+            {
+              "type": "prose",
+              "title": "Same toolkit, new job.",
+              "text": "Term 3 you built a track from the elements of music. This term you use the same skills - rhythm, harmony, texture, dynamics - to serve a picture instead of a song. Nothing new to learn, a new job for what you already know."
+            },
+            {
+              "type": "activity",
+              "title": "Your task",
+              "text": "Watch the trailer excerpts again. Log three sounds you hear and classify each one as diegetic, non-diegetic or foley.",
+              "items": []
+            },
+            {
+              "type": "definition",
+              "terms": [
+                "Diegetic sound",
+                "Non-diegetic sound",
+                "Foley"
+              ],
+              "text": "Diegetic sound - something the characters in the story could hear too. Non-diegetic sound - music or sound added for the audience, that the characters cannot hear. Foley - everyday sound effects recreated and layered onto a scene afterwards."
+            },
+            {
+              "type": "support",
+              "title": "Need a hand? Ask one question",
+              "text": "For any sound you're not sure about, ask: could a character in the story actually hear this? Yes means diegetic. No means non-diegetic - unless it's a sound effect like footsteps or a door, which is foley.",
+              "items": []
+            },
+            {
+              "type": "extension",
+              "text": "Find a leitmotif - a short musical idea tied to one character or place - that returns more than once in a film you know well. Explain what it represents and how you can tell.",
+              "items": []
+            },
+            {
+              "type": "exit",
+              "text": "Name one sound from today that only the audience could hear, not the characters."
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "title": "Music and Emotion",
+          "assessed": false,
+          "intention": "We are learning how music shapes the emotions an audience feels.",
+          "criteria": [
+            "I can describe how a piece of music changes how a scene feels."
+          ],
+          "blocks": [
+            {
+              "type": "listen",
+              "heading": "Three moods, three scores",
+              "tracks": [
+                {
+                  "title": "Main Theme | From the Soundtrack to \"Jaws\" by John Williams",
+                  "embed": "b-ot470Cmjk"
+                },
+                {
+                  "title": "Michael Giacchino - Married Life (From \"Up\")",
+                  "embed": "S1uWHjhluTI"
+                },
+                {
+                  "title": "Theme From Jurassic Park",
+                  "embed": "lDlU08RU7Tk"
+                }
+              ]
+            },
+            {
+              "type": "activity",
+              "title": "Your task - Emotion wheel",
+              "text": "For each excerpt, name the emotion it aims for and point to one musical choice - tempo, instrument, dynamics - that creates it.",
+              "items": []
+            },
+            {
+              "type": "table",
+              "headers": [
+                "Score",
+                "Emotion",
+                "What creates it?"
+              ],
+              "rows": [
+                [
+                  "Jaws",
+                  "",
+                  ""
+                ],
+                [
+                  "Married Life",
+                  "",
+                  ""
+                ],
+                [
+                  "Jurassic Park",
+                  "",
+                  ""
+                ]
+              ]
+            },
+            {
+              "type": "definition",
+              "terms": [
+                "Underscoring"
+              ],
+              "text": "Background music written to support the action, mood or dialogue of a scene, without the characters hearing it."
+            },
+            {
+              "type": "support",
+              "title": "Need a hand? Word bank",
+              "text": "Use these words: tense, playful, sweeping, gentle, ominous, hopeful, urgent, tender. Sentence starter: “The music feels ... because the ... makes it sound that way.”",
+              "items": []
+            },
+            {
+              "type": "extension",
+              "text": "Find another recording of one of today's themes - a different orchestra, a solo piano arrangement, a cover. Does the emotion survive the change, or does it need the original instrumentation?",
+              "items": []
+            },
+            {
+              "type": "exit",
+              "text": "Which of today's three scores changed how you felt the fastest, and why?"
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "title": "Foley: Building Sound by Hand",
+          "assessed": false,
+          "intention": "We are learning how foley artists create realistic sound effects.",
+          "criteria": [
+            "I can use classroom objects to recreate a realistic sound effect."
+          ],
+          "blocks": [
+            {
+              "type": "list",
+              "title": "Build your foley kit",
+              "items": [
+                "Choose two classroom objects and a sound you think they could make together.",
+                "Test it near a phone or iPad microphone, close and quiet.",
+                "Record it in GarageBand using the Audio Recorder.",
+                "Listen back. Does it sound like the real thing, or like an object being hit?",
+                "Try again with a different object, or closer to the mic, until it convinces you.",
+                "Save the file with a clear name - what it's meant to be, not what it actually is."
+              ],
+              "text": ""
+            },
+            {
+              "type": "prose",
+              "title": "Why it still matters",
+              "text": "Even in a world of digital sound libraries, foley is usually recorded by a person performing to picture, because a real performance moves and breathes in time with the image in a way a library file never quite does."
+            },
+            {
+              "type": "activity",
+              "title": "Your task - Foley match",
+              "text": "Close your eyes while a partner performs a foley sound. Guess the real object before they tell you.",
+              "items": []
+            },
+            {
+              "type": "definition",
+              "terms": [
+                "Foley"
+              ],
+              "text": "Everyday sound effects - footsteps, doors, wind, crashes - created and added to a film or game to enhance realism. Named after Jack Foley, who pioneered the technique."
+            },
+            {
+              "type": "support",
+              "title": "Need a hand? Start with one sound",
+              "text": "Footsteps are the easiest place to start. Try shoes on different surfaces - carpet, tile, an empty box for a wooden floor - and walk in place with your hands, tapping the surface in rhythm.",
+              "items": []
+            },
+            {
+              "type": "extension",
+              "text": "Layer two or three foley sounds to build one complex effect - for example footsteps, a creaking door and distant wind together for a single haunted-house moment.",
+              "items": []
+            },
+            {
+              "type": "exit",
+              "text": "What everyday object surprised you as a sound effect today?"
+            }
+          ]
+        },
+        {
+          "number": 4,
+          "title": "Music as a Story Starter",
+          "assessed": false,
+          "intention": "We are learning to use music as a stimulus for creative storytelling.",
+          "criteria": [
+            "I can describe a scene that fits the mood of a piece of music."
+          ],
+          "blocks": [
+            {
+              "type": "listen",
+              "heading": "Two orchestral worlds",
+              "tracks": [
+                {
+                  "title": "Holst: The Planets - Mars, the Bringer of War // Danish National Symphony Orchestra (LIVE)",
+                  "embed": "xZfIUz1S97U"
+                },
+                {
+                  "title": "Mussorgsky: \"Night on Bald Mountain\" | The Orchestra Now",
+                  "embed": "QhL4kHh6D_I"
+                }
+              ]
+            },
+            {
+              "type": "activity",
+              "title": "Your task - Imagine the scene",
+              "text": "Listen without any picture. Imagine a film or game scene that could use this music. Write two or three sentences describing what's happening.",
+              "items": []
+            },
+            {
+              "type": "table",
+              "headers": [
+                "Question",
+                "Your answer"
+              ],
+              "rows": [
+                [
+                  "What's happening on screen?",
+                  ""
+                ],
+                [
+                  "Who is the main character, and what do they want?",
+                  ""
+                ],
+                [
+                  "What's the mood?",
+                  ""
+                ]
+              ]
+            },
+            {
+              "type": "definition",
+              "terms": [
+                "Motif"
+              ],
+              "text": "A short musical idea or pattern that is repeated or developed. A motif can grow into a leitmotif once it's tied to one character or place."
+            },
+            {
+              "type": "support",
+              "title": "Need a hand? Sentence starters",
+              "text": "“The music makes me imagine...” “It feels like the moment when...” “I can picture a character who...”",
+              "items": []
+            },
+            {
+              "type": "extension",
+              "text": "Write an extended scene treatment - a short shot list plus notes on where the music enters, builds and cuts out.",
+              "items": []
+            },
+            {
+              "type": "exit",
+              "text": "What would happen next in your scene?"
+            }
+          ]
+        },
+        {
+          "number": 5,
+          "title": "Spotting: Where Does the Music Go?",
+          "assessed": false,
+          "intention": "We are learning to plan where music and sound belong in a scene.",
+          "criteria": [
+            "I can suggest appropriate moments for music and effects in a muted scene."
+          ],
+          "blocks": [
+            {
+              "type": "prose",
+              "title": "What is spotting?",
+              "text": "Spotting is the planning stage of film scoring, where a director and composer watch a scene together and decide exactly where music starts, where it stops, and where silence does the work instead. Every soundtrack starts here, before a single note is written."
+            },
+            {
+              "type": "activity",
+              "title": "Your task - Spot the scene",
+              "text": "Watch a muted clip your teacher plays. Mark the moments where you would add music, add an effect, or leave it silent.",
+              "items": []
+            },
+            {
+              "type": "table",
+              "headers": [
+                "Moment",
+                "Music, effect or silence?",
+                "Why"
+              ],
+              "rows": [
+                [
+                  "",
+                  "",
+                  ""
+                ],
+                [
+                  "",
+                  "",
+                  ""
+                ],
+                [
+                  "",
+                  "",
+                  ""
+                ]
+              ]
+            },
+            {
+              "type": "definition",
+              "terms": [
+                "Cue"
+              ],
+              "text": "A specific piece of music written for a particular moment in a film or game, decided during spotting and then composed to fit exactly."
+            },
+            {
+              "type": "support",
+              "title": "Need a hand? Just mark three spots",
+              "text": "Pick the beginning, the most dramatic moment, and the ending. Decide music, effect or silence for each of those three before trying the whole scene.",
+              "items": []
+            },
+            {
+              "type": "extension",
+              "text": "Justify every choice using the proper terms - cue, leitmotif, dynamics, texture - rather than just “it felt right here.”",
+              "items": []
+            },
+            {
+              "type": "exit",
+              "text": "Name one moment you would leave completely silent, and why."
+            },
+            {
+              "type": "prose",
+              "title": "Next:",
+              "text": "Lessons 6-10 - A History of Scoring. You will hear how film and game music got here, from a lone pianist to an adaptive game engine."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "letter": "B",
+      "name": "A History of Scoring",
+      "from": 6,
+      "to": 10,
+      "lessons": [
+        {
+          "number": 6,
+          "title": "Silent Films, Live Music",
+          "assessed": false,
+          "intention": "We are learning how music supported storytelling before recorded sound.",
+          "criteria": [
+            "I can explain how live music shaped the audience's experience of silent film."
+          ],
+          "blocks": [
+            {
+              "type": "media",
+              "brief": "Charlie Chaplin - Factory Scene - Modern Times (1936)",
+              "embed": "6n9ESFJTnHs"
+            },
+            {
+              "type": "prose",
+              "title": "No dialogue, no effects, just the pianist.",
+              "text": "Before synchronised sound, cinemas hired a pianist or organist to improvise music live under every screening. The same film could feel completely different from one cinema to the next, depending on who was playing."
+            },
+            {
+              "type": "activity",
+              "title": "Your task - Improvise a soundtrack",
+              "text": "In pairs, try a simple improvised soundtrack over a muted clip, using GarageBand or a classroom instrument. React to what's happening on screen as it happens.",
+              "items": []
+            },
+            {
+              "type": "definition",
+              "terms": [
+                "Score"
+              ],
+              "text": "The written or recorded music created specifically for a film or video game. In the silent era, the “score” was often whatever the pianist chose to play that night."
+            },
+            {
+              "type": "support",
+              "title": "Need a hand? Follow a simple rule",
+              "text": "Play softly and slowly for calm moments, faster and louder for excitement or danger. That's the whole job a silent-film pianist was doing, most of the time.",
+              "items": []
+            },
+            {
+              "type": "extension",
+              "text": "Research how different countries - Japan, the United States, Europe - approached silent film music differently, and why.",
+              "items": []
+            },
+            {
+              "type": "exit",
+              "text": "What would be the hardest part of playing music live under a whole film?"
+            }
+          ]
+        },
+        {
+          "number": 7,
+          "title": "Leitmotifs and the Golden Age",
+          "assessed": false,
+          "intention": "We are learning how composers use leitmotifs to represent characters.",
+          "criteria": [
+            "I can identify a leitmotif and explain what it represents."
+          ],
+          "blocks": [
+            {
+              "type": "listen",
+              "heading": "From Kong to Skywalker",
+              "tracks": [
+                {
+                  "title": "King Kong (1933) - Max Steiner, Main Theme"
+                },
+                {
+                  "title": "Star Wars (Main Theme)",
+                  "embed": "MNMSAIG0dfQ"
+                }
+              ]
+            },
+            {
+              "type": "prose",
+              "title": "The first great movie score.",
+              "text": "King Kong (1933) is usually credited as the first film built on a full symphonic score made from recurring themes - one for Kong, another for the ship, another for danger. Four decades later, Star Wars did the same thing for Vader, the rebels and the Force, using the same trick Max Steiner pioneered."
+            },
+            {
+              "type": "table",
+              "headers": [
+                "Character or idea",
+                "What does the leitmotif do?"
+              ],
+              "rows": [
+                [
+                  "",
+                  ""
+                ],
+                [
+                  "",
+                  ""
+                ]
+              ]
+            },
+            {
+              "type": "definition",
+              "terms": [
+                "Leitmotif"
+              ],
+              "text": "A recurring musical theme that represents a character, place, idea or emotion. It can change key, tempo or instrumentation and still be recognisable."
+            },
+            {
+              "type": "support",
+              "title": "Need a hand? Hum it first",
+              "text": "Pick any film or game leitmotif you already know by heart. Hum it, then describe in one sentence what it represents and how the composer makes it recognisable every time.",
+              "items": []
+            },
+            {
+              "type": "extension",
+              "text": "Research how Wagner's use of leitmotif in his operas influenced John Williams and other Hollywood composers.",
+              "items": []
+            },
+            {
+              "type": "exit",
+              "text": "Which leitmotif from any film or game can you hum right now?"
+            }
+          ]
+        },
+        {
+          "number": 8,
+          "title": "Synths Take Over",
+          "assessed": false,
+          "intention": "We are learning how technology changed the sound of film scores.",
+          "criteria": [
+            "I can describe differences between orchestral and electronic scores."
+          ],
+          "blocks": [
+            {
+              "type": "listen",
+              "heading": "Two synthesiser scores, a decade apart",
+              "tracks": [
+                {
+                  "title": "Main Titles - Blade Runner (Vangelis)",
+                  "embed": "smpTDkLCYb0"
+                },
+                {
+                  "title": "Stranger Things | Title Sequence [HD] | Netflix",
+                  "embed": "-RcPZdihrp4"
+                }
+              ]
+            },
+            {
+              "type": "table",
+              "headers": [
+                "Question",
+                "Your answer"
+              ],
+              "rows": [
+                [
+                  "What instrument plays the main line in each?",
+                  ""
+                ],
+                [
+                  "Is the texture orchestral, synthesised, or both?",
+                  ""
+                ],
+                [
+                  "What mood does the synth sound create that an orchestra might not?",
+                  ""
+                ]
+              ]
+            },
+            {
+              "type": "activity",
+              "title": "Your task",
+              "text": "Complete the table above, then discuss: why might a director choose a synthesiser score over an orchestral one?",
+              "items": []
+            },
+            {
+              "type": "definition",
+              "terms": [
+                "Timbre"
+              ],
+              "text": "The unique tone colour or quality of a sound - what makes a synthesiser and a violin sound different even when they play the same note."
+            },
+            {
+              "type": "support",
+              "title": "Need a hand? Just tick a box",
+              "text": "For each track, tick: sounds like a real instrument / sounds electronic / not sure. Then say which one feels colder or more futuristic.",
+              "items": []
+            },
+            {
+              "type": "extension",
+              "text": "Explore how MIDI and sequencing let a single composer build a full electronic score alone, without an orchestra in the room.",
+              "items": []
+            },
+            {
+              "type": "exit",
+              "text": "Would your Term 3 GarageBand track work as film music? Why or why not?"
+            }
+          ]
+        },
+        {
+          "number": 9,
+          "title": "8-Bit and the First Game Music",
+          "assessed": false,
+          "intention": "We are learning about the unique requirements of early video game music.",
+          "criteria": [
+            "I can explain why early game music had to be short and looped."
+          ],
+          "blocks": [
+            {
+              "type": "media",
+              "brief": "8-bit Music & Chiptune: A Brief History",
+              "embed": "6R5PnTDXnWU"
+            },
+            {
+              "type": "prose",
+              "title": "Three channels, one chip.",
+              "text": "Early game consoles could often only play two or three notes at once, on a dedicated sound chip with no room for a full recording. Composers wrote short, tightly looped melodies because that was the only music the hardware could produce - and because a player might hear the same 8 bars hundreds of times in one sitting."
+            },
+            {
+              "type": "activity",
+              "title": "Your task - Compose an 8-bar loop",
+              "text": "Compose an 8-bar loop in GarageBand inspired by early game music - simple, catchy, and built to repeat without getting old.",
+              "items": []
+            },
+            {
+              "type": "definition",
+              "terms": [
+                "Soundtrack"
+              ],
+              "text": "The collection of all sound in a film or game - dialogue, effects and music - or the commercially released music from it."
+            },
+            {
+              "type": "support",
+              "title": "Need a hand? Copy, then change one thing",
+              "text": "Start from a simple 4-note pattern on a chip-style synth sound. Change the rhythm, or one note, until it's recognisably yours.",
+              "items": []
+            },
+            {
+              "type": "extension",
+              "text": "Research how the limitations of early consoles - the NES, Game Boy, Sega Master System - shaped what composers had to invent.",
+              "items": []
+            },
+            {
+              "type": "exit",
+              "text": "Why do you think early game music had to loop seamlessly?"
+            }
+          ]
+        },
+        {
+          "number": 10,
+          "title": "When Music Reacts to You",
+          "assessed": false,
+          "intention": "We are learning how modern game music adapts to player action.",
+          "criteria": [
+            "I can explain how music can change in response to gameplay."
+          ],
+          "blocks": [
+            {
+              "type": "media",
+              "brief": "The Music of Breath of the Wild | GMTK Extra",
+              "embed": "3FWVKu1gnWs"
+            },
+            {
+              "type": "table",
+              "headers": [
+                "Game moment",
+                "How might the music change?"
+              ],
+              "rows": [
+                [
+                  "Quiet exploration",
+                  ""
+                ],
+                [
+                  "A battle starts",
+                  ""
+                ],
+                [
+                  "You win",
+                  ""
+                ]
+              ]
+            },
+            {
+              "type": "activity",
+              "title": "Your task - Storyboard a game level",
+              "text": "In small groups, storyboard a short game level and plan how the music would change as the player's situation changes.",
+              "items": []
+            },
+            {
+              "type": "definition",
+              "terms": [
+                "Adaptive music"
+              ],
+              "text": "Video game music that changes depending on player actions or the game environment, rather than playing the same way every time."
+            },
+            {
+              "type": "support",
+              "title": "Need a hand? Pick three states",
+              "text": "Choose just three game states - calm, danger, victory - and describe one thing that would change about the music between each one: louder, faster, more instruments, a key change.",
+              "items": []
+            },
+            {
+              "type": "extension",
+              "text": "Research middleware tools like FMOD or Wwise, which composers and programmers use to build adaptive soundtracks.",
+              "items": []
+            },
+            {
+              "type": "exit",
+              "text": "Is adaptive game music still “composing”, or something else? Explain your answer."
+            },
+            {
+              "type": "prose",
+              "title": "Next:",
+              "text": "Lessons 11-15 - Suspense and the Brief. You will build tension in GarageBand, then launch the assessment task."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "letter": "C",
+      "name": "Suspense and the Brief",
+      "from": 11,
+      "to": 15,
+      "lessons": [
+        {
+          "number": 11,
+          "title": "Building Tension",
+          "assessed": false,
+          "intention": "We are learning how composers use dissonance, silence and dynamics to build tension.",
+          "criteria": [
+            "I can compose a short suspense loop using dissonant sounds and dynamics."
+          ],
+          "blocks": [
+            {
+              "type": "listen",
+              "heading": "Fear, built from almost nothing",
+              "tracks": [
+                {
+                  "title": "Main Theme | From the Soundtrack to \"Jaws\" by John Williams",
+                  "embed": "b-ot470Cmjk"
+                }
+              ]
+            },
+            {
+              "type": "prose",
+              "title": "Two notes is enough.",
+              "text": "The Jaws theme is famously just two alternating notes, getting faster and louder. Tension in film music usually comes from restraint and repetition, not complexity - a simple idea, tightened."
+            },
+            {
+              "type": "list",
+              "title": "Build a suspense loop",
+              "items": [
+                "Choose two close or dissonant notes on a keyboard or synth sound.",
+                "Alternate them slowly, then speed up over 8 bars.",
+                "Add a tremolo or sustained string sound underneath.",
+                "Drop to complete silence for one full bar.",
+                "Bring in one sudden, loud hit right after the silence.",
+                "Save your loop."
+              ],
+              "text": ""
+            },
+            {
+              "type": "definition",
+              "terms": [
+                "Suspense"
+              ],
+              "text": "Musical techniques - dissonance, silence, sudden changes in dynamics - used deliberately to build tension in an audience."
+            },
+            {
+              "type": "support",
+              "title": "Need a hand? Follow the checklist",
+              "text": "High pitch, played softly, followed by one sudden loud sound. That is a complete, working suspense idea on its own.",
+              "items": []
+            },
+            {
+              "type": "extension",
+              "text": "Compose your suspense idea using a chromatic or whole-tone scale instead of a major or minor one, and describe what changes.",
+              "items": []
+            },
+            {
+              "type": "exit",
+              "text": "What is the smallest musical idea you used to create fear today?"
+            }
+          ]
+        },
+        {
+          "number": 12,
+          "title": "Starting the Assessment Task",
+          "assessed": false,
+          "intention": "We are learning to plan a soundtrack for a muted film scene in groups.",
+          "criteria": [
+            "I can work with my group to identify where dialogue, foley and music should be placed."
+          ],
+          "blocks": [
+            {
+              "type": "prose",
+              "title": "This lesson launches your assessment task.",
+              "text": "In groups of three or four, you will re-score a muted film scene with original dialogue, foley and music. It's worth 20% of your Year 8 Music mark, split between composing and listening. Today you watch the scene and plan."
+            },
+            {
+              "type": "list",
+              "title": "Today's plan",
+              "items": [
+                "Form your group of three or four.",
+                "Watch the muted scene together, all the way through, before planning anything.",
+                "Watch it again and complete a spotting sheet, marking where dialogue, foley and music belong.",
+                "Decide who is taking the lead on dialogue, who on foley, and who on the music - everyone contributes to all three, but one person keeps each on track."
+              ],
+              "text": ""
+            },
+            {
+              "type": "table",
+              "headers": [
+                "Component",
+                "Weighting"
+              ],
+              "rows": [
+                [
+                  "Composing - your original music",
+                  "10%"
+                ],
+                [
+                  "Listening - your understanding of film and game sound",
+                  "10%"
+                ],
+                [
+                  "Total",
+                  "20%"
+                ]
+              ]
+            },
+            {
+              "type": "prose",
+              "title": "Adjustments available",
+              "text": "A shorter or simplified scene is a valid submission. Speak to your teacher before you begin if you or your group need one."
+            },
+            {
+              "type": "support",
+              "title": "Need a hand? Take on one clear role",
+              "text": "If planning as a whole scene feels like too much, choose one role - dialogue, foley or music - and focus your spotting sheet entirely on that one layer.",
+              "items": []
+            },
+            {
+              "type": "extension",
+              "text": "Write full cue sheets for your scene, noting tempo, texture and motif ideas for every music cue before you start recording.",
+              "items": []
+            },
+            {
+              "type": "exit",
+              "text": "What is your group's plan for who does what?"
+            }
+          ]
+        },
+        {
+          "number": 13,
+          "title": "Recording Dialogue and Foley",
+          "assessed": false,
+          "intention": "We are learning to record and layer dialogue and foley for our scene.",
+          "criteria": [
+            "I can create realistic dialogue and sound effects for my scene."
+          ],
+          "blocks": [
+            {
+              "type": "list",
+              "title": "Record your dialogue and foley",
+              "items": [
+                "Draft a short dialogue script that matches what's happening in your scene.",
+                "Record it on iPad, in as quiet a space as you can find.",
+                "Record your foley separately, close to the microphone, one sound at a time.",
+                "Import everything into your GarageBand or iMovie project.",
+                "Name every file clearly - what it's for, not just “Recording 1”.",
+                "Save into your shared group project."
+              ],
+              "text": ""
+            },
+            {
+              "type": "prose",
+              "title": "Quiet on set.",
+              "text": "Background noise recorded now is very hard to remove later. A slightly imperfect line recorded in silence beats a perfect line recorded next to a noisy hallway."
+            },
+            {
+              "type": "support",
+              "title": "Need a hand? One line, one sound",
+              "text": "If your group is short on time, record one clear line of dialogue and one clear foley sound properly, rather than several done roughly. Quality over quantity is marked, not just how much you attempted.",
+              "items": []
+            },
+            {
+              "type": "extension",
+              "text": "Add effects - reverb, EQ - to your recorded dialogue to match the space the scene is set in, for example a large hall versus a small room.",
+              "items": []
+            },
+            {
+              "type": "exit",
+              "text": "What was the hardest sound to get right today?"
+            }
+          ]
+        },
+        {
+          "number": 14,
+          "title": "Composing the Underscore",
+          "assessed": false,
+          "intention": "We are learning to compose music that matches the mood of a scene.",
+          "criteria": [
+            "I can compose underscoring that creates emotion for my film scene."
+          ],
+          "blocks": [
+            {
+              "type": "list",
+              "title": "Score your scene",
+              "items": [
+                "Review your spotting sheet from Lesson 12.",
+                "For each cue, choose or write a loop or melody that matches that moment's mood.",
+                "Fade music in and out rather than cutting it abruptly.",
+                "Change the tempo, texture or dynamics at your scene's turning point.",
+                "Save."
+              ],
+              "text": ""
+            },
+            {
+              "type": "prose",
+              "title": "Reuse what you already know.",
+              "text": "Drums, chords, bass, a riff, texture, effects - every skill from your Term 3 composition applies here. The difference is that the picture sets the timing now, not a repeating 8-bar loop."
+            },
+            {
+              "type": "definition",
+              "terms": [
+                "Underscoring"
+              ],
+              "text": "Background music written to support the action, mood or dialogue of a scene. It's the music layer of your project, sitting under the dialogue and foley."
+            },
+            {
+              "type": "support",
+              "title": "Need a hand? Use a pre-labelled loop bank",
+              "text": "Choose from loops sorted by mood - tense, calm, triumphant - and place them under the matching moment in your scene. Choosing the right loop for the right moment is still a real composing decision.",
+              "items": []
+            },
+            {
+              "type": "extension",
+              "text": "Compose an original motif for your scene rather than using a pre-made loop, and orchestrate it across two or three instrument sounds.",
+              "items": []
+            },
+            {
+              "type": "exit",
+              "text": "Does your music enter and exit the scene, or does it just start and stop?"
+            }
+          ]
+        },
+        {
+          "number": 15,
+          "title": "Syncing Sound to Picture",
+          "assessed": false,
+          "intention": "We are learning to synchronise dialogue, foley and music with the scene.",
+          "criteria": [
+            "I can align dialogue, foley and music accurately with the scene."
+          ],
+          "blocks": [
+            {
+              "type": "list",
+              "title": "Lock it to picture",
+              "items": [
+                "Import your scene and audio layers into iMovie.",
+                "Drag each layer so it starts at the exact moment it belongs.",
+                "Nudge in small steps until it lands precisely - a frame or two matters.",
+                "Play back at full speed and check every layer together.",
+                "Get feedback from another group on one thing that's out of sync.",
+                "Save."
+              ],
+              "text": ""
+            },
+            {
+              "type": "table",
+              "headers": [
+                "Sync checklist",
+                "Done"
+              ],
+              "rows": [
+                [
+                  "Dialogue lands on the moment it's spoken",
+                  ""
+                ],
+                [
+                  "Footsteps and foley match the action on screen",
+                  ""
+                ],
+                [
+                  "Music fades in and out rather than cutting",
+                  ""
+                ]
+              ]
+            },
+            {
+              "type": "prose",
+              "title": "Close enough is not synced.",
+              "text": "A sound effect that lands even half a second late reads as a mistake to an audience, even one that can't say why. Small adjustments matter more here than almost anywhere else in the project."
+            },
+            {
+              "type": "support",
+              "title": "Need a hand? One layer at a time",
+              "text": "Sync only the dialogue first and check it fully before touching foley. Sync only the foley and check it before touching music. Trying to fix all three at once is where sync work goes wrong.",
+              "items": []
+            },
+            {
+              "type": "extension",
+              "text": "Use crossfades, volume automation and layered textures so the transitions between your cues feel deliberate rather than sudden.",
+              "items": []
+            },
+            {
+              "type": "exit",
+              "text": "Which layer took the longest to sync, and why?"
+            },
+            {
+              "type": "prose",
+              "title": "Next:",
+              "text": "Lessons 16-20 - Finish and Submit. You refine, finish and present your soundtrack, and the assessment task is submitted."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "letter": "D",
+      "name": "Finish and Submit",
+      "from": 16,
+      "to": 20,
+      "lessons": [
+        {
+          "number": 16,
+          "title": "Refining with Feedback",
+          "assessed": false,
+          "intention": "We are learning to refine our soundtrack through rehearsal and feedback.",
+          "criteria": [
+            "I can improve timing, balance and emotional impact using feedback."
+          ],
+          "blocks": [
+            {
+              "type": "activity",
+              "title": "Your task",
+              "text": "Present your rough draft to your teacher or another group for formative feedback before you finalise anything.",
+              "items": []
+            },
+            {
+              "type": "table",
+              "headers": [
+                "Feedback",
+                "Write it here"
+              ],
+              "rows": [
+                [
+                  "One thing that worked",
+                  ""
+                ],
+                [
+                  "One thing to improve",
+                  ""
+                ],
+                [
+                  "My plan before next lesson",
+                  ""
+                ]
+              ]
+            },
+            {
+              "type": "prose",
+              "title": "Feedback rule.",
+              "text": "Comment on the soundtrack, not the group. Find something real to praise before you suggest a change, and be specific - “the footsteps are a beat early” is useful, “it's good” is not."
+            },
+            {
+              "type": "support",
+              "title": "Need a hand? Fix one thing",
+              "text": "Ask your teacher for the single most important fix, and spend the lesson on that one thing rather than trying to change everything at once.",
+              "items": []
+            },
+            {
+              "type": "extension",
+              "text": "Incorporate advanced editing - automation, panning, layered reverb - to lift your mix beyond the basics.",
+              "items": []
+            },
+            {
+              "type": "exit",
+              "text": "What is the single thing you will fix before you submit?"
+            }
+          ]
+        },
+        {
+          "number": 17,
+          "title": "Finalise and Submit",
+          "assessed": true,
+          "intention": "We are learning to complete and present our film soundtrack project.",
+          "criteria": [
+            "I can finalise and submit a re-scored film scene with music, dialogue and foley."
+          ],
+          "blocks": [
+            {
+              "type": "prose",
+              "title": "This lesson is assessed.",
+              "text": "Your group finalises edits and exports your re-scored scene. Marked against the rubric for composing and listening."
+            },
+            {
+              "type": "prose",
+              "title": "Submission checklist - tick every row before you submit",
+              "text": "Submission checklist - tick every row before you submit"
+            },
+            {
+              "type": "table",
+              "headers": [
+                "Requirement",
+                "Done",
+                "Built in"
+              ],
+              "rows": [
+                [
+                  "Spotting sheet completed",
+                  "",
+                  "Lesson 12"
+                ],
+                [
+                  "Dialogue recorded",
+                  "",
+                  "Lesson 13"
+                ],
+                [
+                  "Foley recorded",
+                  "",
+                  "Lesson 13"
+                ],
+                [
+                  "Underscoring composed",
+                  "",
+                  "Lesson 14"
+                ],
+                [
+                  "Everything synced to picture",
+                  "",
+                  "Lesson 15"
+                ],
+                [
+                  "Final video exported and uploaded",
+                  "",
+                  "Today"
+                ]
+              ]
+            },
+            {
+              "type": "prose",
+              "title": "Adjustments available",
+              "text": "A shorter or simplified scene, with fewer sound layers, is a valid submission. Work through the checklist above with your teacher before you upload."
+            },
+            {
+              "type": "prose",
+              "title": "Going further",
+              "text": "Extend your scene with additional cues, use advanced automation, or record live instruments or vocals and mix them in with your programmed parts."
+            }
+          ]
+        },
+        {
+          "number": 18,
+          "title": "Showcase and Presentation",
+          "assessed": false,
+          "intention": "We are learning to present our project and explain our choices.",
+          "criteria": [
+            "I can present my project and explain how my group's sounds created emotion."
+          ],
+          "blocks": [
+            {
+              "type": "activity",
+              "title": "Your task",
+              "text": "Play your finished scene to the class. Be ready to explain one choice you made and why.",
+              "items": []
+            },
+            {
+              "type": "prose",
+              "title": "Audience job.",
+              "text": "Respectful listening is part of the lesson. No talking, no phones, and applaud every group."
+            },
+            {
+              "type": "table",
+              "headers": [
+                "Group",
+                "One thing I liked",
+                "One question I'd ask"
+              ],
+              "rows": [
+                [
+                  "",
+                  "",
+                  ""
+                ],
+                [
+                  "",
+                  "",
+                  ""
+                ],
+                [
+                  "",
+                  "",
+                  ""
+                ]
+              ]
+            },
+            {
+              "type": "support",
+              "title": "Need a hand? Present in one sentence",
+              "text": "If presenting feels daunting, play your scene and say one sentence: “We wanted this moment to feel ... so we ...”",
+              "items": []
+            },
+            {
+              "type": "extension",
+              "text": "Write a short reflection explaining your scoring choices in more depth than you have time to present aloud.",
+              "items": []
+            },
+            {
+              "type": "exit",
+              "text": "What is one choice another group made that you wish you'd thought of?"
+            }
+          ]
+        },
+        {
+          "number": 19,
+          "title": "Reflecting on the Process",
+          "assessed": false,
+          "intention": "We are learning to reflect on our creative process and final product.",
+          "criteria": [
+            "I can identify strengths, challenges and improvements in my project."
+          ],
+          "blocks": [
+            {
+              "type": "table",
+              "headers": [
+                "Question",
+                "Your answer"
+              ],
+              "rows": [
+                [
+                  "What worked well in your soundtrack?",
+                  ""
+                ],
+                [
+                  "What was hardest, and how did you solve it?",
+                  ""
+                ],
+                [
+                  "What would you change with one more lesson?",
+                  ""
+                ]
+              ]
+            },
+            {
+              "type": "prose",
+              "title": "Reflection builds musicians.",
+              "text": "The habit of asking what worked and what didn't is what turns one project into a skill you carry to the next one."
+            },
+            {
+              "type": "support",
+              "title": "Need a hand? Reflection starters",
+              "text": "“One thing I did well was...” “I found it hard when...” “Next time I would...” You can answer these out loud instead of writing them.",
+              "items": []
+            },
+            {
+              "type": "extension",
+              "text": "Write a one-page reflection connecting your group's choices to a professional scoring technique from earlier in the term.",
+              "items": []
+            },
+            {
+              "type": "exit",
+              "text": "What is the one skill from this project you are most proud of?"
+            }
+          ]
+        },
+        {
+          "number": 20,
+          "title": "Yours vs Theirs",
+          "assessed": false,
+          "intention": "We are learning to compare our work with a professional film score.",
+          "criteria": [
+            "I can identify differences between my group's soundtrack and a professional score."
+          ],
+          "blocks": [
+            {
+              "type": "listen",
+              "heading": "Hear the professional version",
+              "tracks": [
+                {
+                  "title": "Theme From Jurassic Park",
+                  "embed": "lDlU08RU7Tk"
+                }
+              ]
+            },
+            {
+              "type": "activity",
+              "title": "Your task - Venn diagram",
+              "text": "Draw a Venn diagram comparing your group's soundtrack to a professional film score. What do you share, and where do the resources differ?",
+              "items": []
+            },
+            {
+              "type": "definition",
+              "terms": [
+                "Texture"
+              ],
+              "text": "How many layers of sound are heard at once, and how they interact. A professional score might use a full orchestra; your project might use four or five GarageBand layers doing the same job."
+            },
+            {
+              "type": "support",
+              "title": "Need a hand? Compare two things only",
+              "text": "Compare just the number of instruments, and how the music changes over time. That's enough for a real comparison.",
+              "items": []
+            },
+            {
+              "type": "extension",
+              "text": "Analyse the professional score's use of leitmotif, texture and orchestration, and explain what resources it has that your project doesn't.",
+              "items": []
+            },
+            {
+              "type": "exit",
+              "text": "Name one thing the professional score does that yours doesn't, and one thing yours does that theirs doesn't."
+            },
+            {
+              "type": "prose",
+              "title": "Next:",
+              "text": "Lessons 21-25 - Reflect and Extend. Deeper listening, and one last creative task before the year wraps up."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "letter": "E",
+      "name": "Reflect and Extend",
+      "from": 21,
+      "to": 25,
+      "lessons": [
+        {
+          "number": 21,
+          "title": "Deep Dive: A Feature Score",
+          "assessed": false,
+          "intention": "We are learning how music interacts with storytelling across a whole film.",
+          "criteria": [
+            "I can describe how a soundtrack changes the way we experience a scene."
+          ],
+          "blocks": [
+            {
+              "type": "media",
+              "brief": "A trailer built almost entirely on its score",
+              "embed": "0Q3O8rauQx0"
+            },
+            {
+              "type": "prose",
+              "title": "One scene is a sample. A whole film is a system.",
+              "text": "Everything you've studied this term - diegetic sound, leitmotif, spotting, dynamics - works together across an entire film, not just one excerpt. A feature score returns to its ideas, develops them, and times its silences across two hours, not two minutes."
+            },
+            {
+              "type": "table",
+              "headers": [
+                "Moment",
+                "What does the music do?"
+              ],
+              "rows": [
+                [
+                  "",
+                  ""
+                ],
+                [
+                  "",
+                  ""
+                ],
+                [
+                  "",
+                  ""
+                ]
+              ]
+            },
+            {
+              "type": "definition",
+              "terms": [
+                "Synchronisation"
+              ],
+              "text": "The process of matching sound precisely with on-screen action - the same skill you practised in Lesson 15, at the scale of a whole film."
+            },
+            {
+              "type": "support",
+              "title": "Need a hand? Just three moments",
+              "text": "Pick the opening, one dramatic turning point, and the ending. Note what the music is doing in each.",
+              "items": []
+            },
+            {
+              "type": "extension",
+              "text": "Analyse a stylistic influence in the score - jazz, classical, another genre - and explain how it shapes the film's identity.",
+              "items": []
+            },
+            {
+              "type": "exit",
+              "text": "Pick one moment where the music told you something the picture alone didn't."
+            }
+          ]
+        },
+        {
+          "number": 22,
+          "title": "Iconic Game Soundtracks",
+          "assessed": false,
+          "intention": "We are learning how game music adapts to and represents different worlds.",
+          "criteria": [
+            "I can compare how two game soundtracks fit their game's mood."
+          ],
+          "blocks": [
+            {
+              "type": "listen",
+              "heading": "Four worlds, four sounds",
+              "tracks": [
+                {
+                  "title": "Super Mario Bros. - Overworld Theme"
+                },
+                {
+                  "title": "The Legend of Zelda - Main Theme"
+                },
+                {
+                  "title": "Halo - Theme"
+                },
+                {
+                  "title": "Undertale - Main Theme"
+                }
+              ]
+            },
+            {
+              "type": "table",
+              "headers": [
+                "Game",
+                "Mood the music sets",
+                "Busy or simple?"
+              ],
+              "rows": [
+                [
+                  "",
+                  "",
+                  ""
+                ],
+                [
+                  "",
+                  "",
+                  ""
+                ]
+              ]
+            },
+            {
+              "type": "activity",
+              "title": "Your task - Match soundtrack to mood",
+              "text": "In pairs, choose two of the four games and complete the table. Your teacher can play each theme for the class.",
+              "items": []
+            },
+            {
+              "type": "support",
+              "title": "Need a hand? Just two games",
+              "text": "Compare only two of the four. Ask: does this music want me to feel safe, or on edge? Simple or busy?",
+              "items": []
+            },
+            {
+              "type": "extension",
+              "text": "Research an adaptive audio middleware tool and present how it lets one of these games' soundtracks react to the player.",
+              "items": []
+            },
+            {
+              "type": "exit",
+              "text": "Which of these four would you swap into a different game, and why?"
+            }
+          ]
+        },
+        {
+          "number": 23,
+          "title": "Rescore It",
+          "assessed": false,
+          "intention": "We are learning to creatively reimagine a soundtrack.",
+          "criteria": [
+            "I can rescore a trailer to change its mood."
+          ],
+          "blocks": [
+            {
+              "type": "prose",
+              "title": "Choose one pathway",
+              "text": "Choose one pathway"
+            },
+            {
+              "type": "table",
+              "headers": [
+                "Pathway",
+                "What you do"
+              ],
+              "rows": [
+                [
+                  "Silly",
+                  "Rescore a serious trailer with playful, mismatched GarageBand loops."
+                ],
+                [
+                  "Serious",
+                  "Score a light trailer as if it were a horror film."
+                ],
+                [
+                  "Irony",
+                  "Put happy music under a tense moment and see what happens to the meaning."
+                ]
+              ]
+            },
+            {
+              "type": "support",
+              "title": "Need a hand? Change one loop",
+              "text": "Take one loop from your Term 3 or Term 4 project and swap it under a new muted clip. That's a complete, real rescoring decision.",
+              "items": []
+            },
+            {
+              "type": "extension",
+              "text": "Attempt deliberate irony - happy music under a horror trailer, or menacing music under a comedy - and explain what it does to the meaning of the scene.",
+              "items": []
+            },
+            {
+              "type": "exit",
+              "text": "Which pathway did you choose, and what surprised you?"
+            }
+          ]
+        },
+        {
+          "number": 24,
+          "title": "The Power of Silence",
+          "assessed": false,
+          "intention": "We are learning about the role of silence in film.",
+          "criteria": [
+            "I can explain how silence changes the impact of a scene."
+          ],
+          "blocks": [
+            {
+              "type": "media",
+              "brief": "A Quiet Place (2018) - Official Trailer - Paramount Pictures",
+              "embed": "WR7cc5t7tv8"
+            },
+            {
+              "type": "prose",
+              "title": "Silence is a choice, not an absence.",
+              "text": "A film built around near-total silence still has a soundtrack - it's just made almost entirely of the sounds a character can't afford to make. Removing music is as deliberate a decision as adding it."
+            },
+            {
+              "type": "activity",
+              "title": "Your task - Mute it",
+              "text": "Choose a music cue from your own project. Mute it and watch the scene again. Compare the two versions.",
+              "items": []
+            },
+            {
+              "type": "table",
+              "headers": [
+                "Version",
+                "How did it feel?"
+              ],
+              "rows": [
+                [
+                  "With music",
+                  ""
+                ],
+                [
+                  "Silent",
+                  ""
+                ]
+              ]
+            },
+            {
+              "type": "definition",
+              "terms": [
+                "Dynamics"
+              ],
+              "text": "The volume of music, from soft to loud. Silence is the most extreme dynamic available, and the one composers use most sparingly."
+            },
+            {
+              "type": "support",
+              "title": "Need a hand? Just vote",
+              "text": "Watch both versions as a class and vote on which felt stronger. Then say one word for why.",
+              "items": []
+            },
+            {
+              "type": "extension",
+              "text": "Debate: “Silence is more powerful than music.” Prepare one argument for each side before the class discussion.",
+              "items": []
+            },
+            {
+              "type": "exit",
+              "text": "Name one moment in your own project where silence might work better than music."
+            }
+          ]
+        },
+        {
+          "number": 25,
+          "title": "Wrap-Up: A Year of Music",
+          "assessed": false,
+          "intention": "We are learning to reflect on our growth across Year 8 Music.",
+          "criteria": [
+            "I can describe what I improved in and set a target for next year."
+          ],
+          "blocks": [
+            {
+              "type": "prose",
+              "title": "Look back over the whole year.",
+              "text": "From your first keyboard piece in Term 1 to a fully synced, re-scored film scene in Term 4 - four different projects, and the same elements of music underneath every one of them."
+            },
+            {
+              "type": "table",
+              "headers": [
+                "Question",
+                "Your answer"
+              ],
+              "rows": [
+                [
+                  "What did you improve most this year?",
+                  ""
+                ],
+                [
+                  "Which term's project are you proudest of?",
+                  ""
+                ],
+                [
+                  "What is your target for Year 9?",
+                  ""
+                ]
+              ]
+            },
+            {
+              "type": "prose",
+              "title": "Playback session.",
+              "text": "We finish by watching the best projects from the term again, properly, as an audience rather than as markers."
+            },
+            {
+              "type": "support",
+              "title": "Need a hand? Reflection starters",
+              "text": "“One thing I did well was...” “I found it hard when...” “Next year I want to...” You can answer these out loud instead of writing them.",
+              "items": []
+            },
+            {
+              "type": "extension",
+              "text": "Evaluate your development critically across the whole year. Where is the ceiling on your current skills, and what would you need to learn to get past it?",
+              "items": []
+            },
+            {
+              "type": "prose",
+              "title": "Next:",
+              "text": "This is the last unit of Year 8 Music. Next year builds on everything from this year in Year 9."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
