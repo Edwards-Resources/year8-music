@@ -274,8 +274,8 @@
           "blocks": [
             {
               "type": "media",
-              "brief": "Programming a beat on the grid",
-              "embed": ""
+              "brief": "Programming a beat on the grid with the Beat Sequencer",
+              "embed": "cAyZbLm6py4"
             },
             {
               "type": "list",
@@ -543,8 +543,8 @@
           "blocks": [
             {
               "type": "media",
-              "brief": "Recording chords",
-              "embed": ""
+              "brief": "Recording chords with Smart Chords",
+              "embed": "V6IU2c11M9s"
             },
             {
               "type": "list",
@@ -657,8 +657,8 @@
           "blocks": [
             {
               "type": "media",
-              "brief": "Layering drums and chords",
-              "embed": ""
+              "brief": "Building a project up track by track",
+              "embed": "vh4JUNQO6BI"
             },
             {
               "type": "list",
@@ -848,8 +848,8 @@
           "blocks": [
             {
               "type": "media",
-              "brief": "Recording bass",
-              "embed": ""
+              "brief": "Adding bass to your project",
+              "embed": "c2edAkeQTS8"
             },
             {
               "type": "list",
@@ -994,8 +994,8 @@
           "blocks": [
             {
               "type": "media",
-              "brief": "Recording a riff",
-              "embed": ""
+              "brief": "Recording a riff on the virtual guitars",
+              "embed": "E0PKZeSfL30"
             },
             {
               "type": "list",
@@ -1172,8 +1172,8 @@
           "blocks": [
             {
               "type": "media",
-              "brief": "Applying effects in GarageBand",
-              "embed": ""
+              "brief": "Applying effects: EQ, reverb, echo and compression",
+              "embed": "hzo6DrPrioM"
             },
             {
               "type": "table",
@@ -1544,11 +1544,19 @@
           "blocks": [
             {
               "type": "listen",
-              "heading": "",
+              "heading": "The three artists",
               "tracks": [
-                "Baker Boy - video",
-                "Thelma Plum - video",
-                "Jessica Mauboy - video"
+                {
+                  "title": "Baker Boy - Marryuna (feat. Yirrmal)",
+                  "embed": "afQcYH2nwoM"
+                },
+                {
+                  "title": "Thelma Plum - Better in Blak"
+                },
+                {
+                  "title": "Jessica Mauboy - Little Things",
+                  "embed": "XbAlPugythw"
+                }
               ]
             },
             {
