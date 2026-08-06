@@ -148,9 +148,18 @@
               "type": "listen",
               "heading": "The three grooves",
               "tracks": [
-                "Backbeat - rock",
-                "Four-on-the-floor - EDM and dance",
-                "Trap - hip hop"
+                {
+                  "title": "Backbeat - Jet, Are You Gonna Be My Girl",
+                  "embed": "tuK6n2Lkza0"
+                },
+                {
+                  "title": "Four-on-the-floor - RUFUS DU SOL, Innerbloom",
+                  "embed": "Tx9zMFodNtA"
+                },
+                {
+                  "title": "Trap - Baker Boy, Marryuna",
+                  "embed": "afQcYH2nwoM"
+                }
               ]
             },
             {
@@ -218,9 +227,9 @@
           ],
           "blocks": [
             {
-              "type": "prose",
-              "title": "",
-              "text": "Setup walkthrough video"
+              "type": "media",
+              "brief": "Getting started in GarageBand for iPad",
+              "embed": "vh4JUNQO6BI"
             },
             {
               "type": "list",
@@ -322,19 +331,22 @@
           ],
           "blocks": [
             {
-              "type": "prose",
-              "title": "",
-              "text": "Rock reference track"
-            },
-            {
-              "type": "prose",
-              "title": "",
-              "text": "Pop reference track"
-            },
-            {
-              "type": "prose",
-              "title": "",
-              "text": "EDM or hip hop reference track"
+              "type": "listen",
+              "heading": "Reference tracks",
+              "tracks": [
+                {
+                  "title": "Rock - Jet, Are You Gonna Be My Girl",
+                  "embed": "tuK6n2Lkza0"
+                },
+                {
+                  "title": "Pop - Jessica Mauboy, Little Things",
+                  "embed": "XbAlPugythw"
+                },
+                {
+                  "title": "Hip hop - Baker Boy, Marryuna",
+                  "embed": "afQcYH2nwoM"
+                }
+              ]
             },
             {
               "type": "activity",
@@ -587,11 +599,20 @@
           "blocks": [
             {
               "type": "listen",
-              "heading": "",
+              "heading": "Harmony in three styles",
               "tracks": [
-                "Piano ballad - video",
-                "Pub rock - video",
-                "EDM pads - video"
+                {
+                  "title": "Piano ballad - Missy Higgins, Where I Stood",
+                  "embed": "c9QNRvXH1HI"
+                },
+                {
+                  "title": "Pub rock - Jet, Are You Gonna Be My Girl",
+                  "embed": "tuK6n2Lkza0"
+                },
+                {
+                  "title": "EDM pads - RUFUS DU SOL, Innerbloom",
+                  "embed": "Tx9zMFodNtA"
+                }
               ]
             },
             {
@@ -657,8 +678,8 @@
           "blocks": [
             {
               "type": "media",
-              "brief": "Building a project up track by track",
-              "embed": "vh4JUNQO6BI"
+              "brief": "Recording more than one track and stacking them up",
+              "embed": "9TmHfA8wlIk"
             },
             {
               "type": "list",
@@ -766,11 +787,20 @@
           "blocks": [
             {
               "type": "listen",
-              "heading": "",
+              "heading": "Bass in three styles",
               "tracks": [
-                "Bass in rock - video",
-                "Bass in pop - video",
-                "Bass in EDM - video"
+                {
+                  "title": "Bass in rock - AC/DC, Thunderstruck",
+                  "embed": "v2AC41dglnM"
+                },
+                {
+                  "title": "Bass in pop - Jessica Mauboy, Little Things",
+                  "embed": "XbAlPugythw"
+                },
+                {
+                  "title": "Bass in EDM - Flume, Never Be Like You",
+                  "embed": "-KPnyf8vwXI"
+                }
               ]
             },
             {
@@ -916,11 +946,20 @@
           "blocks": [
             {
               "type": "listen",
-              "heading": "",
+              "heading": "Three kinds of hook",
               "tracks": [
-                "Famous guitar riff - video",
-                "Famous synth hook - video",
-                "Famous vocal hook - video"
+                {
+                  "title": "Guitar riff - AC/DC, Thunderstruck",
+                  "embed": "v2AC41dglnM"
+                },
+                {
+                  "title": "Synth hook - Flume, Never Be Like You",
+                  "embed": "-KPnyf8vwXI"
+                },
+                {
+                  "title": "Vocal hook - Gotye, Somebody That I Used To Know",
+                  "embed": "8UVNT4wvIGY"
+                }
               ]
             },
             {
@@ -1114,10 +1153,16 @@
           "blocks": [
             {
               "type": "listen",
-              "heading": "",
+              "heading": "Thin and thick",
               "tracks": [
-                "Thin texture example - video",
-                "Thick texture example - video"
+                {
+                  "title": "Thin - Vance Joy, Riptide",
+                  "embed": "uJ_1HMAGb4k"
+                },
+                {
+                  "title": "Thick - Jessica Mauboy, Little Things",
+                  "embed": "XbAlPugythw"
+                }
               ]
             },
             {
@@ -1251,8 +1296,8 @@
           "blocks": [
             {
               "type": "media",
-              "brief": "Structure in an Australian popular song",
-              "embed": ""
+              "brief": "Gotye, Somebody That I Used To Know - listen for where each section starts",
+              "embed": "8UVNT4wvIGY"
             },
             {
               "type": "list",
@@ -1624,10 +1669,16 @@
           "blocks": [
             {
               "type": "listen",
-              "heading": "",
+              "heading": "Two artists, side by side",
               "tracks": [
-                "Artist A - video",
-                "Artist B - video"
+                {
+                  "title": "Artist A - AC/DC, Thunderstruck",
+                  "embed": "v2AC41dglnM"
+                },
+                {
+                  "title": "Artist B - Flume, Never Be Like You",
+                  "embed": "-KPnyf8vwXI"
+                }
               ]
             },
             {
