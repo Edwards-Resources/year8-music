@@ -62,7 +62,10 @@ Step up to **Opus, medium-high** only if the visual world needs to change, or fo
 3. **Channel verified, lyrics not.** Every video id across both terms was checked through oEmbed to confirm it exists, embeds, and sits on an official or clearly legitimate channel. That says nothing about content. Matthew should listen before teaching from any of them.
 4. **Tame Impala is deliberately the Official Audio**, not the music video, in Lesson 11. The lyrics are fine; the official video has sexual content and blood in it. If anyone "fixes" that id to the video, the lesson becomes unteachable. The same trap applies to any track chosen for its bass line rather than its clip.
 5. **Silverchair's "Israel's Son"** (Lesson 11) has no explicit language but violent lyric content, kept with Matthew's knowledge. Flagged here so it is not quietly dropped by a later session that assumes it was an oversight.
-6. **DoE external-publishing policy** still unverified, same open question as the Year 10 site.
+6. **Ads on the embedded videos.** Matthew has YouTube Premium and still gets an ad every time. Almost certainly because the embeds go through `youtube-nocookie.com`, a separate domain from `youtube.com`, so his login cookies are never sent and the player treats him as signed out. No URL parameter disables ads; an authenticated Premium session is the only mechanism.
+
+   **Do not "fix" this by swapping the embed domain.** `youtube-nocookie.com` is there so students are not tracked on every lesson page, and changing it trades their privacy for one teacher's ad-free playback - and may not even work, since Chrome and Safari restrict the third-party cookies a `youtube.com` embed depends on. Better: clicking the video title in the player's top bar already opens it on YouTube signed in, or add a small "Open on YouTube" link under each player. Diagnose first by loading `https://www.youtube-nocookie.com/embed/2SUwOgmvzK4` and `https://www.youtube.com/embed/2SUwOgmvzK4` in his teaching browser; if both show ads, cookie blocking is defeating it and no site change will help. Raised 7 August 2026, deferred - "it's fine for now".
+7. **DoE external-publishing policy** still unverified, same open question as the Year 10 site.
 
 ## How to work on it
 
