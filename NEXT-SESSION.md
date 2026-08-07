@@ -4,6 +4,10 @@
 
 **Popular Music was revised on 6 August 2026** against Matthew's per-lesson notes: worksheet tables are now typeable, Lesson 9 gained a beat-grid diagram, Lessons 11, 13, 16 and 18 changed repertoire, and Flume and Thelma Plum are out of the term entirely. See "The Flume lesson" below - it is the important one.
 
+**Key-word tables added 7 August 2026.** Ten of them, matching the fill-in tables built on the Year 10 site the same day: one at the end of each section listing that section's key words with a blank beside each, plus a whole-term glossary in each Wrap-Up lesson (both Lesson 25s). They are ordinary `table` blocks with headers `["Key word", "What it means"]` and an empty second cell, so they inherit the existing fillable-table behaviour and per-lesson saving. **No table lists a word the page it sits on defines** - the answer must never sit above the blank - and the build script asserts this rather than trusting the author. Sections that teach only one or two new words carry earlier words forward.
+
+Year 10's per-table **Clear** button was deliberately not ported: Year 8 has no equivalent, and adding one touches all 45 tables and the finish-reviewed design system. Worth doing as its own task if the two sites should match.
+
 ## The Flume lesson
 
 Flume's "Never Be Like You" was embedded in **four** lessons (1, 11, 13, 23), live and public, because it had passed the oEmbed channel check: FlumeVEVO, official, exists, embeds. The channel check cannot see lyrics, and the track has an explicit original.
@@ -88,6 +92,7 @@ Step up to **Opus, medium-high** only if the visual world needs to change, or fo
 - **Reading surfaces stay light.** The one Print Black field that is not a print field is the video well, which is the letterbox behind the player. That exception is documented in DESIGN.md; do not widen it.
 - **Black type on every spot ink.** White on the pink fails contrast.
 - **Grid and flex parents need `min-width:0`** if a child can be wider than the column. The tables carry a 34rem min-width and `.clip` carries `min-width:0` for the same reason. Without it the page slides sideways on a phone instead of the table or player behaving.
+- **Two-column tables are the exception to the 34rem floor.** The floor exists so a four-column worksheet is not crushed; a two-column table has nothing to crush, so `build.py` tags it `is-narrow` and it drops to 19rem, fits a phone, and loses the swipe hint. 28 of the site's 45 tables are two-column. If a table ever gains a third column it picks the floor and the hint back up automatically. **Do not hardcode the hint back on**: a table that no longer clips must not tell a student to slide it.
 - The design hook reports one finding, `#000` in `assets/site.css`. It is a **known false positive**: the opaque stop of the halftone's `mask-image` gradient, where only the alpha channel is read. Do not "fix" it and do not suppress it without asking Matthew.
 - Syllabus outcomes were taken verbatim from `Syllabus Reference/Music 7-10 (2024)/NESA - music_7_10_2024 (S4).docx`. Do not reword them and do not add outcomes without a source.
 - The teacher master Canvas page is excluded from extraction and must never be published.
@@ -96,7 +101,11 @@ Step up to **Opus, medium-high** only if the visual world needs to change, or fo
 ## Last commit
 
 ```
-b46e5f5 Popular Music: typeable tables, a beat grid, and safer repertoire
+36d9961 Add key-word fill-in tables, and let two-column tables fit a phone
 ```
 
-Pushed to `origin/main`, and deployed and verified live on 7 August 2026 at 07:54 AEST.
+Pushed to `origin/main` on 7 August 2026. Verify the deployment rather than the push:
+
+```bash
+curl -s "https://edwards-resources.github.io/year8-music/year8-music/popular-music/lesson-25/" | grep -c 'Key words: the whole term'
+```
