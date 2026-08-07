@@ -382,6 +382,36 @@
               "text": "A specific piece of music written for a particular moment in a film or game, decided during spotting and then composed to fit exactly."
             },
             {
+              "type": "table",
+              "heading": "Key words so far",
+              "headers": [
+                "Key word",
+                "What it means"
+              ],
+              "rows": [
+                [
+                  "Diegetic sound",
+                  ""
+                ],
+                [
+                  "Non-diegetic sound",
+                  ""
+                ],
+                [
+                  "Foley",
+                  ""
+                ],
+                [
+                  "Underscoring",
+                  ""
+                ],
+                [
+                  "Motif",
+                  ""
+                ]
+              ]
+            },
+            {
               "type": "support",
               "title": "Need a hand? Just mark three spots",
               "text": "Pick the beginning, the most dramatic moment, and the ending. Decide music, effect or silence for each of those three before trying the whole scene.",
@@ -700,6 +730,32 @@
               "text": "Video game music that changes depending on player actions or the game environment, rather than playing the same way every time."
             },
             {
+              "type": "table",
+              "heading": "Key words so far",
+              "headers": [
+                "Key word",
+                "What it means"
+              ],
+              "rows": [
+                [
+                  "Score",
+                  ""
+                ],
+                [
+                  "Leitmotif",
+                  ""
+                ],
+                [
+                  "Timbre",
+                  ""
+                ],
+                [
+                  "Soundtrack",
+                  ""
+                ]
+              ]
+            },
+            {
               "type": "support",
               "title": "Need a hand? Pick three states",
               "text": "Choose just three game states - calm, danger, victory - and describe one thing that would change about the music between each one: louder, faster, more instruments, a key change.",
@@ -1001,6 +1057,28 @@
               "text": "A sound effect that lands even half a second late reads as a mistake to an audience, even one that can't say why. Small adjustments matter more here than almost anywhere else in the project."
             },
             {
+              "type": "table",
+              "heading": "Key words so far",
+              "headers": [
+                "Key word",
+                "What it means"
+              ],
+              "rows": [
+                [
+                  "Suspense",
+                  ""
+                ],
+                [
+                  "Cue",
+                  ""
+                ],
+                [
+                  "Adaptive music",
+                  ""
+                ]
+              ]
+            },
+            {
               "type": "support",
               "title": "Need a hand? One layer at a time",
               "text": "Sync only the dialogue first and check it fully before touching foley. Sync only the foley and check it before touching music. Trying to fix all three at once is where sync work goes wrong.",
@@ -1255,6 +1333,36 @@
               "type": "prose",
               "title": "Reflection builds musicians.",
               "text": "The habit of asking what worked and what didn't is what turns one project into a skill you carry to the next one."
+            },
+            {
+              "type": "table",
+              "heading": "Key words so far",
+              "headers": [
+                "Key word",
+                "What it means"
+              ],
+              "rows": [
+                [
+                  "Foley",
+                  ""
+                ],
+                [
+                  "Motif",
+                  ""
+                ],
+                [
+                  "Score",
+                  ""
+                ],
+                [
+                  "Leitmotif",
+                  ""
+                ],
+                [
+                  "Underscoring",
+                  ""
+                ]
+              ]
             },
             {
               "type": "support",
@@ -1626,6 +1734,76 @@
               "type": "prose",
               "title": "Playback session.",
               "text": "We finish by watching the best projects from the term again, properly, as an audience rather than as markers."
+            },
+            {
+              "type": "table",
+              "heading": "Key words: the whole term",
+              "headers": [
+                "Key word",
+                "What it means"
+              ],
+              "rows": [
+                [
+                  "Diegetic sound",
+                  ""
+                ],
+                [
+                  "Non-diegetic sound",
+                  ""
+                ],
+                [
+                  "Foley",
+                  ""
+                ],
+                [
+                  "Underscoring",
+                  ""
+                ],
+                [
+                  "Motif",
+                  ""
+                ],
+                [
+                  "Cue",
+                  ""
+                ],
+                [
+                  "Score",
+                  ""
+                ],
+                [
+                  "Leitmotif",
+                  ""
+                ],
+                [
+                  "Timbre",
+                  ""
+                ],
+                [
+                  "Soundtrack",
+                  ""
+                ],
+                [
+                  "Adaptive music",
+                  ""
+                ],
+                [
+                  "Suspense",
+                  ""
+                ],
+                [
+                  "Synchronisation",
+                  ""
+                ],
+                [
+                  "Texture",
+                  ""
+                ],
+                [
+                  "Dynamics",
+                  ""
+                ]
+              ]
             },
             {
               "type": "support",

@@ -328,13 +328,19 @@ def block_html(block, loud=False, idx=0):
         # A scroll region needs a name and keyboard focus, or it is unreachable
         # without a pointer, and the hint says so in words rather than a fading edge.
         label = e(f"{h}, table" if h else "Table")
-        # The hint goes above the wrapper, so it is read before the clip, not after.
+        # Two columns fit a phone, so they drop the 34rem floor and stop asking to be
+        # swiped. The hint goes with it: a table that no longer clips must not tell a
+        # student to slide it, and the hint sits above the wrapper so it is read
+        # before the clip rather than after.
+        narrow = len(block["headers"]) <= 2
+        hint = ("" if narrow
+                else '<p class="tablehint">Swipe the table sideways to see the rest.</p>')
+        cls = "tablewrap" + (" is-fill" if fillable else "") + (" is-narrow" if narrow else "")
         note = ('<p class="fillnote">Type straight into the boxes. Your answers stay '
                 'on this device and are still here if you close the page.</p>'
                 if fillable else "")
-        return (f'<section class="blk">{head}'
-                '<p class="tablehint">Swipe the table sideways to see the rest.</p>'
-                f'<div class="tablewrap{" is-fill" if fillable else ""}" role="region" '
+        return (f'<section class="blk">{head}{hint}'
+                f'<div class="{cls}" role="region" '
                 f'tabindex="0" aria-label="{label}">'
                 f"<table><thead><tr>{th}</tr></thead><tbody>{rows}</tbody></table>"
                 f"</div>{note}</section>")

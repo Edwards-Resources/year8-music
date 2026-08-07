@@ -388,6 +388,32 @@
               "text": "How many layers of sound are heard at once, and how they interact. A solo voice is a thin texture; a full band with backing vocals is a thick one."
             },
             {
+              "type": "table",
+              "heading": "Key words so far",
+              "headers": [
+                "Key word",
+                "What it means"
+              ],
+              "rows": [
+                [
+                  "Genre",
+                  ""
+                ],
+                [
+                  "Beat",
+                  ""
+                ],
+                [
+                  "Groove",
+                  ""
+                ],
+                [
+                  "Loop",
+                  ""
+                ]
+              ]
+            },
+            {
               "type": "support",
               "title": "Need a hand? Just compare two",
               "text": "Compare pop against rock only. Ask one question: are the drums played by a person or made by a computer? Then say which sounds heavier, and why you think so.",
@@ -825,6 +851,32 @@
               "text": ""
             },
             {
+              "type": "table",
+              "heading": "Key words so far",
+              "headers": [
+                "Key word",
+                "What it means"
+              ],
+              "rows": [
+                [
+                  "Chord progression",
+                  ""
+                ],
+                [
+                  "Texture",
+                  ""
+                ],
+                [
+                  "Loop",
+                  ""
+                ],
+                [
+                  "Groove",
+                  ""
+                ]
+              ]
+            },
+            {
               "type": "support",
               "title": "Need a hand? Chorus only",
               "text": "Learn the chorus and nothing else. A chorus performed accurately and confidently is worth far more than a whole song played badly. Ask for a lyric sheet with the chords marked above the words.",
@@ -1216,6 +1268,32 @@
               ]
             },
             {
+              "type": "table",
+              "heading": "Key words so far",
+              "headers": [
+                "Key word",
+                "What it means"
+              ],
+              "rows": [
+                [
+                  "Bass line",
+                  ""
+                ],
+                [
+                  "Riff",
+                  ""
+                ],
+                [
+                  "Hook",
+                  ""
+                ],
+                [
+                  "Chord progression",
+                  ""
+                ]
+              ]
+            },
+            {
               "type": "support",
               "title": "Need a hand? Play the chorus only",
               "text": "A simplified section, played accurately, is a real performance. Use your annotated lyric and chord sheet, and play the part you know best.",
@@ -1458,6 +1536,28 @@
                 "Structure"
               ],
               "text": "The arrangement of sections in a piece of music, and the order they come in. In most pop and rock songs that is some combination of intro, verse, chorus, bridge and outro."
+            },
+            {
+              "type": "table",
+              "heading": "Key words so far",
+              "headers": [
+                "Key word",
+                "What it means"
+              ],
+              "rows": [
+                [
+                  "Tone colour",
+                  ""
+                ],
+                [
+                  "Dynamics",
+                  ""
+                ],
+                [
+                  "Reverb",
+                  ""
+                ]
+              ]
             },
             {
               "type": "support",
@@ -1940,6 +2040,68 @@
               "type": "prose",
               "title": "Playback session.",
               "text": "We finish by listening to the tracks again, properly, as an audience rather than as markers."
+            },
+            {
+              "type": "table",
+              "heading": "Key words: the whole term",
+              "headers": [
+                "Key word",
+                "What it means"
+              ],
+              "rows": [
+                [
+                  "Genre",
+                  ""
+                ],
+                [
+                  "Beat",
+                  ""
+                ],
+                [
+                  "Groove",
+                  ""
+                ],
+                [
+                  "Loop",
+                  ""
+                ],
+                [
+                  "Texture",
+                  ""
+                ],
+                [
+                  "Chord progression",
+                  ""
+                ],
+                [
+                  "Bass line",
+                  ""
+                ],
+                [
+                  "Riff",
+                  ""
+                ],
+                [
+                  "Hook",
+                  ""
+                ],
+                [
+                  "Tone colour",
+                  ""
+                ],
+                [
+                  "Dynamics",
+                  ""
+                ],
+                [
+                  "Reverb",
+                  ""
+                ],
+                [
+                  "Structure",
+                  ""
+                ]
+              ]
             },
             {
               "type": "support",

@@ -235,6 +235,10 @@ a{color:inherit}
 .tablewrap:focus-visible{outline:3px solid var(--pink);outline-offset:2px}
 .tablehint{display:none;font-size:.86rem;color:var(--soft);margin-bottom:.4rem}
 table{border-collapse:collapse;width:100%;font-size:.95rem;min-width:34rem}
+/* The 34rem floor keeps a four-column worksheet readable rather than crushed. A
+   two-column table has nothing to crush, so it drops to a width a phone can hold
+   and stops scrolling sideways for no reason. */
+.tablewrap.is-narrow table{min-width:19rem}
 th{background:var(--print);color:#fff;font-family:var(--display);font-weight:400;
    font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;text-align:left;padding:.6rem .7rem}
 td{border-bottom:1px solid var(--rule);padding:.6rem .7rem;vertical-align:top;
