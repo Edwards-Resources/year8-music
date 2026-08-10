@@ -1,0 +1,1439 @@
+{
+  "id": "keyboard",
+  "name": "Keyboard",
+  "subtitle": "The Keys to Success",
+  "term": "Term 1",
+  "blurb": "This term you start at the keyboard and learn to read music from scratch. Pitch, rhythm, notation and technique, building towards a Keyboard Skills Test where you perform a melody, an accompaniment, a scale, and a piece you choose yourself.",
+  "question": "How do pitch and rhythm combine to create melody?",
+  "outcomes": [
+    ["MU4-PER-01", "uses performance skills to demonstrate understanding of the elements of music and communicate musical ideas"],
+    ["MU4-LIS-01", "uses listening skills to describe music in relation to stylistic, cultural, historical or social contexts and the elements of music"],
+    ["MU4-COM-01", "improvises, arranges or composes using the elements of music to create musical ideas"]
+  ],
+  "assessment": {
+    "name": "Keyboard Skills",
+    "when": "Due Week 8",
+    "detail": "A performance for your teacher: a right hand melody, a left hand accompaniment, both hands together, a C major scale, and a short piece you choose yourself."
+  },
+  "sections": [
+    {
+      "letter": "A",
+      "name": "Pitch and the Keyboard",
+      "from": 1,
+      "to": 5,
+      "lessons": [
+        {
+          "number": 1,
+          "title": "High, Low and In Between",
+          "assessed": false,
+          "intention": "We are learning to identify high and low sounds and describe how a melody moves.",
+          "criteria": [
+            "I can tell whether a sound is high or low.",
+            "I can describe pitch movement as a step, a leap or a repeat."
+          ],
+          "blocks": [
+            {
+              "type": "prose",
+              "title": "Welcome to the keyboard room.",
+              "text": "Everything this term happens at a keyboard. Before you play a note you need one idea: pitch. Pitch is how high or low a sound is, and every piece of music you have ever heard is built out of it."
+            },
+            {
+              "type": "table",
+              "headers": ["What you hear", "What it is called"],
+              "rows": [
+                ["A sound that is high, like a whistle", "High pitch"],
+                ["A sound that is low, like a truck engine", "Low pitch"],
+                ["Moving to the note right next door", "Step"],
+                ["Skipping over notes to a further one", "Leap"],
+                ["Playing the same note again", "Repeat"]
+              ]
+            },
+            {
+              "type": "activity",
+              "title": "Your task",
+              "text": "Play any note in the middle of the keyboard. Now play one that is higher, one that is lower, then the same note twice. Show your partner a step, a leap and a repeat without saying which is which, and see if they can name it.",
+              "items": []
+            },
+            {
+              "type": "definition",
+              "terms": ["Pitch", "Step", "Leap", "Repeat"],
+              "text": "Pitch - how high or low a sound is. Step - moving to the note right next door. Leap - skipping over notes to a further one. Repeat - playing the same note again."
+            },
+            {
+              "type": "prose",
+              "title": "How this room works.",
+              "text": "Two people to a keyboard, headphones in, volume at a level you can still talk over. Nothing gets unplugged and nothing gets carried. If a key is not working, tell your teacher rather than fixing it yourself."
+            },
+            {
+              "type": "support",
+              "title": "Need a hand? Use your hand",
+              "text": "Hold your hand flat and move it up for higher, down for lower. Steps are small moves, leaps are big jumps, repeats stay still. Show the movement before you try to name it.",
+              "items": []
+            },
+            {
+              "type": "extension",
+              "text": "Play a five note pattern for your partner using only steps, then the same shape using only leaps. Talk about what changes in how it feels, not just in how it sounds.",
+              "items": []
+            },
+            {
+              "type": "exit",
+              "text": "Play one step and one leap for the person next to you, and say which is which."
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "title": "Reading the Treble Clef",
+          "assessed": false,
+          "intention": "We are learning to read and play treble clef notes.",
+          "criteria": [
+            "I can name the lines and spaces of the treble clef.",
+            "I can find middle C on the keyboard and on the staff."
+          ],
+          "blocks": [
+            {
+              "type": "prose",
+              "title": "Why bother with notation?",
+              "text": "You could learn every piece by copying your teacher. Notation means you do not have to. It is a system for writing sound down so that a musician who has never met you can play exactly what you wrote."
+            },
+            {
+              "type": "table",
+              "headers": ["Where it sits", "Notes, bottom to top", "How to remember it"],
+              "rows": [
+                ["The five lines", "E G B D F", "Every Good Boy Deserves Fruit"],
+                ["The four spaces", "F A C E", "They spell the word FACE"]
+              ]
+            },
+            {
+              "type": "table",
+              "heading": "Line or space?",
+              "headers": ["Note", "Line or space?"],
+              "rows": [["G", ""], ["C", ""], ["F", ""], ["E", ""], ["A", ""], ["D", ""]]
+            },
+            {
+              "type": "activity",
+              "title": "Your task",
+              "text": "Fill in the table above, then find middle C on your keyboard. Play an echo game with your partner: they play a note, you name it, then swap over.",
+              "items": []
+            },
+            {
+              "type": "definition",
+              "terms": ["Treble clef", "Staff", "Middle C", "Leger lines"],
+              "text": "Treble clef - the symbol at the start of the staff that fixes the higher notes in place. Staff - the five lines music is written on, also called the stave. Middle C - the note at the centre of the keyboard and of the staff system. Leger lines - short extra lines used for notes sitting above or below the staff."
+            },
+            {
+              "type": "support",
+              "title": "Need a hand? Start from one note",
+              "text": "You do not have to know all nine at once. Learn where middle C sits, then count up or down from it, one line and space at a time. Every other note is a short count away from something you already know.",
+              "items": []
+            },
+            {
+              "type": "extension",
+              "text": "Work out where these same notes appear in the bass clef, and why middle C needs a leger line in both clefs.",
+              "items": []
+            },
+            {
+              "type": "exit",
+              "text": "Name the four space notes of the treble clef, bottom to top."
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "title": "The Map of the Keyboard",
+          "assessed": false,
+          "intention": "We are learning to navigate the keyboard.",
+          "criteria": ["I can locate and name notes across the whole keyboard."],
+          "blocks": [
+            {
+              "type": "media",
+              "embed": "Pbsvz1hFCxI",
+              "brief": "The black keys come in groups of two and three. That pattern is the map, and it repeats all the way along the keyboard."
+            },
+            {
+              "type": "prose",
+              "title": "The pattern repeats.",
+              "text": "A keyboard looks like eighty eight different keys. It is really one pattern of twelve, printed over and over. Find the group of two black keys and C is the white key immediately to its left, every single time."
+            },
+            {
+              "type": "table",
+              "headers": ["White key", "How to find it"],
+              "rows": [
+                ["C", "Directly left of the group of two black keys"],
+                ["F", "Directly left of the group of three black keys"],
+                ["E", "Directly right of the group of two black keys"],
+                ["B", "Directly right of the group of three black keys"]
+              ]
+            },
+            {
+              "type": "activity",
+              "title": "Your task",
+              "text": "Keyboard scavenger hunt. Find and play every C on your keyboard, low to high. Then do the same for F. Count how many of each you found and compare with the keyboard next to you.",
+              "items": []
+            },
+            {
+              "type": "definition",
+              "terms": ["Octave"],
+              "text": "The distance from one note to the next note with the same name, higher or lower. Two Cs an octave apart sound like the same note in a different place."
+            },
+            {
+              "type": "support",
+              "title": "Need a hand? Two and three",
+              "text": "Ignore the white keys for a moment and look only at the black ones. Two, three, two, three, all the way along. Once you can see that pattern, C and F find themselves.",
+              "items": []
+            },
+            {
+              "type": "extension",
+              "text": "Play a chromatic run from one C to the next, using every white and black key in between. Count how many keys you played, and work out why that number is always the same.",
+              "items": []
+            },
+            {
+              "type": "exit",
+              "text": "How many Cs are there on your keyboard?"
+            }
+          ]
+        },
+        {
+          "number": 4,
+          "title": "Your First Melody",
+          "assessed": false,
+          "intention": "We are learning to perform a melody using correct fingering.",
+          "criteria": ["I can play a simple right hand melody with mostly correct pitch and rhythm."],
+          "blocks": [
+            {
+              "type": "media",
+              "embed": "0iUA3EHJSuw",
+              "brief": "Hot Cross Buns with the right hand. Watch the fingers before you watch the keys."
+            },
+            {
+              "type": "prose",
+              "title": "Fingers have numbers.",
+              "text": "Thumb is 1, index is 2, middle is 3, ring is 4, little finger is 5, on both hands. Music tells you which finger to use so your hand ends up in the right place for the next note instead of tying itself in a knot."
+            },
+            {
+              "type": "list",
+              "title": "How to learn it",
+              "items": [
+                "Put finger 3 on E, finger 2 on D, finger 1 on C. Do not move your hand after that.",
+                "Say the note names out loud, slowly: E D C, E D C.",
+                "Play it once at a speed where you make no mistakes at all.",
+                "Only then speed up. Fast and wrong takes longer to fix than slow and right."
+              ],
+              "text": ""
+            },
+            {
+              "type": "activity",
+              "title": "Your task",
+              "text": "Learn Hot Cross Buns with your right hand, using fingers 3, 2 and 1. When you can play it three times in a row without a mistake, play it for your partner and take their feedback.",
+              "items": []
+            },
+            {
+              "type": "definition",
+              "terms": ["Melody", "Technique"],
+              "text": "Melody - a sequence of pitches that makes a tune. Technique - the way you sit, shape your hand and choose fingers, so that playing stays accurate and comfortable."
+            },
+            {
+              "type": "support",
+              "title": "Need a hand? Three keys only",
+              "text": "This whole tune uses three keys next to each other. Mark E, D and C, keep your hand still, and let the fingers do the work. If your hand moves, the notes get harder than they need to be.",
+              "items": []
+            },
+            {
+              "type": "extension",
+              "text": "Add the second half of the tune, then play the whole thing an octave higher without changing your fingering.",
+              "items": []
+            },
+            {
+              "type": "exit",
+              "text": "Which finger plays E in Hot Cross Buns?"
+            }
+          ]
+        },
+        {
+          "number": 5,
+          "title": "Step, Leap, Repeat",
+          "assessed": false,
+          "intention": "We are learning to identify pitch movement in music.",
+          "criteria": [
+            "I can recognise whether a melody moves by step, leap or repeat.",
+            "I can describe the contour of a melody I hear."
+          ],
+          "blocks": [
+            {
+              "type": "listen",
+              "heading": "Three famous openings",
+              "tracks": [
+                {"title": "Repeat, then a leap down - Beethoven, Symphony No. 5", "embed": "bKFLH-y6Ao0"},
+                {"title": "Step - John Williams, Jaws main title", "embed": "ek0Hd4W-WZ8"},
+                {"title": "Leap - Over the Rainbow, from The Wizard of Oz", "embed": "areSgU0fGp8"}
+              ]
+            },
+            {
+              "type": "prose",
+              "title": "Three notes can be enough.",
+              "text": "Beethoven repeats one note three times and then drops. Williams uses two notes a semitone apart and nothing else. Over the Rainbow opens by leaping a full octave on the first word. None of these needed to be complicated to become unforgettable."
+            },
+            {
+              "type": "table",
+              "heading": "What each opening does",
+              "headers": ["Excerpt", "Step, leap or repeat?", "What it makes you feel"],
+              "rows": [
+                ["Beethoven, Symphony No. 5", "", ""],
+                ["Jaws main title", "", ""],
+                ["Over the Rainbow", "", ""]
+              ]
+            },
+            {
+              "type": "activity",
+              "title": "Your task",
+              "text": "Listen to each opening twice and fill in the table. Then draw the shape of each melody as a line going up, down or staying flat. That line is the contour.",
+              "items": []
+            },
+            {
+              "type": "definition",
+              "terms": ["Contour"],
+              "text": "The shape a melody makes as it rises, falls or stays level. Draw it as a line and you have drawn the contour."
+            },
+            {
+              "type": "table",
+              "heading": "Key words so far",
+              "headers": ["Key word", "What it means"],
+              "rows": [["Pitch", ""], ["Step", ""], ["Leap", ""], ["Repeat", ""], ["Treble clef", ""], ["Middle C", ""]]
+            },
+            {
+              "type": "support",
+              "title": "Need a hand? Draw before you name",
+              "text": "Do not try to name the movement first. Draw the shape with your finger in the air while it plays, then look at what your finger did. Small moves are steps, big jumps are leaps, no movement is a repeat.",
+              "items": []
+            },
+            {
+              "type": "extension",
+              "text": "Notate the first two bars of one of these openings by ear. Get the contour right first, then work on the exact notes.",
+              "items": []
+            },
+            {
+              "type": "exit",
+              "text": "Which of today's three openings used a leap, and how big was it?"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "letter": "B",
+      "name": "Rhythm and the Left Hand",
+      "from": 6,
+      "to": 10,
+      "lessons": [
+        {
+          "number": 6,
+          "title": "Beat and Rhythm",
+          "assessed": false,
+          "intention": "We are learning to understand the difference between beat and rhythm.",
+          "criteria": ["I can clap and perform basic rhythms using crotchets, quavers and rests."],
+          "blocks": [
+            {
+              "type": "media",
+              "embed": "F21pS3Wo8ko",
+              "brief": "Beat and rhythm are not the same thing, and mixing them up makes everything after this harder."
+            },
+            {
+              "type": "prose",
+              "title": "The beat is the floor.",
+              "text": "The beat is the steady pulse underneath, the thing you tap your foot to. It never changes. Rhythm is the pattern of long and short sounds you play on top of it. One is the floor, the other is what you do standing on it."
+            },
+            {
+              "type": "table",
+              "headers": ["Note", "How long", "What it looks like"],
+              "rows": [
+                ["Crotchet", "One beat", "A filled note head with a stem"],
+                ["Quaver", "Half a beat", "A filled note head with a stem and a tail"],
+                ["Crotchet rest", "One beat of silence", "A squiggle sitting on the middle line"]
+              ]
+            },
+            {
+              "type": "activity",
+              "title": "Your task",
+              "text": "In pairs. One person taps a steady beat on the desk and does not stop for anything. The other claps a rhythm over the top using crotchets, quavers and rests. Swap after eight beats. The tapper is not allowed to follow the clapper.",
+              "items": []
+            },
+            {
+              "type": "definition",
+              "terms": ["Beat", "Rhythm", "Crotchet", "Quaver", "Rest"],
+              "text": "Beat - the steady pulse of the music. Rhythm - the pattern of long and short sounds and silences. Crotchet - one beat. Quaver - half a beat. Rest - silence, written down so that it is played on purpose."
+            },
+            {
+              "type": "support",
+              "title": "Need a hand? Walk it",
+              "text": "Walk on the spot for the beat. Say the rhythm out loud while you walk: ta for a crotchet, ti ti for two quavers, shh for a rest. Your feet keep the beat honest while your mouth handles the rhythm.",
+              "items": []
+            },
+            {
+              "type": "extension",
+              "text": "Clap a rhythm that includes a syncopation, where a note lands off the beat rather than on it. Show your partner exactly where the surprise is.",
+              "items": []
+            },
+            {
+              "type": "exit",
+              "text": "Beat or rhythm: which one never changes?"
+            }
+          ]
+        },
+        {
+          "number": 7,
+          "title": "Writing Rhythm Down",
+          "assessed": false,
+          "intention": "We are learning to write and read rhythm notation.",
+          "criteria": ["I can listen to and accurately notate short rhythms."],
+          "blocks": [
+            {
+              "type": "prose",
+              "title": "Dictation is not a trick.",
+              "text": "Your teacher claps, you write it down. It feels impossible the first time and it stops feeling that way quickly, because the skill is really just counting. Four beats in a bar, and each beat holds one sound, two sounds or silence."
+            },
+            {
+              "type": "table",
+              "headers": ["Symbol", "Name", "What it tells you"],
+              "rows": [
+                ["4/4", "Time signature", "Four beats in every bar, and each one is a crotchet"],
+                ["The vertical line", "Bar line", "Divides the music into equal groups of beats"]
+              ]
+            },
+            {
+              "type": "list",
+              "title": "How to take a rhythm down",
+              "items": [
+                "Listen once and write nothing. Just find the beat.",
+                "Listen again, tapping the beat with your foot while the rhythm plays.",
+                "On the third listen, mark which beats have one sound, two sounds or no sound.",
+                "Write the note values in last. The counting is the hard part, not the drawing."
+              ],
+              "text": ""
+            },
+            {
+              "type": "table",
+              "heading": "Your dictation",
+              "headers": ["Bar", "What you heard", "Your notation"],
+              "rows": [["1", "", ""], ["2", "", ""], ["3", "", ""], ["4", "", ""]]
+            },
+            {
+              "type": "activity",
+              "title": "Your task",
+              "text": "Four dictations, four bars each. Use the four step method every time, then check against a partner before your teacher shows the answer. Where you disagree, clap both versions and decide which one matches.",
+              "items": []
+            },
+            {
+              "type": "definition",
+              "terms": ["Time signature", "Bar line"],
+              "text": "Time signature - the two numbers at the start that tell you how many beats are in each bar. Bar line - the vertical line that divides the music into equal groups of beats."
+            },
+            {
+              "type": "support",
+              "title": "Need a hand? Long and short first",
+              "text": "Forget note names to begin with. Draw a long dash for a long sound and a short dash for a short one, in the order you hear them. Turn the dashes into proper notes afterwards.",
+              "items": []
+            },
+            {
+              "type": "extension",
+              "text": "Take down a rhythm that includes semiquavers or a dotted crotchet, and write the counting underneath it.",
+              "items": []
+            },
+            {
+              "type": "exit",
+              "text": "How many crotchet beats are there in a bar of 4/4?"
+            }
+          ]
+        },
+        {
+          "number": 8,
+          "title": "The Left Hand Joins In",
+          "assessed": false,
+          "intention": "We are learning to perform left hand accompaniments.",
+          "criteria": ["I can play a steady drone or repeated pattern with my left hand."],
+          "blocks": [
+            {
+              "type": "listen",
+              "heading": "Music built over a drone",
+              "tracks": [
+                {"title": "Bagpipes, where the drones never stop", "embed": "Li0P9P_c9Zg"},
+                {"title": "William Barton and the Sydney Symphony Orchestra", "embed": "o6S0hTZr-TM"}
+              ]
+            },
+            {
+              "type": "prose",
+              "title": "One note, held, changes everything.",
+              "text": "A drone is a single note that keeps sounding while the melody moves above it. Bagpipes have pipes that do nothing else. The didgeridoo works the same way. It is the simplest accompaniment there is, and it is the one your left hand learns first."
+            },
+            {
+              "type": "prose",
+              "title": "The bass clef.",
+              "text": "Your left hand plays lower notes, so they are written on their own staff with a different symbol at the front. Same idea as the treble clef, different set of note names to learn."
+            },
+            {
+              "type": "activity",
+              "title": "Your task",
+              "text": "Left hand only. Put finger 5 on the C below middle C and play it on every beat while your teacher counts. Then play it on beats one and three only. Then two quavers on each beat. Same note the whole time, three different accompaniments.",
+              "items": []
+            },
+            {
+              "type": "definition",
+              "terms": ["Drone", "Accompaniment", "Bass clef"],
+              "text": "Drone - a single note held or repeated underneath a melody. Accompaniment - the supporting part that sits under the tune. Bass clef - the symbol for the lower staff, where the left hand usually reads."
+            },
+            {
+              "type": "support",
+              "title": "Need a hand? One finger, one key",
+              "text": "You need one finger on one key. Everything else here is timing. If keeping the beat is the hard part, play along with your teacher counting out loud until it locks in.",
+              "items": []
+            },
+            {
+              "type": "extension",
+              "text": "Instead of one note, alternate between C and G in your left hand. Work out why those two sound settled together, and what changes if you use C and D instead.",
+              "items": []
+            },
+            {
+              "type": "exit",
+              "text": "Name one instrument that has a drone built into it."
+            }
+          ]
+        },
+        {
+          "number": 9,
+          "title": "Melody and Accompaniment",
+          "assessed": false,
+          "intention": "We are learning to perform melody and accompaniment together.",
+          "criteria": ["I can play a simple melody with a left hand accompaniment at the same time."],
+          "blocks": [
+            {
+              "type": "prose",
+              "title": "The hardest thing so far.",
+              "text": "Two hands, doing different jobs, at the same time. Everyone finds this hard and everyone gets there. The trick is not practising harder, it is practising smaller."
+            },
+            {
+              "type": "list",
+              "title": "Chunking: how to actually get this",
+              "items": [
+                "Play the left hand alone until you no longer have to think about it.",
+                "Play the right hand alone until the same is true.",
+                "Play the first bar only, both hands, ridiculously slowly.",
+                "Add the second bar. Then the third. Never add a bar until the one before it is easy."
+              ],
+              "text": ""
+            },
+            {
+              "type": "activity",
+              "title": "Your task",
+              "text": "Hot Cross Buns, right hand melody, left hand drone on C. Use the chunking steps in order. Aim to get two bars solid rather than four bars messy.",
+              "items": []
+            },
+            {
+              "type": "definition",
+              "terms": ["Texture"],
+              "text": "How many layers of sound are happening at once and how they fit together. One hand on its own is a thin texture. Two hands doing different jobs is a thicker one."
+            },
+            {
+              "type": "table",
+              "heading": "Bar by bar",
+              "headers": ["Bar", "Left hand", "Right hand", "Solid yet?"],
+              "rows": [["1", "", "", ""], ["2", "", "", ""], ["3", "", "", ""], ["4", "", "", ""]]
+            },
+            {
+              "type": "support",
+              "title": "Need a hand? Split the job",
+              "text": "Play the melody while your partner plays the drone, then swap. Hearing the two parts together while you are only responsible for one of them makes the coordination much easier when you take both on.",
+              "items": []
+            },
+            {
+              "type": "extension",
+              "text": "Change the rhythm of your drone so it is not just on every beat. Keep the melody exactly as it is, and listen to how different the whole piece becomes.",
+              "items": []
+            },
+            {
+              "type": "exit",
+              "text": "What is the first step of chunking?"
+            }
+          ]
+        },
+        {
+          "number": 10,
+          "title": "Practice Stations",
+          "assessed": false,
+          "intention": "We are learning to consolidate our skills through practice.",
+          "criteria": ["I can identify one specific keyboard skill I need to work on, and improve it."],
+          "blocks": [
+            {
+              "type": "prose",
+              "title": "Practice is a skill you can be bad at.",
+              "text": "Playing a piece from start to finish over and over is close to the least useful thing you can do. Good practice finds the two bars that keep going wrong and works only on those."
+            },
+            {
+              "type": "list",
+              "title": "The three stations",
+              "items": [
+                "Melody station: right hand only, accuracy and fingering.",
+                "Rhythm station: clapping and reading, crotchets, quavers and rests.",
+                "Left hand station: drones and repeated patterns, in time."
+              ],
+              "text": ""
+            },
+            {
+              "type": "activity",
+              "title": "Your task",
+              "text": "Ten minutes at each station. Before you start, write down the one thing you most need to fix. At the end, write down whether you fixed it.",
+              "items": []
+            },
+            {
+              "type": "table",
+              "heading": "Key words so far",
+              "headers": ["Key word", "What it means"],
+              "rows": [["Beat", ""], ["Rhythm", ""], ["Crotchet", ""], ["Quaver", ""], ["Drone", ""], ["Accompaniment", ""]]
+            },
+            {
+              "type": "support",
+              "title": "Need a hand? Pick the smallest thing",
+              "text": "Do not write down get better at keyboard. Write down bar three, left hand, keeps coming in late. A problem that small is a problem you can actually solve in ten minutes.",
+              "items": []
+            },
+            {
+              "type": "extension",
+              "text": "Design a fourth station for the class. What skill would it work on, what would students actually do, and how would they know they had improved?",
+              "items": []
+            },
+            {
+              "type": "exit",
+              "text": "Name the one thing you improved today."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "letter": "C",
+      "name": "Scales and Hands Together",
+      "from": 11,
+      "to": 15,
+      "lessons": [
+        {
+          "number": 11,
+          "title": "Ode to Joy",
+          "assessed": false,
+          "intention": "We are learning to coordinate melody and accompaniment in a new piece.",
+          "criteria": ["I can perform a melody and accompaniment hands together with some fluency."],
+          "blocks": [
+            {
+              "type": "listen",
+              "heading": "The piece, as Beethoven wrote it",
+              "tracks": [
+                {"title": "Beethoven, Symphony No. 9, Ode to Joy - Sydney Symphony Orchestra", "embed": "O3uCdTCA0rA"}
+              ]
+            },
+            {
+              "type": "media",
+              "embed": "Y5DJjfJf8PQ",
+              "brief": "The same tune, at a size and a speed you can play this term."
+            },
+            {
+              "type": "prose",
+              "title": "Why this tune.",
+              "text": "Ode to Joy is almost entirely steps. It barely leaps anywhere. That is exactly why it works as your first real piece: your hand stays in one position, so your brain can spend its effort on the left hand instead."
+            },
+            {
+              "type": "activity",
+              "title": "Your task",
+              "text": "Learn the first four bars of Ode to Joy with your right hand, then add a left hand drone on C. Use chunking. This is one of the pieces available to you in the skills test, so the work you do today counts twice.",
+              "items": []
+            },
+            {
+              "type": "definition",
+              "terms": ["Dynamics"],
+              "text": "How loud or soft the music is. Piano means soft, forte means loud, and a crescendo means getting gradually louder."
+            },
+            {
+              "type": "support",
+              "title": "Need a hand? Steps make it easier",
+              "text": "Because the tune moves mostly by step, your fingers barely need to travel. Set your hand up once, thumb on middle C, and let each finger stay over its own key.",
+              "items": []
+            },
+            {
+              "type": "extension",
+              "text": "Add dynamics. Play the first phrase softly and its repeat loudly, then decide for yourself where the piece should grow and where it should pull back.",
+              "items": []
+            },
+            {
+              "type": "exit",
+              "text": "Does Ode to Joy move mostly by step or mostly by leap?"
+            }
+          ]
+        },
+        {
+          "number": 12,
+          "title": "The C Major Scale, Right Hand",
+          "assessed": false,
+          "intention": "We are learning to perform a C major scale with correct fingering.",
+          "criteria": ["I can play a one octave C major scale with my right hand."],
+          "blocks": [
+            {
+              "type": "media",
+              "embed": "i-buhBdqwtY",
+              "brief": "The thumb tuck is the whole trick. Watch for it at the fourth note."
+            },
+            {
+              "type": "prose",
+              "title": "Eight notes, five fingers.",
+              "text": "A scale runs C D E F G A B C, which is eight notes. You have five fingers. The thumb solves it: after the third note your thumb tucks under the hand and starts again, so you keep travelling without stopping."
+            },
+            {
+              "type": "table",
+              "headers": ["Note", "Right hand finger"],
+              "rows": [
+                ["C, start", "1, thumb"],
+                ["D", "2"],
+                ["E", "3"],
+                ["F", "1, thumb tucks under"],
+                ["G", "2"],
+                ["A", "3"],
+                ["B", "4"],
+                ["C, top", "5"]
+              ]
+            },
+            {
+              "type": "activity",
+              "title": "Your task",
+              "text": "Right hand, one octave, up and down. Start slowly enough that the thumb tuck is smooth rather than a jolt. Play it four times perfectly before you speed up at all.",
+              "items": []
+            },
+            {
+              "type": "definition",
+              "terms": ["Scale", "Fingering"],
+              "text": "Scale - a sequence of notes in order of pitch, the building blocks most melodies are made from. Fingering - which finger plays which note, chosen so the hand can keep moving."
+            },
+            {
+              "type": "support",
+              "title": "Need a hand? Five notes first",
+              "text": "Play C up to G and back, one finger per note, with no thumb tuck at all. Get that even and confident, then add the tuck as a separate job.",
+              "items": []
+            },
+            {
+              "type": "extension",
+              "text": "Play the scale over two octaves, then work out the fingering for G major and find where its one black key changes things.",
+              "items": []
+            },
+            {
+              "type": "exit",
+              "text": "Which finger plays F in the right hand C major scale?"
+            }
+          ]
+        },
+        {
+          "number": 13,
+          "title": "The C Major Scale, Left Hand",
+          "assessed": false,
+          "intention": "We are learning to perform a C major scale with our left hand.",
+          "criteria": ["I can play a one octave C major scale with my left hand."],
+          "blocks": [
+            {
+              "type": "media",
+              "embed": "0Hphvu_hJRQ",
+              "brief": "One octave, each hand on its own. The left hand fingering is a mirror of the right, not a copy of it."
+            },
+            {
+              "type": "prose",
+              "title": "The mirror.",
+              "text": "The left hand starts on finger 5 and works down to the thumb, then the third finger crosses over the top of it. Same idea as the right hand thumb tuck, running the other way. Expect it to feel wrong for about ten minutes."
+            },
+            {
+              "type": "table",
+              "headers": ["Note", "Left hand finger"],
+              "rows": [
+                ["C, start", "5, little finger"],
+                ["D", "4"],
+                ["E", "3"],
+                ["F", "2"],
+                ["G", "1, thumb"],
+                ["A", "3, crosses over the thumb"],
+                ["B", "2"],
+                ["C, top", "1"]
+              ]
+            },
+            {
+              "type": "activity",
+              "title": "Your task",
+              "text": "Left hand, one octave, up and down. Say the finger numbers out loud as you play them. When you can do it without saying them, do it with your eyes off your hand.",
+              "items": []
+            },
+            {
+              "type": "support",
+              "title": "Need a hand? Watch where 3 goes",
+              "text": "The whole thing works if the third finger crosses over the thumb at the right moment. Practise just those two notes, thumb then third finger crossing, twenty times, before you play the scale again.",
+              "items": []
+            },
+            {
+              "type": "extension",
+              "text": "Play the left hand scale in contrary motion with the right: both thumbs starting on middle C and the hands moving in opposite directions.",
+              "items": []
+            },
+            {
+              "type": "exit",
+              "text": "Which finger does the left hand start the scale on?"
+            }
+          ]
+        },
+        {
+          "number": 14,
+          "title": "Hands Together",
+          "assessed": false,
+          "intention": "We are learning to perform a C major scale hands together.",
+          "criteria": ["I can play a one octave C major scale with both hands at the same time."],
+          "blocks": [
+            {
+              "type": "media",
+              "embed": "oU5jRnpJqM4",
+              "brief": "Hands together. The video runs two octaves. You only need one, so stop at the top of the first."
+            },
+            {
+              "type": "prose",
+              "title": "The two thumbs never land together.",
+              "text": "That is what makes this hard. The right thumb tucks at F while the left hand is still descending, and the left hand crosses at A while the right is doing nothing unusual. If you try to feel both, you lose both. Listen instead: if the scale sounds even, it is even."
+            },
+            {
+              "type": "list",
+              "title": "Four notes at a time",
+              "items": [
+                "Play C D E F hands together. Stop. Check.",
+                "Play G A B C hands together. Stop. Check.",
+                "Join the two halves. Slowly.",
+                "Only once it is even, add the way back down."
+              ],
+              "text": ""
+            },
+            {
+              "type": "activity",
+              "title": "Your task",
+              "text": "One octave, hands together, up and down. Four notes at a time. If the hands come apart, go back to the four note chunk where it happened rather than starting again from the top.",
+              "items": []
+            },
+            {
+              "type": "support",
+              "title": "Need a hand? Hands separately is a valid result",
+              "text": "Hands together is the extension, not the requirement. The skills test accepts the scale hands separately. Get each hand genuinely solid, then try them together with whatever time is left.",
+              "items": []
+            },
+            {
+              "type": "extension",
+              "text": "Play the scale hands together at three different tempos, and add a crescendo going up and a diminuendo coming back down.",
+              "items": []
+            },
+            {
+              "type": "exit",
+              "text": "At which note does the right hand thumb tuck under?"
+            }
+          ]
+        },
+        {
+          "number": 15,
+          "title": "Write a Four Bar Rhythm",
+          "assessed": false,
+          "intention": "We are learning to compose and perform short rhythmic patterns.",
+          "criteria": ["I can create and notate a short rhythm using crotchets, quavers and rests."],
+          "blocks": [
+            {
+              "type": "prose",
+              "title": "Your turn to write.",
+              "text": "You have been reading other people's rhythms all term. Now you write one. Four bars of 4/4, using crotchets, quavers and rests only. It has to be playable, and you have to be the one who plays it."
+            },
+            {
+              "type": "list",
+              "title": "Rules of the task",
+              "items": [
+                "Four bars, four beats in each. Count them.",
+                "Crotchets, quavers and rests only.",
+                "At least one rest somewhere, because silence is part of rhythm.",
+                "Repeat something. A pattern that comes back is what makes it sound composed rather than random."
+              ],
+              "text": ""
+            },
+            {
+              "type": "table",
+              "heading": "Your composition",
+              "headers": ["Bar", "Your rhythm", "Does it add up to 4?"],
+              "rows": [["1", "", ""], ["2", "", ""], ["3", "", ""], ["4", "", ""]]
+            },
+            {
+              "type": "activity",
+              "title": "Your task",
+              "text": "Write your four bars, count the beats in each one, then perform it. Clap it first, then play it on a single note on the keyboard so it becomes music rather than clapping.",
+              "items": []
+            },
+            {
+              "type": "definition",
+              "terms": ["Ostinato"],
+              "text": "A short pattern repeated over and over. If one of your bars keeps coming back, you have written an ostinato."
+            },
+            {
+              "type": "table",
+              "heading": "Key words so far",
+              "headers": ["Key word", "What it means"],
+              "rows": [["Texture", ""], ["Dynamics", ""], ["Scale", ""], ["Fingering", ""], ["Contour", ""]]
+            },
+            {
+              "type": "support",
+              "title": "Need a hand? Steal a rhythm",
+              "text": "Clap the rhythm of a sentence you say often, or of your own name repeated four times. Write down what you clapped. That is a composition and it is yours.",
+              "items": []
+            },
+            {
+              "type": "extension",
+              "text": "Write a second four bar rhythm that answers the first, so the two together sound like a question and a reply. Perform them one after the other.",
+              "items": []
+            },
+            {
+              "type": "exit",
+              "text": "How many beats should each of your bars add up to?"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "letter": "D",
+      "name": "Refine and Rehearse",
+      "from": 16,
+      "to": 20,
+      "lessons": [
+        {
+          "number": 16,
+          "title": "Morning Mood",
+          "assessed": false,
+          "intention": "We are learning to refine our skills and choose our repertoire.",
+          "criteria": ["I can identify my strengths and weaknesses in keyboard skills."],
+          "blocks": [
+            {
+              "type": "listen",
+              "heading": "The piece, as Grieg wrote it",
+              "tracks": [
+                {"title": "Grieg, Morning Mood from Peer Gynt - Seattle Symphony", "embed": "aMs0rNtBZJk"}
+              ]
+            },
+            {
+              "type": "media",
+              "embed": "LNVBi1DN-mw",
+              "brief": "The keyboard version. Slower and smaller, same tune."
+            },
+            {
+              "type": "prose",
+              "title": "The other option.",
+              "text": "Morning Mood is the second piece available in the skills test. It is more of a stretch than Ode to Joy and it rewards expression more, because the tune is one idea repeated at different heights rather than a new idea each bar."
+            },
+            {
+              "type": "activity",
+              "title": "Your task",
+              "text": "Work the stations again, but this time choose your own order and spend the most time on your weakest skill. Then decide which piece you are taking into the skills test, and tell your teacher.",
+              "items": []
+            },
+            {
+              "type": "definition",
+              "terms": ["Expression"],
+              "text": "The detail that shapes mood and style: how loud, how smooth, how much you shape a phrase, rather than only playing the right notes."
+            },
+            {
+              "type": "table",
+              "heading": "Where you are up to",
+              "headers": ["Skill", "Confident", "Getting there", "Needs work"],
+              "rows": [
+                ["Right hand melody", "", "", ""],
+                ["Left hand accompaniment", "", "", ""],
+                ["Hands together", "", "", ""],
+                ["C major scale", "", "", ""],
+                ["Own choice piece", "", "", ""]
+              ]
+            },
+            {
+              "type": "support",
+              "title": "Need a hand? Be honest in the table",
+              "text": "The table is only useful if you tell the truth in it. Marking everything confident means you get no help, and the skills test will find out anyway.",
+              "items": []
+            },
+            {
+              "type": "extension",
+              "text": "Listen to two different orchestras play Morning Mood and describe what each one does differently with dynamics and tempo.",
+              "items": []
+            },
+            {
+              "type": "exit",
+              "text": "Which piece are you taking into the skills test, and why that one?"
+            }
+          ]
+        },
+        {
+          "number": 17,
+          "title": "Trial Run",
+          "assessed": false,
+          "intention": "We are learning to prepare for our skills test.",
+          "criteria": ["I can perform the assessment skills sequence under practice conditions."],
+          "blocks": [
+            {
+              "type": "prose",
+              "title": "A rehearsal, not the real thing.",
+              "text": "Today you do the whole sequence in order, in front of one other person, marked against the same rubric your teacher will use. Nothing counts. That is the point: find out now what falls apart."
+            },
+            {
+              "type": "list",
+              "title": "The sequence, in order",
+              "items": [
+                "Right hand melody.",
+                "Left hand accompaniment.",
+                "Melody and accompaniment together.",
+                "C major scale, one octave, hands separately or together.",
+                "Your own choice piece."
+              ],
+              "text": ""
+            },
+            {
+              "type": "activity",
+              "title": "Your task",
+              "text": "In pairs. One performs the full sequence, the other marks it against the rubric and writes down one specific thing to fix. Then swap. Specific means bar and hand, not it was good.",
+              "items": []
+            },
+            {
+              "type": "table",
+              "heading": "Peer feedback",
+              "headers": ["Skill", "What went well", "One thing to fix"],
+              "rows": [
+                ["Right hand melody", "", ""],
+                ["Left hand accompaniment", "", ""],
+                ["Hands together", "", ""],
+                ["C major scale", "", ""],
+                ["Own choice piece", "", ""]
+              ]
+            },
+            {
+              "type": "support",
+              "title": "Need a hand? Perform to one person",
+              "text": "If the audience is the hard part rather than the playing, ask to perform to your teacher alone, or to face away from the room. Do the run through either way. Skipping it does not make the test easier.",
+              "items": []
+            },
+            {
+              "type": "extension",
+              "text": "Perform your sequence to a small group rather than one partner, and take three pieces of feedback rather than one.",
+              "items": []
+            },
+            {
+              "type": "exit",
+              "text": "What is the one thing you are going to fix before the test?"
+            }
+          ]
+        },
+        {
+          "number": 18,
+          "title": "Listening and Notation Revision",
+          "assessed": false,
+          "intention": "We are learning to prepare for the listening and notation quiz.",
+          "criteria": ["I can identify pitch movement and accurately notate short rhythms."],
+          "blocks": [
+            {
+              "type": "prose",
+              "title": "What the quiz asks you to do.",
+              "text": "Two things, both of which you have done all term. Hear a melody and say whether it moves by step, leap or repeat. Hear a rhythm and write it down. There is nothing new in it."
+            },
+            {
+              "type": "list",
+              "title": "Contour, in one listen",
+              "items": [
+                "Is the last note higher or lower than the first?",
+                "Does it move in small moves or big jumps?",
+                "Does anything come back?",
+                "Draw the line before you write the word."
+              ],
+              "text": ""
+            },
+            {
+              "type": "activity",
+              "title": "Your task",
+              "text": "Six contour examples and four rhythm dictations, run as a practice quiz. Mark your own, then work out which of the two halves needs your revision time.",
+              "items": []
+            },
+            {
+              "type": "table",
+              "heading": "Contour practice",
+              "headers": ["Example", "Step, leap or repeat?"],
+              "rows": [["1", ""], ["2", ""], ["3", ""], ["4", ""], ["5", ""], ["6", ""]]
+            },
+            {
+              "type": "definition",
+              "terms": ["Dictation"],
+              "text": "Writing down music you hear rather than music you read. Rhythmic dictation is the version you are doing: hear it, count it, notate it."
+            },
+            {
+              "type": "support",
+              "title": "Need a hand? Answer out loud",
+              "text": "You can answer the contour questions by pointing up, down or flat, and the rhythm questions by clapping them back before you write anything. Ask your teacher if you would rather work that way.",
+              "items": []
+            },
+            {
+              "type": "extension",
+              "text": "Take down a dictation that includes both pitch and rhythm, not just rhythm, written on the treble staff.",
+              "items": []
+            },
+            {
+              "type": "exit",
+              "text": "Step, leap or repeat: which one has the flattest contour?"
+            }
+          ]
+        },
+        {
+          "number": 19,
+          "title": "Your Own Focus",
+          "assessed": false,
+          "intention": "We are learning to improve our skills through practice and feedback.",
+          "criteria": ["I can demonstrate progress on a skill I chose to work on."],
+          "blocks": [
+            {
+              "type": "prose",
+              "title": "You pick.",
+              "text": "One lesson, one skill, your choice. Your teacher is conferencing one to one today, so the work you do here gets direct feedback on the thing you actually need."
+            },
+            {
+              "type": "list",
+              "title": "Choosing well",
+              "items": [
+                "Look at your self assessment table from Lesson 16.",
+                "Take the row you marked needs work.",
+                "Narrow it down to one bar, or one hand.",
+                "Spend the whole lesson on that. Not on the whole piece."
+              ],
+              "text": ""
+            },
+            {
+              "type": "activity",
+              "title": "Your task",
+              "text": "Choose your one skill, write it down, and work on it for the lesson. When your teacher reaches you, play the thing you have been working on rather than the thing you already do well.",
+              "items": []
+            },
+            {
+              "type": "support",
+              "title": "Need a hand? Ask for the drill",
+              "text": "If you know what is wrong but not how to fix it, that is exactly the question to ask. There is a drill for almost everything: slow it down, isolate one hand, isolate two notes, repeat twenty times.",
+              "items": []
+            },
+            {
+              "type": "extension",
+              "text": "Rather than fixing a weakness, take a strength further. Add dynamics and phrasing to your own choice piece so that it is interpreted, not only correct.",
+              "items": []
+            },
+            {
+              "type": "exit",
+              "text": "What did you work on today, and is it better than it was?"
+            }
+          ]
+        },
+        {
+          "number": 20,
+          "title": "Dress Rehearsal",
+          "assessed": false,
+          "intention": "We are learning to demonstrate readiness for the assessment.",
+          "criteria": ["I can perform all of the assessment skills in sequence."],
+          "blocks": [
+            {
+              "type": "prose",
+              "title": "Full run, no stopping.",
+              "text": "Everything, in order, without going back to fix anything. In the test you get one go at each skill, so today you practise carrying on after a mistake rather than restarting."
+            },
+            {
+              "type": "list",
+              "title": "What your teacher is checking",
+              "items": [
+                "That you know the order of the sequence without being prompted.",
+                "That your own choice piece is chosen, approved and learned.",
+                "That your scale has a fingering you can repeat, not one you invent each time.",
+                "That a wrong note does not stop the performance."
+              ],
+              "text": ""
+            },
+            {
+              "type": "activity",
+              "title": "Your task",
+              "text": "Perform the full sequence under timed conditions. If something goes wrong, keep going. Afterwards, write down the one bar you would most like another week on.",
+              "items": []
+            },
+            {
+              "type": "table",
+              "heading": "Key words so far",
+              "headers": ["Key word", "What it means"],
+              "rows": [["Ostinato", ""], ["Expression", ""], ["Technique", ""], ["Bass clef", ""], ["Dictation", ""]]
+            },
+            {
+              "type": "support",
+              "title": "Need a hand? Shorten the run",
+              "text": "A shortened sequence is a valid submission. Talk to your teacher before the test about which skills you are presenting and in what form, so that it is agreed rather than decided on the day.",
+              "items": []
+            },
+            {
+              "type": "extension",
+              "text": "Perform your sequence for another class group, or record it and mark your own recording against the rubric as if it belonged to someone else.",
+              "items": []
+            },
+            {
+              "type": "exit",
+              "text": "Which bar would you most like another week on?"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "letter": "E",
+      "name": "Test and Beyond",
+      "from": 21,
+      "to": 25,
+      "lessons": [
+        {
+          "number": 21,
+          "title": "Keyboard Skills Test",
+          "assessed": true,
+          "intention": "We are learning to demonstrate our keyboard skills.",
+          "criteria": [
+            "I can perform a right hand melody, a left hand accompaniment, both hands together, and a C major scale."
+          ],
+          "blocks": [
+            {
+              "type": "prose",
+              "title": "This lesson is assessed.",
+              "text": "You perform the skills sequence individually for your teacher, marked against the rubric you have been using since Lesson 17."
+            },
+            {
+              "type": "list",
+              "title": "What you are marked on",
+              "items": [
+                "Accuracy - right notes, right rhythm, steady tempo",
+                "Technique - hand position, posture and consistent fingering",
+                "Fluency - the performance keeps going rather than restarting",
+                "Coordination - the two hands hold together"
+              ],
+              "text": ""
+            },
+            {
+              "type": "prose",
+              "title": "Audience.",
+              "text": "Respectful listening is part of the lesson. No talking, no phones, and applaud everyone."
+            },
+            {
+              "type": "prose",
+              "title": "Adjustments available",
+              "text": "A shortened sequence, hands separately rather than together, or a smaller range on the scale are all valid submissions. Speak to your teacher before the lesson rather than on the day."
+            },
+            {
+              "type": "prose",
+              "title": "Going further",
+              "text": "Present the scale hands together over two octaves, or carry dynamics and phrasing across the whole sequence rather than only in your own choice piece."
+            }
+          ]
+        },
+        {
+          "number": 22,
+          "title": "Own Choice Piece and Listening Quiz",
+          "assessed": true,
+          "intention": "We are learning to demonstrate our individual skills and understanding.",
+          "criteria": [
+            "I can perform my own choice piece.",
+            "I can identify pitch movement and notate short rhythms in a quiz."
+          ],
+          "blocks": [
+            {
+              "type": "prose",
+              "title": "This lesson is assessed.",
+              "text": "Two parts. You perform the piece you chose, then you complete the listening and notation quiz. Both are marked."
+            },
+            {
+              "type": "list",
+              "title": "What you are marked on",
+              "items": [
+                "Own choice piece - accuracy, fluency and expression",
+                "Listening - identifying step, leap and repeat",
+                "Notation - writing down short rhythms accurately"
+              ],
+              "text": ""
+            },
+            {
+              "type": "prose",
+              "title": "Audience.",
+              "text": "Respectful listening is part of the lesson. No talking, no phones, and applaud everyone."
+            },
+            {
+              "type": "prose",
+              "title": "Adjustments available",
+              "text": "An excerpt rather than a full piece, oral answers instead of written ones, and a simplified dictation are all available. Arrange it with your teacher beforehand."
+            },
+            {
+              "type": "prose",
+              "title": "Going further",
+              "text": "Justify your interpretation. Explain why you played a phrase the way you did, and what you wanted the audience to hear in it."
+            }
+          ]
+        },
+        {
+          "number": 23,
+          "title": "Keyboard Challenges",
+          "assessed": false,
+          "intention": "We are learning to celebrate our skills through challenges.",
+          "criteria": ["I can take part in challenges that show what I can play."],
+          "blocks": [
+            {
+              "type": "prose",
+              "title": "The test is done.",
+              "text": "Three lessons left and no assessment in any of them. Today is skill games: the same things you have been practising all term, played against a clock and against each other."
+            },
+            {
+              "type": "list",
+              "title": "The four challenges",
+              "items": [
+                "Scale sprint: C major, one octave up and down, cleanly, as fast as you can hold it together.",
+                "Note name relay: your teacher points at a key, first correct name takes the point.",
+                "Contour call: hear four notes, name the shape before anyone else does.",
+                "No mistakes: play Hot Cross Buns four times in a row. One wrong note and you start again."
+              ],
+              "text": ""
+            },
+            {
+              "type": "activity",
+              "title": "Your task",
+              "text": "Rotate through all four challenges in teams and keep score. The scale sprint is the one worth practising between rounds, because speed without accuracy scores nothing.",
+              "items": []
+            },
+            {
+              "type": "support",
+              "title": "Need a hand? Accuracy beats speed",
+              "text": "Every one of these gives the point to the clean answer, not the fast one. Playing at half speed with no mistakes wins more rounds than rushing does.",
+              "items": []
+            },
+            {
+              "type": "extension",
+              "text": "Set the challenge for the next round. Design a fifth game, explain the rules, and run it for your group.",
+              "items": []
+            },
+            {
+              "type": "exit",
+              "text": "Which challenge did your team do best at?"
+            }
+          ]
+        },
+        {
+          "number": 24,
+          "title": "The Group Jingle",
+          "assessed": false,
+          "intention": "We are learning to compose collaboratively.",
+          "criteria": ["I can contribute to a group composition and perform it with others."],
+          "blocks": [
+            {
+              "type": "prose",
+              "title": "Four bars, one group.",
+              "text": "In groups, write a jingle. Four bars long, with a melody and an accompaniment, and memorable enough that another group can hum it back after hearing it once."
+            },
+            {
+              "type": "list",
+              "title": "How to build it",
+              "items": [
+                "Agree the rhythm first. Clap it until everyone has it.",
+                "Put pitches on that rhythm using notes from the C major scale.",
+                "Add a left hand drone or an ostinato underneath.",
+                "Rehearse it, then perform it. Every person in the group plays something."
+              ],
+              "text": ""
+            },
+            {
+              "type": "table",
+              "heading": "Who is doing what",
+              "headers": ["Job", "Who is doing it", "What they play"],
+              "rows": [
+                ["Melody", "", ""],
+                ["Accompaniment", "", ""],
+                ["Rhythm or percussion", "", ""],
+                ["Counting in and starting", "", ""]
+              ]
+            },
+            {
+              "type": "activity",
+              "title": "Your task",
+              "text": "Write, rehearse and perform your four bar jingle. Every member of the group has a part. The test of it is whether the class can hum it back afterwards.",
+              "items": []
+            },
+            {
+              "type": "support",
+              "title": "Need a hand? One note is a part",
+              "text": "A part can be a single note played on beat one of every bar. That is a real contribution to the texture and it counts. Take the job you can do well rather than the loudest one.",
+              "items": []
+            },
+            {
+              "type": "extension",
+              "text": "Extend the jingle to eight bars, with the second four answering the first, and notate it so another group could play it without ever hearing you.",
+              "items": []
+            },
+            {
+              "type": "exit",
+              "text": "Could the class hum your jingle back? What made it stick, or not?"
+            }
+          ]
+        },
+        {
+          "number": 25,
+          "title": "Wrap-Up and Reflection",
+          "assessed": false,
+          "intention": "We are learning to reflect on our progress and set a goal for next term.",
+          "criteria": ["I can describe what I improved in and set a target for future learning."],
+          "blocks": [
+            {
+              "type": "prose",
+              "title": "Ten weeks ago.",
+              "text": "In Lesson 1 you were working out which sounds were high and which were low. By Lesson 21 you performed a melody, an accompaniment, both hands together and a scale, for a mark. That is a term."
+            },
+            {
+              "type": "table",
+              "heading": "Your reflection",
+              "headers": ["Question", "Your answer"],
+              "rows": [
+                ["What did I improve most in this term?", ""],
+                ["What was hardest, and how did I get past it?", ""],
+                ["Performing or composing - which suited me better?", ""],
+                ["My target for next term", ""]
+              ]
+            },
+            {
+              "type": "activity",
+              "title": "Your task",
+              "text": "Fill in the reflection table, then the glossary below. Answer the glossary from memory first, and only look back through the term for the ones you cannot get.",
+              "items": []
+            },
+            {
+              "type": "table",
+              "heading": "Key words: the whole term",
+              "headers": ["Key word", "What it means"],
+              "rows": [
+                ["Pitch", ""], ["Step", ""], ["Leap", ""], ["Repeat", ""],
+                ["Treble clef", ""], ["Bass clef", ""], ["Middle C", ""], ["Leger lines", ""],
+                ["Staff", ""], ["Bar line", ""], ["Time signature", ""],
+                ["Beat", ""], ["Rhythm", ""], ["Crotchet", ""], ["Quaver", ""], ["Rest", ""],
+                ["Scale", ""], ["Contour", ""], ["Melody", ""], ["Accompaniment", ""],
+                ["Dynamics", ""], ["Expression", ""], ["Technique", ""]
+              ]
+            },
+            {
+              "type": "support",
+              "title": "Need a hand? Reflection starters",
+              "text": "\"One thing I can do now that I could not in Week 1 is ...\"   \"The hardest part was ...\"   \"Next term I want to ...\" You can answer these out loud instead of writing them.",
+              "items": []
+            },
+            {
+              "type": "extension",
+              "text": "Evaluate your development critically. What is the ceiling on your current keyboard skills, what specifically would you need to learn to get past it, and what is an ambitious but real goal for next term?",
+              "items": []
+            },
+            {
+              "type": "prose",
+              "title": "Next term:",
+              "text": "Guitar. Different instrument, same three jobs: read it, play it, listen to it. The notation and rhythm work you did this term carries straight across."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
