@@ -1,6 +1,8 @@
 # Next session
 
-**Where things stand (6 August 2026):** Term 3 and Term 4 are both built, reviewed, published and full of playable video. Live at **https://edwards-resources.github.io/year8-music/**, public repo `Edwards-Resources/year8-music`, Pages on `main` `/docs`. 53 pages, 62 video players across the two terms. `python3 build.py` emits from `data/` into `docs/`.
+**Where things stand (10 August 2026):** Terms 1, 3 and 4 are built. Term 2 Guitar is the only gap. Live at **https://edwards-resources.github.io/year8-music/**, public repo `Edwards-Resources/year8-music`, Pages on `main` `/docs`. 79 pages, 77 video players across the three terms. `python3 build.py` emits from `data/` into `docs/`.
+
+**Term 1 Keyboard was built 10 August 2026** and is committed but **not pushed** - Matthew had not been asked yet. `keyboard.json`, 25 lessons, 15 verified video slots, key-word tables at 5, 10, 15, 20 and the registered unit vocabulary as the Lesson 25 glossary. It sits first in `course.json`, so the home page now opens on Term 1. See "Three things Term 1 turned up" below before building Term 2.
 
 **Popular Music was revised on 6 August 2026** against Matthew's per-lesson notes: worksheet tables are now typeable, Lesson 9 gained a beat-grid diagram, Lessons 11, 13, 16 and 18 changed repertoire, and Flume and Thelma Plum are out of the term entirely. See "The Flume lesson" below - it is the important one.
 
@@ -45,13 +47,31 @@ Getting there took eleven hours, for a reason worth not repeating. Five commits 
 
 **Popular Music Lesson 13 needs Matthew's ear on one track.** He asked for The Easybeats' "Friday On My Mind" as the vocal-riff example, for a "na na na na" section. No such section could be located - the famous hook in that song is the guitar riff - so it went in as asked and was flagged rather than swapped or quietly left wrong. If he names a different song, swap the track and its `Vocal riff - ` title prefix in `popular-music.json` Lesson 13 and rebuild. Nothing else depends on it.
 
+## Three things Term 1 turned up
+
+Read these before Term 2. All three are about the source documents, not the site.
+
+1. **The unit is called Keyboard on the site, not Piano.** This file and PRODUCT.md both said "Term 1 Piano", which came from the archive folder name. The registered program says keyboard everywhere, the classroom instruments are keyboards, and the task is "Keyboard Skills". The program is the authority, so the topic id is `keyboard` and the name is Keyboard, with the registered unit title "The Keys to Success" as the subtitle. **Matthew has not confirmed this** - if he prefers Piano, rename the id, the folder under `docs/` will follow on rebuild, and fix the pointer in `course.json`.
+
+2. **Two documents name different repertoire.** The program teaches Hot Cross Buns from the Beats & Tunes booklet. The Semester 1 task overview names "Morning" from Peer Gynt and Ode to Joy as the assessment melodies. Both are now on the site and neither was dropped: Hot Cross Buns is the teaching melody at Lessons 4 and 9, Ode to Joy arrives at Lesson 11 and Morning Mood at Lesson 16, so students choose between the two assessment pieces with six lessons left. Worth Matthew reconciling the two documents even so.
+
+3. **The Week 8 due date and the lesson sequence disagree by about a lesson.** The schedule says the task is due Week 8 of Term 1. The program's own sequence puts the Keyboard Skills Test at Lesson 21, and at 2.5 lessons a week that lands early in Week 9. The site says "Due Week 8" because the registered schedule is the authority, and the assessed flag sits on Lessons 21 and 22 because the program's sequence is. Not resolvable from the documents.
+
+Also worth knowing: **`build.py` does not assert the key-word rule**, despite what this file said on 7 August. It was checked by hand for Term 3 and Term 4, and by a throwaway script for Term 1. Do the same for Term 2, or add the assert properly.
+
 ## The next task
 
-**Build Term 1 (Piano)**, then Term 2 (Guitar), into the existing system, so the site is complete for the 2027 Year 8 intake.
+**Build Term 2 (Guitar)**, and the site is complete for the 2027 Year 8 intake.
 
-The previous cohort's material is in `Year 8 (2026)/Archive (pre-2026)/`. It needs **rebuilding, not porting**: the registered program in `Year 8 (2026)/Program and Assessment/` is the authority, and the archive is last year's teaching material rather than a source of truth. This is how Term 4 was built - the archive folder for it was barely used; the program document supplied the real lesson sequence.
+The registered program is `Year 8 (2026)/Program and Assessment/Year 8 Music Term 2.docx`, unit title "Striking the Right Chord". It runs guitar performance alongside tone colour as the listening strand: string names and single-string riffs, then multi-string riffs, then open chords and strumming, orchestral families and world instruments, a Week 7 performance and listening assessment, and a three-week band project to finish. It has a full 25-lesson learning-experience table, same shape as Term 1's.
 
-Shape of the work: add `data/courses/year8-music/topics/piano.json` (or similar id) following `popular-music.json` and `film-soundtrack.json`, add its id to `course.json`, rebuild. No CSS should be needed. Media is a solved problem - use a `media` block for one instructional video, or `listen` tracks each carrying an `embed` for a run of repertoire.
+**Its header block is wrong in the source document** and should not be copied: it says YEAR 12 and UNIT LENGTH 4 TERMS, both left over from whatever it was pasted from. It is a Year 8, one-term unit. Tell Matthew; the .docx wants fixing, not just the site.
+
+The previous cohort's material is in `Year 8 (2026)/Archive (pre-2026)/Term 2 - Guitar/`, including a guitar booklet PDF. It needs **rebuilding, not porting**: the registered program is the authority and the archive is last year's teaching material. Term 1 and Term 4 were both built this way and the archive was barely opened.
+
+Shape of the work: add `data/courses/year8-music/topics/guitar.json` following `keyboard.json`, which is the closest model since both are skills-and-repertoire units, add its id to `course.json` between `keyboard` and `popular-music`, rebuild. No CSS needed. Term 2 wants more `listen` blocks than Term 1 did, because tone colour is half the unit: orchestral families, then world instruments (djembe, gamelan, sitar, shamisen, balafon are the ones the program names).
+
+**Tone colour is taught again in Term 3 Lesson 18.** Check what `popular-music.json` already says about it so the two terms agree rather than defining it twice, differently.
 
 ## Model and effort
 
@@ -101,11 +121,11 @@ Step up to **Opus, medium-high** only if the visual world needs to change, or fo
 ## Last commit
 
 ```
-36d9961 Add key-word fill-in tables, and let two-column tables fit a phone
+9298d24 Build Term 1 Keyboard, 25 lessons
 ```
 
-Pushed to `origin/main` on 7 August 2026. Verify the deployment rather than the push:
+**Committed on 10 August 2026 and not pushed.** Matthew has not been asked yet, and this repo is public, so nothing goes out without him saying so. Once it is pushed, verify the deployment rather than the push:
 
 ```bash
-curl -s "https://edwards-resources.github.io/year8-music/year8-music/popular-music/lesson-25/" | grep -c 'Key words: the whole term'
+curl -s "https://edwards-resources.github.io/year8-music/year8-music/keyboard/lesson-12/" | grep -c 'thumb tucks under'
 ```
