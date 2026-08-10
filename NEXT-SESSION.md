@@ -124,7 +124,7 @@ Step up to **Opus, medium-high** only if the visual world needs to change, or fo
 9298d24 Build Term 1 Keyboard, 25 lessons
 ```
 
-**Committed on 10 August 2026 and not pushed.** Matthew has not been asked yet, and this repo is public, so nothing goes out without him saying so. Once it is pushed, verify the deployment rather than the push:
+**Pushed to `origin/main` on 10 August 2026 with Matthew's say-so, and verified against the live URL**, not against the push: all 25 keyboard lesson pages return 200, Lesson 25 serves its 27 fill fields, Lesson 5 serves its three players, and the home page opens on Keyboard. One push, one deployment, no collision. Re-check with:
 
 ```bash
 curl -s "https://edwards-resources.github.io/year8-music/year8-music/keyboard/lesson-12/" | grep -c 'thumb tucks under'
