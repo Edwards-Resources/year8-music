@@ -1,0 +1,2043 @@
+{
+  "id": "guitar",
+  "name": "Guitar",
+  "subtitle": "Striking the Right Chord",
+  "term": "Term 2",
+  "blurb": "This term you build practical guitar skills, from your first riff to your first open chords, alongside tone colour: the element that makes every instrument, orchestral or from anywhere in the world, sound like itself. It finishes with three weeks in a band, putting riffs, chords and listening together in a real ensemble.",
+  "question": "How can riffs, chords and strumming patterns be combined to create music?",
+  "outcomes": [
+    [
+      "MU4-PER-01",
+      "uses performance skills to demonstrate understanding of the elements of music and communicate musical ideas"
+    ],
+    [
+      "MU4-LIS-01",
+      "uses listening skills to describe music in relation to stylistic, cultural, historical or social contexts and the elements of music"
+    ],
+    [
+      "MU4-COM-01",
+      "improvises, arranges or composes using the elements of music to create musical ideas"
+    ]
+  ],
+  "assessment": {
+    "name": "Guitar Performance and Listening",
+    "when": "Due Week 7",
+    "detail": "A guitar performance for your teacher - a riff, a chord progression or a short song excerpt - followed by a written listening quiz identifying orchestral and world instruments by their tone colour."
+  },
+  "sections": [
+    {
+      "letter": "A",
+      "name": "Strings, Riffs and Tone Colour",
+      "from": 1,
+      "to": 5,
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Parts of the Guitar",
+          "assessed": false,
+          "intention": "We are learning to identify the parts of the guitar and hold it correctly.",
+          "criteria": [
+            "I can name the main parts of the guitar.",
+            "I can hold the guitar and tune it with help."
+          ],
+          "blocks": [
+            {
+              "type": "media",
+              "embed": "X2EmpWr9vUc",
+              "brief": "Six strings, six pegs. Watch how each one is turned to bring a string up or down to pitch."
+            },
+            {
+              "type": "prose",
+              "title": "Six strings, one map.",
+              "text": "Every guitar has the same six parts doing the same six jobs, acoustic or electric. Learn the map once and it works on any guitar you ever pick up."
+            },
+            {
+              "type": "table",
+              "headers": [
+                "Part",
+                "What it does"
+              ],
+              "rows": [
+                [
+                  "Headstock",
+                  "Holds the tuning pegs at the top of the neck"
+                ],
+                [
+                  "Tuning Pegs",
+                  "Turns to tighten or loosen a string and change its pitch"
+                ],
+                [
+                  "Fret",
+                  "A metal strip across the neck that marks off each note"
+                ],
+                [
+                  "Body",
+                  "The hollow or solid block that the sound comes from"
+                ],
+                [
+                  "Bridge",
+                  "Anchors the strings at the bottom of the body"
+                ]
+              ]
+            },
+            {
+              "type": "activity",
+              "title": "Your task",
+              "text": "Label a diagram of the guitar with headstock, tuning pegs, frets, body and bridge. Then hold your guitar the way your teacher shows you and check with a partner: guitar resting on your leg, neck angled up, strumming arm relaxed.",
+              "items": []
+            },
+            {
+              "type": "definition",
+              "terms": [
+                "Headstock",
+                "Tuning Pegs",
+                "Fret"
+              ],
+              "text": "Headstock - the top of the guitar that holds the tuning pegs. Tuning Pegs - turns to tighten or loosen a string and change its pitch. Fret - the metal strip across the neck of the guitar that divides notes."
+            },
+            {
+              "type": "support",
+              "title": "Need a hand? Point before you name",
+              "text": "Point to each part on your own guitar before you write its name down. If you can point to it, the label is easy; if you can't find it, ask before guessing.",
+              "items": []
+            },
+            {
+              "type": "extension",
+              "text": "Work out why nylon strings and steel strings need different amounts of turning to reach the same pitch, and check your idea with your teacher.",
+              "items": []
+            },
+            {
+              "type": "exit",
+              "text": "Point to your guitar's headstock, then its bridge."
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "title": "String Names and Tone Colour",
+          "assessed": false,
+          "intention": "We are learning to name the six strings and describe their tone colour.",
+          "criteria": [
+            "I can name the six open strings, low to high.",
+            "I can describe the difference between a low string and a high string using tone colour words."
+          ],
+          "blocks": [
+            {
+              "type": "prose",
+              "title": "Eddie Ate Dynamite.",
+              "text": "Six strings, six names, from the thickest string to the thinnest: E A D G B E. The mnemonic Eddie Ate Dynamite, Good Bye Eddie gives you the first letter of each one in order."
+            },
+            {
+              "type": "table",
+              "headers": [
+                "String",
+                "Name",
+                "Mnemonic word"
+              ],
+              "rows": [
+                [
+                  "6th, thickest",
+                  "E",
+                  "Eddie"
+                ],
+                [
+                  "5th",
+                  "A",
+                  "Ate"
+                ],
+                [
+                  "4th",
+                  "D",
+                  "Dynamite"
+                ],
+                [
+                  "3rd",
+                  "G",
+                  "Good"
+                ],
+                [
+                  "2nd",
+                  "B",
+                  "Bye"
+                ],
+                [
+                  "1st, thinnest",
+                  "E",
+                  "Eddie"
+                ]
+              ]
+            },
+            {
+              "type": "activity",
+              "title": "Your task",
+              "text": "Pluck each open string in order, low to high, saying its name out loud. Then compare the low E and the high e: which one is darker and more resonant, and which one is brighter and thinner? Write one tone colour word for each.",
+              "items": []
+            },
+            {
+              "type": "definition",
+              "terms": [
+                "String Names",
+                "Tone Colour (Timbre)"
+              ],
+              "text": "String Names - the six open strings on a guitar, low to high: E A D G B E. Tone Colour (Timbre) - the unique quality of a sound that makes one instrument or voice sound different from another, even playing the same note."
+            },
+            {
+              "type": "support",
+              "title": "Need a hand? Start with the outside two",
+              "text": "Just learn the two outside strings first: thick E and thin E. Once those two are solid, the four in the middle sit between them in order.",
+              "items": []
+            },
+            {
+              "type": "extension",
+              "text": "Play the same string open and then fretted at the twelfth fret. Explain in your own words why the pitch changes but the string's name doesn't.",
+              "items": []
+            },
+            {
+              "type": "exit",
+              "text": "Which string is darker and more resonant, the low E or the high e?"
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "title": "Your First Riff",
+          "assessed": false,
+          "intention": "We are learning to perform a single-string riff in time with a steady beat.",
+          "criteria": [
+            "I can play a short riff on one string.",
+            "I can keep the riff steady against a beat."
+          ],
+          "blocks": [
+            {
+              "type": "media",
+              "embed": "GR31wpNrc8Q",
+              "brief": "Smoke on the Water, on one string only. Watch the frets before you watch the fingers."
+            },
+            {
+              "type": "prose",
+              "title": "One string is enough.",
+              "text": "A riff is a short pattern of notes, played over and over, that is instantly recognisable. Some of the most famous riffs in rock use only one string, because the pattern is what matters, not how many strings it crosses."
+            },
+            {
+              "type": "list",
+              "title": "How to learn it",
+              "items": [
+                "Find the string and the first fret in the riff before you try to play it in time.",
+                "Say the fret numbers out loud as you play them, slowly.",
+                "Play it once at a speed with no mistakes at all.",
+                "Only then add the backing beat, at 60 to 80 beats per minute."
+              ],
+              "text": ""
+            },
+            {
+              "type": "activity",
+              "title": "Your task",
+              "text": "Learn the riff on one string, following the video. Once you can play it three times without a mistake, play along with a steady drum loop at 60-80 bpm.",
+              "items": []
+            },
+            {
+              "type": "definition",
+              "terms": [
+                "Riff"
+              ],
+              "text": "A short pattern of notes, often played on single strings, repeated so it becomes instantly recognisable."
+            },
+            {
+              "type": "support",
+              "title": "Need a hand? One fret at a time",
+              "text": "Play just the first two notes until they are solid, then add one more note at a time. A riff you have chunked into pairs is much easier than one you are trying to play whole.",
+              "items": []
+            },
+            {
+              "type": "extension",
+              "text": "Once the riff is solid at 60 bpm, take it up to 100 bpm without losing accuracy, and work out which note is hardest to keep clean at speed.",
+              "items": []
+            },
+            {
+              "type": "exit",
+              "text": "Which string does your riff use?"
+            }
+          ]
+        },
+        {
+          "number": 4,
+          "title": "Families of the Orchestra",
+          "assessed": false,
+          "intention": "We are learning to identify the four orchestral families by their tone colour.",
+          "criteria": [
+            "I can name the four orchestral families.",
+            "I can describe an instrument's tone colour using appropriate vocabulary."
+          ],
+          "blocks": [
+            {
+              "type": "listen",
+              "heading": "Four instruments, four families",
+              "tracks": [
+                {
+                  "title": "Violin - the string family",
+                  "embed": "zgaQFLUdUL0"
+                },
+                {
+                  "title": "Flute - the woodwind family",
+                  "embed": "MTqOckjkkeE"
+                },
+                {
+                  "title": "Trumpet - the brass family",
+                  "embed": "QcIp7K2UFgE"
+                },
+                {
+                  "title": "Timpani - the percussion family",
+                  "embed": "40k3AAbA7tM"
+                }
+              ]
+            },
+            {
+              "type": "prose",
+              "title": "Same job, different family.",
+              "text": "Every orchestral instrument makes its sound one of four ways: a vibrating string, air blown across or into a reed, buzzing lips down a metal tube, or something struck, shaken or scraped. That method of sound production is what puts an instrument into its family."
+            },
+            {
+              "type": "table",
+              "headers": [
+                "Instrument",
+                "Family",
+                "Tone colour word"
+              ],
+              "rows": [
+                [
+                  "Violin",
+                  "",
+                  ""
+                ],
+                [
+                  "Flute",
+                  "",
+                  ""
+                ],
+                [
+                  "Trumpet",
+                  "",
+                  ""
+                ],
+                [
+                  "Timpani",
+                  "",
+                  ""
+                ]
+              ],
+              "heading": "Match the instrument to its family"
+            },
+            {
+              "type": "definition",
+              "terms": [
+                "String Family",
+                "Woodwind Family",
+                "Brass Family",
+                "Percussion Family"
+              ],
+              "text": "String family - instruments that produce sound from vibrating strings, such as violin, cello and guitar. Woodwind family - instruments that produce sound by blowing air across a reed or opening, such as flute and clarinet. Brass family - instruments made of metal that use buzzing lips to create sound, such as trumpet and trombone. Percussion family - instruments that are struck, shaken or scraped to make sound, such as drums and xylophone."
+            },
+            {
+              "type": "support",
+              "title": "Need a hand? How is the sound made?",
+              "text": "Ignore what the instrument looks like and ask one question: how does it actually make its sound? Blown, bowed, buzzed or hit. That question sorts every instrument into its family.",
+              "items": []
+            },
+            {
+              "type": "extension",
+              "text": "The guitar is a string instrument, like the violin, but the two sound very different. Explain what about the way each one is played changes its tone colour.",
+              "items": []
+            },
+            {
+              "type": "exit",
+              "text": "Which family does a vibrating string put an instrument into?"
+            }
+          ]
+        },
+        {
+          "number": 5,
+          "title": "Riff Circle",
+          "assessed": false,
+          "intention": "We are learning to perform confidently for our peers and extend our tone colour vocabulary.",
+          "criteria": [
+            "I can perform my riff for an audience.",
+            "I can use at least three tone colour words to describe sounds I hear."
+          ],
+          "blocks": [
+            {
+              "type": "prose",
+              "title": "Your turn in the circle.",
+              "text": "Every riff you have learned this week gets its audience today. Performing for two or three classmates is real performance: an audience, a start, an end, and applause."
+            },
+            {
+              "type": "listen",
+              "heading": "Two more tone colours",
+              "tracks": [
+                {
+                  "title": "Oboe - a reedy, nasal woodwind",
+                  "embed": "QNBsgfh4UMY"
+                },
+                {
+                  "title": "Trumpet - a bright, metallic brass sound",
+                  "embed": "QcIp7K2UFgE"
+                }
+              ]
+            },
+            {
+              "type": "activity",
+              "title": "Your task",
+              "text": "In a circle, each person performs their riff in turn. While you listen, build a class vocabulary wall: add a tone colour word for each riff and each listening excerpt you hear today.",
+              "items": []
+            },
+            {
+              "type": "definition",
+              "terms": [
+                "Bright",
+                "Mellow",
+                "Percussive",
+                "Resonant"
+              ],
+              "text": "Bright - a clear, sharp tone colour, often high-pitched. Mellow - a smooth, soft tone colour, often warm and gentle. Percussive - a sharp, rhythmic sound, like drums or muted guitar. Resonant - a full, echoing sound that seems to ring out."
+            },
+            {
+              "type": "table",
+              "headers": [
+                "Key word",
+                "What it means"
+              ],
+              "rows": [
+                [
+                  "Headstock",
+                  ""
+                ],
+                [
+                  "Tuning Pegs",
+                  ""
+                ],
+                [
+                  "Fret",
+                  ""
+                ],
+                [
+                  "String Names",
+                  ""
+                ],
+                [
+                  "Tone Colour (Timbre)",
+                  ""
+                ],
+                [
+                  "Riff",
+                  ""
+                ]
+              ],
+              "heading": "Key words so far"
+            },
+            {
+              "type": "support",
+              "title": "Need a hand? Perform to one person",
+              "text": "If the circle feels big, ask to perform to one partner first. The riff does not get easier by avoiding an audience, but a smaller one is a real place to start.",
+              "items": []
+            },
+            {
+              "type": "extension",
+              "text": "Describe your own riff's tone colour using two of today's words, and explain what about how you played it created that sound.",
+              "items": []
+            },
+            {
+              "type": "exit",
+              "text": "Which tone colour word best describes your own riff?"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "letter": "B",
+      "name": "Fluency and Orchestral Colour",
+      "from": 6,
+      "to": 10,
+      "lessons": [
+        {
+          "number": 6,
+          "title": "Two Strings Now",
+          "assessed": false,
+          "intention": "We are learning to perform a riff that crosses two strings.",
+          "criteria": [
+            "I can play a riff that uses two adjacent strings.",
+            "I can keep the riff accurate and in time."
+          ],
+          "blocks": [
+            {
+              "type": "media",
+              "embed": "XT7UGxGAkc0",
+              "brief": "Come As You Are, on two strings. Watch which string each note falls on before you watch the rhythm."
+            },
+            {
+              "type": "prose",
+              "title": "One more string changes everything.",
+              "text": "A riff on two strings asks a new question: which string is this note on? Your fretting hand has to move between strings as well as along the neck, and that takes rehearsal your first riff didn't need."
+            },
+            {
+              "type": "activity",
+              "title": "Your task",
+              "text": "Learn the riff slowly, checking which string every note falls on before you worry about speed. Rehearse in pairs: one plays, one calls out the string number just before each note change.",
+              "items": []
+            },
+            {
+              "type": "table",
+              "headers": [
+                "Note in the riff",
+                "Which string?"
+              ],
+              "rows": [
+                [
+                  "1",
+                  ""
+                ],
+                [
+                  "2",
+                  ""
+                ],
+                [
+                  "3",
+                  ""
+                ],
+                [
+                  "4",
+                  ""
+                ]
+              ],
+              "heading": "Check your strings"
+            },
+            {
+              "type": "support",
+              "title": "Need a hand? Isolate the string change",
+              "text": "Find the exact spot where the riff moves from one string to the other. Practise just those two notes, back and forth, until the move is automatic before you play the whole riff.",
+              "items": []
+            },
+            {
+              "type": "extension",
+              "text": "Once the riff is solid, work out the fingering that lets you play it without your hand shifting position at all.",
+              "items": []
+            },
+            {
+              "type": "exit",
+              "text": "How many different strings does today's riff use?"
+            }
+          ]
+        },
+        {
+          "number": 7,
+          "title": "Riff Fluency",
+          "assessed": false,
+          "intention": "We are learning to strengthen accuracy and control in our riff playing.",
+          "criteria": [
+            "I can play my riff smoothly at a steady tempo.",
+            "I can identify what still needs work in my own playing."
+          ],
+          "blocks": [
+            {
+              "type": "prose",
+              "title": "One minute, on repeat.",
+              "text": "Fluency means the riff holds together without you having to think about each note. The only way there is repetition with attention: playing the same four bars until they stop needing your attention."
+            },
+            {
+              "type": "list",
+              "title": "The fluency drill",
+              "items": [
+                "Play the riff for one minute straight, gradually increasing speed.",
+                "Record a short video clip of yourself playing it.",
+                "Watch it back and name one specific thing that slipped.",
+                "Rehearse only that one thing before you record again."
+              ],
+              "text": ""
+            },
+            {
+              "type": "activity",
+              "title": "Your task",
+              "text": "Run the fluency drill on your riff from Lesson 6. Record two clips, ten minutes apart, and compare them: is the second clip actually more accurate, or just more confident?",
+              "items": []
+            },
+            {
+              "type": "table",
+              "headers": [
+                "Attempt",
+                "What slipped",
+                "Fixed?"
+              ],
+              "rows": [
+                [
+                  "1",
+                  "",
+                  ""
+                ],
+                [
+                  "2",
+                  "",
+                  ""
+                ],
+                [
+                  "3",
+                  "",
+                  ""
+                ]
+              ],
+              "heading": "Your fluency log"
+            },
+            {
+              "type": "support",
+              "title": "Need a hand? Half speed counts",
+              "text": "A riff played at half speed with no mistakes is more fluent than the same riff at full speed with three mistakes. Slow down before you speed up.",
+              "items": []
+            },
+            {
+              "type": "extension",
+              "text": "Play your riff along with a backing track rather than a click, and notice what changes about keeping time when the beat isn't a machine.",
+              "items": []
+            },
+            {
+              "type": "exit",
+              "text": "What is the one thing you fixed today?"
+            }
+          ]
+        },
+        {
+          "number": 8,
+          "title": "Listening in Isolation",
+          "assessed": false,
+          "intention": "We are learning to identify orchestral instruments by their tone colour alone.",
+          "criteria": [
+            "I can name an instrument from how it sounds.",
+            "I can describe its tone colour using accurate vocabulary."
+          ],
+          "blocks": [
+            {
+              "type": "listen",
+              "heading": "Five instruments, five tone colours",
+              "tracks": [
+                {
+                  "title": "Violin",
+                  "embed": "zgaQFLUdUL0"
+                },
+                {
+                  "title": "Trumpet",
+                  "embed": "QcIp7K2UFgE"
+                },
+                {
+                  "title": "Oboe",
+                  "embed": "QNBsgfh4UMY"
+                },
+                {
+                  "title": "Flute",
+                  "embed": "MTqOckjkkeE"
+                },
+                {
+                  "title": "Timpani",
+                  "embed": "40k3AAbA7tM"
+                }
+              ]
+            },
+            {
+              "type": "prose",
+              "title": "No picture, just sound.",
+              "text": "Today you don't see any of these instruments being played, only hear them. That is closer to how you actually meet tone colour in real listening: on the radio, in a film score, in a recording, with no visual clue at all."
+            },
+            {
+              "type": "table",
+              "headers": [
+                "Instrument",
+                "Tone colour word"
+              ],
+              "rows": [
+                [
+                  "Violin",
+                  ""
+                ],
+                [
+                  "Trumpet",
+                  ""
+                ],
+                [
+                  "Oboe",
+                  ""
+                ],
+                [
+                  "Flute",
+                  ""
+                ],
+                [
+                  "Timpani",
+                  ""
+                ]
+              ],
+              "heading": "Name it and describe it"
+            },
+            {
+              "type": "support",
+              "title": "Need a hand? Two questions",
+              "text": "Ask two questions about every excerpt: is the sound continuous or does it start and stop? Is it high, middle or low? Those two answers narrow an unfamiliar instrument down fast.",
+              "items": []
+            },
+            {
+              "type": "extension",
+              "text": "Two of today's instruments are both woodwind. Explain what specifically makes their tone colours different from each other, not just from the strings and brass.",
+              "items": []
+            },
+            {
+              "type": "exit",
+              "text": "Which instrument today was hardest to name, and why?"
+            }
+          ]
+        },
+        {
+          "number": 9,
+          "title": "Technique and Tone Colour",
+          "assessed": false,
+          "intention": "We are learning how playing technique changes a guitar's tone colour.",
+          "criteria": [
+            "I can produce at least two different tone colours on the guitar.",
+            "I can describe how I changed the sound."
+          ],
+          "blocks": [
+            {
+              "type": "prose",
+              "title": "The guitar isn't one sound.",
+              "text": "Where you pluck a string and how hard you press change its tone colour more than the note itself does. Play near the bridge and the sound turns bright and thin; play over the sound hole and it turns warm and full."
+            },
+            {
+              "type": "activity",
+              "title": "Your task",
+              "text": "Play your riff from Lesson 6 three ways: picked near the bridge, picked over the sound hole, and picked with heavy finger pressure. Describe what changes in each version using tone colour words.",
+              "items": []
+            },
+            {
+              "type": "table",
+              "headers": [
+                "Where you played",
+                "Tone colour word"
+              ],
+              "rows": [
+                [
+                  "Near the bridge",
+                  ""
+                ],
+                [
+                  "Over the sound hole",
+                  ""
+                ],
+                [
+                  "Heavy finger pressure",
+                  ""
+                ]
+              ],
+              "heading": "Same riff, three tone colours"
+            },
+            {
+              "type": "definition",
+              "terms": [
+                "Picking"
+              ],
+              "text": "Plucking individual strings with a pick or fingers, rather than strumming across several at once."
+            },
+            {
+              "type": "support",
+              "title": "Need a hand? Loud versus soft is enough",
+              "text": "If three positions is a lot to track, just compare loud and soft on the same string. Even that small change gives you two clearly different tone colours to describe.",
+              "items": []
+            },
+            {
+              "type": "extension",
+              "text": "Try picking with your fingernail versus the pad of your finger, and explain which orchestral instrument's tone colour each one reminds you of.",
+              "items": []
+            },
+            {
+              "type": "exit",
+              "text": "Which playing position gave you the brightest tone colour?"
+            }
+          ]
+        },
+        {
+          "number": 10,
+          "title": "Mock Listening Quiz",
+          "assessed": false,
+          "intention": "We are learning to prepare for the listening assessment.",
+          "criteria": [
+            "I can identify at least four instruments correctly.",
+            "I can apply accurate tone colour vocabulary to what I hear."
+          ],
+          "blocks": [
+            {
+              "type": "prose",
+              "title": "A practice run, not the real thing.",
+              "text": "Today's quiz is exactly the shape of the one in Week 7: short excerpts, no visuals, name the instrument and describe its tone colour. Nothing here counts towards your mark, so use it to find out what you actually know."
+            },
+            {
+              "type": "table",
+              "headers": [
+                "Excerpt",
+                "Instrument",
+                "Tone colour word"
+              ],
+              "rows": [
+                [
+                  "1",
+                  "",
+                  ""
+                ],
+                [
+                  "2",
+                  "",
+                  ""
+                ],
+                [
+                  "3",
+                  "",
+                  ""
+                ],
+                [
+                  "4",
+                  "",
+                  ""
+                ],
+                [
+                  "5",
+                  "",
+                  ""
+                ]
+              ],
+              "heading": "Your quiz answers"
+            },
+            {
+              "type": "activity",
+              "title": "Your task",
+              "text": "Complete the mock quiz individually, then mark your own against your teacher's answers. Circle any instrument you got wrong and note what tricked you.",
+              "items": []
+            },
+            {
+              "type": "table",
+              "headers": [
+                "Key word",
+                "What it means"
+              ],
+              "rows": [
+                [
+                  "Fret",
+                  ""
+                ],
+                [
+                  "Riff",
+                  ""
+                ],
+                [
+                  "String Family",
+                  ""
+                ],
+                [
+                  "Brass Family",
+                  ""
+                ],
+                [
+                  "Percussion Family",
+                  ""
+                ],
+                [
+                  "Picking",
+                  ""
+                ]
+              ],
+              "heading": "Key words so far"
+            },
+            {
+              "type": "support",
+              "title": "Need a hand? Rule two out first",
+              "text": "If you're not sure, rule out the family first: is it strings, woodwind, brass or percussion? Naming the exact instrument is much easier once you've narrowed the family down.",
+              "items": []
+            },
+            {
+              "type": "extension",
+              "text": "For the instrument you found hardest to identify, research one feature of how it's played that explains its particular tone colour.",
+              "items": []
+            },
+            {
+              "type": "exit",
+              "text": "How many did you get right, and which family gave you the most trouble?"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "letter": "C",
+      "name": "Chords and World Instruments",
+      "from": 11,
+      "to": 15,
+      "lessons": [
+        {
+          "number": 11,
+          "title": "Your First Open Chords",
+          "assessed": false,
+          "intention": "We are learning to play E minor and A minor open chords.",
+          "criteria": [
+            "I can position my fingers correctly for E minor and A minor.",
+            "I can strum both chords cleanly."
+          ],
+          "blocks": [
+            {
+              "type": "media",
+              "embed": "HtJ08n97X2c",
+              "brief": "E minor and A minor, the first two chords most guitarists ever learn. Watch the finger shapes before you watch the strumming."
+            },
+            {
+              "type": "prose",
+              "title": "Six strings, one shape.",
+              "text": "A chord is a group of notes played together, usually three or more. An open chord uses at least one string played open, not fretted, which is what makes these first shapes so much easier than the ones that come later."
+            },
+            {
+              "type": "table",
+              "headers": [
+                "Chord",
+                "Fingers down"
+              ],
+              "rows": [
+                [
+                  "E minor",
+                  "2nd finger on the 5th string, 3rd finger on the 4th string, both at the 2nd fret"
+                ],
+                [
+                  "A minor",
+                  "1st finger on the 4th string, 2nd finger on the 3rd string, 3rd finger on the 2nd string, all at the 2nd fret"
+                ]
+              ]
+            },
+            {
+              "type": "activity",
+              "title": "Your task",
+              "text": "Set up E minor, strum all six strings and listen for any buzzing or muted notes. Fix your finger placement until it rings clean, then do the same for A minor. Finish by changing between the two chords, slowly.",
+              "items": []
+            },
+            {
+              "type": "definition",
+              "terms": [
+                "Chord",
+                "Open Chord"
+              ],
+              "text": "Chord - a group of notes played together, usually three or more. Open chord - a chord that uses open strings, not fretted on every note."
+            },
+            {
+              "type": "support",
+              "title": "Need a hand? One string at a time",
+              "text": "Strum one string at a time through the chord shape and listen for buzz. Fix whichever string is unclear before you strum the whole chord together.",
+              "items": []
+            },
+            {
+              "type": "extension",
+              "text": "Add D major to your two minor chords and practise moving between all three, in any order, without stopping.",
+              "items": []
+            },
+            {
+              "type": "exit",
+              "text": "Which finger sits on the fourth string in an A minor chord?"
+            }
+          ]
+        },
+        {
+          "number": 12,
+          "title": "Strumming in 4/4",
+          "assessed": false,
+          "intention": "We are learning to strum a steady pattern in 4/4 time.",
+          "criteria": [
+            "I can strum a down-down-up-up-down pattern in time.",
+            "I can keep the pattern steady while changing chords."
+          ],
+          "blocks": [
+            {
+              "type": "media",
+              "embed": "skJR_8nvDQw",
+              "brief": "Down, down, up, up, down. Watch the strumming arm, not the fretting hand."
+            },
+            {
+              "type": "prose",
+              "title": "The arm never stops.",
+              "text": "Good strumming keeps your arm moving up and down on every beat, whether or not you actually hit the strings. That constant motion is what keeps a strumming pattern locked to the beat instead of drifting."
+            },
+            {
+              "type": "list",
+              "title": "Build it in stages",
+              "items": [
+                "Practise the down-down-up-up-down pattern with no chord at all, just the motion.",
+                "Add E minor and strum the pattern slowly, counting the beats out loud.",
+                "Play along with a backing track at a slow tempo.",
+                "Only once it's steady, try changing to A minor partway through the pattern."
+              ],
+              "text": ""
+            },
+            {
+              "type": "activity",
+              "title": "Your task",
+              "text": "Strum the down-down-up-up-down pattern on E minor until it's steady, then repeat on A minor. Finish by changing chords every four strums without breaking the pattern.",
+              "items": []
+            },
+            {
+              "type": "definition",
+              "terms": [
+                "Strumming"
+              ],
+              "text": "Brushing across the strings with a pick or fingers to play a chord, rather than picking out individual notes."
+            },
+            {
+              "type": "support",
+              "title": "Need a hand? Downs only, to start",
+              "text": "Strum on the beat, down only, until that feels completely steady. Add the up-strokes in between once the downs are locked in.",
+              "items": []
+            },
+            {
+              "type": "extension",
+              "text": "Try a pattern that leaves out a strum on beat three, and work out how to keep your arm moving through the gap without losing time.",
+              "items": []
+            },
+            {
+              "type": "exit",
+              "text": "In the pattern down-down-up-up-down, which strums land on the beat?"
+            }
+          ]
+        },
+        {
+          "number": 13,
+          "title": "G and C, and Your First Progression",
+          "assessed": false,
+          "intention": "We are learning to play G and C chords and move between them fluently.",
+          "criteria": [
+            "I can position my fingers for G major and C major.",
+            "I can change between two or more chords without breaking rhythm."
+          ],
+          "blocks": [
+            {
+              "type": "media",
+              "embed": "JOsMVwp2KSQ",
+              "brief": "G, C and D, and ten songs that use them. You only need G and C today."
+            },
+            {
+              "type": "prose",
+              "title": "A progression is a path.",
+              "text": "A chord progression is a sequence of chords played one after another, and it's the structural backbone of most songs you know. G to C to D is one of the most common paths in guitar music, in any style."
+            },
+            {
+              "type": "list",
+              "title": "Drilling a chord change",
+              "items": [
+                "Set up the first chord and check it rings clean before you move.",
+                "Lift your fingers together and reset them on the second shape, as one movement.",
+                "Repeat the same two-chord change for eight bars, counting the beats.",
+                "Add a third chord only once the first change is smooth."
+              ],
+              "text": ""
+            },
+            {
+              "type": "activity",
+              "title": "Your task",
+              "text": "Learn G and C, then drill the change between them for eight bars with a partner giving feedback. If it's solid, try the progression G, C, D or Em, C, G, D.",
+              "items": []
+            },
+            {
+              "type": "table",
+              "headers": [
+                "Chords",
+                "Clean change?"
+              ],
+              "rows": [
+                [
+                  "G to C",
+                  ""
+                ],
+                [
+                  "G, C, D",
+                  ""
+                ],
+                [
+                  "Em, C, G, D",
+                  ""
+                ]
+              ],
+              "heading": "Your progression practice"
+            },
+            {
+              "type": "support",
+              "title": "Need a hand? Move one finger at a time",
+              "text": "If G and C share no fingers in common, that's normal; look for the single easiest finger to place first each time and let the rest follow it into shape.",
+              "items": []
+            },
+            {
+              "type": "extension",
+              "text": "Add a sus2 or sus4 chord as a passing shape between two of your regular chords, and describe what it does to the progression.",
+              "items": []
+            },
+            {
+              "type": "exit",
+              "text": "Which chord in G, C, D did you find hardest to change into?"
+            }
+          ]
+        },
+        {
+          "number": 14,
+          "title": "Instruments of the World",
+          "assessed": false,
+          "intention": "We are learning to identify world instruments and describe their tone colour.",
+          "criteria": [
+            "I can name at least three world instruments by sound.",
+            "I can describe a world instrument's tone colour using accurate vocabulary."
+          ],
+          "blocks": [
+            {
+              "type": "listen",
+              "heading": "Five instruments, five origins",
+              "tracks": [
+                {
+                  "title": "Djembe - a West African hand drum",
+                  "embed": "q5U8md4rZS8"
+                },
+                {
+                  "title": "Gamelan - an Indonesian tuned percussion ensemble",
+                  "embed": "GsPdTNGnr44"
+                },
+                {
+                  "title": "Sitar - a plucked string instrument from India",
+                  "embed": "7u-c-mIKUJw"
+                },
+                {
+                  "title": "Shamisen - a plucked Japanese string instrument",
+                  "embed": "mACJ_E2SFzM"
+                },
+                {
+                  "title": "Balafon - a West African wooden xylophone",
+                  "embed": "sr-zxiatpKo"
+                }
+              ]
+            },
+            {
+              "type": "prose",
+              "title": "Every culture, its own instruments.",
+              "text": "Guitar and violin are not the only string instruments in the world, and drums are not the only percussion. Every culture has built instruments suited to its own music, and each one has a tone colour as distinctive as any orchestral instrument's."
+            },
+            {
+              "type": "table",
+              "headers": [
+                "Instrument",
+                "Cultural origin",
+                "Tone colour word"
+              ],
+              "rows": [
+                [
+                  "Djembe",
+                  "",
+                  ""
+                ],
+                [
+                  "Gamelan",
+                  "",
+                  ""
+                ],
+                [
+                  "Sitar",
+                  "",
+                  ""
+                ],
+                [
+                  "Shamisen",
+                  "",
+                  ""
+                ],
+                [
+                  "Balafon",
+                  "",
+                  ""
+                ]
+              ],
+              "heading": "Match instrument to origin and tone colour"
+            },
+            {
+              "type": "definition",
+              "terms": [
+                "Djembe",
+                "Gamelan"
+              ],
+              "text": "Djembe - a West African hand drum with a wide range of tone colours. Gamelan - an Indonesian ensemble of tuned percussion instruments, like metallophones and gongs."
+            },
+            {
+              "type": "support",
+              "title": "Need a hand? Two families, one ear",
+              "text": "The djembe and balafon are both percussion, like timpani. The sitar and shamisen are both strings, like guitar and violin. Use the families you already know as a starting point.",
+              "items": []
+            },
+            {
+              "type": "extension",
+              "text": "Compare the guitar's tone colour to the sitar's or the shamisen's. What about how each is built or played explains the difference?",
+              "items": []
+            },
+            {
+              "type": "exit",
+              "text": "Name one instrument you heard today, and where in the world it comes from."
+            }
+          ]
+        },
+        {
+          "number": 15,
+          "title": "Progressions and Global Listening",
+          "assessed": false,
+          "intention": "We are learning to connect performance skills with global listening knowledge.",
+          "criteria": [
+            "I can perform a chord progression fluently.",
+            "I can describe a world instrument using tone colour vocabulary."
+          ],
+          "blocks": [
+            {
+              "type": "prose",
+              "title": "Rhythm, then melody, then swap.",
+              "text": "In small groups, rehearse your chord progression while one person strums rhythm and another picks out a simple melody over the top. Swap roles partway through so everyone plays both."
+            },
+            {
+              "type": "activity",
+              "title": "Your task",
+              "text": "Rehearse your progression in role pairs, then listen to a short excerpt of world music and describe its tone colour using vocabulary from Lesson 14. Discuss with your group: does guitar tone colour imitate or contrast with what you heard?",
+              "items": []
+            },
+            {
+              "type": "table",
+              "headers": [
+                "Question",
+                "Your answer"
+              ],
+              "rows": [
+                [
+                  "How did guitar tone colour compare to the world instrument?",
+                  ""
+                ],
+                [
+                  "What surprised you about the comparison?",
+                  ""
+                ]
+              ],
+              "heading": "Reflection"
+            },
+            {
+              "type": "table",
+              "headers": [
+                "Key word",
+                "What it means"
+              ],
+              "rows": [
+                [
+                  "Chord",
+                  ""
+                ],
+                [
+                  "Open Chord",
+                  ""
+                ],
+                [
+                  "Strumming",
+                  ""
+                ],
+                [
+                  "Djembe",
+                  ""
+                ],
+                [
+                  "Gamelan",
+                  ""
+                ],
+                [
+                  "Woodwind Family",
+                  ""
+                ]
+              ],
+              "heading": "Key words so far"
+            },
+            {
+              "type": "support",
+              "title": "Need a hand? One clear sentence",
+              "text": "If comparing feels big, aim for one sentence: 'The guitar sounds ___ and the [instrument] sounds ___ because ___.' That sentence is the whole task.",
+              "items": []
+            },
+            {
+              "type": "extension",
+              "text": "Write a short two-chord vamp inspired by the rhythm of one of today's world instruments, and perform it for your group.",
+              "items": []
+            },
+            {
+              "type": "exit",
+              "text": "In one sentence, how does guitar tone colour compare to the world instrument you focused on?"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "letter": "D",
+      "name": "Rehearse and Refine",
+      "from": 16,
+      "to": 20,
+      "lessons": [
+        {
+          "number": 16,
+          "title": "Bringing It Together",
+          "assessed": false,
+          "intention": "We are learning to strengthen our performance skills across riffs and chords.",
+          "criteria": [
+            "I can demonstrate fluency with either a riff or a chord progression.",
+            "I can identify what still needs rehearsal before the assessment."
+          ],
+          "blocks": [
+            {
+              "type": "prose",
+              "title": "Choose your path.",
+              "text": "From Week 7 you can perform a riff, a chord progression, or a short song excerpt for your assessment. Today you consolidate whichever one you're leaning towards, with a rehearsal log to track what's actually improving."
+            },
+            {
+              "type": "list",
+              "title": "A useful warm-up",
+              "items": [
+                "Run a single-string riff, slow to fast.",
+                "Rotate through your chord progressions in pairs.",
+                "Note in your log what you practised and what still needs work.",
+                "Play along with a backing track to check your tempo."
+              ],
+              "text": ""
+            },
+            {
+              "type": "activity",
+              "title": "Your task",
+              "text": "Choose a riff or a chord progression to focus on today. Warm up, rehearse it against a backing track, and fill in your rehearsal log honestly.",
+              "items": []
+            },
+            {
+              "type": "table",
+              "headers": [
+                "What I practised",
+                "What needs refining"
+              ],
+              "rows": [
+                [
+                  "",
+                  ""
+                ],
+                [
+                  "",
+                  ""
+                ],
+                [
+                  "",
+                  ""
+                ]
+              ],
+              "heading": "Your rehearsal log"
+            },
+            {
+              "type": "support",
+              "title": "Need a hand? Pick one thing",
+              "text": "Don't try to fix everything today. Pick the single weakest bar or chord change and spend the whole lesson only on that.",
+              "items": []
+            },
+            {
+              "type": "extension",
+              "text": "Add dynamics or tone variation to your riff or progression, changing volume or picking position as you play through it.",
+              "items": []
+            },
+            {
+              "type": "exit",
+              "text": "What is the one thing your rehearsal log says still needs work?"
+            }
+          ]
+        },
+        {
+          "number": 17,
+          "title": "Performance Skills",
+          "assessed": false,
+          "intention": "We are learning to prepare for performance through rehearsal and feedback.",
+          "criteria": [
+            "I can demonstrate correct tuning, posture and confident presentation.",
+            "I can give specific feedback on a peer's performance."
+          ],
+          "blocks": [
+            {
+              "type": "prose",
+              "title": "Presentation is part of performance.",
+              "text": "Walking to the front, tuning up, counting yourself in and acknowledging the audience are all part of a performance, not just the playing itself. Today you rehearse the whole package, not only the notes."
+            },
+            {
+              "type": "list",
+              "title": "What a confident performance looks like",
+              "items": [
+                "Check your tuning before you start.",
+                "Count yourself in out loud, so the audience knows the tempo before you play.",
+                "Keep going if something goes wrong, rather than stopping to restart.",
+                "Acknowledge the audience at the end."
+              ],
+              "text": ""
+            },
+            {
+              "type": "activity",
+              "title": "Your task",
+              "text": "Perform for a partner or small group, then give and receive feedback using the scaffold below. Specific feedback names a bar or a chord, not just 'good' or 'needs work'.",
+              "items": []
+            },
+            {
+              "type": "table",
+              "headers": [
+                "What went well",
+                "One thing to fix"
+              ],
+              "rows": [
+                [
+                  "",
+                  ""
+                ],
+                [
+                  "",
+                  ""
+                ]
+              ],
+              "heading": "Peer feedback"
+            },
+            {
+              "type": "support",
+              "title": "Need a hand? Perform to one person",
+              "text": "If an audience is the hard part rather than the playing, ask to perform to your teacher alone first. Do the run-through either way; skipping it does not make the real thing easier.",
+              "items": []
+            },
+            {
+              "type": "extension",
+              "text": "Perform to a slightly larger group than usual, and take three pieces of feedback rather than one.",
+              "items": []
+            },
+            {
+              "type": "exit",
+              "text": "What is one piece of feedback you received today?"
+            }
+          ]
+        },
+        {
+          "number": 18,
+          "title": "Tone Colour Review",
+          "assessed": false,
+          "intention": "We are learning to refine our listening skills for the assessment.",
+          "criteria": [
+            "I can correctly identify instruments from a mixed set.",
+            "I can apply at least two tone colour descriptors accurately."
+          ],
+          "blocks": [
+            {
+              "type": "prose",
+              "title": "Orchestral and world, mixed together.",
+              "text": "The real listening quiz won't separate orchestral instruments from world instruments, so today's mock doesn't either. Expect the excerpts to arrive in any order."
+            },
+            {
+              "type": "table",
+              "headers": [
+                "Excerpt",
+                "Instrument",
+                "Tone colour word"
+              ],
+              "rows": [
+                [
+                  "1",
+                  "",
+                  ""
+                ],
+                [
+                  "2",
+                  "",
+                  ""
+                ],
+                [
+                  "3",
+                  "",
+                  ""
+                ],
+                [
+                  "4",
+                  "",
+                  ""
+                ],
+                [
+                  "5",
+                  "",
+                  ""
+                ],
+                [
+                  "6",
+                  "",
+                  ""
+                ]
+              ],
+              "heading": "Mock listening quiz"
+            },
+            {
+              "type": "activity",
+              "title": "Your task",
+              "text": "Complete the mock quiz, mixing orchestral and world instruments from the last two weeks. Mark your own, then discuss any you got wrong as a class and add missing vocabulary to the wall.",
+              "items": []
+            },
+            {
+              "type": "support",
+              "title": "Need a hand? Family first, then instrument",
+              "text": "Start every excerpt by naming the family: string, woodwind, brass, percussion or none of the above. Narrowing it down that way makes the exact instrument far easier to name.",
+              "items": []
+            },
+            {
+              "type": "extension",
+              "text": "For one orchestral and one world instrument that share a family, explain what makes their tone colours different from each other.",
+              "items": []
+            },
+            {
+              "type": "exit",
+              "text": "Which excerpt today took you the longest to identify?"
+            }
+          ]
+        },
+        {
+          "number": 19,
+          "title": "Rehearse and Quiz Under Time",
+          "assessed": false,
+          "intention": "We are learning to prepare for both the performance and listening components of the assessment.",
+          "criteria": [
+            "I can perform confidently under rehearsal conditions.",
+            "I can score at least two out of three on a practice quiz."
+          ],
+          "blocks": [
+            {
+              "type": "prose",
+              "title": "Half and half.",
+              "text": "Half of today is rehearsal, with your teacher checking in on run-throughs. The other half is a short practice quiz, modelled exactly on the real listening assessment: three questions, timed."
+            },
+            {
+              "type": "activity",
+              "title": "Your task",
+              "text": "Rehearse your chosen piece with teacher check-ins for the first half of the lesson, then complete the three-question timed quiz. Reflect on one strength and one area to improve from each half.",
+              "items": []
+            },
+            {
+              "type": "table",
+              "headers": [
+                "Question",
+                "Your answer"
+              ],
+              "rows": [
+                [
+                  "1",
+                  ""
+                ],
+                [
+                  "2",
+                  ""
+                ],
+                [
+                  "3",
+                  ""
+                ]
+              ],
+              "heading": "Practice quiz"
+            },
+            {
+              "type": "support",
+              "title": "Need a hand? Rehearse in a small group",
+              "text": "If solo rehearsal feels exposed, rehearse in a small group where everyone takes a turn. The quiz stays individual either way.",
+              "items": []
+            },
+            {
+              "type": "extension",
+              "text": "Rehearse your performance in front of peers and refine it based on their feedback before the final prep lesson.",
+              "items": []
+            },
+            {
+              "type": "exit",
+              "text": "What is one strength and one thing to improve from today?"
+            }
+          ]
+        },
+        {
+          "number": 20,
+          "title": "Final Preparation",
+          "assessed": false,
+          "intention": "We are learning to consolidate our learning before the Week 7 assessment.",
+          "criteria": [
+            "I can demonstrate readiness to perform a polished piece.",
+            "I can confidently identify instruments by tone colour."
+          ],
+          "blocks": [
+            {
+              "type": "prose",
+              "title": "One more week.",
+              "text": "Today is a structured run-through, not new content. Perform what you've prepared, then run a speed round of instrument identification to finish your listening revision."
+            },
+            {
+              "type": "list",
+              "title": "What your teacher is checking",
+              "items": [
+                "That your riff, progression or song excerpt is chosen, rehearsed and ready.",
+                "That your strumming or picking stays steady even after a mistake.",
+                "That you can name an instrument's family before you name the instrument.",
+                "That your tone colour vocabulary is specific, not just 'nice' or 'good'."
+              ],
+              "text": ""
+            },
+            {
+              "type": "activity",
+              "title": "Your task",
+              "text": "Run through your performance piece once without stopping, then complete a speed round of instrument identification with a partner testing you.",
+              "items": []
+            },
+            {
+              "type": "table",
+              "headers": [
+                "Key word",
+                "What it means"
+              ],
+              "rows": [
+                [
+                  "Open Chord",
+                  ""
+                ],
+                [
+                  "Strumming",
+                  ""
+                ],
+                [
+                  "Bright",
+                  ""
+                ],
+                [
+                  "Mellow",
+                  ""
+                ],
+                [
+                  "Resonant",
+                  ""
+                ],
+                [
+                  "Gamelan",
+                  ""
+                ]
+              ],
+              "heading": "Key words so far"
+            },
+            {
+              "type": "support",
+              "title": "Need a hand? Talk to your teacher first",
+              "text": "A shortened performance or a simplified quiz format are both valid options. Arrange it with your teacher before the assessment lesson, not on the day.",
+              "items": []
+            },
+            {
+              "type": "extension",
+              "text": "Perform your piece for a different class group, or record it and mark your own recording against the rubric as if it belonged to someone else.",
+              "items": []
+            },
+            {
+              "type": "exit",
+              "text": "What is the one thing you most want to get right next lesson?"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "letter": "E",
+      "name": "Assessment and the Band Project",
+      "from": 21,
+      "to": 25,
+      "lessons": [
+        {
+          "number": 21,
+          "title": "Guitar Performance",
+          "assessed": true,
+          "intention": "We are learning to demonstrate our guitar performance skills.",
+          "criteria": [
+            "I can perform a riff, chord progression or song excerpt fluently, in time and with correct technique."
+          ],
+          "blocks": [
+            {
+              "type": "prose",
+              "title": "This lesson is assessed.",
+              "text": "You perform your chosen riff, chord progression or short song excerpt individually for your teacher and the class, marked against the rubric you have been using since Lesson 17."
+            },
+            {
+              "type": "list",
+              "title": "What you are marked on",
+              "items": [
+                "Accuracy - correct notes or chords, correct rhythm",
+                "Technique - hand position and clean, confident execution",
+                "Fluency - the performance keeps going rather than restarting",
+                "Presentation - tuning, counting in and acknowledging the audience"
+              ],
+              "text": ""
+            },
+            {
+              "type": "prose",
+              "title": "Audience.",
+              "text": "Respectful listening is part of the lesson. No talking, no phones, and applaud everyone."
+            },
+            {
+              "type": "prose",
+              "title": "Adjustments available",
+              "text": "A simplified riff or a single chord performed in a supportive small group are valid submissions. Speak to your teacher before the lesson rather than on the day."
+            },
+            {
+              "type": "prose",
+              "title": "Going further",
+              "text": "Add dynamics or a second layer, such as a duet part, and be ready to explain the musical choice you made."
+            }
+          ]
+        },
+        {
+          "number": 22,
+          "title": "Listening Assessment",
+          "assessed": true,
+          "intention": "We are learning to demonstrate our listening skills and tone colour vocabulary.",
+          "criteria": [
+            "I can identify orchestral and world instruments by sound.",
+            "I can describe their tone colour using accurate vocabulary in written answers."
+          ],
+          "blocks": [
+            {
+              "type": "prose",
+              "title": "This lesson is assessed.",
+              "text": "You complete a written listening quiz: short excerpts of orchestral and world instruments, played with no visuals. You name each instrument and describe its tone colour."
+            },
+            {
+              "type": "list",
+              "title": "What you are marked on",
+              "items": [
+                "Accuracy - correctly identifying the instrument",
+                "Vocabulary - using appropriate tone colour descriptors",
+                "Detail - written answers that go beyond one word"
+              ],
+              "text": ""
+            },
+            {
+              "type": "prose",
+              "title": "Conditions.",
+              "text": "Excerpts are played twice each, with time to write between them. Work individually and in silence."
+            },
+            {
+              "type": "prose",
+              "title": "Adjustments available",
+              "text": "A simplified multiple-choice version with images, or a word bank to support written answers, are both available. Arrange this with your teacher beforehand."
+            },
+            {
+              "type": "prose",
+              "title": "Going further",
+              "text": "Compare two instruments from different families in the same answer, explaining what makes their tone colours different rather than only naming them."
+            }
+          ]
+        },
+        {
+          "number": 23,
+          "title": "Starting the Band Project",
+          "assessed": false,
+          "intention": "We are learning to begin collaborative rehearsal in small ensembles.",
+          "criteria": [
+            "I can help select a song and take on a role in a group.",
+            "I can begin rehearsing cooperatively."
+          ],
+          "blocks": [
+            {
+              "type": "prose",
+              "title": "Three weeks, one song.",
+              "text": "The assessment is done. For the rest of the term you work in a group of three to five, choose a class-approved song, and rehearse it as a band."
+            },
+            {
+              "type": "list",
+              "title": "Getting started",
+              "items": [
+                "Form a group of three to five.",
+                "Choose a song from the class-approved list.",
+                "Assign roles: guitar, keyboard, percussion, vocals.",
+                "Start rehearsing your first section together."
+              ],
+              "text": ""
+            },
+            {
+              "type": "activity",
+              "title": "Your task",
+              "text": "Form your group, choose your song and assign roles. Use the rest of the lesson to begin rehearsing, even if it's just the first four bars.",
+              "items": []
+            },
+            {
+              "type": "table",
+              "headers": [
+                "Job",
+                "Who is doing it",
+                "What they play or sing"
+              ],
+              "rows": [
+                [
+                  "Guitar",
+                  "",
+                  ""
+                ],
+                [
+                  "Keyboard",
+                  "",
+                  ""
+                ],
+                [
+                  "Percussion",
+                  "",
+                  ""
+                ],
+                [
+                  "Vocals",
+                  "",
+                  ""
+                ]
+              ],
+              "heading": "Who is doing what"
+            },
+            {
+              "type": "support",
+              "title": "Need a hand? Take a supportive role",
+              "text": "Percussion or a repeated drone note is a real contribution to a band, not a lesser one. Take the role you can do well rather than the loudest one.",
+              "items": []
+            },
+            {
+              "type": "extension",
+              "text": "Take a leadership role in your group: arranging who plays when, or directing the first rehearsal.",
+              "items": []
+            },
+            {
+              "type": "exit",
+              "text": "What song did your group choose, and what's your role in it?"
+            }
+          ]
+        },
+        {
+          "number": 24,
+          "title": "Ensemble Rehearsal",
+          "assessed": false,
+          "intention": "We are learning to rehearse collaboratively and explore tone colour in an ensemble.",
+          "criteria": [
+            "I can contribute to group rehearsal and maintain a steady tempo.",
+            "I can make at least one musical decision about tone colour."
+          ],
+          "blocks": [
+            {
+              "type": "prose",
+              "title": "Balance is a decision, not an accident.",
+              "text": "A band sounds good when every part can be heard, not just when everyone plays their best. Today's rehearsal is about balance and tone colour choices as much as accuracy."
+            },
+            {
+              "type": "list",
+              "title": "Questions to work through as a group",
+              "items": [
+                "Is any instrument drowning out the others?",
+                "Could a section sound different if one instrument dropped out, or layered in?",
+                "Is the tempo steady across the whole group, not just within each part?",
+                "What's one tone colour choice your group has made on purpose?"
+              ],
+              "text": ""
+            },
+            {
+              "type": "activity",
+              "title": "Your task",
+              "text": "Rehearse your song, working through the balance questions as a group. Make and record at least one deliberate decision about tone colour, such as layering parts in or out.",
+              "items": []
+            },
+            {
+              "type": "table",
+              "headers": [
+                "Section",
+                "Decision made"
+              ],
+              "rows": [
+                [
+                  "Intro",
+                  ""
+                ],
+                [
+                  "Verse",
+                  ""
+                ],
+                [
+                  "Chorus",
+                  ""
+                ]
+              ],
+              "heading": "Group rehearsal log"
+            },
+            {
+              "type": "support",
+              "title": "Need a hand? One decision is enough",
+              "text": "You don't need to solve the whole song today. One clear decision, made and agreed on by the group, is a real result.",
+              "items": []
+            },
+            {
+              "type": "extension",
+              "text": "Try two contrasting textures in the same section, such as fingerpicking versus strumming, and decide as a group which serves the song better.",
+              "items": []
+            },
+            {
+              "type": "exit",
+              "text": "What's one tone colour decision your group made today?"
+            }
+          ]
+        },
+        {
+          "number": 25,
+          "title": "Wrap-Up and Showcase",
+          "assessed": false,
+          "intention": "We are learning to share our ensemble learning and reflect on the term.",
+          "criteria": [
+            "I can perform collaboratively and confidently as part of an ensemble.",
+            "I can describe what I improved in this term and set a target for next term."
+          ],
+          "blocks": [
+            {
+              "type": "prose",
+              "title": "From one string to a whole band.",
+              "text": "In Lesson 3 you were learning a riff on a single string. Today you perform as part of a band. That's a term."
+            },
+            {
+              "type": "prose",
+              "title": "The showcase.",
+              "text": "Each group performs their song for the class. This isn't formally assessed; it's a chance to share what you've built and hear what everyone else did. Give supportive feedback after every performance."
+            },
+            {
+              "type": "activity",
+              "title": "Your task",
+              "text": "Perform your group's song in the showcase, then complete the reflection table and the glossary below.",
+              "items": []
+            },
+            {
+              "type": "table",
+              "headers": [
+                "Question",
+                "Your answer"
+              ],
+              "rows": [
+                [
+                  "What did I improve most in this term?",
+                  ""
+                ],
+                [
+                  "Riffs, chords or the band project - which suited me best?",
+                  ""
+                ],
+                [
+                  "My target for next term",
+                  ""
+                ]
+              ],
+              "heading": "Your reflection"
+            },
+            {
+              "type": "table",
+              "headers": [
+                "Key word",
+                "What it means"
+              ],
+              "rows": [
+                [
+                  "Headstock",
+                  ""
+                ],
+                [
+                  "Tuning Pegs",
+                  ""
+                ],
+                [
+                  "Fret",
+                  ""
+                ],
+                [
+                  "String Names",
+                  ""
+                ],
+                [
+                  "Riff",
+                  ""
+                ],
+                [
+                  "Chord",
+                  ""
+                ],
+                [
+                  "Open Chord",
+                  ""
+                ],
+                [
+                  "Strumming",
+                  ""
+                ],
+                [
+                  "Picking",
+                  ""
+                ],
+                [
+                  "Tone Colour (Timbre)",
+                  ""
+                ],
+                [
+                  "Bright",
+                  ""
+                ],
+                [
+                  "Mellow",
+                  ""
+                ],
+                [
+                  "Percussive",
+                  ""
+                ],
+                [
+                  "Resonant",
+                  ""
+                ],
+                [
+                  "String Family",
+                  ""
+                ],
+                [
+                  "Woodwind Family",
+                  ""
+                ],
+                [
+                  "Brass Family",
+                  ""
+                ],
+                [
+                  "Percussion Family",
+                  ""
+                ],
+                [
+                  "Djembe",
+                  ""
+                ],
+                [
+                  "Gamelan",
+                  ""
+                ]
+              ],
+              "heading": "Key words: the whole term"
+            },
+            {
+              "type": "support",
+              "title": "Need a hand? Reflection starters",
+              "text": "\"One thing I can do now that I could not in Week 1 is ...\"   \"Playing in a band felt ...\"   \"Next term I want to ...\" You can answer these out loud instead of writing them.",
+              "items": []
+            },
+            {
+              "type": "extension",
+              "text": "Evaluate your own development critically. What is the ceiling on your current guitar skills, what would you need to learn to get past it, and what's an ambitious but real goal for next term?",
+              "items": []
+            },
+            {
+              "type": "prose",
+              "title": "Next term:",
+              "text": "Popular Music. You'll write and produce your own track using GarageBand, and the tone colour vocabulary from this term carries straight across to describing synths and mixed audio."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
