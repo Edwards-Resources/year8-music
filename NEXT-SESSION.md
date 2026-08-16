@@ -26,7 +26,7 @@ None of the three prints the answers to the worksheet table it sits above. That 
 
 ## Next task
 
-Nothing outstanding on this site beyond pushing. **The program's next task is Year 11**, which needs a design pass inside The Billing before its content pour. See `Sites/NEXT-SESSION.md`.
+Nothing outstanding on this site. **The program's next task is Year 11**, which needs a design pass inside The Billing before its content pour. See `Sites/NEXT-SESSION.md`.
 
 **Model and effort: Sonnet, medium** if the next session is more Year 8 content assembly. The block types, CSS and triage pattern are all settled.
 
