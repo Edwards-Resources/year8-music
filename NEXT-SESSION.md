@@ -1,3 +1,13 @@
+> **Update, 16 August 2026 (late).** The first name has been taken off all 105
+> served pages and out of `PRODUCT.md` and `build.py`, committed as `9d8d85a`,
+> **not pushed**. It is still in this repo's pushed history; whether that is worth
+> rewriting 31 published commits over is open and is Matthew's call
+> (recommendation: no, since it is his own first name under an org called
+> `Edwards-Resources`). Separately: **this repo has never contained the school's
+> name.** The Year 9 handoff said it did, and that was checked and is wrong -
+> `Singleton`, `SHS` and "high school" all return zero on a word-boundary search
+> across every blob in all 31 commits.
+
 # Next session
 
 **Where things stand:** All four terms are built and live - Keyboard, Guitar, Popular Music, Film Soundtrack - 100 lesson pages plus 4 term indexes and the home page, 105 pages total. Term 2 Guitar was pushed on 14 August. The site is content-complete.
