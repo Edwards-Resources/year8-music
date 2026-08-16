@@ -2,7 +2,7 @@
 
 **Where things stand:** All four terms are built and live - Keyboard, Guitar, Popular Music, Film Soundtrack - 100 lesson pages plus 4 term indexes and the home page, 105 pages total. Term 2 Guitar was pushed on 14 August. The site is content-complete.
 
-**Local `main` is two commits ahead of `origin/main` and neither is pushed.** Ask Matthew before pushing. On push, verify against the **live URL** rather than trusting the push.
+**Pushed 16 August 2026** (`e229cfa..59e658f`) and verified against the live URL rather than trusting the push. In sync with `origin/main`.
 
 ## Done 16 August 2026
 
@@ -22,7 +22,7 @@ None of the three prints the answers to the worksheet table it sits above. That 
 
 **Three defects fixed:** Popular Music 2 and 17 each named one term in a `definition` block while defining two, so both rendered a "Key word" heading over two definitions. Film 11 used "dissonance" in its lesson intention and in its own definition of suspense without ever defining it.
 
-**Guitar 8's framing block was rewritten.** It said "Today you don't see any of these instruments being played, only hear them" directly above five Philharmonia clips that show the player. It now says listen before you look, and use the video afterwards to check yourself. **Matthew asked for the embeds swapped instead**, and this was done differently because the build already prints each track's title under its player and the table pre-fills the instrument column, so the page names all five instruments regardless of what the video shows. He may want it changed back; if so, that is a real media-sourcing job with the full verification order per track.
+**Guitar 8's framing block was rewritten.** It said "Today you don't see any of these instruments being played, only hear them" directly above five Philharmonia clips that show the player. It now says listen before you look, and use the video afterwards to check yourself. **A swap of the embeds was asked for instead**, and this was done differently because the build already prints each track's title under its player and the table pre-fills the instrument column, so the page names all five instruments regardless of what the video shows. This may want reversing; if so, that is a real media-sourcing job with the full verification order per track.
 
 ## Next task
 
@@ -40,4 +40,4 @@ Nothing outstanding on this site beyond pushing. **The program's next task is Ye
 - **`#000` at `assets/site.css:74`** trips the design hook every time. It is the opaque stop of the halftone's `mask-image` gradient, where only the alpha channel is read, and `DESIGN.md` documents it. Leave it.
 - **No school name and no student names anywhere in this repository**, not just on the built site. The repo is public and git history is permanent. Grep any new file before committing.
 
-**Last commits:** `3e1ffbd` "Make Guitar 8 tell the truth about its own videos", `3258295` "Port the explain block into Tour Tee and pour the three triaged lessons". Neither pushed.
+**Last commits:** `3e1ffbd` "Make Guitar 8 tell the truth about its own videos", `3258295` "Port the explain block into Tour Tee and pour the three triaged lessons". Both pushed and live.
