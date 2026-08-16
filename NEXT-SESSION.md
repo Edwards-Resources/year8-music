@@ -1,32 +1,43 @@
 # Next session
 
-**Where things stand:** All four terms are now built - Keyboard, Guitar, Popular Music, Film Soundtrack - 100 lesson pages plus 4 term indexes and the home page, 105 pages total. **Term 2 Guitar was built and committed today (10 August 2026) but is not pushed** - Matthew has not been asked yet. `guitar.json`, 25 lessons, 20 registered vocabulary terms taught and glossaried, 22 verified video slots (riff/chord tutorials from Andy Guitar and JustinGuitar, orchestral families from Philharmonia Orchestra, world instruments from named performers/institutions). Registered in `course.json` between `keyboard` and `popular-music`. The 2027 Year 8 intake site is content-complete.
+**Where things stand:** All four terms are built and live - Keyboard, Guitar, Popular Music, Film Soundtrack - 100 lesson pages plus 4 term indexes and the home page, 105 pages total. Term 2 Guitar was pushed on 14 August. The site is content-complete.
 
-**Next task:** Get Matthew's sign-off to push. On push, verify against the **live URL**, not the push (see "Deployed, and how it nearly wasn't" in git history / prior commits for why - batch into one commit, one push). Then tell Matthew two things outside the site itself:
-1. The Term 2 program docx (`Year 8 (2026)/Program and Assessment/Year 8 Music Term 2.docx`) has a wrong header block - says YEAR 12 and UNIT LENGTH 4 TERMS, leftover from whatever it was pasted from. It's a Year 8, one-term unit. The docx wants fixing, not just the site.
-2. Whether the unit should stay named "Guitar" - the docx itself titles it "Striking the Right Chord" with no ambiguity like Term 1's Piano/Keyboard question, so this one is low-risk, but confirm anyway.
+**Local `main` is two commits ahead of `origin/main` and neither is pushed.** Ask Matthew before pushing. On push, verify against the **live URL** rather than trusting the push.
 
-**Model/effort recommendation:** Sonnet, low-medium for the push/verify/handoff step - mechanical. Step up to Opus, medium if Matthew wants a finish review now that all four terms exist, since that's a cross-term consistency judgement call, not content assembly.
+## Done 16 August 2026
 
-**Watch out for:**
-- **Local preview is session-scoped.** The dev server config lives in the **top-level `School Master/.claude/launch.json`**, `year8-music` entry. It points at a scratchpad `serve/year8-music` symlink into `docs/`. Both the symlink and the absolute scratchpad path must be recreated each session, and the port has to move each time (currently 8803, was 8802, 8801...8793, 8765) because the previous session's server holds the old one.
-- **The repo is public** (`Edwards-Resources/year8-music`), so every commit is public and history is permanent. Grep any new file for the school name before committing. **Ask Matthew before pushing**, always.
-- **Never edit `docs/` by hand** - `python3 build.py` wipes and rewrites it from `data/` every run.
-- **Verify every YouTube id before shipping it**, oEmbed first, then the Apple catalogue `trackExplicitness` check for anything with lyrics, before the oEmbed check - see "The Flume lesson" further down this file for why the order matters. Both Smoke on the Water (Deep Purple) and Come As You Are (Nirvana), used as riff examples in Guitar, came back `notExplicit`.
-- **Read DESIGN.md before touching any CSS** - the rules in it were earned through a finish review, not invented.
-- The outstanding items list below (Popular Music's Easybeats question, the King Kong gap in Film Soundtrack, the YouTube Premium ads issue, the DoE publishing policy question) is unrelated to Guitar and still open - don't assume it was cleaned up as a side effect of this session.
+All 100 lessons were triaged against the two tests this program settled on 14 August: does the lesson introduce something a student writes in their book that only exists in a teacher's head or a deck, and would you stop the recording and talk over it.
 
-## Also outstanding (carried forward, unrelated to Guitar)
+**Three fired. 753 words, against roughly 25,000 for a sequential pour.** Most lessons that looked like certain candidates turned out to be covered already: Keyboard 7 already carries the four-step dictation method as a list, Keyboard 6 does beat versus rhythm in one good sentence, Keyboard 2 has both mnemonics plus a count-from-middle-C method, and Film 7 is a genuinely good leitmotif lesson. **This site is in better shape than it looked**: its `definition` blocks print full meanings, most prose already does conceptual work, and it averages 177 to 235 words a term.
 
-1. **Popular Music Lesson 13 needs Matthew's ear on one track.** He asked for The Easybeats' "Friday On My Mind" as the vocal-riff example; no "na na na na" section could be located (the famous hook is the guitar riff), so it went in as asked and was flagged. If he names a different song, swap it in `popular-music.json` Lesson 13 and rebuild.
-2. **King Kong (1933) has no video**, Film Soundtrack Lesson 7 - no clean official YouTube upload found, left as a title-only gap rather than risking an unofficial source.
-3. **Ads on the embedded videos.** Matthew has YouTube Premium and still gets ads, because `youtube-nocookie.com` embeds don't carry his login cookies. Do not "fix" this by swapping to the tracked `youtube.com` domain - see the full reasoning in git history (commit around 7 August 2026) if this comes up again. Deferred - "it's fine for now".
-4. **DoE external-publishing policy** still unverified for the whole site.
+- **Film Soundtrack 2**, the five controls that create emotion. The task asked students to point at the musical choice and the page never gave them the levers; the support block's word bank lists emotions, not mechanisms.
+- **Popular Music 6**, what a chord numeral means. The progressions table is good but nothing decoded I-V-vi-IV, so an absent student had a lookup table they could not read.
+- **Guitar 8**, the three-part tone colour answer, and that tone colour words are not emotion words.
 
-## Last commit
+None of the three prints the answers to the worksheet table it sits above. That constraint shaped all of them.
 
-```
-3ddd0ea Build Term 2 Guitar, 25 lessons
-```
+**The `explain` block type is new** (`3258295`) and is documented in `DESIGN.md`. Quiet weight, so the task keeps the ink; no second hue, no new frame, no new size on either ramp. What separates it is the **call**, one sentence at the learning intention's size with the paragraphs at Body under it. Labelled `Liner notes`. A `paras` item is either a paragraph or a list of strings, the same either-shape `listen`'s tracks already use.
 
-Committed locally, **not pushed**. 29 files changed (guitar.json, course.json, docs/index.html, 25 new lesson pages, new topic index).
+**Not eligible for the loud field**, and that is deliberate: adding a type to `loud_block()`'s search order would re-allocate the ink on lessons that already have it. One consequence to know about - on a lesson with no task block the loud field can land on a framing paragraph while the real teaching sits quiet below it, which is what Guitar 8 now does.
+
+**Three defects fixed:** Popular Music 2 and 17 each named one term in a `definition` block while defining two, so both rendered a "Key word" heading over two definitions. Film 11 used "dissonance" in its lesson intention and in its own definition of suspense without ever defining it.
+
+**Guitar 8's framing block was rewritten.** It said "Today you don't see any of these instruments being played, only hear them" directly above five Philharmonia clips that show the player. It now says listen before you look, and use the video afterwards to check yourself. **Matthew asked for the embeds swapped instead**, and this was done differently because the build already prints each track's title under its player and the table pre-fills the instrument column, so the page names all five instruments regardless of what the video shows. He may want it changed back; if so, that is a real media-sourcing job with the full verification order per track.
+
+## Next task
+
+Nothing outstanding on this site beyond pushing. **The program's next task is Year 11**, which needs a design pass inside The Billing before its content pour. See `Sites/NEXT-SESSION.md`.
+
+**Model and effort: Sonnet, medium** if the next session is more Year 8 content assembly. The block types, CSS and triage pattern are all settled.
+
+## Watch out for
+
+- **This site has no position marker by design and must never gain one.** Several classes run the same sequence at different speeds. There is no position logic in the build.
+- **Verify every track before shipping it:** Apple explicitness flag, then oEmbed, then duration. That order.
+- **Check whether text is a citation before correcting it.** Popular Music 17's video brief names echo and compression where the table says Delay and Filter; the brief is an accurate citation of the video's own title and was deliberately left. Guitar 2 asks for a tone colour word three lessons before the vocabulary is formalised, which reads as feel it first, name it later, and was also left.
+- **Render the page and look at it before writing a rule about it.** The first version of the explain block set five named controls as prose and buried the five words a student writes in their book mid-sentence. Rendering caught it; reading the data did not.
+- **The Browser pane fails often.** It hung on `scroll` this session. Headless Chrome against a symlink wrapper works, since the site expects to be served at `/year8-music/` rather than at the server root. Its narrow-width clipping is an artifact; use the Browser pane's `resize_window` for real mobile checks.
+- **`#000` at `assets/site.css:74`** trips the design hook every time. It is the opaque stop of the halftone's `mask-image` gradient, where only the alpha channel is read, and `DESIGN.md` documents it. Leave it.
+- **No school name and no student names anywhere in this repository**, not just on the built site. The repo is public and git history is permanent. Grep any new file before committing.
+
+**Last commits:** `3e1ffbd` "Make Guitar 8 tell the truth about its own videos", `3258295` "Port the explain block into Tour Tee and pour the three triaged lessons". Neither pushed.
