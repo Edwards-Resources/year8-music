@@ -104,7 +104,7 @@ laid out like a gig page: the billing, the set, the task, the way out.
 FIRST VIEWPORT: Black print field, unit name at poster scale as a tour logo,
 25 DATES beneath it, and the tour list starting immediately with no hero card.
 FORM: Band merch back-print tour list, candidate 6 of the grounded list, chosen
-by Matthew after a re-roll steered for fun and playful. Seed key b2cc7a19.
+by the user after a re-roll steered for fun and playful. Seed key b2cc7a19.
 FINISH: unreviewed and undocumented is unfinished; this build ends with the finish
 review, the verdict, and DESIGN.md
 -->
@@ -134,7 +134,7 @@ review, the verdict, and DESIGN.md
 def is_placeholder(text):
     """True for an unfilled media slot carried over from the Canvas pages.
 
-    They are written as "Something - video": a note to Matthew about what to find,
+    They are written as "Something - video": a note to the author about what to find,
     never a sentence meant for a student. The listen blocks have always been checked
     for this, but the same placeholders also arrive as untitled prose, and there they
     printed to the page as if they were teaching copy. One test, used by both.
@@ -273,7 +273,7 @@ def block_html(block, loud=False, idx=0):
 
     if t == "listen":
         # A track is either a bare title or {"title", "embed"}. Both shapes live in
-        # the same list, so a block can be half filled while Matthew works through it.
+        # the same list, so a block can be half filled while it is worked through.
         tracks = [x if isinstance(x, dict) else {"title": x} for x in block["tracks"]]
         # Placeholders, not repertoire, and they must never render as content.
         if all(is_placeholder(x["title"]) for x in tracks):
@@ -440,7 +440,7 @@ def block_html(block, loud=False, idx=0):
     if t == "media":
         # A filled slot and an empty one are the same shape on the page: the quiet
         # panel labelled Video. Only the inside changes, so a lesson does not
-        # re-flow when Matthew finally picks the track.
+        # re-flow when the track is finally picked.
         if not block.get("embed"):
             return unfilled_media("Video", "video")
         brief = f'<p>{e(block["brief"])}</p>' if block.get("brief") else ""
