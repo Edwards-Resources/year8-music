@@ -1,6 +1,8 @@
 > **Update, 16 August 2026 (late).** The first name has been taken off all 105
-> served pages and out of `PRODUCT.md` and `build.py`, committed as `9d8d85a`,
-> **not pushed**. It is still in this repo's pushed history; whether that is worth
+> served pages and out of `PRODUCT.md` and `build.py`, **pushed and verified
+> against the live URL**: the name returns zero on the home page and on sampled
+> lesson pages across all four terms. It is still in this repo's earlier
+> history; whether that is worth
 > rewriting 31 published commits over is open and is Matthew's call
 > (recommendation: no, since it is his own first name under an org called
 > `Edwards-Resources`). Separately: **this repo has never contained the school's
