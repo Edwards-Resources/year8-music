@@ -144,6 +144,22 @@
               ]
             },
             {
+              "type": "explain",
+              "call": "There is no sad instrument. There is only what a composer does with it.",
+              "paras": [
+                "A cello can open a funeral or a comedy. Ask most people why a scene feels tense and they will point at the instrument, but the instrument is close to the last thing that decides it. Emotion in a score comes from a small set of choices, and you already know all of them, because they are the same elements you used to build your track last term. What changes this term is the job they are doing. Last term they served a song. This term they serve a picture.",
+                "Five controls do most of the work.",
+                [
+                  "Tempo sets whether you are pushed forward or held still.",
+                  "Register is how high or low the music sits, which is why a piccolo and a double bass playing the same tune feel nothing alike.",
+                  "Dynamics decide whether the music demands your attention or makes you lean in towards it.",
+                  "Harmony settles you or unsettles you: major tends to resolve, minor tends not to, and notes that clash refuse to.",
+                  "Instrumentation and texture set who is speaking, because one voice alone is exposed, a full orchestra is overwhelming, and a synthesiser sounds like no instrument anyone is holding."
+                ],
+                "The controls stack, and that is where the real work happens. High and soft is fragile. High and loud is alarm. Slow and minor reads as grief, while slow and major can be peace or dread depending entirely on what is on the screen. That last one matters most, because the picture carries half the meaning. The same thirty seconds of music under a wedding and under an empty road are not the same cue."
+              ]
+            },
+            {
               "type": "activity",
               "title": "Your task - Emotion wheel",
               "text": "For each excerpt, name the emotion it aims for and point to one musical choice - tempo, instrument, dynamics - that creates it.",
@@ -825,9 +841,10 @@
             {
               "type": "definition",
               "terms": [
+                "Dissonance",
                 "Suspense"
               ],
-              "text": "Musical techniques - dissonance, silence, sudden changes in dynamics - used deliberately to build tension in an audience."
+              "text": "Dissonance - two or more notes that clash when sounded together, creating tension that wants to resolve. Suspense - musical techniques including dissonance, silence and sudden changes in dynamics, used deliberately to build tension in an audience."
             },
             {
               "type": "support",

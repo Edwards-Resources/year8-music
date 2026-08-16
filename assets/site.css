@@ -149,6 +149,15 @@ a{color:inherit}
 .panel.quiet .panel-h{background:none;color:var(--print);border-bottom:2px solid var(--ink);
                       display:inline-block;padding:.5rem 0 .28rem}
 .panel.quiet .panel-in{padding:.6rem 0 0}
+
+/* The long read. Same quiet frame as every other named block, because the task
+   keeps the ink; the call is what sets it apart. One sentence at the learning
+   intention's size, which is the documented body-face exception for a sentence
+   that has to survive the back of the room, so the claim reads off the projector
+   and the paragraphs under it read at a desk. No new size, no second ink. */
+.explain .call{font-size:clamp(1.15rem,2.5vw,1.5rem);font-weight:700;line-height:1.3;
+               max-width:60ch;text-wrap:balance}
+.explain .panel-in p{max-width:70ch}
 .panel-in>*+*{margin-top:.7rem}
 .panel-in ul{margin:0;padding-left:1.1rem}
 .panel-in li+li{margin-top:.35rem}

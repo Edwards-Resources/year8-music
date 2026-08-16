@@ -381,6 +381,41 @@ def block_html(block, loud=False, idx=0):
     if t == "extension":
         return panel("Go further")
 
+    if t == "explain":
+        # The block a student who missed the lesson can teach themselves from, and
+        # the only long read on the page. It takes the quiet weight like every other
+        # named block: the task keeps the ink, because the task is still the thing
+        # to act on. What sets this block apart is the call - one sentence carrying
+        # the idea, set at the learning intention's size - so the back of a daylit
+        # room gets the claim off the board and the student at home reads the rest.
+        # That is the two-distance split the whole system is built for, done inside
+        # one block instead of with a second ink.
+        #
+        # Paragraphs arrive as a list rather than as one string split on blank
+        # lines, so the data says where a paragraph ends instead of the renderer
+        # guessing. A block with no call and no paragraphs is not a thin block, it
+        # is an empty one, and it prints nothing.
+        #
+        # An item is either a paragraph or a list of strings, the same either-shape
+        # the listen block's tracks already use. This exists because the first
+        # explain block written was a five-item set of controls set as prose, and
+        # rendering it showed the five names a student has to write down buried mid
+        # sentence. A set is bulleted; keeping it in one field rather than adding a
+        # second means the data decides where in the read the set falls.
+        call = block.get("call") or ""
+        items = [p for p in (block.get("paras") or []) if p]
+        if not call and not items:
+            return ""
+        inner = f'<p class="call">{e(call)}</p>' if call else ""
+        for p in items:
+            if isinstance(p, list):
+                inner += "<ul>" + "".join(f"<li>{e(x)}</li>" for x in p) + "</ul>"
+            else:
+                inner += f"<p>{e(p)}</p>"
+        return ('<section class="blk panel quiet explain">'
+                f'{head}<h3 class="panel-h">Liner notes</h3>'
+                f'<div class="panel-in">{inner}</div></section>')
+
     if t == "exit":
         # The way out: a solid ink field, the only one on the page, so the lesson
         # ends on a printed beat rather than another bordered box.

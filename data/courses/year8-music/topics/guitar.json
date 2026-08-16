@@ -644,6 +644,19 @@
               "text": "Today you don't see any of these instruments being played, only hear them. That is closer to how you actually meet tone colour in real listening: on the radio, in a film score, in a recording, with no visual clue at all."
             },
             {
+              "type": "explain",
+              "call": "Naming the instrument is the easy half. Describing its tone colour is the half that earns the mark.",
+              "paras": [
+                "In the assessment you will not see the player, so the sound is the only evidence you have. That works in your favour, because the sound carries more than a picture does. An answer that says only \"flute\" has identified something without describing anything, and in the listening assessment it is the description that shows you were actually listening. The table below asks you for the one word. The test in Week 7 asks you for the sentence, and it is built from three parts.",
+                [
+                  "Name it. The instrument, or the family if you cannot get closer than that. \"A brass instrument, probably trumpet\" is a better answer than a confident wrong guess.",
+                  "Describe it. Use a tone colour word: bright, mellow, percussive, resonant, thin, warm, harsh, breathy.",
+                  "Say what makes it sound that way. Bright because it sits high in its range, or buzzy because the sound starts at the player's lips."
+                ],
+                "One trap is worth naming now, because it costs marks every year. Tone colour words are not emotion words. \"Sad\" describes what the music made you feel, and nobody can mark that. \"Mellow\" describes what the sound is, and anybody can check it against the recording. When you are stuck, describe the sound first and let the feeling follow."
+              ]
+            },
+            {
               "type": "table",
               "headers": [
                 "Instrument",

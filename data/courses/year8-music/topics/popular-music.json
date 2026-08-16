@@ -197,6 +197,7 @@
             {
               "type": "definition",
               "terms": [
+                "Beat",
                 "Groove"
               ],
               "text": "Beat - the steady pulse of the music. It is what you tap your foot to. Groove - the overall rhythmic feel created by the interaction of drums, bass and other instruments. Two songs can share a beat but have completely different grooves."
@@ -452,6 +453,20 @@
             "I can play or sequence a simple chord progression."
           ],
           "blocks": [
+            {
+              "type": "explain",
+              "call": "Chord numerals are not chord names. They are seat numbers in a scale.",
+              "paras": [
+                "Look down the table below and the same progression turns up twice, once as C - G - Am - F and once as G - D - Em - C. Different letters, same progression. That is the whole reason musicians write chords as numerals instead of letters: the numeral describes the shape, and the shape is what songs actually share. Two bands playing in different keys are playing the same four chords in the sense that matters.",
+                "Number the notes of a scale from one to seven. In C major that is C, D, E, F, G, A, B. A chord numeral tells you which of those notes the chord is built on, so I is the chord on note one, V is the chord on note five, and vi is the chord on note six. Change key and every letter moves, but the seats stay where they are.",
+                "The case of the numeral carries one more piece of information, and it is easy to miss.",
+                [
+                  "A capital numeral is a major chord: I, IV and V.",
+                  "A lowercase numeral is a minor chord: ii, iii and vi."
+                ],
+                "That is why the pop progression is written I-V-vi-IV rather than I-V-VI-IV. The third chord is the minor one, and it is the reason a progression built from three bright chords still has some shadow in it."
+              ]
+            },
             {
               "type": "table",
               "headers": [
@@ -1452,6 +1467,7 @@
             {
               "type": "definition",
               "terms": [
+                "EQ",
                 "Reverb"
               ],
               "text": "EQ - adjusting frequencies (bass, middle, treble) to shape sound. Reverb - an effect that makes a sound feel like it is in a space, for example a room, hall or stadium."
