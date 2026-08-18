@@ -1274,13 +1274,25 @@
           "assessed": false,
           "intention": "We are learning to record a riff that gives identity to our composition.",
           "criteria": [
-            "I can record a riff that repeats in time and fits with my other parts."
+            "I can record a riff that repeats in time and fits with my other parts.",
+            "I can explain what quantise does to a recording."
           ],
           "blocks": [
             {
               "type": "media",
               "brief": "Recording a riff on the virtual guitars",
               "embed": "E0PKZeSfL30"
+            },
+            {
+              "type": "explain",
+              "call": "A riff has to survive fifty repeats. That is a very different job from playing something once.",
+              "paras": [
+                "This is the fourth and last of the required layers, and it is the one a listener hears most often. At a typical pop tempo of 120 beats per minute, a two-bar riff running through a three-minute track repeats about forty-five times. Anything slightly annoying on the first repeat is unbearable by the fortieth. That is why the plan in Lesson 13 asked for three or four notes. The fewer moving parts a riff has, the longer it survives.",
+                "Quantise means snapping the notes you played onto the nearest line of the beat grid. It does not change which notes you played or how hard you hit them, only when each one starts, so a take with the right feel and loose timing can be rescued instead of rerecorded. Set the quantise value to match the fastest note in your riff. If your riff moves in eighth notes, quantise to 1/8. Quantise that same riff to 1/4 and half your notes get dragged onto beats they were never meant to land on.",
+                "Once one take is right, stop playing it. Tap the region, choose Loop, and GarageBand repeats it for you for as far as you drag it. Copying a take that is right is not cheating. It is how nearly every record you listen to is made, and one loop that is exactly in time beats eight live takes that are nearly in time.",
+                "If you can hear your riff on its own but it vanishes once all four layers are playing, the problem is almost never volume. It is register, meaning how high or low the part sits. Your bass is at the bottom, your chords fill the middle, and a riff written in the middle of that is fighting the chords for the same space. Move the riff up an octave and it will appear without you touching a single fader. Turn it up only if moving it did not work.",
+                "Repetition is what makes a riff memorable and it is also what makes a track boring, which sounds like a contradiction and is not. The professional fix is variation, not novelty. Keep the shape and change one thing: shift the rhythm, alter one note, or drop the riff out altogether for four bars. Bringing something back only works if you took it away."
+              ]
             },
             {
               "type": "list",
@@ -1296,6 +1308,24 @@
               "text": ""
             },
             {
+              "type": "definition",
+              "terms": [
+                "Quantise"
+              ],
+              "text": "Snapping recorded notes onto the nearest line of the beat grid so that loose timing becomes exact. It changes when a note starts, not which note it is or how loud it is. Quantise to the value of the fastest note in the part."
+            },
+            {
+              "type": "list",
+              "title": "In your book",
+              "text": "",
+              "items": [
+                "Quantise: copy the definition from the key word box, in a full sentence.",
+                "Work out how many times your own riff will repeat. Take the length of your track in bars and divide it by the length of your riff in bars. Write the number down.",
+                "Copy the rule for a buried riff: if you cannot hear it, change its register before you change its volume.",
+                "Name the one thing you will vary in the second half of your track, and say what that change will do to the listener."
+              ]
+            },
+            {
               "type": "prose",
               "title": "You now have all four required layers",
               "text": "drums, chords, bass and riff. Lessons 16-18 are about shaping them into a finished track."
@@ -1308,7 +1338,7 @@
             },
             {
               "type": "extension",
-              "text": "Write a variation of your riff for the second half of the track - same shape, one or two notes changed, or the rhythm displaced. Repetition makes a hook memorable; variation stops it becoming boring.",
+              "text": "Write a variation of your riff for the second half of the track - same shape, one or two notes changed, or the rhythm displaced. Then try dropping the riff out entirely for four bars before it returns, and listen to what its absence does.",
               "items": []
             },
             {
@@ -1323,7 +1353,8 @@
           "assessed": false,
           "intention": "We are learning to rehearse and refine our performance for assessment.",
           "criteria": [
-            "I can perform an excerpt of my song with accuracy and stylistic detail."
+            "I can perform an excerpt of my song with accuracy, stylistic awareness and expression.",
+            "I can give feedback that names which of the three it is about."
           ],
           "blocks": [
             {
@@ -1335,7 +1366,44 @@
             {
               "type": "prose",
               "title": "Audience job.",
-              "text": "Listen properly and give one thing that worked and one thing to work on. Be specific - \"the timing in the chorus was solid\" is useful, \"it was good\" is not."
+              "text": "Listen properly, then give one thing that worked and one thing to work on. Name which of the three you are talking about. \"The timing in the chorus was solid\" is accuracy, and it is useful. \"It was good\" names nothing and helps nobody."
+            },
+            {
+              "type": "explain",
+              "call": "You are not marked on how hard the song is. You are marked on three things, and a simple song can meet all three.",
+              "paras": [
+                "Lesson 19 is the assessment and this lesson is the rehearsal for it, so today is the last cheap chance to find out what is not working. The rubric has three parts and they are marked separately, which means a performance can be strong in one and weak in another. Knowing which is which is what turns practising into improving.",
+                "Accuracy is the mechanical part: the right notes, the right rhythm, and a tempo that does not creep up. It is the easiest of the three to fix, because the fix is always the same one. Slow the passage down until you can play it perfectly, then bring the speed back up a little at a time.",
+                "Stylistic awareness is whether it sounds like the genre it came from. The same four chords played as a clean strum, a distorted riff or a soft arpeggio are three different styles, and only one of them is your song. Go back to the recording and copy how the original attacks the notes, not only which notes it plays.",
+                "Expression is what you do on top of correct: getting louder into the chorus, easing off in the verse, holding the last note instead of clipping it. It is the part students skip because it is not written in the notes, and it is the part that most changes how a performance lands on an audience.",
+                "None of the three needs a difficult song. A shortened, simplified version played accurately, in style and with dynamics marks better than an ambitious version played nervously. Pick the version you can actually perform, then make that one good."
+              ]
+            },
+            {
+              "type": "table",
+              "heading": "What you are marked on",
+              "headers": [
+                "Marked on",
+                "What it means",
+                "What it sounds like when it is missing"
+              ],
+              "rows": [
+                [
+                  "Accuracy",
+                  "Right notes, right rhythm, steady tempo",
+                  "Wrong notes, or the tempo creeping up as you get nervous"
+                ],
+                [
+                  "Stylistic awareness",
+                  "It sounds like the genre it came from",
+                  "Correct, but flat and generic. It could be any song"
+                ],
+                [
+                  "Expression",
+                  "Dynamics and phrasing, not only correct notes",
+                  "Every bar at the same volume from the first to the last"
+                ]
+              ]
             },
             {
               "type": "table",
@@ -1363,25 +1431,40 @@
               "heading": "Key words so far",
               "headers": [
                 "Key word",
-                "What it means"
+                "What it means",
+                "Where it was taught"
               ],
               "rows": [
                 [
                   "Bass line",
-                  ""
+                  "",
+                  "Lesson 11"
                 ],
                 [
                   "Riff",
-                  ""
+                  "",
+                  "Lesson 13"
                 ],
                 [
                   "Hook",
-                  ""
+                  "",
+                  "Lesson 13"
                 ],
                 [
                   "Chord progression",
-                  ""
+                  "",
+                  "Lesson 6"
                 ]
+              ]
+            },
+            {
+              "type": "list",
+              "title": "In your book",
+              "text": "",
+              "items": [
+                "Fill in the four key words above from memory first. Only then go back to the lesson listed beside each one and correct what you had.",
+                "Copy the three things you are marked on, with a one-line definition of each in your own words.",
+                "Write down the feedback you were given today, and name which of the three it belongs to."
               ]
             },
             {
