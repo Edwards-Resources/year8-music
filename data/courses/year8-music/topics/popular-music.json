@@ -1094,41 +1094,117 @@
           "number": 13,
           "title": "Hooks and Riffs",
           "assessed": false,
-          "intention": "We are learning what makes a hook memorable.",
+          "intention": "We are learning the difference between a riff and a hook, and what makes each one stick.",
           "criteria": [
+            "I can explain the difference between a riff and a hook.",
             "I can create a short riff or hook that repeats."
           ],
           "blocks": [
             {
               "type": "listen",
-              "heading": "Five kinds of hook",
+              "heading": "Riffs and hooks in five songs",
               "tracks": [
                 {
-                  "title": "Guitar riff - AC/DC, T.N.T.",
+                  "title": "Riff on guitar - AC/DC, T.N.T.",
                   "embed": "CiJeSSzu9Bo"
                 },
                 {
-                  "title": "Vocal riff - The Easybeats, Friday On My Mind",
+                  "title": "Hook in the lyrics - The Easybeats, Friday On My Mind",
                   "embed": "rOtnpb2EtQ8"
                 },
                 {
-                  "title": "String hook - The Veronicas, Untouched",
+                  "title": "Riff on strings - The Veronicas, Untouched",
                   "embed": "uKqriTRYInY"
                 },
                 {
-                  "title": "Flute riff - Men At Work, Down Under",
+                  "title": "Riff on flute, and the song's hook - Men At Work, Down Under",
                   "embed": "XfR9iY5y94s"
                 },
                 {
-                  "title": "Xylophone hook - Gotye, Somebody That I Used To Know",
+                  "title": "Riff on a xylophone sound - Gotye, Somebody That I Used To Know",
                   "embed": "8UVNT4wvIGY"
                 }
               ]
             },
             {
-              "type": "prose",
-              "title": "What makes a hook stick?",
-              "text": "Usually it is short (two bars or less), repeated often, and simple enough to sing back after hearing it once. Complicated ideas are rarely memorable. Notice that these five are played on five different things - guitar, voice, strings, flute and xylophone. A hook is an idea, not an instrument."
+              "type": "explain",
+              "call": "Every riff can become a hook. Not every hook is a riff.",
+              "paras": [
+                "A riff is a short instrumental pattern, usually two to four bars long, that repeats through a song. Three things make it a riff: it is short, it is played rather than sung, and it comes back. It is built from the notes of the chords underneath it, and it usually sits under or between the vocals rather than on top of them. The guitar figure that opens AC/DC's T.N.T. is a riff. It is under the singing for most of the song, and it is still the first thing you would play if someone asked you to play that song.",
+                "A hook is any part of a song written to catch the listener and stay in their head. It is named for the job it does, not for what plays it, so a hook can be sung, played, sampled or purely rhythmic. That is the real difference. A riff is described by what it is; a hook is described by what it achieves. A riff also repeats constantly, while a hook is often saved for the moment that matters most, usually the chorus, so that it lands instead of turning into wallpaper.",
+                "Hooks come in three kinds, and a song often runs more than one at once.",
+                [
+                  "Melodic hook: a catchy tune, like the string line that drives The Veronicas' Untouched.",
+                  "Rhythmic hook: a catchy pattern of long and short sounds, even on one note. The stomp-stomp-clap of Queen's We Will Rock You is a hook with no melody at all.",
+                  "Lyrical hook: a catchy phrase, very often the song title. \"Friday on my mind\" lands at the end of the chorus every time."
+                ],
+                "The two overlap constantly, and that is not a fault in the words. When the riff is the most memorable thing in a song, the riff is also the hook. Down Under is the clearest case on this page: the flute figure is a riff by description, because it is short, played and repeated, and it is the hook by job, because it is the thing everyone remembers. What you cannot do is run it backwards. The sung title line in Gotye's chorus is a hook and it is not a riff, because it is sung and it does not repeat underneath the song the way a riff does.",
+                "What makes either one stick is the same short list: short enough to hold in your head, repeated often enough to learn, and simple enough to sing back after one hearing. Complicated ideas are rarely memorable. Notice that the five songs above carry their idea on five different things, guitar, voice, strings, flute and a xylophone sound. A hook is an idea, not an instrument."
+              ]
+            },
+            {
+              "type": "table",
+              "heading": "Riff or hook?",
+              "headers": [
+                "Compare",
+                "Riff",
+                "Hook"
+              ],
+              "rows": [
+                [
+                  "What is it?",
+                  "A short pattern that repeats",
+                  "Any part written to catch your ear"
+                ],
+                [
+                  "How long?",
+                  "Usually two to four bars",
+                  "Three notes to a whole chorus"
+                ],
+                [
+                  "Played or sung?",
+                  "Played on an instrument",
+                  "Played, sung, sampled or just a rhythm"
+                ],
+                [
+                  "How often?",
+                  "Over and over, often right through",
+                  "Saved for the moment it matters most"
+                ],
+                [
+                  "Where does it sit?",
+                  "Under or between the vocals",
+                  "Out the front, usually the chorus"
+                ],
+                [
+                  "What is its job?",
+                  "Holds the song together",
+                  "Makes you remember the song"
+                ],
+                [
+                  "Named for",
+                  "What it is",
+                  "What it achieves"
+                ],
+                [
+                  "Example above",
+                  "Flute figure, Men At Work, Down Under",
+                  "Title line, The Easybeats, Friday On My Mind"
+                ]
+              ]
+            },
+            {
+              "type": "list",
+              "title": "In your book",
+              "text": "",
+              "items": [
+                "Rule up two columns, Riff and Hook. Copy the definition of each one from the liner notes above, in full sentences.",
+                "Under each definition, write the three things that make it what it is. For a riff: short, played, repeated. For a hook: catchy, memorable, and named for its job rather than its instrument.",
+                "List the three kinds of hook, with the example song for each.",
+                "Write one sentence explaining the overlap: when is a riff also the hook?",
+                "Choose two of the five songs above. For each, name whether you are describing a riff or a hook, and give one reason from your definitions.",
+                "You need both definitions again in Lesson 15 and in the key words check in Lesson 25, so write them properly now."
+              ]
             },
             {
               "type": "activity",
@@ -1166,14 +1242,14 @@
               "terms": [
                 "Riff"
               ],
-              "text": "A repeated melodic or rhythmic pattern, often played on guitar, bass or synth. A riff usually sits underneath or between the vocals."
+              "text": "A short instrumental pattern, usually two to four bars, that repeats through a song. Played rather than sung, most often on guitar, bass, keys or synth, and it usually sits under or between the vocals."
             },
             {
               "type": "definition",
               "terms": [
                 "Hook"
               ],
-              "text": "A short, catchy musical idea that makes a song memorable. A riff can be the hook, but a hook can also be a vocal line, a string part or even a rhythm."
+              "text": "Any part of a song written to catch the listener and stay in their head. A hook is named for its job, not for what plays it, so it can be melodic, rhythmic or lyrical, and sung, played or sampled. When a riff is the most memorable thing in a song, the riff is also the hook."
             },
             {
               "type": "support",
