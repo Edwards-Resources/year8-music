@@ -325,127 +325,6 @@
         },
         {
           "number": 5,
-          "title": "Drums in Genres",
-          "assessed": false,
-          "intention": "We are learning to compare rhythmic features across genres.",
-          "criteria": [
-            "I can describe how grooves affect musical style."
-          ],
-          "blocks": [
-            {
-              "type": "listen",
-              "heading": "Reference tracks",
-              "tracks": [
-                {
-                  "title": "Rock - Jet, Are You Gonna Be My Girl",
-                  "embed": "tuK6n2Lkza0"
-                },
-                {
-                  "title": "Pop - Jessica Mauboy, Little Things",
-                  "embed": "XbAlPugythw"
-                },
-                {
-                  "title": "Hip hop - Baker Boy, Marryuna",
-                  "embed": "afQcYH2nwoM"
-                }
-              ]
-            },
-            {
-              "type": "activity",
-              "title": "Your task - Compare your loop to the real thing",
-              "text": "Play your 8-bar loop from Lesson 4, then play a reference track in the same genre. Answer the questions below.",
-              "items": []
-            },
-            {
-              "type": "table",
-              "headers": [
-                "Question",
-                "Your answer"
-              ],
-              "rows": [
-                [
-                  "What genre is your loop?",
-                  ""
-                ],
-                [
-                  "What is different about the real track's drums?",
-                  ""
-                ],
-                [
-                  "Is the real track faster or slower than yours?",
-                  ""
-                ],
-                [
-                  "One change you will make to your loop",
-                  ""
-                ]
-              ]
-            },
-            {
-              "type": "definition",
-              "terms": [
-                "Texture"
-              ],
-              "text": "How many layers of sound are heard at once, and how they interact. A solo voice is a thin texture; a full band with backing vocals is a thick one."
-            },
-            {
-              "type": "table",
-              "heading": "Key words so far",
-              "headers": [
-                "Key word",
-                "What it means"
-              ],
-              "rows": [
-                [
-                  "Genre",
-                  ""
-                ],
-                [
-                  "Beat",
-                  ""
-                ],
-                [
-                  "Groove",
-                  ""
-                ],
-                [
-                  "Loop",
-                  ""
-                ]
-              ]
-            },
-            {
-              "type": "support",
-              "title": "Need a hand? Just compare two",
-              "text": "Compare pop against rock only. Ask one question: are the drums played by a person or made by a computer? Then say which sounds heavier, and why you think so.",
-              "items": []
-            },
-            {
-              "type": "extension",
-              "text": "Groove carries cultural meaning as well as style. Choose an Australian song and argue how its groove contributes to the identity the artist is presenting. Does a pub rock backbeat say something different about Australia than a trap beat does?",
-              "items": []
-            },
-            {
-              "type": "exit",
-              "text": "Name one thing you will change about your drum loop next lesson."
-            },
-            {
-              "type": "prose",
-              "title": "Next:",
-              "text": "Lessons 6-10 - Chords & Harmony. You will add a chord progression over the drum loop you just built."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "letter": "B",
-      "name": "Chords and Harmony",
-      "from": 6,
-      "to": 10,
-      "lessons": [
-        {
-          "number": 6,
           "title": "Popular Chord Progressions",
           "assessed": false,
           "intention": "We are learning how chords create harmony in popular songs.",
@@ -585,9 +464,17 @@
               "text": "Why do you think so many pop songs use the same four chords?"
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "letter": "B",
+      "name": "Chords and Harmony",
+      "from": 6,
+      "to": 10,
+      "lessons": [
         {
-          "number": 7,
+          "number": 6,
           "title": "Recording Chords in GarageBand",
           "assessed": false,
           "intention": "We are learning to record a chord progression in GarageBand.",
@@ -631,7 +518,7 @@
           ]
         },
         {
-          "number": 8,
+          "number": 7,
           "title": "Harmony in Styles",
           "assessed": false,
           "intention": "We are learning to identify how harmony changes across styles.",
@@ -710,7 +597,7 @@
           ]
         },
         {
-          "number": 9,
+          "number": 8,
           "title": "Combining Drums and Chords",
           "assessed": false,
           "intention": "We are learning to combine rhythm and harmony in GarageBand.",
@@ -835,7 +722,7 @@
           ]
         },
         {
-          "number": 10,
+          "number": 9,
           "title": "Performance Preparation",
           "assessed": false,
           "intention": "We are learning to rehearse and refine our chosen Australian song.",
@@ -912,17 +799,9 @@
               "text": "Lessons 11-15 - Bass & Hooks. You will add the bass line that ties your drums and chords together, then write the riff that makes the track yours."
             }
           ]
-        }
-      ]
-    },
-    {
-      "letter": "C",
-      "name": "Bass and Hooks",
-      "from": 11,
-      "to": 15,
-      "lessons": [
+        },
         {
-          "number": 11,
+          "number": 10,
           "title": "The Role of Bass",
           "assessed": false,
           "intention": "We are learning how the bass works in a pop rock band.",
@@ -1021,9 +900,17 @@
               "text": "Which of the four has the bass line you would most want to play, and what makes it good?"
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "letter": "C",
+      "name": "Bass and Hooks",
+      "from": 11,
+      "to": 15,
+      "lessons": [
         {
-          "number": 12,
+          "number": 11,
           "title": "Recording Bass in GarageBand",
           "assessed": false,
           "intention": "We are learning to record a bass line that works with chords and drums.",
@@ -1087,6 +974,95 @@
             {
               "type": "exit",
               "text": "Does your bass lock with the kick drum? How can you tell?"
+            }
+          ]
+        },
+        {
+          "number": 12,
+          "title": "Jazz in Australian Popular Music",
+          "assessed": false,
+          "intention": "We are learning how jazz reshapes the drums and bass we already recorded.",
+          "criteria": [
+            "I can describe how swing and walking bass differ from what I programmed in GarageBand.",
+            "I can explain the head-solos-head shape of a jazz performance."
+          ],
+          "blocks": [
+            {
+              "type": "listen",
+              "heading": "A jazz shortlist",
+              "tracks": [
+                {
+                  "title": "Jazz in Australian popular music - audio"
+                }
+              ]
+            },
+            {
+              "type": "prose",
+              "title": "Same beat, different feel.",
+              "text": "Your drum part in Lesson 4 played straight, even quavers. Jazz drummers swing them instead, splitting each pair long-short rather than evenly, so the beat rolls rather than ticks. Your bass in Lesson 11 held one root note per chord. A jazz bass line walks: it steps between the root notes of the chords, one note per beat, connecting one chord to the next instead of sitting still under it."
+            },
+            {
+              "type": "table",
+              "headers": [
+                "Part",
+                "What you programmed",
+                "What jazz does instead"
+              ],
+              "rows": [
+                [
+                  "Drums",
+                  "Even quavers, straight time",
+                  "Swung quavers, long-short"
+                ],
+                [
+                  "Bass",
+                  "Root note held for the chord",
+                  "Walking bass, stepping between chords"
+                ]
+              ]
+            },
+            {
+              "type": "explain",
+              "call": "Jazz has a form too: head, solos, head.",
+              "paras": [
+                "A jazz performance usually plays the tune once at the start, called the head, so everyone knows what the song is. Then one or more musicians improvise over the same chords, taking turns, called the solos. The band closes by playing the head again, so the tune arrives and leaves in the same shape.",
+                "That is a section structure, the same idea as verse and chorus in the pop songs you have been recording, just built from three parts instead of several. Improvising in the solos section is not random: every note still has to fit the chords underneath, the same rule you followed programming your own bass and chords."
+              ]
+            },
+            {
+              "type": "activity",
+              "title": "Your task - Hear the difference",
+              "text": "Play back your own drum and bass tracks from Lessons 4 and 11. Where would swinging the drums change the feel? Where would a walking bass replace the held root note? Mark both spots.",
+              "items": []
+            },
+            {
+              "type": "definition",
+              "terms": [
+                "Swing"
+              ],
+              "text": "A jazz rhythmic feel where quaver pairs are played long-short instead of even."
+            },
+            {
+              "type": "definition",
+              "terms": [
+                "Walking bass"
+              ],
+              "text": "A bass line that steps between the notes of each chord, usually one note per beat, instead of holding one note per chord."
+            },
+            {
+              "type": "support",
+              "title": "Need a hand? Tap it first",
+              "text": "Before you try to hear swing, tap it. Tap four even beats, then tap the same four beats long-short, long-short. That physical difference is what your ear is listening for.",
+              "items": []
+            },
+            {
+              "type": "extension",
+              "text": "Try swinging your own drum groove in GarageBand and see whether it still locks with your unswung bass. Explain what has to change for the two to line up again.",
+              "items": []
+            },
+            {
+              "type": "exit",
+              "text": "In your own words, what does a walking bass do that a held root note does not?"
             }
           ]
         },
@@ -1965,82 +1941,86 @@
         },
         {
           "number": 22,
-          "title": "Reflecting on Australian Popular Music",
+          "title": "First Nations Music, Place, Country and Language",
           "assessed": false,
-          "intention": "We are learning to reflect on the cultural identity expressed through Australian popular music.",
+          "intention": "We are learning how Baker Boy's music communicates Cultural understanding of Place, Country or Language, and the protocols that make that possible.",
           "criteria": [
-            "I can identify features that make Australian popular music unique."
+            "I can describe how Marryuna communicates Cultural understanding of Place, Country or Language.",
+            "I can explain what ICIP protects and why consent matters."
           ],
           "blocks": [
             {
               "type": "listen",
-              "heading": "The three artists",
+              "heading": "Baker Boy - Marryuna (feat. Yirrmal)",
               "tracks": [
                 {
                   "title": "Baker Boy - Marryuna (feat. Yirrmal)",
                   "embed": "afQcYH2nwoM"
-                },
-                {
-                  "title": "Miles Phillips - Eastern Rosellas",
-                  "embed": "9vJZi-x-sag"
-                },
-                {
-                  "title": "Jessica Mauboy - Little Things",
-                  "embed": "XbAlPugythw"
                 }
               ]
             },
             {
               "type": "prose",
-              "title": "Back where we started.",
-              "text": "You met these artists in Lesson 1 and listened for instruments and production. Now you have made a track yourself, listen again for something harder: what are they using music to say?"
+              "title": "Track what the Yolŋu Matha does, and where.",
+              "text": "You met Baker Boy in Lesson 1. Listen again, and this time follow the Yolŋu Matha specifically: where in the track it appears, what it sits alongside, and what changes when the English verses hand over to it. That shift is a deliberate choice about identity, made inside a genre, hip hop, that came from somewhere else entirely."
             },
             {
               "type": "activity",
-              "title": "Your task - The Australian sound",
-              "text": "Brainstorm what makes Australian popular music distinctive. Think about language, accent, subject matter, instruments, and the stories artists choose to tell.",
+              "title": "Your task",
+              "text": "Note down every point where the Yolŋu Matha enters or exits. For each one, describe what it communicates about Place, Country or Language that the English lyrics do not.",
               "items": []
             },
             {
+              "type": "explain",
+              "call": "ICIP protects what a Community owns, even when the words are freely available to hear.",
+              "paras": [
+                "Indigenous Cultural and Intellectual Property, ICIP, covers a Community's Languages, stories, Songlines, images and Knowledges. It is not the same as copyright, which protects a recording once it exists. ICIP protects the right to say whether that recording should exist, or exist in that form, at all.",
+                "Consent is central. A Community, or the person who holds a story, can give permission, place limits on it, or refuse it, and that decision can be withdrawn at any time, even after it has been given. Language is used only where its meaning is known and a local Cultural Knowledge Holder has given permission for it to be used that way."
+              ]
+            },
+            {
               "type": "table",
+              "heading": "Ethical use, and what it is not",
               "headers": [
-                "Artist",
-                "What is distinctly Australian about their music?"
+                "Ethical use",
+                "Not ethical use"
               ],
               "rows": [
                 [
-                  "Baker Boy",
-                  ""
+                  "Language used with permission, its meaning known and understood",
+                  "Language sampled for its sound without knowing what it means"
                 ],
                 [
-                  "Miles Phillips",
-                  ""
+                  "A story told by the person who holds it, or with their guidance",
+                  "A story retold by someone outside the Community, without permission"
                 ],
                 [
-                  "Jessica Mauboy",
-                  ""
+                  "The artist and Community credited by name",
+                  "Music used with no credit or acknowledgement at all"
                 ]
               ]
             },
             {
-              "type": "prose",
-              "title": "",
-              "text": "Baker Boy raps in Yolŋu Matha as well as English. That is a deliberate choice about identity, made in a genre that came from somewhere else entirely. Miles Phillips wrote Eastern Rosellas when he was seven, about birds at his grandparents' place, recorded it at home with his dad on drums, and went in at number five on the ARIA chart - the youngest Australian ever to chart."
-            },
-            {
               "type": "support",
-              "title": "Need a hand? One artist, one feature",
-              "text": "Choose the artist you like most and name a single thing that makes their music sound Australian. One clear idea is enough.",
+              "title": "Your own track, the same rule",
+              "text": "The cover and GarageBand track you have built this term sit under the same protocols. This unit does not ask you to compose using Aboriginal or Torres Strait Islander Language, Songlines or Dreaming stories, because that needs a Community's collaboration and permission arranged in advance, not something built alone in a classroom.",
               "items": []
             },
             {
+              "type": "definition",
+              "terms": [
+                "ICIP"
+              ],
+              "text": "Indigenous Cultural and Intellectual Property: a Community's right to control its own Languages, stories, Songlines, images and Knowledges, including whether they are used at all."
+            },
+            {
               "type": "extension",
-              "text": "Australian artists work in genres that began overseas - hip hop, rock, EDM. Explain how they fuse those global forms with something local, and what that fusion achieves culturally.",
+              "text": "Compare Baker Boy's choice to rap in two languages with another artist you know who mixes languages or dialects in their music. What does each artist gain by not translating everything into one shared language?",
               "items": []
             },
             {
               "type": "exit",
-              "text": "Has your answer to \"what makes a song sound Australian\" changed since Lesson 1?"
+              "text": "Name one thing ICIP protects that copyright does not."
             }
           ]
         },

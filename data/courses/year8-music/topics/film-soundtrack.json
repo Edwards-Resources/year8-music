@@ -1,7 +1,7 @@
 {
   "id": "film-soundtrack",
   "name": "Film Soundtrack",
-  "subtitle": "Scoring the Scene",
+  "subtitle": "Film and Video Game Music",
   "term": "Term 4",
   "blurb": "This term you score picture instead of a song. You'll investigate how music, dialogue and sound effects work together in film and games, and finish by re-scoring a muted film scene in a small group.",
   "question": "How does music shape the way we experience a story on screen?",
@@ -1480,6 +1480,11 @@
               "text": "Everything you've studied this term - diegetic sound, leitmotif, spotting, dynamics - works together across an entire film, not just one excerpt. A feature score returns to its ideas, develops them, and times its silences across two hours, not two minutes."
             },
             {
+              "type": "prose",
+              "title": "Every deep dive opens with jazz.",
+              "text": "Before you pick your film, the whole class hears the same noir cue: Henry Mancini's Peter Gunn theme, a swung, syncopated bass riff under blaring horns. Jazz has scored film and television since sound arrived, from a muted trumpet under a detective's footsteps to entire scores built on improvisation. Naming it here means you meet the mandatory jazz repertoire area no matter which film gets picked for the deep dive."
+            },
+            {
               "type": "table",
               "headers": [
                 "Moment",
@@ -1506,6 +1511,13 @@
                 "Synchronisation"
               ],
               "text": "The process of matching sound precisely with on-screen action - the same skill you practised in Lesson 15, at the scale of a whole film."
+            },
+            {
+              "type": "definition",
+              "terms": [
+                "Swing"
+              ],
+              "text": "A jazz rhythmic feel where quaver pairs are played long-short instead of even, the feel under the Peter Gunn cue that opened this lesson."
             },
             {
               "type": "support",
