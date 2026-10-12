@@ -42,15 +42,19 @@
           "blocks": [
             {
               "type": "listen",
-              "heading": "Two ways in",
+              "heading": "Three scenes, three soundtracks",
               "tracks": [
                 {
-                  "title": "Harry Potter and the Deathly Hallows - Official Trailer",
-                  "embed": "0Q3O8rauQx0"
+                  "title": "Weasleys' Wizard Wheezes - Harry Potter and the Half-Blood Prince",
+                  "embed": "vxRqPmvGlUY"
                 },
                 {
-                  "title": "Inception - Digital Trailer",
-                  "embed": "Qwe6qXFTdgc"
+                  "title": "Landing on the Moon - Wallace & Gromit: A Grand Day Out",
+                  "embed": "T0qagA4_eVQ"
+                },
+                {
+                  "title": "Miller's Planet - Interstellar",
+                  "embed": "DB8i1kyXkWc"
                 }
               ]
             },
@@ -87,8 +91,13 @@
             {
               "type": "activity",
               "title": "Your task",
-              "text": "Watch the trailer excerpts again. Log three sounds you hear and classify each one as diegetic, non-diegetic or foley.",
-              "items": []
+              "text": "Listen like a sound designer. Every scene is built from three kinds of sound, and today you sort them.",
+              "items": [
+                "Write the three definitions below into your book: diegetic sound, non-diegetic sound and foley.",
+                "Rule up a table with three columns headed Diegetic, Non-diegetic and Foley.",
+                "Watch each scene. List everything you can hear in the right column - voices, music, footsteps, objects, crowds, anything.",
+                "Compare your table with the class. Where people disagree, test the sound with the question in the support box."
+              ]
             },
             {
               "type": "definition",
