@@ -42,6 +42,25 @@
           "blocks": [
             {
               "type": "listen",
+              "heading": "Start here: one scene, watched twice",
+              "tracks": [
+                {
+                  "title": "Star Wars: A New Hope - The Throne Room (as released)",
+                  "embed": "yixG8pfncOs"
+                },
+                {
+                  "title": "Star Wars Minus Williams - The Throne Room (music removed)",
+                  "embed": "Tj-GZJhfBmI"
+                }
+              ]
+            },
+            {
+              "type": "prose",
+              "title": "Watch it twice.",
+              "text": "Watch the first version and describe the music. How does it start, and how does it change? Did anything else about the scene stand out? Then watch the second version, with the music taken away, and see what the music was doing all along."
+            },
+            {
+              "type": "listen",
               "heading": "Three scenes, three soundtracks",
               "tracks": [
                 {
@@ -241,21 +260,22 @@
           "assessed": false,
           "intention": "We are learning how foley artists create realistic sound effects.",
           "criteria": [
-            "I can use classroom objects to recreate a realistic sound effect."
+            "I can perform sound effects in time with a scene."
           ],
           "blocks": [
             {
-              "type": "list",
-              "title": "Build your foley kit",
-              "items": [
-                "Choose two classroom objects and a sound you think they could make together.",
-                "Test it near a phone or iPad microphone, close and quiet.",
-                "Record it in GarageBand using the Audio Recorder.",
-                "Listen back. Does it sound like the real thing, or like an object being hit?",
-                "Try again with a different object, or closer to the mic, until it convinces you.",
-                "Save the file with a clear name - what it's meant to be, not what it actually is."
-              ],
-              "text": ""
+              "type": "listen",
+              "heading": "Foley artists at work",
+              "tracks": [
+                {
+                  "title": "Foley artist John Simpson talks movie sounds - Behind the News",
+                  "embed": "m3Mv1ry34BM"
+                },
+                {
+                  "title": "Old Disney sound effects, side by side - Jimmy MacDonald",
+                  "embed": "20UISl1e81U"
+                }
+              ]
             },
             {
               "type": "prose",
@@ -264,9 +284,14 @@
             },
             {
               "type": "activity",
-              "title": "Your task - Foley match",
-              "text": "Close your eyes while a partner performs a foley sound. Guess the real object before they tell you.",
-              "items": []
+              "title": "Your task - Act it out, sound it out",
+              "text": "In your group, make up a short story you can act out in about 30 seconds. One person performs every sound effect live on the keyboard while the others act.",
+              "items": [
+                "Plan a story with at least four moments that need a sound: footsteps, a door, a crash, the weather, anything.",
+                "Scroll through the keyboard's sounds and find one for each moment. Write down the sound's number so you can find it again.",
+                "Rehearse until every sound lands exactly when the action happens.",
+                "Perform for the class. The audience calls out which sounds worked best and why."
+              ]
             },
             {
               "type": "definition",
@@ -278,17 +303,17 @@
             {
               "type": "support",
               "title": "Need a hand? Start with one sound",
-              "text": "Footsteps are the easiest place to start. Try shoes on different surfaces - carpet, tile, an empty box for a wooden floor - and walk in place with your hands, tapping the surface in rhythm.",
+              "text": "Start with footsteps or a door, the easiest sounds to time. Try the same sound in a low and a high register: lower usually sounds bigger and heavier, higher sounds smaller and lighter.",
               "items": []
             },
             {
               "type": "extension",
-              "text": "Layer two or three foley sounds to build one complex effect - for example footsteps, a creaking door and distant wind together for a single haunted-house moment.",
+              "text": "Layer two sounds at once for one moment, for example footsteps and wind together as a character walks through a storm.",
               "items": []
             },
             {
               "type": "exit",
-              "text": "What everyday object surprised you as a sound effect today?"
+              "text": "Which keyboard sound was the most convincing sound effect today, and why?"
             }
           ]
         },
@@ -302,24 +327,19 @@
           ],
           "blocks": [
             {
-              "type": "listen",
-              "heading": "Two orchestral worlds",
-              "tracks": [
-                {
-                  "title": "Holst: The Planets - Mars, the Bringer of War // Danish National Symphony Orchestra (LIVE)",
-                  "embed": "xZfIUz1S97U"
-                },
-                {
-                  "title": "Mussorgsky: \"Night on Bald Mountain\" | The Orchestra Now",
-                  "embed": "QhL4kHh6D_I"
-                }
+              "type": "activity",
+              "title": "Your task - Screen off",
+              "text": "Your teacher blanks the screen and plays about a minute of several different pieces. No titles, no pictures, just the music.",
+              "items": [
+                "For each piece, write two or three sentences: what is happening in the film playing in your head?",
+                "Use the table below for the piece you liked most.",
+                "After each piece, compare with the people around you. How close were your films?"
               ]
             },
             {
-              "type": "activity",
-              "title": "Your task - Imagine the scene",
-              "text": "Listen without any picture. Imagine a film or game scene that could use this music. Write two or three sentences describing what's happening.",
-              "items": []
+              "type": "prose",
+              "title": "Why everyone imagines the same film.",
+              "text": "Classes hearing the same minute of music very often imagine nearly the same scene, and students have been giving the same answers for years. That is not a coincidence. Composers use tempo, dynamics, tone colour and texture in ways an audience has learnt to read, so the music tells you the story before a single picture appears."
             },
             {
               "type": "table",
@@ -363,6 +383,35 @@
             {
               "type": "exit",
               "text": "What would happen next in your scene?"
+            },
+            {
+              "type": "list",
+              "title": "What you heard (the reveal)",
+              "items": [
+                "The Ecstasy of Gold - Ennio Morricone, The Good, the Bad and the Ugly (1966)",
+                "An Irish Party in Third Class - Gaelic Storm, Titanic (1997)",
+                "Halloween theme - John Carpenter, Halloween (1978)",
+                "Ride of the Valkyries - Richard Wagner, from the opera Die Walküre",
+                "Dance of the Sugar Plum Fairy - Pyotr Tchaikovsky, The Nutcracker (1892)",
+                "Also sprach Zarathustra - Richard Strauss (1896), the opening of 2001: A Space Odyssey",
+                "Jupiter, the Bringer of Jollity - Gustav Holst, The Planets",
+                "Gladiator - Hans Zimmer and Lisa Gerrard (2000)"
+              ],
+              "text": ""
+            },
+            {
+              "type": "listen",
+              "heading": "Two more to try at home",
+              "tracks": [
+                {
+                  "title": "Holst: The Planets - Mars, the Bringer of War // Danish National Symphony Orchestra (LIVE)",
+                  "embed": "xZfIUz1S97U"
+                },
+                {
+                  "title": "Mussorgsky: \"Night on Bald Mountain\" | The Orchestra Now",
+                  "embed": "QhL4kHh6D_I"
+                }
+              ]
             }
           ]
         },
