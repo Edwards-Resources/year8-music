@@ -62,6 +62,153 @@ def lesson_href(site, course, topic, lesson):
     return f"{site['base']}/{course['id']}/{topic['id']}/lesson-{lesson['number']}/"
 
 
+def page_href(site, course, topic, ref):
+    """A lesson number or the slug of one of the topic's extra pages."""
+    if isinstance(ref, int):
+        return f"{site['base']}/{course['id']}/{topic['id']}/lesson-{ref}/"
+    return f"{site['base']}/{course['id']}/{topic['id']}/{ref}/"
+
+
+def page_of(topic, ref):
+    if isinstance(ref, int):
+        return next(l for l in flat_lessons(topic) if l["number"] == ref)
+    return next(p for p in topic.get("pages", []) if p["slug"] == ref)
+
+
+def ink_of(topic, ref):
+    if isinstance(ref, int):
+        return LEG_INK.get(leg_of(topic, ref)["letter"], "pink")
+    return page_of(topic, ref).get("ink", "pink")
+
+
+# ------------------------------------------------------------- the two runs
+#
+# Two teachers share one set of iPads, so the classes running this term take the
+# same lessons in two orders: the iPads first and the listening after, or the
+# other way round. A run is a sequence, never a position. It says what comes after
+# what for a class on that run; it never says where any class is up to, so it
+# carries no dates, no class names and no teacher names, and the build still has no
+# idea which lesson is "now".
+
+
+def run_numbers(run):
+    """[(item, number or None)] with numbering that skips the unnumbered blocks."""
+    out, n = [], 0
+    for b in run["blocks"]:
+        for item in b["items"]:
+            if b.get("numbered", True):
+                n += 1
+                out.append((b, item, n))
+            else:
+                out.append((b, item, None))
+    return out, n
+
+
+def run_sequence(topic, run):
+    """Every page the run visits, in order, each once: [(ref, label)]."""
+    items, total = run_numbers(run)
+    seq, seen = [], set()
+    for b, item, n in items:
+        label = f"{n} of {total}" if n else b["name"].lower()
+        for ref in item["pages"]:
+            if ref not in seen:
+                seen.add(ref)
+                seq.append((ref, label))
+    missing = [l["number"] for l in flat_lessons(topic) if l["number"] not in seen]
+    assert not missing, f"run {run['id']} never visits lessons {missing}"
+    return seq
+
+
+def pages_phrase(topic, refs):
+    def name(r):
+        return f"Lesson {r}" if isinstance(r, int) else page_of(topic, r)["title"]
+    nums = [r for r in refs if isinstance(r, int)]
+    if len(nums) > 2 and nums == list(range(nums[0], nums[-1] + 1)) and len(nums) == len(refs):
+        return f"Lessons {nums[0]} to {nums[-1]}"
+    if len(refs) == 2 and all(isinstance(r, int) for r in refs):
+        return f"Lesson {refs[0]}, then Lesson {refs[1]}"
+    return ", then ".join(name(r) for r in refs)
+
+
+def runs_html(site, course, topic):
+    runs = topic.get("runs")
+    if not runs:
+        return ""
+    buttons = "".join(
+        f'<button type="button" class="runbtn" data-run="{e(r["id"])}" aria-pressed="false">'
+        f'{e(r["name"])}</button>' for r in runs)
+    panels = []
+    for r in runs:
+        items, total = run_numbers(r)
+        legs, current, rows = [], None, []
+
+        def close():
+            if current is not None:
+                legs.append(f"""<section class="leg runleg">
+  <div class="leg-head">
+    <h3>{e(current['name'])}</h3>
+    <span class="leg-range">{e(current['weeks'])}</span>
+  </div>
+  <ol class="dates">{''.join(rows)}</ol>
+</section>""")
+
+        for b, item, n in items:
+            if b is not current:
+                close()
+                current, rows = b, []
+            refs = item["pages"]
+            target = refs[0] if refs else item.get("link")
+            href = page_href(site, course, topic, target)
+            ink = ink_of(topic, target)
+            where = pages_phrase(topic, refs) if refs else ""
+            int_txt = ". ".join(x for x in (where, item.get("note", "").rstrip(".")) if x)
+            flag = f'<span class="flag">{e(item["flag"])}</span>' if item.get("flag") else ""
+            cls = " is-assessed" if item.get("flag") else ""
+            no = str(n) if n else "&middot;"
+            rows.append(
+                f'<li class="date ink-{ink}{cls}"><a href="{href}">'
+                f'<span class="no">{no}</span>'
+                f'<span class="what"><span class="tt">{e(item["title"])}</span>'
+                f'<span class="int">{e(int_txt)}.</span></span>{flag}</a></li>')
+        close()
+        panels.append(f"""<div class="run" id="{e(r['id'])}" data-run="{e(r['id'])}">
+  <p class="run-blurb"><strong>{e(r['name'])}.</strong> {e(r['blurb'])}</p>
+  {''.join(legs)}
+</div>""")
+    return f"""<section class="runs" data-topic="{e(topic['id'])}" aria-labelledby="runs-h">
+  <div class="tour-head">
+    <h2 id="runs-h">The assessment run</h2>
+    <p>The lessons up to the task, in the order your class does them. Your teacher will tell you which run is yours.</p>
+  </div>
+  <div class="runswitch" role="group" aria-label="Choose your run" hidden>{buttons}</div>
+  <p class="runprompt small" hidden>Choose your class's run to see its order.</p>
+  {''.join(panels)}
+</section>"""
+
+
+def run_nav_html(site, course, topic, ref):
+    """Previous and next along each run, hidden until a run has been chosen."""
+    navs = []
+    for r in topic.get("runs", []):
+        seq = run_sequence(topic, r)
+        idx = next(i for i, (x, _) in enumerate(seq) if x == ref)
+        cards = []
+        if idx > 0:
+            p = seq[idx - 1][0]
+            cards.append(f'<a class="pn prev" href="{page_href(site, course, topic, p)}">'
+                         f'<span>Previous</span><strong>{e(page_of(topic, p)["title"])}</strong></a>')
+        if idx + 1 < len(seq):
+            nx = seq[idx + 1][0]
+            cards.append(f'<a class="pn next" href="{page_href(site, course, topic, nx)}">'
+                         f'<span>Next</span><strong>{e(page_of(topic, nx)["title"])}</strong></a>')
+        navs.append(f"""<nav class="runnav wrap" data-run="{e(r['id'])}" aria-label="{e(r['name'])} run" hidden>
+  <p class="runnav-h">{e(r['name'])} run &middot; {e(seq[idx][1])}
+    <button type="button" class="run-off">Show every lesson in order</button></p>
+  <div class="prevnext">{''.join(cards)}</div>
+</nav>""")
+    return "".join(navs)
+
+
 # ---------------------------------------------------------------- page shell
 
 
@@ -505,6 +652,9 @@ def build_topic(site, course, topic):
     outcomes = "".join(f'<li><span class="code">{e(c)}</span> {e(t)}</li>'
                        for c, t in topic["outcomes"])
     a = topic["assessment"]
+    extra_links = "".join(
+        f'<p><a href="{page_href(site, course, topic, p["slug"])}">{e(p["title"])}</a></p>'
+        for p in topic.get("pages", []))
 
     body = f"""<div class="print">
   <div class="wrap">
@@ -523,6 +673,7 @@ def build_topic(site, course, topic):
 
   <div class="tour">
     <div class="tour-main">
+      {runs_html(site, course, topic)}
       <div class="tour-head">
         <h2>The dates</h2>
         <p>Every lesson of the term, in order. Go straight to the one you need.</p>
@@ -535,6 +686,7 @@ def build_topic(site, course, topic):
         <div class="panel-in">
           <p class="when">{e(a['when'])}</p>
           <p>{e(a['detail'])}</p>
+          {extra_links}
           <p class="small">The task notification and submission are in Canvas.</p>
         </div>
       </section>
@@ -550,8 +702,13 @@ def build_topic(site, course, topic):
 
 
 def build_lesson(site, course, topic, lesson, prev_l, next_l):
-    leg = leg_of(topic, lesson["number"])
-    ink = LEG_INK.get(leg["letter"], "pink")
+    # An extra page (the quiz revision page) has a slug and no number. It sits
+    # outside the 25 dates, so it carries no numeral and no static prev/next; the
+    # runs are the only way through it.
+    ref = lesson.get("number", lesson.get("slug"))
+    numbered = "number" in lesson
+    leg = leg_of(topic, lesson["number"]) if numbered else None
+    ink = LEG_INK.get(leg["letter"], "pink") if numbered else lesson.get("ink", "pink")
     total = len(flat_lessons(topic))
 
     crit = "".join(
@@ -575,14 +732,24 @@ def build_lesson(site, course, topic, lesson, prev_l, next_l):
         nav.append(f'<a class="pn next" href="{lesson_href(site, course, topic, next_l)}">'
                    f'<span>Next</span><strong>{e(next_l["title"])}</strong></a>')
 
+    if numbered:
+        big_no = f'<span class="big-no" aria-hidden="true">{lesson["number"]}</span>'
+        locator = f"Lesson {lesson['number']} of {total} &middot; {e(leg['name'])}"
+    else:
+        big_no = ""
+        locator = f"{e(topic['name'])} &middot; Revision"
+    static_nav = (f'<nav class="prevnext static wrap" aria-label="Lessons">{"".join(nav)}</nav>'
+                  if nav else "")
+    run_nav = run_nav_html(site, course, topic, ref) if topic.get("runs") else ""
+
     body = f"""<article class="lesson ink-{ink}">
 <div class="print print-lesson">
   <div class="wrap">
     <div class="bill">
-      <span class="big-no" aria-hidden="true">{lesson['number']}</span>
+      {big_no}
       <h1>{e(lesson['title'])}</h1>
     </div>
-    <p class="of">Lesson {lesson['number']} of {total} &middot; {e(leg['name'])}</p>
+    <p class="of">{locator}</p>
     {flag}
   </div>
   <div class="halftone" aria-hidden="true"></div>
@@ -605,13 +772,14 @@ def build_lesson(site, course, topic, lesson, prev_l, next_l):
   </aside>
 </div>
 
-<nav class="prevnext wrap" aria-label="Lessons">{''.join(nav)}</nav>
+{run_nav}
+{static_nav}
 </article>"""
 
-    crumbs = [("Home", "/"), (topic["name"], f"/{course['id']}/{topic['id']}/"),
-              (f"Lesson {lesson['number']}", None)]
-    return layout(site, f"Lesson {lesson['number']}: {lesson['title']}", body,
-                  lesson["intention"], crumbs)
+    here = f"Lesson {lesson['number']}" if numbered else lesson["title"]
+    crumbs = [("Home", "/"), (topic["name"], f"/{course['id']}/{topic['id']}/"), (here, None)]
+    title = f"Lesson {lesson['number']}: {lesson['title']}" if numbered else lesson["title"]
+    return layout(site, title, body, lesson["intention"], crumbs)
 
 
 def build_home(site, courses):
@@ -667,6 +835,10 @@ def main():
                       build_lesson(site, course, topic, lesson,
                                    lessons[i - 1] if i else None,
                                    lessons[i + 1] if i + 1 < len(lessons) else None))
+                pages += 1
+            for extra in topic.get("pages", []):
+                write([cid, topic["id"], extra["slug"], "index.html"],
+                      build_lesson(site, course, topic, extra, None, None))
                 pages += 1
 
     write(["index.html"], build_home(site, courses))

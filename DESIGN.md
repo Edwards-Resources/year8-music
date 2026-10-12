@@ -421,6 +421,12 @@ The row that carries the whole product. A three-column grid link (`auto 1fr auto
 - **Mobile (<620px):** two columns; the flag drops to the second column on its own line.
 - Never carries a state beyond hover and focus. No visited styling, no completion styling, no highlight.
 
+### The assessment run (Term 4)
+- **Shape:** the Tour Date row, reused whole. A run block is a leg head with no letter square (it is a stretch of weeks, not a leg, so it gets no leg ink), the block name at Title size and the weeks in the leg range slot, which stays visible below 620px because it carries the meaning. Each row takes the ink of the lesson it opens, so the hover fill matches what the student lands on.
+- **Switch:** two buttons in the "all dates" 4px bordered shape at Label large, stock fill, pressed state in the page ink. Hidden until the script runs.
+- **Run nav on a lesson:** the prev/next cards unchanged, under one Meta-size line naming the run and the step ("Listening first run · 3 of 13") with a text button to drop back to the plain order.
+- **Not a position marker.** It shows order only, the same for every class on that run.
+
 ### Panels: the three weights
 One ink per lesson, three weights of treatment, and the loud one is allocated by the build rather than by the block type. This is the core content grammar and Term 4 must inherit it unchanged.
 - **Weight one, loud** (`.panel`): a 4px black bordered box on lifted stock, with a stamp bar filled in the page ink and black label caps. Exactly one per lesson, plus the two fixed sidebars (assessment on the term page, success criteria on a lesson).

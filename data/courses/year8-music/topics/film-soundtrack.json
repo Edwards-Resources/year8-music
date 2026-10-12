@@ -21,8 +21,8 @@
   ],
   "assessment": {
     "name": "Film Soundtrack",
-    "when": "Due Week 6",
-    "detail": "Working in a small group, re-score a muted film scene with dialogue, foley and original underscoring."
+    "when": "Weeks 3 and 6",
+    "detail": "Two parts. Part A: in a small group, re-score a muted film scene with dialogue, foley and original underscoring. Part B: a listening quiz on film and game music. Which part comes first depends on your class's run."
   },
   "sections": [
     {
@@ -148,21 +148,21 @@
               "call": "There is no sad instrument. There is only what a composer does with it.",
               "paras": [
                 "A cello can open a funeral or a comedy. Ask most people why a scene feels tense and they will point at the instrument, but the instrument is close to the last thing that decides it. Emotion in a score comes from a small set of choices, and you already know all of them, because they are the same elements you used to build your track last term. What changes this term is the job they are doing. Last term they served a song. This term they serve a picture.",
-                "Five controls do most of the work.",
+                "Four controls do most of the work. They are the four words you will use every time you describe a score this term.",
                 [
                   "Tempo sets whether you are pushed forward or held still.",
-                  "Register is how high or low the music sits, which is why a piccolo and a double bass playing the same tune feel nothing alike.",
                   "Dynamics decide whether the music demands your attention or makes you lean in towards it.",
-                  "Harmony settles you or unsettles you: major tends to resolve, minor tends not to, and notes that clash refuse to.",
-                  "Instrumentation and texture set who is speaking, because one voice alone is exposed, a full orchestra is overwhelming, and a synthesiser sounds like no instrument anyone is holding."
+                  "Tone colour is the sound of the instruments and how they are played. A cello bowed low and slow sounds dark, the same cello plucked high sounds playful, and a synthesiser sounds like no instrument anyone is holding.",
+                  "Texture is how many layers are sounding at once. One voice alone is exposed, a full orchestra is overwhelming, and music that starts thin and keeps adding layers feels like something is coming."
                 ],
+                "Two more sharpen them. Register is how high or low the music sits, which is why a piccolo and a double bass playing the same tune feel nothing alike. Harmony settles you or unsettles you: major tends to resolve, minor tends not to, and notes that clash refuse to.",
                 "The controls stack, and that is where the real work happens. High and soft is fragile. High and loud is alarm. Slow and minor reads as grief, while slow and major can be peace or dread depending entirely on what is on the screen. That last one matters most, because the picture carries half the meaning. The same thirty seconds of music under a wedding and under an empty road are not the same cue."
               ]
             },
             {
               "type": "activity",
               "title": "Your task - Emotion wheel",
-              "text": "For each excerpt, name the emotion it aims for and point to one musical choice - tempo, instrument, dynamics - that creates it.",
+              "text": "For each excerpt, name the emotion it aims for. Then say what the tempo, dynamics, tone colour and texture are doing to create it.",
               "items": []
             },
             {
@@ -170,21 +170,33 @@
               "headers": [
                 "Score",
                 "Emotion",
-                "What creates it?"
+                "Tempo",
+                "Dynamics",
+                "Tone colour",
+                "Texture"
               ],
               "rows": [
                 [
                   "Jaws",
+                  "",
+                  "",
+                  "",
                   "",
                   ""
                 ],
                 [
                   "Married Life",
                   "",
+                  "",
+                  "",
+                  "",
                   ""
                 ],
                 [
                   "Jurassic Park",
+                  "",
+                  "",
+                  "",
                   "",
                   ""
                 ]
@@ -479,7 +491,7 @@
             {
               "type": "activity",
               "title": "Your task - Improvise a soundtrack",
-              "text": "In pairs, try a simple improvised soundtrack over a muted clip, using GarageBand or a classroom instrument. React to what's happening on screen as it happens.",
+              "text": "In pairs, try a simple improvised soundtrack over a muted clip, using a keyboard or classroom instrument. React to what's happening on screen as it happens.",
               "items": []
             },
             {
@@ -663,6 +675,16 @@
               "embed": "6R5PnTDXnWU"
             },
             {
+              "type": "listen",
+              "heading": "The most famous loop in games",
+              "tracks": [
+                {
+                  "title": "Super Mario Bros. Theme Song",
+                  "embed": "NTa6Xbzfq1U"
+                }
+              ]
+            },
+            {
               "type": "prose",
               "title": "Three channels, one chip.",
               "text": "Early game consoles could often only play two or three notes at once, on a dedicated sound chip with no room for a full recording. Composers wrote short, tightly looped melodies because that was the only music the hardware could produce - and because a player might hear the same 8 bars hundreds of times in one sitting."
@@ -670,7 +692,7 @@
             {
               "type": "activity",
               "title": "Your task - Compose an 8-bar loop",
-              "text": "Compose an 8-bar loop in GarageBand inspired by early game music - simple, catchy, and built to repeat without getting old.",
+              "text": "Listen to the Super Mario Bros. Ground Theme (Koji Kondo, 1985). Count how many different sounds you can hear at once. Then compose an 8-bar loop inspired by early game music on a keyboard, or in GarageBand if you have it: simple, catchy, and built to repeat without getting old.",
               "items": []
             },
             {
@@ -824,6 +846,37 @@
               "type": "prose",
               "title": "Two notes is enough.",
               "text": "The Jaws theme is famously just two alternating notes, getting faster and louder. Tension in film music usually comes from restraint and repetition, not complexity - a simple idea, tightened."
+            },
+            {
+              "type": "table",
+              "heading": "Listen first: Jaws from start to end",
+              "headers": [
+                "Element",
+                "At the start",
+                "By the end"
+              ],
+              "rows": [
+                [
+                  "Tempo",
+                  "",
+                  ""
+                ],
+                [
+                  "Dynamics",
+                  "",
+                  ""
+                ],
+                [
+                  "Tone colour",
+                  "",
+                  ""
+                ],
+                [
+                  "Texture",
+                  "",
+                  ""
+                ]
+              ]
             },
             {
               "type": "list",
@@ -1851,6 +1904,445 @@
               "text": "This is the last unit of Year 8 Music. Next year builds on everything from this year in Year 9."
             }
           ]
+        }
+      ]
+    }
+  ],
+  "runs": [
+    {
+      "id": "ipads-first",
+      "name": "iPads first",
+      "blurb": "Build the soundtrack on the iPads first, then the listening lessons, then the quiz.",
+      "blocks": [
+        {
+          "name": "Build Part A on the iPads",
+          "weeks": "Weeks 1 to 3",
+          "items": [
+            {
+              "title": "The Sound of Story, and the task launch",
+              "pages": [
+                1,
+                12
+              ],
+              "note": "Get the task, form your group and watch the Mario scene."
+            },
+            {
+              "title": "Music and Emotion",
+              "pages": [
+                2
+              ]
+            },
+            {
+              "title": "Spotting the scene, and foley",
+              "pages": [
+                5,
+                3
+              ]
+            },
+            {
+              "title": "Recording dialogue and foley",
+              "pages": [
+                13
+              ]
+            },
+            {
+              "title": "Composing the underscore",
+              "pages": [
+                14
+              ]
+            },
+            {
+              "title": "Syncing, and the rough draft",
+              "pages": [
+                15,
+                16
+              ],
+              "note": "Show your draft for feedback."
+            },
+            {
+              "title": "Finalise and submit",
+              "pages": [
+                17
+              ],
+              "note": "Upload your scene to Canvas by the end of Week 3.",
+              "flag": "Part A due"
+            }
+          ]
+        },
+        {
+          "name": "Listening for Part B",
+          "weeks": "Weeks 4 and 5",
+          "items": [
+            {
+              "title": "Building Tension",
+              "pages": [
+                11
+              ]
+            },
+            {
+              "title": "Silent film and leitmotifs",
+              "pages": [
+                6,
+                7
+              ]
+            },
+            {
+              "title": "Synths and 8-bit",
+              "pages": [
+                8,
+                9
+              ]
+            },
+            {
+              "title": "When Music Reacts to You",
+              "pages": [
+                10
+              ]
+            },
+            {
+              "title": "Practice quiz",
+              "pages": [
+                "quiz-revision"
+              ],
+              "note": "Practise on Canvas, then revise what you need"
+            }
+          ]
+        },
+        {
+          "name": "The quiz",
+          "weeks": "Week 6",
+          "items": [
+            {
+              "title": "Listening quiz",
+              "pages": [],
+              "note": "On Canvas, in the computer lab.",
+              "flag": "Part B",
+              "link": "quiz-revision"
+            }
+          ]
+        },
+        {
+          "name": "After the task",
+          "weeks": "Weeks 6 to 10",
+          "numbered": false,
+          "items": [
+            {
+              "title": "Music as a Story Starter",
+              "pages": [
+                4
+              ]
+            },
+            {
+              "title": "After the task",
+              "pages": [
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24,
+                25
+              ],
+              "note": "Showcase, reflection and the rest of the term."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "listening-first",
+      "name": "Listening first",
+      "blurb": "The listening lessons and the quiz first, then build the soundtrack on the iPads.",
+      "blocks": [
+        {
+          "name": "Listening for Part B",
+          "weeks": "Weeks 1 to 3",
+          "items": [
+            {
+              "title": "The Sound of Story, and the task launch",
+              "pages": [
+                1,
+                12
+              ],
+              "note": "Get the task, form your group and watch the Mario scene."
+            },
+            {
+              "title": "Music and Emotion",
+              "pages": [
+                2
+              ]
+            },
+            {
+              "title": "Building Tension",
+              "pages": [
+                11
+              ]
+            },
+            {
+              "title": "Silent film and leitmotifs",
+              "pages": [
+                6,
+                7
+              ]
+            },
+            {
+              "title": "Synths and 8-bit",
+              "pages": [
+                8,
+                9
+              ]
+            },
+            {
+              "title": "When Music Reacts to You, and a practice quiz",
+              "pages": [
+                10,
+                "quiz-revision"
+              ]
+            },
+            {
+              "title": "Listening quiz",
+              "pages": [],
+              "note": "On Canvas, in the computer lab. Then start your spotting sheet.",
+              "flag": "Part B",
+              "link": "quiz-revision"
+            }
+          ]
+        },
+        {
+          "name": "Build Part A on the iPads",
+          "weeks": "Weeks 4 and 5",
+          "items": [
+            {
+              "title": "Spotting the scene, and foley",
+              "pages": [
+                5,
+                3
+              ]
+            },
+            {
+              "title": "Recording dialogue and foley",
+              "pages": [
+                13
+              ]
+            },
+            {
+              "title": "Composing the underscore",
+              "pages": [
+                14
+              ]
+            },
+            {
+              "title": "Syncing, and the rough draft",
+              "pages": [
+                15,
+                16
+              ],
+              "note": "Show your draft for feedback."
+            },
+            {
+              "title": "Finalise and upload",
+              "pages": [
+                17
+              ],
+              "note": "Upload your scene to Canvas."
+            }
+          ]
+        },
+        {
+          "name": "Hand in",
+          "weeks": "Week 6",
+          "items": [
+            {
+              "title": "Hand-in, and Music as a Story Starter",
+              "pages": [
+                4
+              ],
+              "note": "Your scene is on Canvas by the start of your first Music lesson of Week 6.",
+              "flag": "Part A due"
+            }
+          ]
+        },
+        {
+          "name": "After the task",
+          "weeks": "Weeks 6 to 10",
+          "numbered": false,
+          "items": [
+            {
+              "title": "After the task",
+              "pages": [
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24,
+                25
+              ],
+              "note": "Showcase, reflection and the rest of the term."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "slug": "quiz-revision",
+      "title": "Quiz Revision",
+      "intention": "We are learning to get ready for the film and game music listening quiz.",
+      "criteria": [
+        "I can sort a sound as diegetic, non-diegetic or foley and say why.",
+        "I can describe music using tempo, dynamics, tone colour and texture.",
+        "I can explain one way game music is different from film music."
+      ],
+      "blocks": [
+        {
+          "type": "prose",
+          "title": "What the quiz is.",
+          "text": "Part B of your assessment task is a listening quiz on Canvas, worth 10 marks. It is done in the computer lab under test conditions, and your teacher plays every excerpt twice. Every excerpt is music you have already heard in class, and every question uses words from this unit."
+        },
+        {
+          "type": "table",
+          "heading": "Three sections",
+          "headers": [
+            "Section",
+            "Marks",
+            "What you do",
+            "Lessons to revisit"
+          ],
+          "rows": [
+            [
+              "1. Sounds in film",
+              "3",
+              "Sort sounds from a film clip as diegetic, non-diegetic or foley, then explain one of your choices.",
+              "Lesson 1"
+            ],
+            [
+              "2. Music and mood",
+              "4",
+              "Say what the tempo, dynamics, tone colour and texture are doing, then explain how two of them create the mood.",
+              "Lessons 2 and 11"
+            ],
+            [
+              "3. Film and game music",
+              "3",
+              "Match excerpts to their style and period, then explain one way game music is different from film music.",
+              "Lessons 6 to 10"
+            ]
+          ]
+        },
+        {
+          "type": "activity",
+          "title": "Your task - Practise on a new clip",
+          "text": "Play the Stranger Things title sequence in Lesson 8. Fill in the table: what are the tempo, dynamics, tone colour and texture doing, and what mood do they create together? Then write one sentence on why a director might choose a synthesiser for this show.",
+          "items": []
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Element",
+            "What it is doing",
+            "How it adds to the mood"
+          ],
+          "rows": [
+            [
+              "Tempo",
+              "",
+              ""
+            ],
+            [
+              "Dynamics",
+              "",
+              ""
+            ],
+            [
+              "Tone colour",
+              "",
+              ""
+            ],
+            [
+              "Texture",
+              "",
+              ""
+            ]
+          ]
+        },
+        {
+          "type": "list",
+          "title": "Answering the written questions",
+          "items": [
+            "Name the music word first, then say what it is doing. \"The tempo gets faster\" earns more than \"it gets intense\".",
+            "Give a reason. Say how the music makes you feel that way, or why the sound belongs in that group.",
+            "Give an example from a film or game you heard in class when the question asks for one.",
+            "One or two clear sentences is enough. Every written answer is marked out of 1, 1.5 or 2."
+          ],
+          "text": ""
+        },
+        {
+          "type": "table",
+          "heading": "Words to use",
+          "headers": [
+            "Word",
+            "What it means"
+          ],
+          "rows": [
+            [
+              "Diegetic",
+              "A sound the characters in the story can hear"
+            ],
+            [
+              "Non-diegetic",
+              "Music or sound added for the audience only"
+            ],
+            [
+              "Foley",
+              "Everyday sound effects recreated and added afterwards"
+            ],
+            [
+              "Tempo",
+              "How fast or slow the music is"
+            ],
+            [
+              "Dynamics",
+              "How loud or soft the music is"
+            ],
+            [
+              "Tone colour",
+              "The sound of the instruments and how they are played"
+            ],
+            [
+              "Texture",
+              "How many layers of sound are playing at once"
+            ],
+            [
+              "Leitmotif",
+              "A recurring musical theme that represents a character, place, idea or emotion"
+            ],
+            [
+              "Synthesiser",
+              "An electronic instrument that creates sound from electrical signals"
+            ],
+            [
+              "Loop",
+              "A short section of music that repeats over and over"
+            ],
+            [
+              "Adaptive music",
+              "Video game music that changes depending on what the player does, rather than playing the same way every time"
+            ]
+          ]
+        },
+        {
+          "type": "support",
+          "title": "Need a hand? Sentence starters",
+          "text": "Sounds: \"___ is ___ because ___.\" Mood: \"The music feels ___ because the ___ makes it sound that way.\" Film and games: \"In a film the music ___, but in a video game the music ___. For example, ___.\"",
+          "items": []
+        },
+        {
+          "type": "exit",
+          "text": "Which of the three sections do you feel least ready for, and which lesson will you revisit?"
         }
       ]
     }

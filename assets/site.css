@@ -351,3 +351,29 @@ tbody tr:nth-child(even) .fill{background:var(--stock-hi)}
   .tablehint{display:block}
 }
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+
+/* The assessment run: the term's lessons in each class's order, above the 25
+   dates. It reuses the tour date row whole, so a run reads as another leg of the
+   same tour rather than a new component; each row takes the ink of the lesson it
+   opens. The switch is the "all dates" button's 4px bordered shape, pressed state
+   in the page ink. */
+[hidden]{display:none !important}
+.runs{margin-bottom:3rem}
+.runswitch{display:flex;flex-wrap:wrap;gap:.6rem;margin-bottom:1.2rem}
+.runbtn{font-family:var(--display);font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;
+        border:4px solid var(--print);background:var(--stock-hi);color:var(--print);
+        padding:.7rem 1rem;cursor:pointer}
+.runbtn[aria-pressed="true"]{background:var(--ink)}
+.runbtn:hover{background:var(--pink)}
+.run-blurb{max-width:60ch;margin-bottom:1.4rem}
+.leg-head h3{font-size:clamp(1rem,2.1vw,1.3rem)}
+.runleg .leg-head{flex-wrap:wrap}
+.runleg .leg-range{display:inline}
+.runnav{margin-top:2.4rem}
+.runnav .prevnext{margin-top:.8rem}
+.runnav-h{font-family:var(--display);font-size:.7rem;letter-spacing:.15em;text-transform:uppercase;
+          display:flex;flex-wrap:wrap;align-items:center;gap:.6rem 1rem}
+.run-off{font-family:var(--display);font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;
+         background:none;border:0;border-bottom:2px solid var(--print);color:var(--print);
+         padding:.2rem 0;cursor:pointer}
+.run-off:hover{border-bottom-color:var(--pink)}
