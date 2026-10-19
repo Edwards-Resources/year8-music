@@ -235,6 +235,13 @@ def layout(site, title, body, description="", crumbs=None):
 {robots}
 <title>{e(title)} | {e(site['title'])}</title>
 <meta name="description" content="{e(description)}">
+<script>
+// Inside a Canvas page, Canvas moves students between lessons. Any link to
+// another page of this site would make the Canvas app hand the frame to Safari,
+// so the site's own navigation hides. Runs before the stylesheet so it never flashes.
+try {{ if (window.self !== window.top) document.documentElement.classList.add('framed'); }}
+catch (err) {{ document.documentElement.classList.add('framed'); }}
+</script>
 <link rel="stylesheet" href="{base}/assets/site.css">
 </head>
 <body>

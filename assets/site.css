@@ -377,3 +377,7 @@ tbody tr:nth-child(even) .fill{background:var(--stock-hi)}
          background:none;border:0;border-bottom:2px solid var(--print);color:var(--print);
          padding:.2rem 0;cursor:pointer}
 .run-off:hover{border-bottom-color:var(--pink)}
+
+/* Framed inside a Canvas page: Canvas's own Previous and Next do the moving, so
+   every link to another page of this site hides (see the script in the head). */
+.framed .bar,.framed .crumbs,.framed .back,.framed .prevnext,.framed .runnav,.framed .foot{display:none!important}
