@@ -7,8 +7,8 @@
 > (recommendation: no, since it is his own first name under an org called
 > `Edwards-Resources`). Separately: **this repo has never contained the school's
 > name.** The Year 9 handoff said it did, and that was checked and is wrong -
-> `Singleton`, `SHS` and "high school" all return zero on a word-boundary search
-> across every blob in all 31 commits.
+> the school's name, its initials and the words "high school" all returned zero
+> on a word-boundary search across every blob in all 31 commits.
 
 # Next session
 
