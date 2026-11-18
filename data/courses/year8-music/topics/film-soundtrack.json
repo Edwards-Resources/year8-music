@@ -175,7 +175,7 @@
                 [
                   "Tempo sets whether you are pushed forward or held still.",
                   "Dynamics decide whether the music demands your attention or makes you lean in towards it.",
-                  "Tone colour is the sound of the instruments and how they are played. A cello bowed low and slow sounds dark, the same cello plucked high sounds playful, and a synthesiser sounds like no instrument anyone is holding.",
+                  "Timbre is the sound of the instruments and how they are played. A cello bowed low and slow sounds dark, the same cello plucked high sounds playful, and a synthesiser sounds like no instrument anyone is holding.",
                   "Texture is how many layers are sounding at once. One voice alone is exposed, a full orchestra is overwhelming, and music that starts thin and keeps adding layers feels like something is coming."
                 ],
                 "Two more sharpen them. Register is how high or low the music sits, which is why a piccolo and a double bass playing the same tune feel nothing alike. Harmony settles you or unsettles you: major tends to resolve, minor tends not to, and notes that clash refuse to.",
@@ -188,7 +188,7 @@
               "text": "Your teacher blanks the screen and plays about a minute of each piece. No titles, no pictures, just the music.",
               "items": [
                 "For each piece, write one or two sentences: what is happening in the film playing in your head?",
-                "Then name one of the four elements (tempo, dynamics, tone colour or texture) that put that picture in your head.",
+                "Then name one of the four elements (tempo, dynamics, timbre or texture) that put that picture in your head.",
                 "After each piece, compare with the people around you. How close were your films?"
               ]
             },
@@ -260,7 +260,7 @@
             {
               "type": "prose",
               "title": "Why everyone imagines the same film.",
-              "text": "Classes hearing the same minute of music very often imagine nearly the same scene, and students have been giving the same answers for years. That is not a coincidence. Composers use tempo, dynamics, tone colour and texture in ways an audience has learnt to read, so the music tells you the story before a single picture appears."
+              "text": "Classes hearing the same minute of music very often imagine nearly the same scene, and students have been giving the same answers for years. That is not a coincidence. Composers use tempo, dynamics, timbre and texture in ways an audience has learnt to read, so the music tells you the story before a single picture appears."
             },
             {
               "type": "support",
@@ -754,7 +754,7 @@
               "terms": [
                 "Timbre"
               ],
-              "text": "The unique tone colour or quality of a sound - what makes a synthesiser and a violin sound different even when they play the same note."
+              "text": "The unique quality of a sound - what makes a synthesiser and a violin sound different even when they play the same note."
             },
             {
               "type": "support",
@@ -980,7 +980,7 @@
                   ""
                 ],
                 [
-                  "Tone colour",
+                  "Timbre",
                   "",
                   ""
                 ],
@@ -2307,7 +2307,7 @@
       "intention": "We are learning to get ready for the film and game music listening quiz.",
       "criteria": [
         "I can sort a sound as diegetic, non-diegetic or foley and say why.",
-        "I can describe music using tempo, dynamics, tone colour and texture.",
+        "I can describe music using tempo, dynamics, timbre and texture.",
         "I can explain one way game music is different from film music."
       ],
       "blocks": [
@@ -2335,7 +2335,7 @@
             [
               "2. Music and mood",
               "4",
-              "Say what the tempo, dynamics, tone colour and texture are doing, then explain how two of them create the mood.",
+              "Say what the tempo, dynamics, timbre and texture are doing, then explain how two of them create the mood.",
               "Lessons 2 and 11"
             ],
             [
@@ -2349,7 +2349,7 @@
         {
           "type": "activity",
           "title": "Your task - Practise on a new clip",
-          "text": "Play the Stranger Things title sequence in Lesson 8. Fill in the table: what are the tempo, dynamics, tone colour and texture doing, and what mood do they create together? Then write one sentence on why a director might choose a synthesiser for this show.",
+          "text": "Play the Stranger Things title sequence in Lesson 8. Fill in the table: what are the tempo, dynamics, timbre and texture doing, and what mood do they create together? Then write one sentence on why a director might choose a synthesiser for this show.",
           "items": []
         },
         {
@@ -2371,7 +2371,7 @@
               ""
             ],
             [
-              "Tone colour",
+              "Timbre",
               "",
               ""
             ],
@@ -2422,7 +2422,7 @@
               "How loud or soft the music is"
             ],
             [
-              "Tone colour",
+              "Timbre",
               "The sound of the instruments and how they are played"
             ],
             [

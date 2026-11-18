@@ -1516,9 +1516,9 @@
             {
               "type": "definition",
               "terms": [
-                "Tone colour"
+                "Timbre"
               ],
-              "text": "Also called timbre. The unique sound quality of an instrument, voice or electronic effect. It is what makes a piano and a guitar sound different playing the same note."
+              "text": "The unique sound quality of an instrument, voice or electronic effect. It is what makes a piano and a guitar sound different playing the same note."
             },
             {
               "type": "definition",
@@ -1697,7 +1697,7 @@
               ],
               "rows": [
                 [
-                  "Tone colour",
+                  "Timbre",
                   ""
                 ],
                 [
@@ -1882,7 +1882,7 @@
               "headers": [
                 "Track by",
                 "Texture",
-                "Tone colour",
+                "Timbre",
                 "Dynamics",
                 "One thing I liked"
               ],
@@ -2067,7 +2067,7 @@
                   ""
                 ],
                 [
-                  "Tone colour",
+                  "Timbre",
                   "",
                   ""
                 ],
@@ -2241,7 +2241,7 @@
                   ""
                 ],
                 [
-                  "Tone colour",
+                  "Timbre",
                   ""
                 ],
                 [

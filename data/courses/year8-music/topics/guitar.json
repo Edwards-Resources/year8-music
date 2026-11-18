@@ -3,7 +3,7 @@
   "name": "Guitar",
   "subtitle": "Striking the Right Chord",
   "term": "Term 2",
-  "blurb": "This term you build practical guitar skills, from your first riff to your first open chords, alongside tone colour: the element that makes every instrument, orchestral or from anywhere in the world, sound like itself. It finishes with three weeks in a band, putting riffs, chords and listening together in a real ensemble.",
+  "blurb": "This term you build practical guitar skills, from your first riff to your first open chords, alongside timbre: the element that makes every instrument, orchestral or from anywhere in the world, sound like itself. It finishes with three weeks in a band, putting riffs, chords and listening together in a real ensemble.",
   "question": "How can riffs, chords and strumming patterns be combined to create music?",
   "outcomes": [
     [
@@ -22,12 +22,12 @@
   "assessment": {
     "name": "Guitar Performance and Listening",
     "when": "Due Week 7",
-    "detail": "A guitar performance for your teacher - a riff, a chord progression or a short song excerpt - followed by a written listening quiz identifying orchestral and world instruments by their tone colour."
+    "detail": "A guitar performance for your teacher - a riff, a chord progression or a short song excerpt - followed by a written listening quiz identifying orchestral and world instruments by their timbre."
   },
   "sections": [
     {
       "letter": "A",
-      "name": "Strings, Riffs and Tone Colour",
+      "name": "Strings, Riffs and Timbre",
       "from": 1,
       "to": 5,
       "lessons": [
@@ -114,12 +114,12 @@
         },
         {
           "number": 2,
-          "title": "String Names and Tone Colour",
+          "title": "String Names and Timbre",
           "assessed": false,
-          "intention": "We are learning to name the six strings and describe their tone colour.",
+          "intention": "We are learning to name the six strings and describe their timbre.",
           "criteria": [
             "I can name the six open strings, low to high.",
-            "I can describe the difference between a low string and a high string using tone colour words."
+            "I can describe the difference between a low string and a high string using timbre words."
           ],
           "blocks": [
             {
@@ -170,16 +170,16 @@
             {
               "type": "activity",
               "title": "Your task",
-              "text": "Pluck each open string in order, low to high, saying its name out loud. Then compare the low E and the high e: which one is darker and more resonant, and which one is brighter and thinner? Write one tone colour word for each.",
+              "text": "Pluck each open string in order, low to high, saying its name out loud. Then compare the low E and the high e: which one is darker and more resonant, and which one is brighter and thinner? Write one timbre word for each.",
               "items": []
             },
             {
               "type": "definition",
               "terms": [
                 "String Names",
-                "Tone Colour (Timbre)"
+                "Timbre"
               ],
-              "text": "String Names - the six open strings on a guitar, low to high: E A D G B E. Tone Colour (Timbre) - the unique quality of a sound that makes one instrument or voice sound different from another, even playing the same note."
+              "text": "String Names - the six open strings on a guitar, low to high: E A D G B E. Timbre - the unique quality of a sound that makes one instrument or voice sound different from another, even playing the same note."
             },
             {
               "type": "support",
@@ -263,10 +263,10 @@
           "number": 4,
           "title": "Families of the Orchestra",
           "assessed": false,
-          "intention": "We are learning to identify the four orchestral families by their tone colour.",
+          "intention": "We are learning to identify the four orchestral families by their timbre.",
           "criteria": [
             "I can name the four orchestral families.",
-            "I can describe an instrument's tone colour using appropriate vocabulary."
+            "I can describe an instrument's timbre using appropriate vocabulary."
           ],
           "blocks": [
             {
@@ -301,7 +301,7 @@
               "headers": [
                 "Instrument",
                 "Family",
-                "Tone colour word"
+                "Timbre word"
               ],
               "rows": [
                 [
@@ -345,7 +345,7 @@
             },
             {
               "type": "extension",
-              "text": "The guitar is a string instrument, like the violin, but the two sound very different. Explain what about the way each one is played changes its tone colour.",
+              "text": "The guitar is a string instrument, like the violin, but the two sound very different. Explain what about the way each one is played changes its timbre.",
               "items": []
             },
             {
@@ -358,10 +358,10 @@
           "number": 5,
           "title": "Riff Circle",
           "assessed": false,
-          "intention": "We are learning to perform confidently for our peers and extend our tone colour vocabulary.",
+          "intention": "We are learning to perform confidently for our peers and extend our timbre vocabulary.",
           "criteria": [
             "I can perform my riff for an audience.",
-            "I can use at least three tone colour words to describe sounds I hear."
+            "I can use at least three timbre words to describe sounds I hear."
           ],
           "blocks": [
             {
@@ -371,7 +371,7 @@
             },
             {
               "type": "listen",
-              "heading": "Two more tone colours",
+              "heading": "Two more timbres",
               "tracks": [
                 {
                   "title": "Oboe - a reedy, nasal woodwind",
@@ -386,7 +386,7 @@
             {
               "type": "activity",
               "title": "Your task",
-              "text": "In a circle, each person performs their riff in turn. While you listen, build a class vocabulary wall: add a tone colour word for each riff and each listening excerpt you hear today.",
+              "text": "In a circle, each person performs their riff in turn. While you listen, build a class vocabulary wall: add a timbre word for each riff and each listening excerpt you hear today.",
               "items": []
             },
             {
@@ -397,7 +397,7 @@
                 "Percussive",
                 "Resonant"
               ],
-              "text": "Bright - a clear, sharp tone colour, often high-pitched. Mellow - a smooth, soft tone colour, often warm and gentle. Percussive - a sharp, rhythmic sound, like drums or muted guitar. Resonant - a full, echoing sound that seems to ring out."
+              "text": "Bright - a clear, sharp timbre, often high-pitched. Mellow - a smooth, soft timbre, often warm and gentle. Percussive - a sharp, rhythmic sound, like drums or muted guitar. Resonant - a full, echoing sound that seems to ring out."
             },
             {
               "type": "table",
@@ -423,7 +423,7 @@
                   ""
                 ],
                 [
-                  "Tone Colour (Timbre)",
+                  "Timbre",
                   ""
                 ],
                 [
@@ -441,12 +441,12 @@
             },
             {
               "type": "extension",
-              "text": "Describe your own riff's tone colour using two of today's words, and explain what about how you played it created that sound.",
+              "text": "Describe your own riff's timbre using two of today's words, and explain what about how you played it created that sound.",
               "items": []
             },
             {
               "type": "exit",
-              "text": "Which tone colour word best describes your own riff?"
+              "text": "Which timbre word best describes your own riff?"
             }
           ]
         }
@@ -606,15 +606,15 @@
           "number": 8,
           "title": "Listening in Isolation",
           "assessed": false,
-          "intention": "We are learning to identify orchestral instruments by their tone colour alone.",
+          "intention": "We are learning to identify orchestral instruments by their timbre alone.",
           "criteria": [
             "I can name an instrument from how it sounds.",
-            "I can describe its tone colour using accurate vocabulary."
+            "I can describe its timbre using accurate vocabulary."
           ],
           "blocks": [
             {
               "type": "listen",
-              "heading": "Five instruments, five tone colours",
+              "heading": "Five instruments, five timbres",
               "tracks": [
                 {
                   "title": "Violin",
@@ -641,26 +641,26 @@
             {
               "type": "prose",
               "title": "Ears first.",
-              "text": "Play each clip without watching it. Turn away from the screen or close your eyes, and decide what the sound is before you look. That is closer to how you actually meet tone colour in real listening: on the radio, in a film score, in a recording, with no visual clue at all. Watch them afterwards to check yourself against what you heard."
+              "text": "Play each clip without watching it. Turn away from the screen or close your eyes, and decide what the sound is before you look. That is closer to how you actually meet timbre in real listening: on the radio, in a film score, in a recording, with no visual clue at all. Watch them afterwards to check yourself against what you heard."
             },
             {
               "type": "explain",
-              "call": "Naming the instrument is the easy half. Describing its tone colour is the half that earns the mark.",
+              "call": "Naming the instrument is the easy half. Describing its timbre is the half that earns the mark.",
               "paras": [
                 "In the assessment you will not see the player, so the sound is the only evidence you have. That works in your favour, because the sound carries more than a picture does. An answer that says only \"flute\" has identified something without describing anything, and in the listening assessment it is the description that shows you were actually listening. The table below asks you for the one word. The test in Week 7 asks you for the sentence, and it is built from three parts.",
                 [
                   "Name it. The instrument, or the family if you cannot get closer than that. \"A brass instrument, probably trumpet\" is a better answer than a confident wrong guess.",
-                  "Describe it. Use a tone colour word: bright, mellow, percussive, resonant, thin, warm, harsh, breathy.",
+                  "Describe it. Use a timbre word: bright, mellow, percussive, resonant, thin, warm, harsh, breathy.",
                   "Say what makes it sound that way. Bright because it sits high in its range, or buzzy because the sound starts at the player's lips."
                 ],
-                "One trap is worth naming now, because it costs marks every year. Tone colour words are not emotion words. \"Sad\" describes what the music made you feel, and nobody can mark that. \"Mellow\" describes what the sound is, and anybody can check it against the recording. When you are stuck, describe the sound first and let the feeling follow."
+                "One trap is worth naming now, because it costs marks every year. Timbre words are not emotion words. \"Sad\" describes what the music made you feel, and nobody can mark that. \"Mellow\" describes what the sound is, and anybody can check it against the recording. When you are stuck, describe the sound first and let the feeling follow."
               ]
             },
             {
               "type": "table",
               "headers": [
                 "Instrument",
-                "Tone colour word"
+                "Timbre word"
               ],
               "rows": [
                 [
@@ -694,7 +694,7 @@
             },
             {
               "type": "extension",
-              "text": "Two of today's instruments are both woodwind. Explain what specifically makes their tone colours different from each other, not just from the strings and brass.",
+              "text": "Two of today's instruments are both woodwind. Explain what specifically makes their timbres different from each other, not just from the strings and brass.",
               "items": []
             },
             {
@@ -705,30 +705,30 @@
         },
         {
           "number": 9,
-          "title": "Technique and Tone Colour",
+          "title": "Technique and Timbre",
           "assessed": false,
-          "intention": "We are learning how playing technique changes a guitar's tone colour.",
+          "intention": "We are learning how playing technique changes a guitar's timbre.",
           "criteria": [
-            "I can produce at least two different tone colours on the guitar.",
+            "I can produce at least two different timbres on the guitar.",
             "I can describe how I changed the sound."
           ],
           "blocks": [
             {
               "type": "prose",
               "title": "The guitar isn't one sound.",
-              "text": "Where you pluck a string and how hard you press change its tone colour more than the note itself does. Play near the bridge and the sound turns bright and thin; play over the sound hole and it turns warm and full."
+              "text": "Where you pluck a string and how hard you press change its timbre more than the note itself does. Play near the bridge and the sound turns bright and thin; play over the sound hole and it turns warm and full."
             },
             {
               "type": "activity",
               "title": "Your task",
-              "text": "Play your riff from Lesson 6 three ways: picked near the bridge, picked over the sound hole, and picked with heavy finger pressure. Describe what changes in each version using tone colour words.",
+              "text": "Play your riff from Lesson 6 three ways: picked near the bridge, picked over the sound hole, and picked with heavy finger pressure. Describe what changes in each version using timbre words.",
               "items": []
             },
             {
               "type": "table",
               "headers": [
                 "Where you played",
-                "Tone colour word"
+                "Timbre word"
               ],
               "rows": [
                 [
@@ -744,7 +744,7 @@
                   ""
                 ]
               ],
-              "heading": "Same riff, three tone colours"
+              "heading": "Same riff, three timbres"
             },
             {
               "type": "definition",
@@ -756,17 +756,17 @@
             {
               "type": "support",
               "title": "Need a hand? Loud versus soft is enough",
-              "text": "If three positions is a lot to track, just compare loud and soft on the same string. Even that small change gives you two clearly different tone colours to describe.",
+              "text": "If three positions is a lot to track, just compare loud and soft on the same string. Even that small change gives you two clearly different timbres to describe.",
               "items": []
             },
             {
               "type": "extension",
-              "text": "Try picking with your fingernail versus the pad of your finger, and explain which orchestral instrument's tone colour each one reminds you of.",
+              "text": "Try picking with your fingernail versus the pad of your finger, and explain which orchestral instrument's timbre each one reminds you of.",
               "items": []
             },
             {
               "type": "exit",
-              "text": "Which playing position gave you the brightest tone colour?"
+              "text": "Which playing position gave you the brightest timbre?"
             }
           ]
         },
@@ -777,20 +777,20 @@
           "intention": "We are learning to prepare for the listening assessment.",
           "criteria": [
             "I can identify at least four instruments correctly.",
-            "I can apply accurate tone colour vocabulary to what I hear."
+            "I can apply accurate timbre vocabulary to what I hear."
           ],
           "blocks": [
             {
               "type": "prose",
               "title": "A practice run, not the real thing.",
-              "text": "Today's quiz is exactly the shape of the one in Week 7: short excerpts, no visuals, name the instrument and describe its tone colour. Nothing here counts towards your mark, so use it to find out what you actually know."
+              "text": "Today's quiz is exactly the shape of the one in Week 7: short excerpts, no visuals, name the instrument and describe its timbre. Nothing here counts towards your mark, so use it to find out what you actually know."
             },
             {
               "type": "table",
               "headers": [
                 "Excerpt",
                 "Instrument",
-                "Tone colour word"
+                "Timbre word"
               ],
               "rows": [
                 [
@@ -869,7 +869,7 @@
             },
             {
               "type": "extension",
-              "text": "For the instrument you found hardest to identify, research one feature of how it's played that explains its particular tone colour.",
+              "text": "For the instrument you found hardest to identify, research one feature of how it's played that explains its particular timbre.",
               "items": []
             },
             {
@@ -1095,10 +1095,10 @@
           "number": 14,
           "title": "Instruments of the World",
           "assessed": false,
-          "intention": "We are learning to identify world instruments and describe their tone colour.",
+          "intention": "We are learning to identify world instruments and describe their timbre.",
           "criteria": [
             "I can name at least three world instruments by sound.",
-            "I can describe a world instrument's tone colour using accurate vocabulary."
+            "I can describe a world instrument's timbre using accurate vocabulary."
           ],
           "blocks": [
             {
@@ -1130,14 +1130,14 @@
             {
               "type": "prose",
               "title": "Every culture, its own instruments.",
-              "text": "Guitar and violin are not the only string instruments in the world, and drums are not the only percussion. Every culture has built instruments suited to its own music, and each one has a tone colour as distinctive as any orchestral instrument's."
+              "text": "Guitar and violin are not the only string instruments in the world, and drums are not the only percussion. Every culture has built instruments suited to its own music, and each one has a timbre as distinctive as any orchestral instrument's."
             },
             {
               "type": "table",
               "headers": [
                 "Instrument",
                 "Cultural origin",
-                "Tone colour word"
+                "Timbre word"
               ],
               "rows": [
                 [
@@ -1166,7 +1166,7 @@
                   ""
                 ]
               ],
-              "heading": "Match instrument to origin and tone colour"
+              "heading": "Match instrument to origin and timbre"
             },
             {
               "type": "definition",
@@ -1174,7 +1174,7 @@
                 "Djembe",
                 "Gamelan"
               ],
-              "text": "Djembe - a West African hand drum with a wide range of tone colours. Gamelan - an Indonesian ensemble of tuned percussion instruments, like metallophones and gongs."
+              "text": "Djembe - a West African hand drum with a wide range of timbres. Gamelan - an Indonesian ensemble of tuned percussion instruments, like metallophones and gongs."
             },
             {
               "type": "support",
@@ -1184,7 +1184,7 @@
             },
             {
               "type": "extension",
-              "text": "Compare the guitar's tone colour to the sitar's or the shamisen's. What about how each is built or played explains the difference?",
+              "text": "Compare the guitar's timbre to the sitar's or the shamisen's. What about how each is built or played explains the difference?",
               "items": []
             },
             {
@@ -1200,7 +1200,7 @@
           "intention": "We are learning to connect performance skills with global listening knowledge.",
           "criteria": [
             "I can perform a chord progression fluently.",
-            "I can describe a world instrument using tone colour vocabulary."
+            "I can describe a world instrument using timbre vocabulary."
           ],
           "blocks": [
             {
@@ -1211,7 +1211,7 @@
             {
               "type": "activity",
               "title": "Your task",
-              "text": "Rehearse your progression in role pairs, then listen to a short excerpt of world music and describe its tone colour using vocabulary from Lesson 14. Discuss with your group: does guitar tone colour imitate or contrast with what you heard?",
+              "text": "Rehearse your progression in role pairs, then listen to a short excerpt of world music and describe its timbre using vocabulary from Lesson 14. Discuss with your group: does guitar timbre imitate or contrast with what you heard?",
               "items": []
             },
             {
@@ -1222,7 +1222,7 @@
               ],
               "rows": [
                 [
-                  "How did guitar tone colour compare to the world instrument?",
+                  "How did guitar timbre compare to the world instrument?",
                   ""
                 ],
                 [
@@ -1279,7 +1279,7 @@
             },
             {
               "type": "exit",
-              "text": "In one sentence, how does guitar tone colour compare to the world instrument you focused on?"
+              "text": "In one sentence, how does guitar timbre compare to the world instrument you focused on?"
             }
           ]
         }
@@ -1431,12 +1431,12 @@
         },
         {
           "number": 18,
-          "title": "Tone Colour Review",
+          "title": "Timbre Review",
           "assessed": false,
           "intention": "We are learning to refine our listening skills for the assessment.",
           "criteria": [
             "I can correctly identify instruments from a mixed set.",
-            "I can apply at least two tone colour descriptors accurately."
+            "I can apply at least two timbre descriptors accurately."
           ],
           "blocks": [
             {
@@ -1449,7 +1449,7 @@
               "headers": [
                 "Excerpt",
                 "Instrument",
-                "Tone colour word"
+                "Timbre word"
               ],
               "rows": [
                 [
@@ -1499,7 +1499,7 @@
             },
             {
               "type": "extension",
-              "text": "For one orchestral and one world instrument that share a family, explain what makes their tone colours different from each other.",
+              "text": "For one orchestral and one world instrument that share a family, explain what makes their timbres different from each other.",
               "items": []
             },
             {
@@ -1575,7 +1575,7 @@
           "intention": "We are learning to consolidate our learning before the Week 7 assessment.",
           "criteria": [
             "I can demonstrate readiness to perform a polished piece.",
-            "I can confidently identify instruments by tone colour."
+            "I can confidently identify instruments by timbre."
           ],
           "blocks": [
             {
@@ -1590,7 +1590,7 @@
                 "That your riff, progression or song excerpt is chosen, rehearsed and ready.",
                 "That your strumming or picking stays steady even after a mistake.",
                 "That you can name an instrument's family before you name the instrument.",
-                "That your tone colour vocabulary is specific, not just 'nice' or 'good'."
+                "That your timbre vocabulary is specific, not just 'nice' or 'good'."
               ],
               "text": ""
             },
@@ -1705,23 +1705,23 @@
           "number": 22,
           "title": "Listening Assessment",
           "assessed": true,
-          "intention": "We are learning to demonstrate our listening skills and tone colour vocabulary.",
+          "intention": "We are learning to demonstrate our listening skills and timbre vocabulary.",
           "criteria": [
             "I can identify orchestral and world instruments by sound.",
-            "I can describe their tone colour using accurate vocabulary in written answers."
+            "I can describe their timbre using accurate vocabulary in written answers."
           ],
           "blocks": [
             {
               "type": "prose",
               "title": "This lesson is assessed.",
-              "text": "You complete a written listening quiz: short excerpts of orchestral and world instruments, played with no visuals. You name each instrument and describe its tone colour."
+              "text": "You complete a written listening quiz: short excerpts of orchestral and world instruments, played with no visuals. You name each instrument and describe its timbre."
             },
             {
               "type": "list",
               "title": "What you are marked on",
               "items": [
                 "Accuracy - correctly identifying the instrument",
-                "Vocabulary - using appropriate tone colour descriptors",
+                "Vocabulary - using appropriate timbre descriptors",
                 "Detail - written answers that go beyond one word"
               ],
               "text": ""
@@ -1739,7 +1739,7 @@
             {
               "type": "prose",
               "title": "Going further",
-              "text": "Compare two instruments from different families in the same answer, explaining what makes their tone colours different rather than only naming them."
+              "text": "Compare two instruments from different families in the same answer, explaining what makes their timbres different rather than only naming them."
             }
           ]
         },
@@ -1827,16 +1827,16 @@
           "number": 24,
           "title": "Ensemble Rehearsal",
           "assessed": false,
-          "intention": "We are learning to rehearse collaboratively and explore tone colour in an ensemble.",
+          "intention": "We are learning to rehearse collaboratively and explore timbre in an ensemble.",
           "criteria": [
             "I can contribute to group rehearsal and maintain a steady tempo.",
-            "I can make at least one musical decision about tone colour."
+            "I can make at least one musical decision about timbre."
           ],
           "blocks": [
             {
               "type": "prose",
               "title": "Balance is a decision, not an accident.",
-              "text": "A band sounds good when every part can be heard, not just when everyone plays their best. Today's rehearsal is about balance and tone colour choices as much as accuracy."
+              "text": "A band sounds good when every part can be heard, not just when everyone plays their best. Today's rehearsal is about balance and timbre choices as much as accuracy."
             },
             {
               "type": "list",
@@ -1845,14 +1845,14 @@
                 "Is any instrument drowning out the others?",
                 "Could a section sound different if one instrument dropped out, or layered in?",
                 "Is the tempo steady across the whole group, not just within each part?",
-                "What's one tone colour choice your group has made on purpose?"
+                "What's one timbre choice your group has made on purpose?"
               ],
               "text": ""
             },
             {
               "type": "activity",
               "title": "Your task",
-              "text": "Rehearse your song, working through the balance questions as a group. Make and record at least one deliberate decision about tone colour, such as layering parts in or out.",
+              "text": "Rehearse your song, working through the balance questions as a group. Make and record at least one deliberate decision about timbre, such as layering parts in or out.",
               "items": []
             },
             {
@@ -1890,7 +1890,7 @@
             },
             {
               "type": "exit",
-              "text": "What's one tone colour decision your group made today?"
+              "text": "What's one timbre decision your group made today?"
             }
           ]
         },
@@ -1986,7 +1986,7 @@
                   ""
                 ],
                 [
-                  "Tone Colour (Timbre)",
+                  "Timbre",
                   ""
                 ],
                 [
@@ -2046,7 +2046,7 @@
             {
               "type": "prose",
               "title": "Next term:",
-              "text": "Popular Music. You'll write and produce your own track using GarageBand, and the tone colour vocabulary from this term carries straight across to describing synths and mixed audio."
+              "text": "Popular Music. You'll write and produce your own track using GarageBand, and the timbre vocabulary from this term carries straight across to describing synths and mixed audio."
             }
           ]
         }
