@@ -1537,6 +1537,126 @@
               "text": "How does it feel? Which elements make it feel like that? Answer as a class before you move on. The feel chart on the wall has words if you need them."
             },
             {
+              "type": "sounds",
+              "heading": "Build it up",
+              "brief": "The same loop, one layer at a time. Each time a new layer comes in, say what job it does. **Rhythmic** layers keep the beat and the groove, **harmonic** layers play the chords, and the **melodic** layer is the tune you'd sing back.",
+              "clips": [
+                {
+                  "title": "Drums",
+                  "file": "layers/build-1.mp3"
+                },
+                {
+                  "title": "Drums and bass",
+                  "file": "layers/build-2.mp3"
+                },
+                {
+                  "title": "Drums, bass and keys",
+                  "file": "layers/build-3.mp3"
+                },
+                {
+                  "title": "Full band",
+                  "file": "layers/full.mp3"
+                }
+              ],
+              "headers": [
+                "Layer",
+                "Its job"
+              ],
+              "rows": [
+                [
+                  "Drums",
+                  ""
+                ],
+                [
+                  "Bass",
+                  ""
+                ],
+                [
+                  "Keys",
+                  ""
+                ],
+                [
+                  "Melody",
+                  ""
+                ]
+              ]
+            },
+            {
+              "type": "reveal",
+              "summary": "Show the jobs",
+              "items": [
+                "Drums: **rhythmic**. The backbeat holds everything together.",
+                "Bass: **rhythmic and harmonic**. It plays with the kick drum, and its notes are the bottom of each chord.",
+                "Keys: **harmonic**. The chords.",
+                "Melody: **melodic**. The tune. It's the main layer, and the others are there to support it."
+              ]
+            },
+            {
+              "type": "sounds",
+              "heading": "Take one away",
+              "brief": "The full band, then four clips with one layer missing. Name the missing layer, then say what the loop lost without it.",
+              "clips": [
+                {
+                  "title": "Full band",
+                  "file": "layers/full.mp3"
+                },
+                {
+                  "title": "Missing A",
+                  "file": "layers/missing-a.mp3"
+                },
+                {
+                  "title": "Missing B",
+                  "file": "layers/missing-b.mp3"
+                },
+                {
+                  "title": "Missing C",
+                  "file": "layers/missing-c.mp3"
+                },
+                {
+                  "title": "Missing D",
+                  "file": "layers/missing-d.mp3"
+                }
+              ],
+              "headers": [
+                "Clip",
+                "Missing layer",
+                "What did the loop lose?"
+              ],
+              "rows": [
+                [
+                  "Missing A",
+                  "",
+                  ""
+                ],
+                [
+                  "Missing B",
+                  "",
+                  ""
+                ],
+                [
+                  "Missing C",
+                  "",
+                  ""
+                ],
+                [
+                  "Missing D",
+                  "",
+                  ""
+                ]
+              ]
+            },
+            {
+              "type": "reveal",
+              "summary": "Show the missing layers",
+              "items": [
+                "Missing A: the **keys**.",
+                "Missing B: the **drums**.",
+                "Missing C: the **melody**.",
+                "Missing D: the **bass**.",
+                "What the loop lost is your call. Check it against the job that layer does."
+              ]
+            },
+            {
               "type": "prose",
               "title": "Contrast is the point.",
               "text": "A track where everything plays all the time is exhausting. Take layers away in the verse and add them in the chorus, and the chorus feels bigger without being louder."
@@ -1552,6 +1672,14 @@
                 "Save."
               ],
               "text": ""
+            },
+            {
+              "type": "definition",
+              "terms": [
+                "Texture",
+                "Layer"
+              ],
+              "text": "Texture - the way layers of sound are combined in a piece of music. Layer - one part of the music doing one job, such as the drums, the bass or the melody."
             },
             {
               "type": "definition",
