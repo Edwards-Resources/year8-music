@@ -1,99 +1,109 @@
-// Success-criteria ticks and worksheet-table answers, saved per lesson on this
-// device only. Nothing leaves the browser: the site is public and must never hold
-// anything about a student.
-(function () {
-  var key = 'y8:' + location.pathname;
-  var saved = {};
-  try { saved = JSON.parse(localStorage.getItem(key) || '{}'); } catch (e) {}
+/* Year 8's own script. Two jobs.
 
-  var pending = null;
-  function store() {
-    // Typing fires per keystroke, so the write is coalesced. localStorage is
-    // synchronous, and a class typing into a projected table should not be paying
-    // for a disk write per character.
-    if (pending) return;
-    pending = setTimeout(function () {
-      pending = null;
-      try { localStorage.setItem(key, JSON.stringify(saved)); } catch (e) {}
-    }, 250);
+   1. Saved answers from before the move. Until 19 November 2026 this site kept
+      ticks and typed answers under "y8:<page>", as {c0: true, "f3-0-1": "..."}.
+      The shared shell keeps them under its own names. The first time a student
+      opens a lesson after the move, anything saved the old way is put back into
+      the boxes, and the shell keeps it from there. Each fill-in box carries its
+      old name in data-old. The old entries are left where they are.
+
+   2. The assessment run. Two teachers share one set of iPads, so Film
+      Soundtrack's lessons run in two orders. The term page lets a student pick
+      their class's run, and a lesson page then offers previous and next along
+      that run instead of the plain 1 to 25 order. The choice is a per-device
+      convenience only: it is never sent anywhere, and it says which order a
+      class takes, never where a class is up to.
+
+   Runs after shell.js (both are deferred, in that order), so the shell's
+   listeners are in place and an "input" or "change" event is enough for it to
+   save what is restored. */
+(function () {
+  "use strict";
+
+  var site = document.documentElement.getAttribute("data-site") || "site";
+  function get(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
+  function put(k, v) {
+    try { if (v) { localStorage.setItem(k, v); } else { localStorage.removeItem(k); } } catch (e) {}
   }
 
-  document.querySelectorAll('.crit input[type=checkbox]').forEach(function (b) {
-    if (saved[b.id]) b.checked = true;
-    b.addEventListener('change', function () {
-      saved[b.id] = b.checked;
-      store();
-    });
-  });
+  /* ------------------------------------------------ 1. saved answers */
+  var old = {};
+  try { old = JSON.parse(get("y8:" + location.pathname) || "{}") || {}; } catch (e) { old = {}; }
+  if (Object.keys(old).length) {
+    if (!get(site + ":ticks:" + location.pathname)) {
+      Array.prototype.forEach.call(document.querySelectorAll(".sc-list input[type=checkbox]"), function (b, i) {
+        if (!old["c" + i]) return;
+        b.checked = true;
+        b.dispatchEvent(new Event("change"));
+      });
+    }
+    if (!get(site + ":answers:" + location.pathname)) {
+      Array.prototype.forEach.call(document.querySelectorAll("textarea.field[data-old]"), function (f) {
+        var v = old["f" + f.getAttribute("data-old")];
+        if (!v || f.value) return;
+        f.value = v;
+        f.dispatchEvent(new Event("input"));
+      });
+    }
+  }
 
-  // The key carries the block index and the cell, so two tables in one lesson do
-  // not overwrite each other, and an edit to one lesson cannot reach another.
-  document.querySelectorAll('input.fill').forEach(function (f) {
-    var k = 'f' + f.dataset.cell;
-    if (saved[k]) f.value = saved[k];
-    f.addEventListener('input', function () {
-      if (f.value) { saved[k] = f.value; } else { delete saved[k]; }
-      store();
-    });
-  });
-})();
-
-// The assessment run. Two teachers share one set of iPads, so the term's lessons
-// run in two orders. The term page lets a student pick their class's run, and a
-// lesson page then offers previous and next along that run instead of the plain
-// 1 to 25 order. The choice is a per-device convenience only: it is never sent
-// anywhere, and it says which order a class takes, never where a class is up to.
-(function () {
-  var runs = document.querySelector('.runs');
-  var navs = document.querySelectorAll('.runnav');
+  /* ------------------------------------------------- 2. the runs */
+  var runs = document.querySelector(".runs");
+  var navs = document.querySelectorAll(".runnav");
   if (!runs && !navs.length) return;
 
   // One choice per topic. The term page names its topic; a lesson page takes it
-  // from the term page's address, the second-to-last folder of its own.
-  var topic = runs ? runs.dataset.topic
-    : location.pathname.replace(/\/$/, '').split('/').slice(-2)[0];
-  var key = 'y8:run:' + topic;
-  function get() { try { return localStorage.getItem(key); } catch (e) { return null; } }
-  function set(v) {
-    try { if (v) { localStorage.setItem(key, v); } else { localStorage.removeItem(key); } } catch (e) {}
-  }
+  // from its own address, the folder above the lesson's.
+  var topic = runs ? runs.getAttribute("data-topic")
+    : location.pathname.replace(/\/(index\.html)?$/, "").split("/").slice(-2)[0];
+  var key = "y8:run:" + topic;
 
   if (runs) {
-    var buttons = runs.querySelectorAll('.runbtn');
-    var panels = runs.querySelectorAll('.run');
-    var prompt = runs.querySelector('.runprompt');
-    var ids = Array.prototype.map.call(panels, function (p) { return p.dataset.run; });
-    function show(id) {
-      panels.forEach(function (p) { p.hidden = p.dataset.run !== id; });
-      buttons.forEach(function (b) { b.setAttribute('aria-pressed', String(b.dataset.run === id)); });
+    var buttons = runs.querySelectorAll(".runbtn");
+    var panels = runs.querySelectorAll(".run");
+    var prompt = runs.querySelector(".runprompt");
+    var ids = Array.prototype.map.call(panels, function (p) { return p.getAttribute("data-run"); });
+    var show = function (id) {
+      Array.prototype.forEach.call(panels, function (p) { p.hidden = p.getAttribute("data-run") !== id; });
+      Array.prototype.forEach.call(buttons, function (b) {
+        b.setAttribute("aria-pressed", String(b.getAttribute("data-run") === id));
+      });
       prompt.hidden = !!id;
-    }
-    runs.querySelector('.runswitch').hidden = false;
+    };
+    runs.querySelector(".runswitch").hidden = false;
     // A teacher can link straight to a run (#listening-first) from Canvas.
     var fromHash = location.hash.slice(1);
-    var chosen = ids.indexOf(fromHash) >= 0 ? fromHash : get();
+    var chosen = ids.indexOf(fromHash) >= 0 ? fromHash : get(key);
     if (ids.indexOf(chosen) < 0) chosen = null;
-    if (chosen) set(chosen);
+    if (chosen) put(key, chosen);
     show(chosen);
-    buttons.forEach(function (b) {
-      b.addEventListener('click', function () {
-        set(b.dataset.run);
-        show(b.dataset.run);
-        try { history.replaceState(null, '', '#' + b.dataset.run); } catch (e) {}
+    Array.prototype.forEach.call(buttons, function (b) {
+      b.addEventListener("click", function () {
+        var id = b.getAttribute("data-run");
+        put(key, id);
+        show(id);
+        try { history.replaceState(null, "", "#" + id); } catch (e) {}
       });
     });
   }
 
   if (navs.length) {
-    var plain = document.querySelector('.prevnext.static');
-    function follow(id) {
+    // The shell's own previous and next, the plain lesson order.
+    var plain = document.querySelector("main > .prevnext");
+    // Inside Canvas, Canvas moves students between lessons, so neither order shows.
+    var framed = document.documentElement.classList.contains("framed");
+    var follow = function (id) {
+      if (framed) id = null;
       var any = false;
-      navs.forEach(function (n) { n.hidden = n.dataset.run !== id; if (!n.hidden) any = true; });
+      Array.prototype.forEach.call(navs, function (n) {
+        n.hidden = n.getAttribute("data-run") !== id;
+        if (!n.hidden) any = true;
+      });
       if (plain) plain.hidden = any;
-    }
-    follow(get());
-    document.querySelectorAll('.run-off').forEach(function (b) {
-      b.addEventListener('click', function () { set(null); follow(null); });
+    };
+    follow(get(key));
+    Array.prototype.forEach.call(document.querySelectorAll(".run-off"), function (b) {
+      b.addEventListener("click", function () { put(key, null); follow(null); });
     });
   }
 })();

@@ -4,28 +4,34 @@
 Reads data/, writes docs/. Standard library only, on purpose: no package manager,
 no lockfile, nothing that needs updating in three years when nobody is looking.
 
-    python3 build.py
+    /usr/bin/python3 build.py
 
 Every page is generated. Never edit anything in docs/ by hand; it gets overwritten.
+
+Since 19 November 2026 every page is drawn by the shared music shell (shell.py,
+copied in from ../music-shell by sync.py; never edit the copy here). This file
+reads Year 8's data and hands each piece to a shell function. What is still
+Year 8's own: the beat grid, the two runs on Film Soundtrack, and assets/site.js,
+which carries saved answers across from the old storage names.
 
 One rule this build enforces structurally: there is no "current lesson" anywhere.
 Several classes run this sequence at different speeds, so the site never marks a
 position. If you find yourself adding one, read PRODUCT.md first.
 """
 
-import html
 import json
 import os
+import re
 import shutil
-from datetime import date
+
+import shell as S
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 DATA = os.path.join(ROOT, "data")
 OUT = os.path.join(ROOT, "docs")
 ASSETS = os.path.join(ROOT, "assets")
 
-# The five legs of the tour, in print order. Spot inks, screenprint-loud.
-LEG_INK = {"A": "pink", "B": "yellow", "C": "cyan", "D": "lime", "E": "orange"}
+e = S.e
 
 
 def load(*parts):
@@ -33,15 +39,17 @@ def load(*parts):
         return json.load(f)
 
 
-def e(s):
-    return html.escape(str(s), quote=True)
-
-
 def write(path_parts, markup):
     path = os.path.join(OUT, *path_parts)
     os.makedirs(os.path.dirname(path), exist_ok=True)
     with open(path, "w", encoding="utf-8") as f:
         f.write(markup)
+
+
+def shell_site(site, nav):
+    return {"base": site["base"], "title": site["title"], "year": 8, "key": "y8",
+            "foot": "Class material. Assessment tasks, submissions and marks stay in Canvas.",
+            "nav": nav, "noindex": site.get("noindex")}
 
 
 # ------------------------------------------------------------------ helpers
@@ -58,15 +66,16 @@ def leg_of(topic, number):
     return topic["sections"][0]
 
 
-def lesson_href(site, course, topic, lesson):
-    return f"{site['base']}/{course['id']}/{topic['id']}/lesson-{lesson['number']}/"
+def topic_path(course, topic):
+    return f"/{course['id']}/{topic['id']}/"
 
 
-def page_href(site, course, topic, ref):
-    """A lesson number or the slug of one of the topic's extra pages."""
+def page_path(course, topic, ref):
+    """Site-relative address of a lesson number or one of the topic's extra pages.
+    These addresses are what Canvas frames point at, so they never change."""
     if isinstance(ref, int):
-        return f"{site['base']}/{course['id']}/{topic['id']}/lesson-{ref}/"
-    return f"{site['base']}/{course['id']}/{topic['id']}/{ref}/"
+        return f"/{course['id']}/{topic['id']}/lesson-{ref}/"
+    return f"/{course['id']}/{topic['id']}/{ref}/"
 
 
 def page_of(topic, ref):
@@ -75,10 +84,22 @@ def page_of(topic, ref):
     return next(p for p in topic.get("pages", []) if p["slug"] == ref)
 
 
-def ink_of(topic, ref):
-    if isinstance(ref, int):
-        return LEG_INK.get(leg_of(topic, ref)["letter"], "pink")
-    return page_of(topic, ref).get("ink", "pink")
+def is_placeholder(text):
+    """An unfilled media slot carried over from the Canvas pages, written as
+    "Something - video": a note to the author, never a sentence for a student."""
+    t = (text or "").rstrip().lower()
+    return t.endswith("- video") or t.endswith("- audio")
+
+
+def strip_prefix(title, prefix):
+    """ "Your task - Screen off" names the task "Screen off" under the Your task
+    label, and "Need a hand? Start small" is "Start small" under Need a hand.
+    The bare label on its own adds nothing to the label, so it is dropped."""
+    if not title:
+        return None
+    if title.startswith(prefix):
+        return title[len(prefix):].lstrip(" -:?.") or None
+    return title
 
 
 # ------------------------------------------------------------- the two runs
@@ -92,7 +113,7 @@ def ink_of(topic, ref):
 
 
 def run_numbers(run):
-    """[(item, number or None)] with numbering that skips the unnumbered blocks."""
+    """[(block, item, number or None)] with numbering that skips unnumbered blocks."""
     out, n = [], 0
     for b in run["blocks"]:
         for item in b["items"]:
@@ -130,689 +151,363 @@ def pages_phrase(topic, refs):
     return ", then ".join(name(r) for r in refs)
 
 
-def runs_html(site, course, topic):
+def runs_html(course, topic, base):
+    """The run chooser, then each run as a schedule. With scripting off every run
+    shows; with it on, only the one chosen on this device."""
     runs = topic.get("runs")
     if not runs:
         return ""
     buttons = "".join(
         f'<button type="button" class="runbtn" data-run="{e(r["id"])}" aria-pressed="false">'
         f'{e(r["name"])}</button>' for r in runs)
+    chooser = S.section(
+        "runs", "Assessment run", "list", "The assessment run",
+        '<p class="brief">The lessons up to the task, in the order your class does them. '
+        'Your teacher will tell you which run is yours.</p>'
+        f'<div class="runswitch" role="group" aria-label="Choose your run" hidden>{buttons}</div>'
+        '<p class="runprompt fine" hidden>Choose your class&rsquo;s run to see its order.</p>')
     panels = []
     for r in runs:
         items, total = run_numbers(r)
-        legs, current, rows = [], None, []
-
-        def close():
-            if current is not None:
-                legs.append(f"""<section class="leg runleg">
-  <div class="leg-head">
-    <h3>{e(current['name'])}</h3>
-    <span class="leg-range">{e(current['weeks'])}</span>
-  </div>
-  <ol class="dates">{''.join(rows)}</ol>
-</section>""")
-
+        groups, current, rows = [], None, []
         for b, item, n in items:
             if b is not current:
-                close()
+                if current is not None:
+                    groups.append((current["name"], rows, current["weeks"]))
                 current, rows = b, []
             refs = item["pages"]
             target = refs[0] if refs else item.get("link")
-            href = page_href(site, course, topic, target)
-            ink = ink_of(topic, target)
             where = pages_phrase(topic, refs) if refs else ""
-            int_txt = ". ".join(x for x in (where, item.get("note", "").rstrip(".")) if x)
-            flag = f'<span class="flag">{e(item["flag"])}</span>' if item.get("flag") else ""
-            cls = " is-assessed" if item.get("flag") else ""
-            no = str(n) if n else "&middot;"
-            rows.append(
-                f'<li class="date ink-{ink}{cls}"><a href="{href}">'
-                f'<span class="no">{no}</span>'
-                f'<span class="what"><span class="tt">{e(item["title"])}</span>'
-                f'<span class="int">{e(int_txt)}.</span></span>{flag}</a></li>')
-        close()
-        panels.append(f"""<div class="run" id="{e(r['id'])}" data-run="{e(r['id'])}">
-  <p class="run-blurb"><strong>{e(r['name'])}.</strong> {e(r['blurb'])}</p>
-  {''.join(legs)}
-</div>""")
-    return f"""<section class="runs" data-topic="{e(topic['id'])}" aria-labelledby="runs-h">
-  <div class="tour-head">
-    <h2 id="runs-h">The assessment run</h2>
-    <p>The lessons up to the task, in the order your class does them. Your teacher will tell you which run is yours.</p>
-  </div>
-  <div class="runswitch" role="group" aria-label="Choose your run" hidden>{buttons}</div>
-  <p class="runprompt small" hidden>Choose your class's run to see its order.</p>
-  {''.join(panels)}
-</section>"""
+            words = ". ".join(x for x in (where, item.get("note", "").rstrip(".")) if x)
+            flag = f'**{item["flag"]}.** ' if item.get("flag") else ""
+            rows.append({"n": str(n) if n else "·", "title": item["title"],
+                         "href": page_path(course, topic, target),
+                         "meta": f"{flag}{words}.", "at": bool(item.get("flag"))})
+        groups.append((current["name"], rows, current["weeks"]))
+        panels.append(f'<div class="run" id="{e(r["id"])}" data-run="{e(r["id"])}">'
+                      + S.schedule(groups, base=base, title=f'{r["name"]}', label="Assessment run",
+                                   note=r["blurb"])
+                      + "</div>")
+    return f'<div class="runs" data-topic="{e(topic["id"])}">{chooser}{"".join(panels)}</div>'
 
 
-def run_nav_html(site, course, topic, ref):
-    """Previous and next along each run, hidden until a run has been chosen."""
+def run_nav_html(course, topic, ref, base):
+    """Previous and next along each run, hidden until a run has been chosen. When
+    one is showing, site.js hides the plain lesson order under it."""
     navs = []
     for r in topic.get("runs", []):
         seq = run_sequence(topic, r)
         idx = next(i for i, (x, _) in enumerate(seq) if x == ref)
-        cards = []
-        if idx > 0:
-            p = seq[idx - 1][0]
-            cards.append(f'<a class="pn prev" href="{page_href(site, course, topic, p)}">'
-                         f'<span>Previous</span><strong>{e(page_of(topic, p)["title"])}</strong></a>')
-        if idx + 1 < len(seq):
-            nx = seq[idx + 1][0]
-            cards.append(f'<a class="pn next" href="{page_href(site, course, topic, nx)}">'
-                         f'<span>Next</span><strong>{e(page_of(topic, nx)["title"])}</strong></a>')
-        navs.append(f"""<nav class="runnav wrap" data-run="{e(r['id'])}" aria-label="{e(r['name'])} run" hidden>
-  <p class="runnav-h">{e(r['name'])} run &middot; {e(seq[idx][1])}
-    <button type="button" class="run-off">Show every lesson in order</button></p>
-  <div class="prevnext">{''.join(cards)}</div>
-</nav>""")
+        cells = []
+        for j, cls, word in ((idx - 1, "pn-prev", "Previous"), (idx + 1, "pn-next", "Next")):
+            if 0 <= j < len(seq):
+                p = seq[j][0]
+                cells.append(f'<a class="pn {cls} int" href="{base}{page_path(course, topic, p)}">'
+                             f'<span>{word}</span>{e(page_of(topic, p)["title"])}</a>')
+            else:
+                cells.append('<span class="pn-gap"></span>')
+        navs.append(f'<div class="runnav" data-run="{e(r["id"])}" hidden>'
+                    f'<p class="runnav-h">{e(r["name"])} run &middot; {e(seq[idx][1])} '
+                    '<button type="button" class="run-off">Show every lesson in order</button></p>'
+                    f'<nav class="prevnext" aria-label="{e(r["name"])} run">{"".join(cells)}</nav></div>')
     return "".join(navs)
 
 
-# ---------------------------------------------------------------- page shell
+# --------------------------------------------------------------- beat grid
 
 
-def layout(site, title, body, description="", crumbs=None):
-    base = site["base"]
-    robots = '<meta name="robots" content="noindex, nofollow">' if site.get("noindex") else ""
-    crumbs = crumbs or []
-    trail = ""
-    if crumbs:
-        parts = []
-        for i, (label, href) in enumerate(crumbs):
-            if href and i < len(crumbs) - 1:
-                parts.append(f'<li><a href="{base}{href}">{e(label)}</a></li>')
-            else:
-                parts.append(f'<li><span aria-current="page">{e(label)}</span></li>')
-        trail = ('<nav class="crumbs" aria-label="Breadcrumb"><div class="wrap">'
-                 f'<ol>{"".join(parts)}</ol></div></nav>')
-
-    return f"""<!doctype html>
-<html lang="en-AU">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-{robots}
-<title>{e(title)} | {e(site['title'])}</title>
-<meta name="description" content="{e(description)}">
-<script>
-// Inside a Canvas page, Canvas moves students between lessons. Any link to
-// another page of this site would make the Canvas app hand the frame to Safari,
-// so the site's own navigation hides. Runs before the stylesheet so it never flashes.
-try {{ if (window.self !== window.top) document.documentElement.classList.add('framed'); }}
-catch (err) {{ document.documentElement.classList.add('framed'); }}
-</script>
-<link rel="stylesheet" href="{base}/assets/site.css">
-</head>
-<body>
-<!--
-THESIS: The term is the tour and every lesson is a date on the back of the shirt.
-Refuses the school course-card grid and the week accordion: the term page is a
-tour back-print you read straight down, with no "you are here" anywhere.
-OWN-WORLD: Screenprint. Black print fields for covers, bone garment stock for
-reading, five loud spot inks (pink, yellow, cyan, lime, orange) one per leg.
-Heavy grotesque caps with a single overprint offset, halftone dot fields, thick
-rules, black type on every spot ink. Recognisable with all content removed.
-STORY: A student finds their date in the list, opens it, and works down a lesson
-laid out like a gig page: the billing, the set, the task, the way out.
-FIRST VIEWPORT: Black print field, unit name at poster scale as a tour logo,
-25 DATES beneath it, and the tour list starting immediately with no hero card.
-FORM: Band merch back-print tour list, candidate 6 of the grounded list, chosen
-by the user after a re-roll steered for fun and playful. Seed key b2cc7a19.
-FINISH: unreviewed and undocumented is unfinished; this build ends with the finish
-review, the verdict, and DESIGN.md
--->
-<a class="skip" href="#main">Skip to content</a>
-<header class="bar">
-  <div class="wrap"><a class="brand" href="{base}/">{e(site['title'])}</a></div>
-</header>
-{trail}
-<main id="main">
-{body}
-</main>
-<footer class="foot">
-  <div class="wrap">
-    <p>Class material. Assessment tasks, submissions and marks stay in Canvas.</p>
-    <p class="foot-date">Updated {date.today().strftime('%-d %B %Y')}</p>
-  </div>
-</footer>
-<script src="{base}/assets/site.js" defer></script>
-</body>
-</html>
-"""
-
-
-# ------------------------------------------------------------------- blocks
-
-
-def is_placeholder(text):
-    """True for an unfilled media slot carried over from the Canvas pages.
-
-    They are written as "Something - video": a note to the author about what to find,
-    never a sentence meant for a student. The listen blocks have always been checked
-    for this, but the same placeholders also arrive as untitled prose, and there they
-    printed to the page as if they were teaching copy. One test, used by both.
-    """
-    t = (text or "").rstrip().lower()
-    return t.endswith("- video") or t.endswith("- audio")
-
-
-def unfilled_media(label, what):
-    """The honest stand-in for a media slot that has no media yet.
-
-    Quiet weight, the same as every other titled block, because an empty slot must
-    not shout louder than the lesson around it.
-    """
-    return (f'<section class="blk panel quiet"><h3 class="panel-h">{label}</h3>'
-            f'<div class="panel-in"><p>Not added yet. The {what} for this lesson '
-            f'{"are" if what.endswith("s") else "is"} still being chosen.</p>'
-            f'</div></section>')
-
-
-def player_html(embed, title):
-    """The 16:9 well. Lazy, so a lesson carrying six of them still opens on the board."""
-    return (f'<div class="video"><iframe src="https://www.youtube-nocookie.com/embed/{e(embed)}" '
-            f'title="{e(title)}" loading="lazy" allowfullscreen '
-            'allow="accelerometer; clipboard-write; encrypted-media; picture-in-picture">'
-            '</iframe></div>')
-
-
-def clip_html(track):
-    """One named thing to listen to, with its player if it has one yet.
-
-    A track with no embed keeps its place in the grid and says so, rather than
-    disappearing, so the run still reads as the complete set the lesson names.
-    """
-    name = f'<p class="clip-t">{e(track["title"])}</p>'
-    if track.get("embed"):
-        return f'<div class="clip">{player_html(track["embed"], track["title"])}{name}</div>'
-    return f'<div class="clip"><div class="video video-none"><p>Not added yet</p></div>{name}</div>'
-
-
-def loud_block(blocks):
-    """Index of the one block on a lesson that carries the filled ink field.
-
-    The loud weight belongs to the thing the student has to act on. In an ordinary
-    lesson that is the task. Assessment lessons carry no task block, which is why
-    they used to render with no filled field at all and read as the least printed
-    pages on the site; there the criteria list, or failing that the first named
-    paragraph, is what the student acts on. Exactly one per lesson, always.
-
-    A placeholder can never take the ink. Today's placeholders are all untitled and
-    so were never eligible, but a titled one would otherwise print "Not added yet"
-    as the loudest thing on the page.
-    """
-    for want in ("activity",), ("list",), ("prose",):
-        for i, b in enumerate(blocks):
-            if b["type"] in want and (want[0] != "prose" or b.get("title") or b.get("heading")):
-                if is_placeholder(b.get("text")):
-                    continue
-                return i
-    return -1
-
-
-def beatgrid_html(block):
+def beatgrid_svg(block):
     """Four bars of drum grid with the chord blocks drawn above it.
 
     A student who has just watched a multitrack tutorial can record two layers and
-    still have no picture of what "line them up" means. Words do not carry it: the
-    thing being taught is a spatial relationship, so it is drawn. Print Black rules
-    on bone with the leg ink for the chord blocks, which is the same two-colour
-    budget every other object on the page works inside.
-
-    The grid is described in data - rows of sixteen hits, and a chord per bar - so
-    a later lesson can draw a different groove without touching this function.
+    still have no picture of what "line them up" means. The thing being taught is
+    a spatial relationship, so it is drawn. The grid is described in data (rows of
+    sixteen hits, and a chord per bar), so a later lesson can draw a different
+    groove without touching this function.
     """
     rows = block["rows"]
     chords = block["chords"]
     bars, per_bar = 4, 4
     steps = bars * per_bar
-    lab_w, cell, row_h = 108, 44, 40          # user units, viewBox space
-    top = 66                                   # chord band above the drum rows
+    lab_w, cell, row_h = 108, 44, 40
+    top = 66
     w = lab_w + steps * cell
     h = top + len(rows) * row_h + 34
 
-    p = []
-    # The chord band. One block per bar, each landing exactly on beat 1, which is
-    # the whole claim the diagram is making.
-    p.append('<text x="0" y="16" class="bg-lab" font-size="15">Chords</text>')
+    p = ['<text x="0" y="16" class="bg-lab" font-size="15">Chords</text>']
+    # One block per bar, each landing exactly on beat 1, which is the whole claim
+    # the diagram is making.
     for i, ch in enumerate(chords):
         x = lab_w + i * per_bar * cell
-        p.append(f'<rect x="{x + 2}" y="24" width="{per_bar * cell - 4}" height="34" '
-                 'class="bg-chord"/>')
-        p.append(f'<text x="{x + per_bar * cell / 2}" y="47" class="bg-ch" '
-                 f'font-size="20">{e(ch)}</text>')
-
-    # The drum rows. A filled square is a hit, so the pattern reads at board size.
+        p.append(f'<rect x="{x + 2}" y="24" width="{per_bar * cell - 4}" height="34" rx="6" class="bg-chord"/>')
+        p.append(f'<text x="{x + per_bar * cell / 2}" y="47" class="bg-ch" font-size="20">{e(ch)}</text>')
     for r, row in enumerate(rows):
         y = top + r * row_h
-        p.append(f'<text x="0" y="{y + 26}" class="bg-lab" font-size="15">'
-                 f'{e(row["name"])}</text>')
+        p.append(f'<text x="0" y="{y + 26}" class="bg-lab" font-size="15">{e(row["name"])}</text>')
         for s in range(steps):
             x = lab_w + s * cell
-            p.append(f'<rect x="{x}" y="{y + 4}" width="{cell}" height="{row_h - 8}" '
-                     'class="bg-cell"/>')
+            p.append(f'<rect x="{x}" y="{y + 4}" width="{cell}" height="{row_h - 8}" class="bg-cell"/>')
             if row["hits"][s] == "x":
-                p.append(f'<rect x="{x + 8}" y="{y + 12}" width="{cell - 16}" '
-                         f'height="{row_h - 24}" class="bg-hit"/>')
-
-    # Bar lines run the full height, through both the chord band and the drums,
-    # because the alignment between them is the point being made.
+                p.append(f'<rect x="{x + 8}" y="{y + 12}" width="{cell - 16}" height="{row_h - 24}" rx="3" class="bg-hit"/>')
+    # Bar lines run through both the chord band and the drums, because the
+    # alignment between them is the point being made.
     bottom = top + len(rows) * row_h
     for b in range(bars + 1):
         x = lab_w + b * per_bar * cell
         p.append(f'<line x1="{x}" y1="20" x2="{x}" y2="{bottom}" class="bg-bar"/>')
     for b in range(bars):
         x = lab_w + b * per_bar * cell + per_bar * cell / 2
-        p.append(f'<text x="{x}" y="{bottom + 24}" class="bg-beat" font-size="13">'
-                 f'Bar {b + 1}</text>')
-
-    svg = (f'<svg viewBox="0 0 {w} {h}" class="beatgrid" role="img" '
-           f'aria-label="{e(block["alt"])}">{"".join(p)}</svg>')
-    cap = f'<p class="bg-cap">{e(block["caption"])}</p>' if block.get("caption") else ""
-    # Same rule as the tables: a region that clips gets a name, keyboard focus, and
-    # a hint in words at the width where it actually clips.
-    return ('<section class="blk panel quiet"><h3 class="panel-h">'
-            f'{e(block.get("title") or "Lining the layers up")}</h3>'
-            '<div class="panel-in">'
-            '<p class="tablehint">Swipe the diagram sideways to see all four bars.</p>'
-            f'<div class="bgwrap" role="region" tabindex="0" '
-            f'aria-label="{e(block["alt"])}">{svg}</div>{cap}</div></section>')
+        p.append(f'<text x="{x}" y="{bottom + 24}" class="bg-beat" font-size="13">Bar {b + 1}</text>')
+    return (f'<svg viewBox="0 0 {w} {h}" class="beatgrid" role="img" '
+            f'aria-label="{e(block["alt"])}">{"".join(p)}</svg>')
 
 
-def block_html(block, loud=False, idx=0):
-    t = block["type"]
-    h = block.get("heading")
-    head = f'<h3 class="blk-h">{e(h)}</h3>' if h else ""
+def beatgrid(block, side=""):
+    cap = f'<p class="bg-cap">{S.rich(block["caption"])}</p>' if block.get("caption") else ""
+    # A region that clips gets a name, keyboard focus, and a hint in words at the
+    # width where it actually clips.
+    body = ('<p class="bg-hint fine">Swipe the diagram sideways to see all four bars.</p>'
+            f'<div class="bgwrap" role="region" tabindex="0" aria-label="{e(block["alt"])}">'
+            f'{beatgrid_svg(block)}</div>{cap}')
+    return S.section("beatgrid", "Diagram", "compare", block.get("title") or "Lining the layers up",
+                     body, side=side)
 
-    if t == "listen":
-        # A track is either a bare title or {"title", "embed"}. Both shapes live in
-        # the same list, so a block can be half filled while it is worked through.
-        tracks = [x if isinstance(x, dict) else {"title": x} for x in block["tracks"]]
-        # Placeholders, not repertoire, and they must never render as content.
-        if all(is_placeholder(x["title"]) for x in tracks):
-            return unfilled_media("Listening", "tracks")
 
-        # Once anything in the run is playable the whole run becomes a clip grid.
-        # Mixing a player column against a tick list reads as two different blocks.
-        if any(x.get("embed") for x in tracks):
-            title = block.get("heading") or "Listen"
-            clips = "".join(clip_html(x) for x in tracks)
-            return (f'<section class="blk panel quiet"><h3 class="panel-h">{e(title)}</h3>'
-                    f'<div class="panel-in"><div class="clips">{clips}</div></div></section>')
+# ------------------------------------------------------------------- blocks
 
-        rows = "".join(
-            f'<li><span class="tick" aria-hidden="true"></span><span>{e(x["title"])}</span></li>'
-            for x in tracks
-        )
-        # The heading is the truth: these runs are sometimes a listening list and
-        # sometimes a set of named things (the three grooves). Only say "Listen"
-        # when the source page did not name the group itself. Titled means quiet
-        # panel, the same as every other named block, so one content shape does
-        # not print two ways from one lesson to the next.
-        title = block.get("heading") or "Listen"
-        return (f'<section class="blk panel quiet"><h3 class="panel-h">{e(title)}</h3>'
-                f'<div class="panel-in"><ul class="tracks">{rows}</ul></div></section>')
 
-    if t == "table":
-        # A worksheet table is one that arrives with empty cells: the data says what
-        # the columns are and leaves the answers blank. Those blanks are the whole
-        # point of the block, so they become fields a student can type into rather
-        # than dead space they have to copy into a book. A reference table (every
-        # cell filled, as in Lesson 1's survey) is left exactly as it was.
-        fillable = any(not str(c).strip() for r in block["rows"] for c in r)
-        th = "".join(f"<th>{e(c)}</th>" for c in block["headers"])
+def keyword_pairs(block):
+    """A definition block carries its terms and one run of text, "Term - meaning.
+    Term - meaning." Split it back into pairs for the Key words card."""
+    terms = block.get("terms") or []
+    text = block.get("text") or ""
+    if len(terms) == 1:
+        lead = re.match(rf"\s*{re.escape(terms[0])}\s+-\s+", text, re.I)
+        return [(terms[0], text[lead.end():] if lead else text)]
+    spots = []
+    for t in terms:
+        m = re.search(rf"(?:^|(?<=\. )){re.escape(t)}\s+-\s+", text, re.I)
+        if not m:
+            return None
+        spots.append((m.start(), m.end(), t))
+    spots.sort()
+    pairs = []
+    for i, (start, end, t) in enumerate(spots):
+        stop = spots[i + 1][0] if i + 1 < len(spots) else len(text)
+        pairs.append((t, text[end:stop].strip()))
+    return pairs
 
-        def cell(c, ri, ci):
-            if not (fillable and not str(c).strip()):
-                return f"<td>{e(c)}</td>"
-            # aria-label reads the row's first filled cell and the column head, so
-            # the field is identifiable out of context: "Piano ballad, Mood".
-            row_name = next((str(x).strip() for x in block["rows"][ri] if str(x).strip()), "")
-            col = block["headers"][ci] if ci < len(block["headers"]) else ""
-            label = ", ".join(x for x in (row_name, col) if x) or "Answer"
-            return (f'<td class="fillcell"><input type="text" class="fill" '
-                    f'data-cell="{idx}-{ri}-{ci}" aria-label="{e(label)}"></td>')
 
-        rows = "".join(
-            "<tr>" + "".join(cell(c, ri, ci) for ci, c in enumerate(r)) + "</tr>"
-            for ri, r in enumerate(block["rows"])
-        )
-        # The table keeps a min-width, so on a phone it scrolls inside this wrapper.
-        # A scroll region needs a name and keyboard focus, or it is unreachable
-        # without a pointer, and the hint says so in words rather than a fading edge.
-        label = e(f"{h}, table" if h else "Table")
-        # Two columns fit a phone, so they drop the 34rem floor and stop asking to be
-        # swiped. The hint goes with it: a table that no longer clips must not tell a
-        # student to slide it, and the hint sits above the wrapper so it is read
-        # before the clip rather than after.
-        narrow = len(block["headers"]) <= 2
-        hint = ("" if narrow
-                else '<p class="tablehint">Swipe the table sideways to see the rest.</p>')
-        cls = "tablewrap" + (" is-fill" if fillable else "") + (" is-narrow" if narrow else "")
-        note = ('<p class="fillnote">Type straight into the boxes. Your answers stay '
-                'on this device and are still here if you close the page.</p>'
-                if fillable else "")
-        return (f'<section class="blk">{head}{hint}'
-                f'<div class="{cls}" role="region" '
-                f'tabindex="0" aria-label="{label}">'
-                f"<table><thead><tr>{th}</tr></thead><tbody>{rows}</tbody></table>"
-                f"</div>{note}</section>")
+def fill_keys(idx, rows):
+    """The old storage name of every box in a fill-in table, in the order the
+    shell draws them (row by row, left to right). site.js reads data-old to put
+    back anything saved before the move."""
+    return [f"{idx}-{ri}-{ci}" for ri, r in enumerate(rows) for ci, c in enumerate(r) if not c]
 
-    # One ink per lesson, three weights. The leg's spot ink comes from the article,
-    # so hue never encodes block type; the weight of the treatment does. Loud is the
-    # filled ink bar and belongs to the task alone, because the task is the one thing
-    # a student has to do. Everything else is a quiet bone box under a black rule.
-    def panel(label, extra=""):
-        items = "".join(f"<li>{e(i)}</li>" for i in block.get("items") or [])
-        inner = f"<p>{e(block['text'])}</p>" if block.get("text") else ""
-        inner += f"<ul>{items}</ul>" if items else ""
-        cls = "blk panel" if loud else "blk panel quiet"
-        return (f'<section class="{cls}">{head}'
-                f'<h3 class="panel-h">{e(label)}</h3>'
-                f'<div class="panel-in">{extra}{inner}</div></section>')
 
-    if t == "activity":
-        return panel(block.get("title") or "Your task")
+def tag_fields(markup, keys):
+    parts = markup.split('<textarea class="field"')
+    assert len(parts) - 1 == len(keys), "fill-in boxes and saved names no longer line up"
+    out = parts[0]
+    for k, rest in zip(keys, parts[1:]):
+        out += f'<textarea class="field" data-old="{k}"' + rest
+    return out
 
-    if t == "definition":
-        # One box per word. The extractor used to fold two unrelated elements into
-        # a single Key words panel - timbre with dynamics, structure with drop - and
-        # a student reading it could not tell where one definition stopped. A block
-        # carrying exactly one term names that term in its own heading; a genuine
-        # group of related words keeps the plural label.
-        # With one term the heading carries the word, so the chip would print it
-        # twice in a row; the chips stay where they are doing work, naming several.
-        names = block.get("terms") or []
-        if len(names) == 1:
-            return panel(f"Key word: {names[0]}")
-        terms = "".join(f'<span class="term">{e(x)}</span>' for x in names)
-        return panel("Key words", f'<p class="terms">{terms}</p>' if terms else "")
 
-    if t == "support":
-        return panel(block.get("title") or "Need a hand?")
+def take_side(kind):
+    """Section kinds that can hold a side card on a laptop."""
+    return kind in ("prose", "explain", "listen", "media", "table", "activity", "list", "beatgrid")
 
-    if t == "extension":
-        return panel("Go further")
 
-    if t == "explain":
-        # The block a student who missed the lesson can teach themselves from, and
-        # the only long read on the page. It takes the quiet weight like every other
-        # named block: the task keeps the ink, because the task is still the thing
-        # to act on. What sets this block apart is the call - one sentence carrying
-        # the idea, set at the learning intention's size - so the back of a daylit
-        # room gets the claim off the board and the student at home reads the rest.
-        # That is the two-distance split the whole system is built for, done inside
-        # one block instead of with a second ink.
-        #
-        # Paragraphs arrive as a list rather than as one string split on blank
-        # lines, so the data says where a paragraph ends instead of the renderer
-        # guessing. A block with no call and no paragraphs is not a thin block, it
-        # is an empty one, and it prints nothing.
-        #
-        # An item is either a paragraph or a list of strings, the same either-shape
-        # the listen block's tracks already use. This exists because the first
-        # explain block written was a five-item set of controls set as prose, and
-        # rendering it showed the five names a student has to write down buried mid
-        # sentence. A set is bulleted; keeping it in one field rather than adding a
-        # second means the data decides where in the read the set falls.
-        call = block.get("call") or ""
-        items = [p for p in (block.get("paras") or []) if p]
-        if not call and not items:
-            return ""
-        inner = f'<p class="call">{e(call)}</p>' if call else ""
-        for p in items:
-            if isinstance(p, list):
-                inner += "<ul>" + "".join(f"<li>{e(x)}</li>" for x in p) + "</ul>"
-            else:
-                inner += f"<p>{e(p)}</p>"
-        return ('<section class="blk panel quiet explain">'
-                f'{head}<h3 class="panel-h">Liner notes</h3>'
-                f'<div class="panel-in">{inner}</div></section>')
-
-    if t == "exit":
-        # The way out: a solid ink field, the only one on the page, so the lesson
-        # ends on a printed beat rather than another bordered box.
-        return ('<section class="blk encore"><div class="encore-in">'
-                '<h3 class="encore-h">Encore</h3>'
-                f'<p>{e(block["text"])}</p></div></section>')
-
-    # A named list or a named paragraph is the same printed object as a support or
-    # extension block, so it takes the same quiet treatment. Without this the
-    # assessment lessons, which are almost entirely titled prose, render as bare
-    # text and end up the least printed pages on a site about printing.
-    cls = "blk panel" if loud else "blk panel quiet"
-
-    if t == "list":
-        items = "".join(f"<li><span>{e(i)}</span></li>" for i in block["items"])
-        title = block.get("title") or block.get("heading") or ""
-        if not title:
-            return f'<section class="blk"><ol class="steps">{items}</ol></section>'
-        return (f'<section class="{cls}"><h3 class="panel-h">{e(title)}</h3>'
-                f'<div class="panel-in"><ol class="steps">{items}</ol></div></section>')
-
-    if t == "media":
-        # A filled slot and an empty one are the same shape on the page: the quiet
-        # panel labelled Video. Only the inside changes, so a lesson does not
-        # re-flow when the track is finally picked.
-        if not block.get("embed"):
-            return unfilled_media("Video", "video")
-        brief = f'<p>{e(block["brief"])}</p>' if block.get("brief") else ""
-        return (
-            '<section class="blk panel quiet"><h3 class="panel-h">Video</h3>'
-            '<div class="panel-in">'
-            + player_html(block["embed"], block.get("brief") or "Video for this lesson")
-            + f'{brief}</div></section>'
-        )
-
-    if t == "beatgrid":
-        return beatgrid_html(block)
+def block_section(b, idx, side=""):
+    """One block as one shell section, or "" for a block with nothing to show."""
+    t = b["type"]
 
     if t == "prose":
-        title = block.get("title") or h
-        # Eight lessons carry their unfilled video slot as untitled prose rather than
-        # as a listen block, and printed it to the page as a sentence. Same slot, same
-        # honest notice, whichever shape it arrives in.
-        if is_placeholder(block.get("text")):
-            return unfilled_media("Video", "video")
-        if not title:
-            return f'<section class="blk"><p>{e(block["text"])}</p></section>'
-        return (f'<section class="{cls}"><h3 class="panel-h">{e(title)}</h3>'
-                f'<div class="panel-in"><p>{e(block["text"])}</p></div></section>')
+        if is_placeholder(b.get("text")):
+            return S.listen([{"title": "Video for this lesson",
+                              "pending": "Not added yet. The video for this lesson is still being chosen."}],
+                            label="Watch", side=side)
+        return S.learn([b["text"]], title=b.get("title") or b.get("heading"), side=side)
+
+    if t == "explain":
+        paras = [p for p in (b.get("paras") or []) if p]
+        if not b.get("call") and not paras:
+            return ""
+        return S.learn(paras, title=b.get("heading"), call=b.get("call"), side=side)
+
+    if t == "listen":
+        tracks = [x if isinstance(x, dict) else {"title": x} for x in b["tracks"]]
+        if all(is_placeholder(x["title"]) for x in tracks):
+            return S.listen([{"title": "Tracks for this lesson",
+                              "pending": "Not added yet. The tracks for this lesson are still being chosen."}],
+                            title=b.get("heading"), side=side)
+        clips = [{"title": x["title"], "embed": x.get("embed"),
+                  "pending": "" if x.get("embed") else "Not added yet."} for x in tracks]
+        return S.listen(clips, title=b.get("heading"), side=side)
+
+    if t == "media":
+        if not b.get("embed"):
+            return S.listen([{"title": "Video for this lesson",
+                              "pending": "Not added yet. The video for this lesson is still being chosen."}],
+                            label="Watch", side=side)
+        return S.listen([{"title": "Video for this lesson", "embed": b["embed"]}],
+                        label="Watch", brief=b.get("brief", ""), side=side)
+
+    if t == "table":
+        rows = [[str(c).strip() for c in r] for r in b["rows"]]
+        fillable = any(not c for r in rows for c in r)
+        if not fillable:
+            return S.compare(b["headers"], rows, title=b.get("heading"), label="Table", side=side)
+        markup = S.compare(b["headers"], rows, title=b.get("heading"), label="Fill in",
+                           form=True, side=side)
+        return tag_fields(markup, fill_keys(idx, rows))
+
+    if t == "activity":
+        title = strip_prefix(b.get("title"), "Your task")
+        if b.get("items"):
+            lis = "".join(f"<li>{S.rich(x)}</li>" for x in b["items"])
+            body = (f"<p>{S.rich(b['text'])}</p>" if b.get("text") else "") + f'<ul class="plain-list">{lis}</ul>'
+            return S.section("task", "Your task", "task", title, body, side=side)
+        return S.task(b.get("text", ""), title=title, side=side)
+
+    if t == "list":
+        return S.steps(b["items"], title=b.get("title") or b.get("heading"), label="Step by step", side=side)
+
+    if t == "beatgrid":
+        return beatgrid(b, side=side)
 
     return ""
+
+
+def end_card(b):
+    t = b["type"]
+    if t == "support":
+        return S.help_card(b["text"], title=strip_prefix(b.get("title"), "Need a hand"))
+    if t == "extension":
+        return S.further(b["text"])
+    if t == "exit":
+        return S.exit_ticket(b["text"])
+    return None
+
+
+def lesson_sections(blocks):
+    """The blocks in order. Key words wait for the next section that can hold a
+    side card; support, extension and the exit ticket go to the end cards."""
+    sections, end, keys = [], [], []
+
+    def keys_card():
+        pairs = [p for k in keys for p in k]
+        return S.keywords_card(pairs) if pairs else ""
+
+    for i, b in enumerate(blocks):
+        t = b["type"]
+        card = end_card(b)
+        if card is not None:
+            end.append(card)
+            continue
+        if t == "definition":
+            pairs = keyword_pairs(b)
+            if pairs is None:
+                # Text that cannot be split back into terms prints as written.
+                sections.append(S.section("keys", "Key words", "key", None, f"<p>{S.rich(b['text'])}</p>"))
+            else:
+                keys.append(pairs)
+            continue
+        side = ""
+        if keys and take_side(t):
+            side, keys = keys_card(), []
+        html = block_section(b, i, side=side)
+        if html:
+            sections.append(html)
+    if keys:
+        # Nothing after them could hold a side card, so they get a card of their own.
+        kw = "".join(f'<div class="kw"><dt>{S.rich(k)}</dt><dd>{S.rich(v)}</dd></div>'
+                     for pairs in keys for k, v in pairs)
+        sections.append(S.section("keys", "Key words", "key", None, f'<div class="keys"><dl>{kw}</dl></div>'))
+    return sections, end
 
 
 # -------------------------------------------------------------------- pages
 
 
-def tour_list(site, course, topic):
-    """The back-print: every lesson of the term as a tour date."""
-    legs = []
+def topic_schedule(course, topic, base, title="Every lesson"):
+    groups = []
     for s in topic["sections"]:
-        ink = LEG_INK.get(s["letter"], "pink")
-        rows = []
-        for l in s["lessons"]:
-            flag = '<span class="flag">Assessment</span>' if l.get("assessed") else ""
-            cls = " is-assessed" if l.get("assessed") else ""
-            rows.append(
-                f'<li class="date{cls}">'
-                f'<a href="{lesson_href(site, course, topic, l)}">'
-                f'<span class="no">{l["number"]}</span>'
-                f'<span class="what"><span class="tt">{e(l["title"])}</span>'
-                f'<span class="int">{e(l["intention"])}</span></span>'
-                f"{flag}</a></li>"
-            )
-        legs.append(f"""<section class="leg ink-{ink}">
-  <div class="leg-head">
-    <span class="leg-letter" aria-hidden="true">{s['letter']}</span>
-    <h2>{e(s['name'])}</h2>
-    <span class="leg-range">Lessons {s['from']} to {s['to']}</span>
-  </div>
-  <ol class="dates">{''.join(rows)}</ol>
-</section>""")
-    return "".join(legs)
+        rows = [{"n": str(l["number"]), "title": l["title"], "href": page_path(course, topic, l["number"]),
+                 "meta": l["intention"], "at": bool(l.get("assessed"))} for l in s["lessons"]]
+        groups.append((s["name"], rows, f"Lessons {s['from']} to {s['to']}"))
+    return S.schedule(groups, base=base, title=title, label="This term",
+                      note="Every lesson of the term, in order. Go straight to the one you need.")
 
 
-def build_topic(site, course, topic):
+def build_topic(site, sh, course, topic):
+    base = site["base"]
     total = len(flat_lessons(topic))
-    outcomes = "".join(f'<li><span class="code">{e(c)}</span> {e(t)}</li>'
-                       for c, t in topic["outcomes"])
+    hd = S.head(topic["name"], kicker=topic["term"], meta=f"{topic['subtitle']}. {total} lessons.")
+
+    outs = "".join(f"<li><strong>{e(c)}</strong> {S.rich(t)}</li>" for c, t in topic["outcomes"])
+    about = S.section("about", "This unit", "learn", None,
+                      S.prose([topic["blurb"], {"h": "The question for this term"}, topic["question"]]),
+                      side=S.side_card("Outcomes", "target", f'<ul class="plain outcomes">{outs}</ul>'))
+
     a = topic["assessment"]
-    extra_links = "".join(
-        f'<p><a href="{page_href(site, course, topic, p["slug"])}">{e(p["title"])}</a></p>'
-        for p in topic.get("pages", []))
+    links = "".join(f'<p><a class="int" href="{base}{page_path(course, topic, p["slug"])}">{e(p["title"])}</a></p>'
+                    for p in topic.get("pages", []))
+    task = S.section("assess", "Assessment", "assess", a["name"],
+                     f'<p class="about">{S.rich(a["detail"])}</p>'
+                     f'<dl class="facts"><div><dt>When</dt><dd>{S.rich(a["when"])}</dd></div></dl>'
+                     f'{links}<p class="fine">The task notification and submission are in Canvas.</p>')
 
-    body = f"""<div class="print">
-  <div class="wrap">
-    <h1 class="logo">{e(topic['name'])}</h1>
-    <p class="count">{e(topic['term'])} &middot; {total} dates &middot; {e(topic['subtitle'])}</p>
-    <p class="blurb">{e(topic['blurb'])}</p>
-  </div>
-  <div class="halftone" aria-hidden="true"></div>
-</div>
-
-<div class="wrap">
-  <section class="askbox">
-    <h2>The question for this term</h2>
-    <div class="askbox-in"><p>{e(topic['question'])}</p></div>
-  </section>
-
-  <div class="tour">
-    <div class="tour-main">
-      {runs_html(site, course, topic)}
-      <div class="tour-head">
-        <h2>The dates</h2>
-        <p>Every lesson of the term, in order. Go straight to the one you need.</p>
-      </div>
-      {tour_list(site, course, topic)}
-    </div>
-    <aside class="tour-side">
-      <section class="panel ink-pink">
-        <h3 class="panel-h">{e(a['name'])}</h3>
-        <div class="panel-in">
-          <p class="when">{e(a['when'])}</p>
-          <p>{e(a['detail'])}</p>
-          {extra_links}
-          <p class="small">The task notification and submission are in Canvas.</p>
-        </div>
-      </section>
-      <section class="panel outcomes">
-        <h3 class="panel-h">Outcomes</h3>
-        <div class="panel-in"><ul>{outcomes}</ul></div>
-      </section>
-    </aside>
-  </div>
-</div>"""
-    return layout(site, topic["name"], body, topic["blurb"],
-                  [("Home", "/"), (topic["name"], None)])
+    body = hd + about + task + runs_html(course, topic, base) + topic_schedule(course, topic, base)
+    return S.page(sh, title=topic["name"], body=body, description=topic["blurb"],
+                  crumbs=[("Home", "/"), (topic["name"], None)], nav_current=topic["id"], site_js=True)
 
 
-def build_lesson(site, course, topic, lesson, prev_l, next_l):
-    # An extra page (the quiz revision page) has a slug and no number. It sits
-    # outside the 25 dates, so it carries no numeral and no static prev/next; the
-    # runs are the only way through it.
-    ref = lesson.get("number", lesson.get("slug"))
+def build_lesson(site, sh, course, topic, lesson, prev_l, next_l):
+    """A numbered lesson, or one of the topic's extra pages (Quiz Revision), which
+    sits outside the 25 lessons and so has no number and no plain prev/next; the
+    runs are the only way through it."""
+    base = site["base"]
     numbered = "number" in lesson
-    leg = leg_of(topic, lesson["number"]) if numbered else None
-    ink = LEG_INK.get(leg["letter"], "pink") if numbered else lesson.get("ink", "pink")
+    ref = lesson["number"] if numbered else lesson["slug"]
     total = len(flat_lessons(topic))
-
-    crit = "".join(
-        f'<li><input type="checkbox" id="c{i}"><label for="c{i}">{e(c)}</label></li>'
-        for i, c in enumerate(lesson["criteria"])
-    )
-    li = loud_block(lesson["blocks"])
-    # The block index goes through so a fillable table's saved answers are keyed to
-    # its position in the lesson, not just to the page. Two tables on one lesson
-    # would otherwise share one set of stored values.
-    blocks = "".join(block_html(b, loud=(i == li), idx=i)
-                     for i, b in enumerate(lesson["blocks"]))
-    flag = ('<p class="assessed-flag">This lesson is an assessment task</p>'
-            if lesson.get("assessed") else "")
-
-    nav = []
-    if prev_l:
-        nav.append(f'<a class="pn prev" href="{lesson_href(site, course, topic, prev_l)}">'
-                   f'<span>Previous</span><strong>{e(prev_l["title"])}</strong></a>')
-    if next_l:
-        nav.append(f'<a class="pn next" href="{lesson_href(site, course, topic, next_l)}">'
-                   f'<span>Next</span><strong>{e(next_l["title"])}</strong></a>')
 
     if numbered:
-        big_no = f'<span class="big-no" aria-hidden="true">{lesson["number"]}</span>'
-        locator = f"Lesson {lesson['number']} of {total} &middot; {e(leg['name'])}"
+        leg = leg_of(topic, lesson["number"])
+        hd = S.head(lesson["title"], kicker=topic["name"], num=lesson["number"],
+                    meta=f"Lesson {lesson['number']} of {total}, in {leg['name']}.",
+                    chips=("Assessment task",) if lesson.get("assessed") else ())
     else:
-        big_no = ""
-        locator = f"{e(topic['name'])} &middot; Revision"
-    static_nav = (f'<nav class="prevnext static wrap" aria-label="Lessons">{"".join(nav)}</nav>'
-                  if nav else "")
-    run_nav = run_nav_html(site, course, topic, ref) if topic.get("runs") else ""
+        hd = S.head(lesson["title"], kicker=topic["name"], meta="Revision.")
 
-    body = f"""<article class="lesson ink-{ink}">
-<div class="print print-lesson">
-  <div class="wrap">
-    <div class="bill">
-      {big_no}
-      <h1>{e(lesson['title'])}</h1>
-    </div>
-    <p class="of">{locator}</p>
-    {flag}
-  </div>
-  <div class="halftone" aria-hidden="true"></div>
-</div>
+    sections, end = lesson_sections(lesson["blocks"])
+    body = S.lesson(hd, S.intent(lesson["intention"], criteria=lesson["criteria"]), sections, end)
+    # The run order sits straight above the plain one, which it replaces once chosen.
+    if topic.get("runs"):
+        body += run_nav_html(course, topic, ref, base)
 
-<div class="wrap lesson-body">
-  <div class="lesson-main">
-    <section class="intention">
-      <p>{e(lesson['intention'])}</p>
-    </section>
-    {blocks}
-  </div>
-  <aside class="lesson-side">
-    <section class="panel">
-      <h3 class="panel-h">How you know you have it</h3>
-      <div class="panel-in"><ul class="crit">{crit}</ul>
-      <p class="small">Ticks save on this device only.</p></div>
-    </section>
-    <a class="back" href="{site['base']}/{course['id']}/{topic['id']}/">All {total} dates</a>
-  </aside>
-</div>
-
-{run_nav}
-{static_nav}
-</article>"""
+    def pn(l, word):
+        return (f"{word}: Lesson {l['number']}", l["title"], page_path(course, topic, l["number"])) if l else None
 
     here = f"Lesson {lesson['number']}" if numbered else lesson["title"]
-    crumbs = [("Home", "/"), (topic["name"], f"/{course['id']}/{topic['id']}/"), (here, None)]
     title = f"Lesson {lesson['number']}: {lesson['title']}" if numbered else lesson["title"]
-    return layout(site, title, body, lesson["intention"], crumbs)
+    extras = S.fold(f"All {total} lessons in {topic['name']}", topic_schedule(course, topic, base))
+    return S.page(sh, title=title, body=body, description=lesson["intention"],
+                  crumbs=[("Home", "/"), (topic["name"], topic_path(course, topic)), (here, None)],
+                  nav_current=topic["id"],
+                  prevnext=(pn(prev_l, "Previous"), pn(next_l, "Next")) if numbered else None,
+                  extras=extras, site_js=True)
 
 
-def build_home(site, courses):
-    cards = []
-    for course, topics in courses:
-        for t in topics:
-            n = len(flat_lessons(t))
-            cards.append(f"""<li class="poster">
-  <a href="{site['base']}/{course['id']}/{t['id']}/">
-    <span class="poster-name">{e(t['name'])}</span>
-    <span class="poster-sub">{e(t['term'])} &middot; {e(t['subtitle'])} &middot; {n} dates</span>
-  </a>
-</li>""")
-
-    body = f"""<div class="print print-home">
-  <div class="wrap">
-    <h1 class="logo">{e(site['title'])}</h1>
-    <p class="blurb">Everything we do in class, lesson by lesson. Miss one and you can pick up exactly what the class did.</p>
-  </div>
-  <div class="halftone" aria-hidden="true"></div>
-</div>
-<div class="wrap">
-  <ul class="posters">{''.join(cards)}</ul>
-  <p class="rest">The rest of the year goes up here as each term is written.</p>
-</div>"""
-    return layout(site, site["title"], body, "Year 8 Music class material, lesson by lesson.")
+def build_home(site, sh, course, topics):
+    hd = S.head(site["title"], meta="Everything we do in class, lesson by lesson. "
+                                    "Miss one and you can pick up exactly what the class did.")
+    cards = [{"title": t["name"], "href": topic_path(course, t), "kicker": t["term"],
+              "text": t["subtitle"], "meta": f"{len(flat_lessons(t))} lessons",
+              "open": i == len(topics) - 1} for i, t in enumerate(topics)]
+    return S.page(sh, title=site["title"], body=hd + S.card_grid(cards, base=site["base"]),
+                  description="Year 8 Music class material, lesson by lesson.", nav_current="home")
 
 
 # --------------------------------------------------------------------- main
@@ -820,35 +515,36 @@ def build_home(site, courses):
 
 def main():
     site = load("site.json")
+    S.set_base(site["base"])
+    if len(site["courses"]) != 1:
+        raise SystemExit("this build expects one course per site")
+    course = load("courses", site["courses"][0], "course.json")
+    topics = [load("courses", course["id"], "topics", f"{tid}.json") for tid in course["topics"]]
+    nav = [("Home", "/", "home")] + [(t["term"], topic_path(course, t), t["id"]) for t in topics]
+    sh = shell_site(site, nav)
+
     if os.path.isdir(OUT):
         shutil.rmtree(OUT)
     os.makedirs(OUT)
 
-    courses = []
-    for cid in site["courses"]:
-        course = load("courses", cid, "course.json")
-        topics = [load("courses", cid, "topics", f"{tid}.json") for tid in course["topics"]]
-        courses.append((course, topics))
-
     pages = 0
-    for course, topics in courses:
-        cid = course["id"]
-        for topic in topics:
-            write([cid, topic["id"], "index.html"], build_topic(site, course, topic))
+    cid = course["id"]
+    for topic in topics:
+        write([cid, topic["id"], "index.html"], build_topic(site, sh, course, topic))
+        pages += 1
+        lessons = flat_lessons(topic)
+        for i, lesson in enumerate(lessons):
+            write([cid, topic["id"], f"lesson-{lesson['number']}", "index.html"],
+                  build_lesson(site, sh, course, topic, lesson,
+                               lessons[i - 1] if i else None,
+                               lessons[i + 1] if i + 1 < len(lessons) else None))
             pages += 1
-            lessons = flat_lessons(topic)
-            for i, lesson in enumerate(lessons):
-                write([cid, topic["id"], f"lesson-{lesson['number']}", "index.html"],
-                      build_lesson(site, course, topic, lesson,
-                                   lessons[i - 1] if i else None,
-                                   lessons[i + 1] if i + 1 < len(lessons) else None))
-                pages += 1
-            for extra in topic.get("pages", []):
-                write([cid, topic["id"], extra["slug"], "index.html"],
-                      build_lesson(site, course, topic, extra, None, None))
-                pages += 1
+        for extra in topic.get("pages", []):
+            write([cid, topic["id"], extra["slug"], "index.html"],
+                  build_lesson(site, sh, course, topic, extra, None, None))
+            pages += 1
 
-    write(["index.html"], build_home(site, courses))
+    write(["index.html"], build_home(site, sh, course, topics))
     pages += 1
 
     shutil.copytree(ASSETS, os.path.join(OUT, "assets"))

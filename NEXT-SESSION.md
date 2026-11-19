@@ -1,3 +1,8 @@
+> **19 November 2026: the site is on the shared music shell.** Every page is now
+> drawn by `shell.py`; the screenprint look is in history up to `7f48c54`. Read
+> `DESIGN.md` for the mapping. Notes below about the loud ink field, `Liner notes`,
+> `block_html()` and `loud_block()` describe the old build and no longer apply.
+
 > **Update, 16 August 2026 (late).** The first name has been taken off all 105
 > served pages and out of `PRODUCT.md` and `build.py`, **pushed and verified
 > against the live URL**: the name returns zero on the home page and on sampled

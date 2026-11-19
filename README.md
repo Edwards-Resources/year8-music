@@ -3,8 +3,8 @@
 Lesson material for a Year 8 Music course, published with GitHub Pages. Students read
 it; assessment stays in Canvas.
 
-Read `DESIGN.md` before touching any CSS. The rules in it were earned through a finish
-review, not invented.
+The look comes from the shared music shell (`../music-shell/`), not from this repo.
+`DESIGN.md` says how this site's data maps onto it and what is still Year 8's own.
 
 ## How it works
 
@@ -16,8 +16,11 @@ review, not invented.
 ## Building
 
 ```
-python3 build.py
+/usr/bin/python3 build.py
 ```
+
+To take a newer shell, run `python3 music-shell/sync.py year8-music` from `Sites/`,
+then rebuild. Never edit `shell.py`, `assets/shell.css` or `assets/shell.js` here.
 
 ## Adding a listening example
 
@@ -37,8 +40,8 @@ showing a placeholder to students.
 2. Add the id to `topics` in `data/courses/year8-music/course.json`.
 3. Rebuild.
 
-No CSS should be needed. If a new block type is genuinely required, add it to
-`block_html()` and record it in `DESIGN.md`.
+No CSS should be needed. If a new block type is genuinely required, map it to a shell
+component in `block_section()` and record it in `DESIGN.md`.
 
 ## No position marker
 
@@ -54,7 +57,7 @@ two orders: **iPads first** and **listening first**. A topic can carry a `runs` 
 opens (`pages`, lesson numbers or an extra page's slug), an optional `note` and an
 optional `flag`. The build asserts that every run visits all 25 lessons.
 
-- The term page shows a switch above the 25 dates. The choice is saved on the device,
+- The term page shows a switch above the 25 lessons. The choice is saved on the device,
   and `#ipads-first` or `#listening-first` in the link opens that run, so each teacher
   can post their own link in Canvas.
 - Once a run is chosen, a lesson page swaps its plain previous and next for the run's.
@@ -65,7 +68,7 @@ A run is a sequence, not a position: no dates, no class names, no teacher names,
 the build still has no idea which lesson is now. Keep it that way.
 
 A topic can also carry extra `pages` (the quiz revision page) with a `slug` instead of
-a number. They sit outside the 25 dates, are linked from the assessment panel and the
+a number. They sit outside the 25 lessons, are linked from the assessment card and the
 runs, and have no plain previous and next.
 
 ## What must never go on this site
