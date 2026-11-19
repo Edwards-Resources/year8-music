@@ -42,6 +42,125 @@
           ],
           "blocks": [
             {
+              "type": "sounds",
+              "heading": "One tune, four changes",
+              "brief": "Play the tune, then each version. Every version changes one thing and keeps the rest the same. Write what changed in your own words. You don't need the proper name for it yet.",
+              "clips": [
+                {
+                  "title": "The tune",
+                  "file": "one-element/tune.mp3"
+                },
+                {
+                  "title": "Version 1",
+                  "file": "one-element/version-1.mp3"
+                },
+                {
+                  "title": "Version 2",
+                  "file": "one-element/version-2.mp3"
+                },
+                {
+                  "title": "Version 3",
+                  "file": "one-element/version-3.mp3"
+                },
+                {
+                  "title": "Version 4",
+                  "file": "one-element/version-4.mp3"
+                }
+              ],
+              "headers": [
+                "Version",
+                "What changed?"
+              ],
+              "rows": [
+                [
+                  "Version 1",
+                  ""
+                ],
+                [
+                  "Version 2",
+                  ""
+                ],
+                [
+                  "Version 3",
+                  ""
+                ],
+                [
+                  "Version 4",
+                  ""
+                ]
+              ]
+            },
+            {
+              "type": "reveal",
+              "summary": "Show the names for what changed",
+              "items": [
+                "Version 1: **duration**. The same notes, slower.",
+                "Version 2: **pitch**. The same tune, higher.",
+                "Version 3: **dynamics and expression**. The same tune, much softer.",
+                "Version 4: **performing media and timbre**. The same tune on a trumpet instead of a piano.",
+                "These are four of the elements of music. This term starts with pitch."
+              ]
+            },
+            {
+              "type": "sounds",
+              "heading": "Which one changed?",
+              "brief": "Each mystery clip changes one element of the tune. Name the element.",
+              "clips": [
+                {
+                  "title": "The tune",
+                  "file": "one-element/tune.mp3"
+                },
+                {
+                  "title": "Mystery A",
+                  "file": "one-element/mystery-a.mp3"
+                },
+                {
+                  "title": "Mystery B",
+                  "file": "one-element/mystery-b.mp3"
+                },
+                {
+                  "title": "Mystery C",
+                  "file": "one-element/mystery-c.mp3"
+                },
+                {
+                  "title": "Mystery D",
+                  "file": "one-element/mystery-d.mp3"
+                }
+              ],
+              "headers": [
+                "Clip",
+                "Which element changed?"
+              ],
+              "rows": [
+                [
+                  "Mystery A",
+                  ""
+                ],
+                [
+                  "Mystery B",
+                  ""
+                ],
+                [
+                  "Mystery C",
+                  ""
+                ],
+                [
+                  "Mystery D",
+                  ""
+                ]
+              ]
+            },
+            {
+              "type": "reveal",
+              "summary": "Show the answers",
+              "items": [
+                "Mystery A: **dynamics and expression**. Much louder.",
+                "Mystery B: **performing media and timbre**. A marimba.",
+                "Mystery C: **duration**. Faster.",
+                "Mystery D: **pitch**. Lower."
+              ]
+            },
+            {
               "type": "prose",
               "title": "Welcome to the keyboard room.",
               "text": "Everything this term happens at a keyboard. Before you play a note you need one idea: pitch. Pitch is how high or low a sound is, and every piece of music you have ever heard is built out of it."

@@ -31,6 +31,8 @@ The data did not move. `data/courses/year8-music/` is read as before and `build.
 | `activity` | Your task. "Your task - Screen off" becomes the title "Screen off"; plain "Your task" adds nothing to the label and is dropped |
 | `list` | Step by step |
 | `beatgrid` | Diagram: this site's own furniture (below) |
+| `sounds` | Listen: our own clips, each with the browser's player, then an optional fill-in table. This site's own (below) |
+| `reveal` | Check yourself: the shell's fold, shut until pressed, so a projected page never shows the answers early |
 | `support`, `extension`, `exit` | The end cards: Need a hand, Go further, Exit ticket. "Need a hand? Start small" becomes the title "Start small" |
 
 The old site gave one block per lesson the loud ink field. The shell has no loud block, so that rule is gone.
@@ -50,5 +52,6 @@ The four terms as cards. Home opens Term 4.
 ## What is still this site's own
 
 - **The beat grid** (Popular Music Lesson 8). Drawn as SVG by `beatgrid_svg()` and styled in `assets/site.css` with the shell's colours.
+- **The clip players** (Keyboard Lesson 1). The shell only plays YouTube, so `sounds()` gives each of our own MP3s a plain `<audio>` player with `preload="none"`. It works inside a Canvas frame. The clips live in `assets/audio/` and are built by `Tools/y8_one_element_clips.py` in School Master; rebuild them there, never edit them here. Every clip is the same length so the player gives nothing away.
 - **The two runs** (Film Soundtrack). On the term page, a chooser and each run as a schedule; on a lesson page, previous and next along the chosen run, which replace the plain ones. `assets/site.js` keeps the choice on the device under `y8:run:<topic>`, and `#ipads-first` or `#listening-first` in a link opens that run. Inside Canvas neither order shows, because Canvas moves students between lessons.
 - **Saved answers from before the move.** The old site kept ticks and typed answers under `y8:<page>`. Each fill-in box carries its old name in `data-old`, and `assets/site.js` puts anything saved the old way back into the boxes once per page per device. It never deletes the old entries.

@@ -11,7 +11,7 @@ Every page is generated. Never edit anything in docs/ by hand; it gets overwritt
 Since 19 November 2026 every page is drawn by the shared music shell (shell.py,
 copied in from ../music-shell by sync.py; never edit the copy here). This file
 reads Year 8's data and hands each piece to a shell function. What is still
-Year 8's own: the beat grid, the two runs on Film Soundtrack, and assets/site.js,
+Year 8's own: the beat grid, the clip players (sounds), the two runs on Film Soundtrack, and assets/site.js,
 which carries saved answers across from the old storage names.
 
 One rule this build enforces structurally: there is no "current lesson" anywhere.
@@ -273,6 +273,26 @@ def beatgrid(block, side=""):
                      body, side=side)
 
 
+# ------------------------------------------------------------------- sounds
+
+
+def sounds(block, side=""):
+    """Our own clips with a plain player each, then a table to fill in while
+    listening. The shell plays YouTube only; these are files made for this site
+    (Tools/y8_one_element_clips.py), so the browser's own player does the job and
+    works inside a Canvas frame. preload="none" keeps a page of nine clips light."""
+    lis = "".join(
+        f'<li class="snd"><span class="snd-name">{e(c["title"])}</span>'
+        f'<audio controls preload="none" src="{e(S.LINK_BASE)}/assets/audio/{e(c["file"])}" '
+        f'aria-label="{e(c["title"])}"></audio></li>' for c in block["clips"])
+    body = (f'<p class="brief">{S.rich(block["brief"])}</p>' if block.get("brief") else "")
+    body += f'<ul class="snds">{lis}</ul>'
+    if block.get("rows"):
+        body += S.table(block["headers"], block["rows"], form=True)
+        body += '<p class="fine">Type straight into the boxes. Your answers stay on this device.</p>'
+    return S.section("sounds", "Listen", "listen", block.get("heading"), body, side=side)
+
+
 # ------------------------------------------------------------------- blocks
 
 
@@ -316,7 +336,7 @@ def tag_fields(markup, keys):
 
 def take_side(kind):
     """Section kinds that can hold a side card on a laptop."""
-    return kind in ("prose", "explain", "listen", "media", "table", "activity", "list", "beatgrid")
+    return kind in ("prose", "explain", "listen", "media", "table", "activity", "list", "beatgrid", "sounds")
 
 
 def block_section(b, idx, side=""):
@@ -376,6 +396,12 @@ def block_section(b, idx, side=""):
 
     if t == "beatgrid":
         return beatgrid(b, side=side)
+
+    if t == "sounds":
+        return sounds(b, side=side)
+
+    if t == "reveal":
+        return S.reveal(b["summary"], b["items"], title=b.get("heading"))
 
     return ""
 
